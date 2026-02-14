@@ -1,0 +1,129 @@
+[
+  {
+    "description": "Call the Pokemon API for Pikachu and extract both the name and height from the response.\n\nRequirements:\n1. Send a GET request to 'https://pokeapi.co/api/v2/pokemon/pikachu' and deserialize the response into a Map<String, Object> named 'pokemon'\n2. Extract the 'name' value as a String into a variable named 'name'\n3. Extract the 'height' value as an Integer into a variable named 'height'",
+    "delta": [
+      {
+        "insert": "Call the Pokemon API for Pikachu and extract both the name and height from the response.\n\nRequirements:\n1. Send a GET request to 'https://pokeapi.co/api/v2/pokemon/pikachu' and deserialize the response into a Map<String, Object> named 'pokemon'\n2. Extract the 'name' value as a String into a variable named 'name'\n3. Extract the 'height' value as an Integer into a variable named 'height'\n"
+      }
+    ],
+    "solution": "HttpRequest request = new HttpRequest();\nrequest.setEndpoint('https://pokeapi.co/api/v2/pokemon/pikachu');\nrequest.setMethod('GET');\nHttp http = new Http();\nHttpResponse response = http.send(request);\nMap<String, Object> pokemon = (Map<String, Object>) JSON.deserializeUntyped(response.getBody());\nString name = (String) pokemon.get('name');\nInteger height = (Integer) pokemon.get('height');",
+    "template": "HttpRequest request = new HttpRequest();\nrequest.setEndpoint('https://pokeapi.co/api/v2/pokemon/pikachu');\nrequest.setMethod('GET');\nHttp http = new Http();\nHttpResponse response = http.send(request);\nMap<String, Object> pokemon = (Map<String, Object>) JSON.deserializeUntyped(response.getBody());\n// Extract name and height from the pokemon map",
+    "preCode": "",
+    "requirements": [
+      "Send a GET request to 'https://pokeapi.co/api/v2/pokemon/pikachu' and deserialize the response into a Map<String, Object> named 'pokemon'",
+      "Extract the 'name' value as a String into a variable named 'name'",
+      "Extract the 'height' value as an Integer into a variable named 'height'"
+    ],
+    "tests": [
+      "HttpRequest request = new HttpRequest();\nrequest.setEndpoint('https://pokeapi.co/api/v2/pokemon/pikachu');\nrequest.setMethod('GET');\nHttp http = new Http();\nHttpResponse response = http.send(request);\nMap<String, Object> pokemon = (Map<String, Object>) JSON.deserializeUntyped(response.getBody());\nAssert.isNotNull(pokemon, 'pokemon map must not be null');",
+      "HttpRequest request = new HttpRequest();\nrequest.setEndpoint('https://pokeapi.co/api/v2/pokemon/pikachu');\nrequest.setMethod('GET');\nHttp http = new Http();\nHttpResponse response = http.send(request);\nMap<String, Object> pokemon = (Map<String, Object>) JSON.deserializeUntyped(response.getBody());\nString name = (String) pokemon.get('name');\nAssert.areEqual('pikachu', name, 'Name must be pikachu');",
+      "HttpRequest request = new HttpRequest();\nrequest.setEndpoint('https://pokeapi.co/api/v2/pokemon/pikachu');\nrequest.setMethod('GET');\nHttp http = new Http();\nHttpResponse response = http.send(request);\nMap<String, Object> pokemon = (Map<String, Object>) JSON.deserializeUntyped(response.getBody());\nInteger height = (Integer) pokemon.get('height');\nAssert.isTrue(height > 0, 'Height must be greater than 0');"
+    ],
+    "points": 10,
+    "difficulty": "easy",
+    "orgCode": false,
+    "testMode": false,
+    "ref": "6990bbd44dc3a532eb9ed4b0",
+    "order": 11
+  },
+  {
+    "description": "Call the Pokemon API for Pikachu and extract the base_experience value.\n\nRequirements:\n1. Send a GET request to 'https://pokeapi.co/api/v2/pokemon/pikachu' and deserialize the response into a Map<String, Object> named 'pokemon'\n2. Extract the 'base_experience' value as an Integer into a variable named 'baseExp'",
+    "delta": [
+      {
+        "insert": "Call the Pokemon API for Pikachu and extract the base_experience value.\n\nRequirements:\n1. Send a GET request to 'https://pokeapi.co/api/v2/pokemon/pikachu' and deserialize the response into a Map<String, Object> named 'pokemon'\n2. Extract the 'base_experience' value as an Integer into a variable named 'baseExp'\n"
+      }
+    ],
+    "solution": "HttpRequest request = new HttpRequest();\nrequest.setEndpoint('https://pokeapi.co/api/v2/pokemon/pikachu');\nrequest.setMethod('GET');\nHttp http = new Http();\nHttpResponse response = http.send(request);\nMap<String, Object> pokemon = (Map<String, Object>) JSON.deserializeUntyped(response.getBody());\nInteger baseExp = (Integer) pokemon.get('base_experience');",
+    "template": "HttpRequest request = new HttpRequest();\nrequest.setEndpoint('https://pokeapi.co/api/v2/pokemon/pikachu');\nrequest.setMethod('GET');\nHttp http = new Http();\nHttpResponse response = http.send(request);\nMap<String, Object> pokemon = (Map<String, Object>) JSON.deserializeUntyped(response.getBody());\n// Extract base_experience as an Integer",
+    "preCode": "",
+    "requirements": [
+      "Send a GET request to 'https://pokeapi.co/api/v2/pokemon/pikachu' and deserialize the response into a Map<String, Object> named 'pokemon'",
+      "Extract the 'base_experience' value as an Integer into a variable named 'baseExp'"
+    ],
+    "tests": [
+      "HttpRequest request = new HttpRequest();\nrequest.setEndpoint('https://pokeapi.co/api/v2/pokemon/pikachu');\nrequest.setMethod('GET');\nHttp http = new Http();\nHttpResponse response = http.send(request);\nMap<String, Object> pokemon = (Map<String, Object>) JSON.deserializeUntyped(response.getBody());\nAssert.isNotNull(pokemon, 'pokemon map must not be null');",
+      "HttpRequest request = new HttpRequest();\nrequest.setEndpoint('https://pokeapi.co/api/v2/pokemon/pikachu');\nrequest.setMethod('GET');\nHttp http = new Http();\nHttpResponse response = http.send(request);\nMap<String, Object> pokemon = (Map<String, Object>) JSON.deserializeUntyped(response.getBody());\nInteger baseExp = (Integer) pokemon.get('base_experience');\nAssert.isTrue(baseExp > 0, 'base_experience must be greater than 0');"
+    ],
+    "points": 10,
+    "difficulty": "easy",
+    "orgCode": false,
+    "testMode": false,
+    "ref": "6990bbd44dc3a532eb9ed4b0",
+    "order": 12
+  },
+  {
+    "description": "The Pokemon API returns nested data. The 'types' field is a list of objects. Complete the code by extracting the 'types' value from the map and casting it to List<Object>.",
+    "delta": [
+      {
+        "insert": "The Pokemon API returns nested data. The 'types' field is a list of objects. Complete the code by extracting the 'types' value from the map and casting it to List<Object>.\n"
+      }
+    ],
+    "solution": "HttpRequest request = new HttpRequest();\nrequest.setEndpoint('https://pokeapi.co/api/v2/pokemon/pikachu');\nrequest.setMethod('GET');\nHttp http = new Http();\nHttpResponse response = http.send(request);\nMap<String, Object> pokemon = (Map<String, Object>) JSON.deserializeUntyped(response.getBody());\nList<Object> types = (List<Object>) pokemon.get('types');",
+    "template": "HttpRequest request = new HttpRequest();\nrequest.setEndpoint('https://pokeapi.co/api/v2/pokemon/pikachu');\nrequest.setMethod('GET');\nHttp http = new Http();\nHttpResponse response = http.send(request);\nMap<String, Object> pokemon = (Map<String, Object>) JSON.deserializeUntyped(response.getBody());\nList<Object> types = (___) pokemon.get('types');",
+    "preCode": "",
+    "requirements": [
+      "Extract the 'types' value from the map and cast it to List<Object>"
+    ],
+    "tests": [
+      "HttpRequest request = new HttpRequest();\nrequest.setEndpoint('https://pokeapi.co/api/v2/pokemon/pikachu');\nrequest.setMethod('GET');\nHttp http = new Http();\nHttpResponse response = http.send(request);\nMap<String, Object> pokemon = (Map<String, Object>) JSON.deserializeUntyped(response.getBody());\nList<Object> types = (List<Object>) pokemon.get('types');\nAssert.isTrue(types.size() > 0, 'Types list must not be empty');"
+    ],
+    "points": 5,
+    "difficulty": "easy",
+    "orgCode": false,
+    "testMode": false,
+    "ref": "6990bbd44dc3a532eb9ed4b0",
+    "order": 13
+  },
+  {
+    "description": "Each entry in the types list is a nested object. To get the type name, you need to navigate through multiple levels: types[0] → 'type' → 'name'.\n\nThe structure looks like: [{\"slot\": 1, \"type\": {\"name\": \"electric\"}}]\n\nRequirements:\n1. Extract the 'types' list from the pokemon map and cast to List<Object>\n2. Get the first entry from the list and cast it to Map<String, Object>\n3. Get the 'type' object from the first entry and cast it to Map<String, Object>\n4. Extract the 'name' from the type object as a String into a variable named 'typeName'",
+    "delta": [
+      {
+        "insert": "Each entry in the types list is a nested object. To get the type name, you need to navigate through multiple levels: types[0] → 'type' → 'name'.\n\nThe structure looks like: [{\"slot\": 1, \"type\": {\"name\": \"electric\"}}]\n\nRequirements:\n1. Extract the 'types' list from the pokemon map and cast to List<Object>\n2. Get the first entry from the list and cast it to Map<String, Object>\n3. Get the 'type' object from the first entry and cast it to Map<String, Object>\n4. Extract the 'name' from the type object as a String into a variable named 'typeName'\n"
+      }
+    ],
+    "solution": "HttpRequest request = new HttpRequest();\nrequest.setEndpoint('https://pokeapi.co/api/v2/pokemon/pikachu');\nrequest.setMethod('GET');\nHttp http = new Http();\nHttpResponse response = http.send(request);\nMap<String, Object> pokemon = (Map<String, Object>) JSON.deserializeUntyped(response.getBody());\nList<Object> types = (List<Object>) pokemon.get('types');\nMap<String, Object> firstType = (Map<String, Object>) types[0];\nMap<String, Object> typeInfo = (Map<String, Object>) firstType.get('type');\nString typeName = (String) typeInfo.get('name');",
+    "template": "HttpRequest request = new HttpRequest();\nrequest.setEndpoint('https://pokeapi.co/api/v2/pokemon/pikachu');\nrequest.setMethod('GET');\nHttp http = new Http();\nHttpResponse response = http.send(request);\nMap<String, Object> pokemon = (Map<String, Object>) JSON.deserializeUntyped(response.getBody());\n// Navigate through the nested types structure to get the type name",
+    "preCode": "",
+    "requirements": [
+      "Extract the 'types' list from the pokemon map and cast to List<Object>",
+      "Get the first entry from the list and cast it to Map<String, Object>",
+      "Get the 'type' object from the first entry and cast it to Map<String, Object>",
+      "Extract the 'name' from the type object as a String into a variable named 'typeName'"
+    ],
+    "tests": [
+      "HttpRequest request = new HttpRequest();\nrequest.setEndpoint('https://pokeapi.co/api/v2/pokemon/pikachu');\nrequest.setMethod('GET');\nHttp http = new Http();\nHttpResponse response = http.send(request);\nMap<String, Object> pokemon = (Map<String, Object>) JSON.deserializeUntyped(response.getBody());\nList<Object> types = (List<Object>) pokemon.get('types');\nAssert.isTrue(types.size() > 0, 'Types list must not be empty');",
+      "HttpRequest request = new HttpRequest();\nrequest.setEndpoint('https://pokeapi.co/api/v2/pokemon/pikachu');\nrequest.setMethod('GET');\nHttp http = new Http();\nHttpResponse response = http.send(request);\nMap<String, Object> pokemon = (Map<String, Object>) JSON.deserializeUntyped(response.getBody());\nList<Object> types = (List<Object>) pokemon.get('types');\nMap<String, Object> firstType = (Map<String, Object>) types[0];\nAssert.isNotNull(firstType, 'First type entry must not be null');",
+      "HttpRequest request = new HttpRequest();\nrequest.setEndpoint('https://pokeapi.co/api/v2/pokemon/pikachu');\nrequest.setMethod('GET');\nHttp http = new Http();\nHttpResponse response = http.send(request);\nMap<String, Object> pokemon = (Map<String, Object>) JSON.deserializeUntyped(response.getBody());\nList<Object> types = (List<Object>) pokemon.get('types');\nMap<String, Object> firstType = (Map<String, Object>) types[0];\nMap<String, Object> typeInfo = (Map<String, Object>) firstType.get('type');\nAssert.isNotNull(typeInfo, 'Type info object must not be null');",
+      "HttpRequest request = new HttpRequest();\nrequest.setEndpoint('https://pokeapi.co/api/v2/pokemon/pikachu');\nrequest.setMethod('GET');\nHttp http = new Http();\nHttpResponse response = http.send(request);\nMap<String, Object> pokemon = (Map<String, Object>) JSON.deserializeUntyped(response.getBody());\nList<Object> types = (List<Object>) pokemon.get('types');\nMap<String, Object> firstType = (Map<String, Object>) types[0];\nMap<String, Object> typeInfo = (Map<String, Object>) firstType.get('type');\nString typeName = (String) typeInfo.get('name');\nAssert.areEqual('electric', typeName, 'Pikachu type name must be electric');"
+    ],
+    "points": 20,
+    "difficulty": "medium",
+    "orgCode": false,
+    "testMode": false,
+    "ref": "6990bbd44dc3a532eb9ed4b0",
+    "order": 14
+  },
+  {
+    "description": "You can build dynamic API URLs by concatenating a variable into the endpoint. Use the provided 'pokemonName' variable to call the API for any Pokemon. Complete the code by building the endpoint dynamically.",
+    "delta": [
+      {
+        "insert": "You can build dynamic API URLs by concatenating a variable into the endpoint. Use the provided 'pokemonName' variable to call the API for any Pokemon. Complete the code by building the endpoint dynamically.\n"
+      }
+    ],
+    "solution": "HttpRequest request = new HttpRequest();\nrequest.setEndpoint('https://pokeapi.co/api/v2/pokemon/' + pokemonName);\nrequest.setMethod('GET');",
+    "template": "HttpRequest request = new HttpRequest();\nrequest.setEndpoint('https://pokeapi.co/api/v2/pokemon/' + ___);\nrequest.setMethod('GET');",
+    "preCode": "String pokemonName = 'charizard';",
+    "requirements": [
+      "Build the endpoint dynamically using the pokemonName variable"
+    ],
+    "tests": [
+      "String pokemonName = 'charizard';\nHttpRequest request = new HttpRequest();\nrequest.setEndpoint('https://pokeapi.co/api/v2/pokemon/' + pokemonName);\nAssert.areEqual('https://pokeapi.co/api/v2/pokemon/charizard', request.getEndpoint(), 'Endpoint must include the pokemon name dynamically');"
+    ],
+    "points": 5,
+    "difficulty": "easy",
+    "orgCode": false,
+    "testMode": false,
+    "ref": "6990bbd44dc3a532eb9ed4b0",
+    "order": 15
+  }
+]

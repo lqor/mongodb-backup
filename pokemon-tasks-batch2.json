@@ -1,0 +1,117 @@
+[
+  {
+    "description": "The response body contains the data returned by the API as a String. Complete the code by calling the method that retrieves the body from the response.",
+    "delta": [
+      {
+        "insert": "The response body contains the data returned by the API as a String. Complete the code by calling the method that retrieves the body from the response.\n"
+      }
+    ],
+    "solution": "HttpRequest request = new HttpRequest();\nrequest.setEndpoint('https://pokeapi.co/api/v2/pokemon/pikachu');\nrequest.setMethod('GET');\nHttp http = new Http();\nHttpResponse response = http.send(request);\nString body = response.getBody();",
+    "template": "HttpRequest request = new HttpRequest();\nrequest.setEndpoint('https://pokeapi.co/api/v2/pokemon/pikachu');\nrequest.setMethod('GET');\nHttp http = new Http();\nHttpResponse response = http.send(request);\nString body = response.___();",
+    "preCode": "",
+    "requirements": [
+      "Get the response body as a String using getBody()"
+    ],
+    "tests": [
+      "HttpRequest request = new HttpRequest();\nrequest.setEndpoint('https://pokeapi.co/api/v2/pokemon/pikachu');\nrequest.setMethod('GET');\nHttp http = new Http();\nHttpResponse response = http.send(request);\nString body = response.getBody();\nAssert.isTrue(body.length() > 0, 'Response body must not be empty');"
+    ],
+    "points": 5,
+    "difficulty": "easy",
+    "orgCode": false,
+    "testMode": false,
+    "ref": "6990bbd44dc3a532eb9ed4b0",
+    "order": 6
+  },
+  {
+    "description": "The response body is a JSON string. To work with it in Apex, you need to deserialize it using JSON.deserializeUntyped(). Complete the code by calling the correct method on the JSON class.",
+    "delta": [
+      {
+        "insert": "The response body is a JSON string. To work with it in Apex, you need to deserialize it using JSON.deserializeUntyped(). Complete the code by calling the correct method on the JSON class.\n"
+      }
+    ],
+    "solution": "HttpRequest request = new HttpRequest();\nrequest.setEndpoint('https://pokeapi.co/api/v2/pokemon/pikachu');\nrequest.setMethod('GET');\nHttp http = new Http();\nHttpResponse response = http.send(request);\nObject result = JSON.deserializeUntyped(response.getBody());",
+    "template": "HttpRequest request = new HttpRequest();\nrequest.setEndpoint('https://pokeapi.co/api/v2/pokemon/pikachu');\nrequest.setMethod('GET');\nHttp http = new Http();\nHttpResponse response = http.send(request);\nObject result = JSON.___(response.getBody());",
+    "preCode": "",
+    "requirements": [
+      "Deserialize the response body using JSON.deserializeUntyped()"
+    ],
+    "tests": [
+      "HttpRequest request = new HttpRequest();\nrequest.setEndpoint('https://pokeapi.co/api/v2/pokemon/pikachu');\nrequest.setMethod('GET');\nHttp http = new Http();\nHttpResponse response = http.send(request);\nObject result = JSON.deserializeUntyped(response.getBody());\nAssert.isNotNull(result, 'Deserialized result must not be null');"
+    ],
+    "points": 5,
+    "difficulty": "easy",
+    "orgCode": false,
+    "testMode": false,
+    "ref": "6990bbd44dc3a532eb9ed4b0",
+    "order": 7
+  },
+  {
+    "description": "JSON.deserializeUntyped() returns an Object. Since the Pokemon API returns a JSON object, you need to cast it to Map<String, Object> to access its fields. Complete the code by adding the correct cast.",
+    "delta": [
+      {
+        "insert": "JSON.deserializeUntyped() returns an Object. Since the Pokemon API returns a JSON object, you need to cast it to Map<String, Object> to access its fields. Complete the code by adding the correct cast.\n"
+      }
+    ],
+    "solution": "HttpRequest request = new HttpRequest();\nrequest.setEndpoint('https://pokeapi.co/api/v2/pokemon/pikachu');\nrequest.setMethod('GET');\nHttp http = new Http();\nHttpResponse response = http.send(request);\nMap<String, Object> pokemon = (Map<String, Object>) JSON.deserializeUntyped(response.getBody());",
+    "template": "HttpRequest request = new HttpRequest();\nrequest.setEndpoint('https://pokeapi.co/api/v2/pokemon/pikachu');\nrequest.setMethod('GET');\nHttp http = new Http();\nHttpResponse response = http.send(request);\nMap<String, Object> pokemon = (___) JSON.deserializeUntyped(response.getBody());",
+    "preCode": "",
+    "requirements": [
+      "Cast the deserialized result to Map<String, Object>"
+    ],
+    "tests": [
+      "HttpRequest request = new HttpRequest();\nrequest.setEndpoint('https://pokeapi.co/api/v2/pokemon/pikachu');\nrequest.setMethod('GET');\nHttp http = new Http();\nHttpResponse response = http.send(request);\nMap<String, Object> pokemon = (Map<String, Object>) JSON.deserializeUntyped(response.getBody());\nAssert.isNotNull(pokemon, 'Result must be cast to Map<String, Object>');"
+    ],
+    "points": 5,
+    "difficulty": "easy",
+    "orgCode": false,
+    "testMode": false,
+    "ref": "6990bbd44dc3a532eb9ed4b0",
+    "order": 8
+  },
+  {
+    "description": "Now that you have a Map, you can extract values using the get() method. The Pokemon API returns a 'name' field as a String. Complete the code by extracting the name and casting it to String.",
+    "delta": [
+      {
+        "insert": "Now that you have a Map, you can extract values using the get() method. The Pokemon API returns a 'name' field as a String. Complete the code by extracting the name and casting it to String.\n"
+      }
+    ],
+    "solution": "HttpRequest request = new HttpRequest();\nrequest.setEndpoint('https://pokeapi.co/api/v2/pokemon/pikachu');\nrequest.setMethod('GET');\nHttp http = new Http();\nHttpResponse response = http.send(request);\nMap<String, Object> pokemon = (Map<String, Object>) JSON.deserializeUntyped(response.getBody());\nString name = (String) pokemon.get('name');",
+    "template": "HttpRequest request = new HttpRequest();\nrequest.setEndpoint('https://pokeapi.co/api/v2/pokemon/pikachu');\nrequest.setMethod('GET');\nHttp http = new Http();\nHttpResponse response = http.send(request);\nMap<String, Object> pokemon = (Map<String, Object>) JSON.deserializeUntyped(response.getBody());\nString name = (___) pokemon.get('name');",
+    "preCode": "",
+    "requirements": [
+      "Extract the 'name' value from the map and cast it to String"
+    ],
+    "tests": [
+      "HttpRequest request = new HttpRequest();\nrequest.setEndpoint('https://pokeapi.co/api/v2/pokemon/pikachu');\nrequest.setMethod('GET');\nHttp http = new Http();\nHttpResponse response = http.send(request);\nMap<String, Object> pokemon = (Map<String, Object>) JSON.deserializeUntyped(response.getBody());\nString name = (String) pokemon.get('name');\nAssert.areEqual('pikachu', name, 'Name must be pikachu');"
+    ],
+    "points": 5,
+    "difficulty": "easy",
+    "orgCode": false,
+    "testMode": false,
+    "ref": "6990bbd44dc3a532eb9ed4b0",
+    "order": 9
+  },
+  {
+    "description": "The Pokemon API also returns numeric fields like 'weight'. Since map values are Objects, you need to cast them to Integer. Complete the code by extracting the weight.",
+    "delta": [
+      {
+        "insert": "The Pokemon API also returns numeric fields like 'weight'. Since map values are Objects, you need to cast them to Integer. Complete the code by extracting the weight.\n"
+      }
+    ],
+    "solution": "HttpRequest request = new HttpRequest();\nrequest.setEndpoint('https://pokeapi.co/api/v2/pokemon/pikachu');\nrequest.setMethod('GET');\nHttp http = new Http();\nHttpResponse response = http.send(request);\nMap<String, Object> pokemon = (Map<String, Object>) JSON.deserializeUntyped(response.getBody());\nInteger weight = (Integer) pokemon.get('weight');",
+    "template": "HttpRequest request = new HttpRequest();\nrequest.setEndpoint('https://pokeapi.co/api/v2/pokemon/pikachu');\nrequest.setMethod('GET');\nHttp http = new Http();\nHttpResponse response = http.send(request);\nMap<String, Object> pokemon = (Map<String, Object>) JSON.deserializeUntyped(response.getBody());\nInteger weight = (___) pokemon.get('weight');",
+    "preCode": "",
+    "requirements": [
+      "Extract the 'weight' value from the map and cast it to Integer"
+    ],
+    "tests": [
+      "HttpRequest request = new HttpRequest();\nrequest.setEndpoint('https://pokeapi.co/api/v2/pokemon/pikachu');\nrequest.setMethod('GET');\nHttp http = new Http();\nHttpResponse response = http.send(request);\nMap<String, Object> pokemon = (Map<String, Object>) JSON.deserializeUntyped(response.getBody());\nInteger weight = (Integer) pokemon.get('weight');\nAssert.isTrue(weight > 0, 'Weight must be greater than 0');"
+    ],
+    "points": 5,
+    "difficulty": "easy",
+    "orgCode": false,
+    "testMode": false,
+    "ref": "6990bbd44dc3a532eb9ed4b0",
+    "order": 10
+  }
+]

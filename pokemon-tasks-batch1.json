@@ -1,0 +1,117 @@
+[
+  {
+    "description": "To call an external API in Apex, you first need to create an HttpRequest object. Complete the code by creating a new HttpRequest instance.",
+    "delta": [
+      {
+        "insert": "To call an external API in Apex, you first need to create an HttpRequest object. Complete the code by creating a new HttpRequest instance.\n"
+      }
+    ],
+    "solution": "HttpRequest request = new HttpRequest();",
+    "template": "HttpRequest request = new ___();",
+    "preCode": "",
+    "requirements": [
+      "Create a new HttpRequest instance"
+    ],
+    "tests": [
+      "HttpRequest request = new HttpRequest();\nAssert.isNotNull(request, 'HttpRequest must be created');"
+    ],
+    "points": 5,
+    "difficulty": "easy",
+    "orgCode": false,
+    "testMode": false,
+    "ref": "6990bbd44dc3a532eb9ed4b0",
+    "order": 1
+  },
+  {
+    "description": "Every HTTP request needs an endpoint — the URL you're calling. Complete the code by setting the endpoint to the Pokemon API URL for Pikachu.",
+    "delta": [
+      {
+        "insert": "Every HTTP request needs an endpoint — the URL you're calling. Complete the code by setting the endpoint to the Pokemon API URL for Pikachu.\n"
+      }
+    ],
+    "solution": "HttpRequest request = new HttpRequest();\nrequest.setEndpoint('https://pokeapi.co/api/v2/pokemon/pikachu');",
+    "template": "HttpRequest request = new HttpRequest();\nrequest.___('https://pokeapi.co/api/v2/pokemon/pikachu');",
+    "preCode": "",
+    "requirements": [
+      "Set the endpoint to 'https://pokeapi.co/api/v2/pokemon/pikachu'"
+    ],
+    "tests": [
+      "HttpRequest request = new HttpRequest();\nrequest.setEndpoint('https://pokeapi.co/api/v2/pokemon/pikachu');\nAssert.areEqual('https://pokeapi.co/api/v2/pokemon/pikachu', request.getEndpoint(), 'Endpoint must be the Pikachu API URL');"
+    ],
+    "points": 5,
+    "difficulty": "easy",
+    "orgCode": false,
+    "testMode": false,
+    "ref": "6990bbd44dc3a532eb9ed4b0",
+    "order": 2
+  },
+  {
+    "description": "You also need to specify the HTTP method. Since we want to retrieve data, we use GET. Complete the code by setting the HTTP method to 'GET'.",
+    "delta": [
+      {
+        "insert": "You also need to specify the HTTP method. Since we want to retrieve data, we use GET. Complete the code by setting the HTTP method to 'GET'.\n"
+      }
+    ],
+    "solution": "HttpRequest request = new HttpRequest();\nrequest.setEndpoint('https://pokeapi.co/api/v2/pokemon/pikachu');\nrequest.setMethod('GET');",
+    "template": "HttpRequest request = new HttpRequest();\nrequest.setEndpoint('https://pokeapi.co/api/v2/pokemon/pikachu');\nrequest.___('GET');",
+    "preCode": "",
+    "requirements": [
+      "Set the HTTP method to 'GET'"
+    ],
+    "tests": [
+      "HttpRequest request = new HttpRequest();\nrequest.setMethod('GET');\nAssert.areEqual('GET', request.getMethod(), 'HTTP method must be GET');"
+    ],
+    "points": 5,
+    "difficulty": "easy",
+    "orgCode": false,
+    "testMode": false,
+    "ref": "6990bbd44dc3a532eb9ed4b0",
+    "order": 3
+  },
+  {
+    "description": "To actually send the request, you need an Http object. Complete the code by calling the send method on the Http instance to get an HttpResponse.\n\nMake sure https://pokeapi.co is in your Remote Site Settings before running this.",
+    "delta": [
+      {
+        "insert": "To actually send the request, you need an Http object. Complete the code by calling the send method on the Http instance to get an HttpResponse.\n\nMake sure https://pokeapi.co is in your Remote Site Settings before running this.\n"
+      }
+    ],
+    "solution": "HttpRequest request = new HttpRequest();\nrequest.setEndpoint('https://pokeapi.co/api/v2/pokemon/pikachu');\nrequest.setMethod('GET');\nHttp http = new Http();\nHttpResponse response = http.send(request);",
+    "template": "HttpRequest request = new HttpRequest();\nrequest.setEndpoint('https://pokeapi.co/api/v2/pokemon/pikachu');\nrequest.setMethod('GET');\nHttp http = new Http();\nHttpResponse response = http.___(request);",
+    "preCode": "",
+    "requirements": [
+      "Send the request using http.send() and store the result in response"
+    ],
+    "tests": [
+      "HttpRequest request = new HttpRequest();\nrequest.setEndpoint('https://pokeapi.co/api/v2/pokemon/pikachu');\nrequest.setMethod('GET');\nHttp http = new Http();\nHttpResponse response = http.send(request);\nAssert.isNotNull(response, 'Response must not be null');"
+    ],
+    "points": 5,
+    "difficulty": "easy",
+    "orgCode": false,
+    "testMode": false,
+    "ref": "6990bbd44dc3a532eb9ed4b0",
+    "order": 4
+  },
+  {
+    "description": "After sending a request, you should check the status code to make sure it was successful. A status code of 200 means OK. Complete the code by getting the status code from the response.",
+    "delta": [
+      {
+        "insert": "After sending a request, you should check the status code to make sure it was successful. A status code of 200 means OK. Complete the code by getting the status code from the response.\n"
+      }
+    ],
+    "solution": "HttpRequest request = new HttpRequest();\nrequest.setEndpoint('https://pokeapi.co/api/v2/pokemon/pikachu');\nrequest.setMethod('GET');\nHttp http = new Http();\nHttpResponse response = http.send(request);\nInteger statusCode = response.getStatusCode();",
+    "template": "HttpRequest request = new HttpRequest();\nrequest.setEndpoint('https://pokeapi.co/api/v2/pokemon/pikachu');\nrequest.setMethod('GET');\nHttp http = new Http();\nHttpResponse response = http.send(request);\nInteger statusCode = response.___();",
+    "preCode": "",
+    "requirements": [
+      "Get the status code from the response using getStatusCode()"
+    ],
+    "tests": [
+      "HttpRequest request = new HttpRequest();\nrequest.setEndpoint('https://pokeapi.co/api/v2/pokemon/pikachu');\nrequest.setMethod('GET');\nHttp http = new Http();\nHttpResponse response = http.send(request);\nInteger statusCode = response.getStatusCode();\nAssert.areEqual(200, statusCode, 'Status code must be 200');"
+    ],
+    "points": 5,
+    "difficulty": "easy",
+    "orgCode": false,
+    "testMode": false,
+    "ref": "6990bbd44dc3a532eb9ed4b0",
+    "order": 5
+  }
+]

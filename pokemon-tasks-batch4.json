@@ -1,0 +1,313 @@
+[
+  {
+    "description": "Create a class named PokemonFetcher with a method named fetchPokemon. This method takes a String parameter 'pokemonName', sends a GET request to 'https://pokeapi.co/api/v2/pokemon/' + pokemonName, and returns the response body as a String.\n\nMake sure https://pokeapi.co is in your Remote Site Settings.\n\nRequirements:\n1. Create a public class named 'PokemonFetcher'\n2. Create a public method named 'fetchPokemon' that takes a String parameter 'pokemonName' and returns a String\n3. The method must send a GET request to 'https://pokeapi.co/api/v2/pokemon/' + pokemonName\n4. The method must return the response body as a String",
+    "delta": [
+      {
+        "insert": "Create a class named PokemonFetcher with a method named fetchPokemon. This method takes a String parameter 'pokemonName', sends a GET request to 'https://pokeapi.co/api/v2/pokemon/' + pokemonName, and returns the response body as a String.\n\nMake sure https://pokeapi.co is in your Remote Site Settings.\n\nRequirements:\n1. Create a public class named 'PokemonFetcher'\n2. Create a public method named 'fetchPokemon' that takes a String parameter 'pokemonName' and returns a String\n3. The method must send a GET request to 'https://pokeapi.co/api/v2/pokemon/' + pokemonName\n4. The method must return the response body as a String\n"
+      }
+    ],
+    "solution": "public class PokemonFetcher {\n    public String fetchPokemon(String pokemonName) {\n        HttpRequest request = new HttpRequest();\n        request.setEndpoint('https://pokeapi.co/api/v2/pokemon/' + pokemonName);\n        request.setMethod('GET');\n        Http http = new Http();\n        HttpResponse response = http.send(request);\n        return response.getBody();\n    }\n}",
+    "template": "",
+    "preCode": "",
+    "requirements": [
+      "Create a public class named 'PokemonFetcher'",
+      "Create a public method named 'fetchPokemon' that takes a String parameter 'pokemonName' and returns a String",
+      "The method must send a GET request to 'https://pokeapi.co/api/v2/pokemon/' + pokemonName",
+      "The method must return the response body as a String"
+    ],
+    "tests": [
+      "PokemonFetcher fetcher = new PokemonFetcher();\nAssert.isNotNull(fetcher, 'PokemonFetcher class must exist');",
+      "PokemonFetcher fetcher = new PokemonFetcher();\nString result = fetcher.fetchPokemon('pikachu');\nAssert.isNotNull(result, 'fetchPokemon must return a String');",
+      "PokemonFetcher fetcher = new PokemonFetcher();\nString result = fetcher.fetchPokemon('pikachu');\nAssert.isTrue(result.contains('pikachu'), 'Response body must contain pikachu');",
+      "PokemonFetcher fetcher = new PokemonFetcher();\nString result = fetcher.fetchPokemon('charizard');\nAssert.isTrue(result.contains('charizard'), 'fetchPokemon must work with different pokemon names');"
+    ],
+    "points": 15,
+    "difficulty": "medium",
+    "orgCode": true,
+    "testMode": false,
+    "ref": "6990bbd44dc3a532eb9ed4b0",
+    "order": 15
+  },
+  {
+    "description": "Create a class named PokemonParser with a method named getName. This method takes a JSON string as a parameter, deserializes it, and returns the value of the 'name' field.\n\nRequirements:\n1. Create a public class named 'PokemonParser'\n2. Create a public method named 'getName' that takes a String parameter 'jsonBody' and returns a String\n3. The method must deserialize the JSON using JSON.deserializeUntyped() and return the 'name' value",
+    "delta": [
+      {
+        "insert": "Create a class named PokemonParser with a method named getName. This method takes a JSON string as a parameter, deserializes it, and returns the value of the 'name' field.\n\nRequirements:\n1. Create a public class named 'PokemonParser'\n2. Create a public method named 'getName' that takes a String parameter 'jsonBody' and returns a String\n3. The method must deserialize the JSON using JSON.deserializeUntyped() and return the 'name' value\n"
+      }
+    ],
+    "solution": "public class PokemonParser {\n    public String getName(String jsonBody) {\n        Map<String, Object> pokemon = (Map<String, Object>) JSON.deserializeUntyped(jsonBody);\n        return (String) pokemon.get('name');\n    }\n}",
+    "template": "public class PokemonParser {\n    public String getName(String jsonBody) {\n        // Write your code here\n    }\n}",
+    "preCode": "",
+    "requirements": [
+      "Create a public class named 'PokemonParser'",
+      "Create a public method named 'getName' that takes a String parameter 'jsonBody' and returns a String",
+      "The method must deserialize the JSON using JSON.deserializeUntyped() and return the 'name' value"
+    ],
+    "tests": [
+      "PokemonParser parser = new PokemonParser();\nAssert.isNotNull(parser, 'PokemonParser class must exist');",
+      "PokemonParser parser = new PokemonParser();\nString result = parser.getName('{\"name\":\"pikachu\",\"weight\":60}');\nAssert.isNotNull(result, 'getName must return a String');",
+      "PokemonParser parser = new PokemonParser();\nString result = parser.getName('{\"name\":\"pikachu\",\"weight\":60}');\nAssert.areEqual('pikachu', result, 'getName must return the pokemon name');"
+    ],
+    "points": 10,
+    "difficulty": "easy",
+    "orgCode": false,
+    "testMode": false,
+    "ref": "6990bbd44dc3a532eb9ed4b0",
+    "order": 16
+  },
+  {
+    "description": "Add a method named getWeight to the PokemonParser class. This method takes a JSON string as a parameter, deserializes it, and returns the value of the 'weight' field as an Integer.\n\nRequirements:\n1. Create a public class named 'PokemonParser'\n2. Create a public method named 'getWeight' that takes a String parameter 'jsonBody' and returns an Integer\n3. The method must deserialize the JSON and return the 'weight' value",
+    "delta": [
+      {
+        "insert": "Add a method named getWeight to the PokemonParser class. This method takes a JSON string as a parameter, deserializes it, and returns the value of the 'weight' field as an Integer.\n\nRequirements:\n1. Create a public class named 'PokemonParser'\n2. Create a public method named 'getWeight' that takes a String parameter 'jsonBody' and returns an Integer\n3. The method must deserialize the JSON and return the 'weight' value\n"
+      }
+    ],
+    "solution": "public class PokemonParser {\n    public Integer getWeight(String jsonBody) {\n        Map<String, Object> pokemon = (Map<String, Object>) JSON.deserializeUntyped(jsonBody);\n        return (Integer) pokemon.get('weight');\n    }\n}",
+    "template": "public class PokemonParser {\n    public Integer getWeight(String jsonBody) {\n        // Write your code here\n    }\n}",
+    "preCode": "",
+    "requirements": [
+      "Create a public class named 'PokemonParser'",
+      "Create a public method named 'getWeight' that takes a String parameter 'jsonBody' and returns an Integer",
+      "The method must deserialize the JSON and return the 'weight' value"
+    ],
+    "tests": [
+      "PokemonParser parser = new PokemonParser();\nAssert.isNotNull(parser, 'PokemonParser class must exist');",
+      "PokemonParser parser = new PokemonParser();\nInteger result = parser.getWeight('{\"name\":\"pikachu\",\"weight\":60,\"height\":4}');\nAssert.isNotNull(result, 'getWeight must return an Integer');",
+      "PokemonParser parser = new PokemonParser();\nInteger result = parser.getWeight('{\"name\":\"pikachu\",\"weight\":60,\"height\":4}');\nAssert.areEqual(60, result, 'getWeight must return the correct weight');"
+    ],
+    "points": 10,
+    "difficulty": "easy",
+    "orgCode": false,
+    "testMode": false,
+    "ref": "6990bbd44dc3a532eb9ed4b0",
+    "order": 17
+  },
+  {
+    "description": "Add a method named getHeight to the PokemonParser class. This method takes a JSON string as a parameter, deserializes it, and returns the value of the 'height' field as an Integer.\n\nRequirements:\n1. Create a public class named 'PokemonParser'\n2. Create a public method named 'getHeight' that takes a String parameter 'jsonBody' and returns an Integer\n3. The method must deserialize the JSON and return the 'height' value",
+    "delta": [
+      {
+        "insert": "Add a method named getHeight to the PokemonParser class. This method takes a JSON string as a parameter, deserializes it, and returns the value of the 'height' field as an Integer.\n\nRequirements:\n1. Create a public class named 'PokemonParser'\n2. Create a public method named 'getHeight' that takes a String parameter 'jsonBody' and returns an Integer\n3. The method must deserialize the JSON and return the 'height' value\n"
+      }
+    ],
+    "solution": "public class PokemonParser {\n    public Integer getHeight(String jsonBody) {\n        Map<String, Object> pokemon = (Map<String, Object>) JSON.deserializeUntyped(jsonBody);\n        return (Integer) pokemon.get('height');\n    }\n}",
+    "template": "public class PokemonParser {\n    public Integer getHeight(String jsonBody) {\n        // Write your code here\n    }\n}",
+    "preCode": "",
+    "requirements": [
+      "Create a public class named 'PokemonParser'",
+      "Create a public method named 'getHeight' that takes a String parameter 'jsonBody' and returns an Integer",
+      "The method must deserialize the JSON and return the 'height' value"
+    ],
+    "tests": [
+      "PokemonParser parser = new PokemonParser();\nAssert.isNotNull(parser, 'PokemonParser class must exist');",
+      "PokemonParser parser = new PokemonParser();\nInteger result = parser.getHeight('{\"name\":\"pikachu\",\"weight\":60,\"height\":4}');\nAssert.isNotNull(result, 'getHeight must return an Integer');",
+      "PokemonParser parser = new PokemonParser();\nInteger result = parser.getHeight('{\"name\":\"pikachu\",\"weight\":60,\"height\":4}');\nAssert.areEqual(4, result, 'getHeight must return the correct height');"
+    ],
+    "points": 10,
+    "difficulty": "easy",
+    "orgCode": false,
+    "testMode": false,
+    "ref": "6990bbd44dc3a532eb9ed4b0",
+    "order": 18
+  },
+  {
+    "description": "Add a method named getTypeName to the PokemonParser class. This method takes a JSON string as a parameter and returns the first type name from the nested 'types' array.\n\nThe types structure looks like: \"types\": [{\"slot\": 1, \"type\": {\"name\": \"electric\"}}]\n\nRequirements:\n1. Create a public class named 'PokemonParser'\n2. Create a public method named 'getTypeName' that takes a String parameter 'jsonBody' and returns a String\n3. The method must navigate the nested types structure: deserialize → get 'types' list → get first entry → get 'type' object → return 'name'",
+    "delta": [
+      {
+        "insert": "Add a method named getTypeName to the PokemonParser class. This method takes a JSON string as a parameter and returns the first type name from the nested 'types' array.\n\nThe types structure looks like: \"types\": [{\"slot\": 1, \"type\": {\"name\": \"electric\"}}]\n\nRequirements:\n1. Create a public class named 'PokemonParser'\n2. Create a public method named 'getTypeName' that takes a String parameter 'jsonBody' and returns a String\n3. The method must navigate the nested types structure: deserialize → get 'types' list → get first entry → get 'type' object → return 'name'\n"
+      }
+    ],
+    "solution": "public class PokemonParser {\n    public String getTypeName(String jsonBody) {\n        Map<String, Object> pokemon = (Map<String, Object>) JSON.deserializeUntyped(jsonBody);\n        List<Object> types = (List<Object>) pokemon.get('types');\n        Map<String, Object> firstType = (Map<String, Object>) types[0];\n        Map<String, Object> typeInfo = (Map<String, Object>) firstType.get('type');\n        return (String) typeInfo.get('name');\n    }\n}",
+    "template": "public class PokemonParser {\n    public String getTypeName(String jsonBody) {\n        // Write your code here\n    }\n}",
+    "preCode": "",
+    "requirements": [
+      "Create a public class named 'PokemonParser'",
+      "Create a public method named 'getTypeName' that takes a String parameter 'jsonBody' and returns a String",
+      "The method must navigate the nested types structure: deserialize → get 'types' list → get first entry → get 'type' object → return 'name'"
+    ],
+    "tests": [
+      "PokemonParser parser = new PokemonParser();\nAssert.isNotNull(parser, 'PokemonParser class must exist');",
+      "PokemonParser parser = new PokemonParser();\nString result = parser.getTypeName('{\"name\":\"pikachu\",\"types\":[{\"slot\":1,\"type\":{\"name\":\"electric\"}}]}');\nAssert.isNotNull(result, 'getTypeName must return a String');",
+      "PokemonParser parser = new PokemonParser();\nString result = parser.getTypeName('{\"name\":\"pikachu\",\"types\":[{\"slot\":1,\"type\":{\"name\":\"electric\"}}]}');\nAssert.areEqual('electric', result, 'getTypeName must return the first type name');"
+    ],
+    "points": 15,
+    "difficulty": "medium",
+    "orgCode": false,
+    "testMode": false,
+    "ref": "6990bbd44dc3a532eb9ed4b0",
+    "order": 19
+  },
+  {
+    "description": "Create a class named PokemonParser with all four parsing methods together.\n\nRequirements:\n1. Create a public class named 'PokemonParser'\n2. Create a public method 'getName' that takes a String 'jsonBody' and returns the 'name' as a String\n3. Create a public method 'getWeight' that takes a String 'jsonBody' and returns the 'weight' as an Integer\n4. Create a public method 'getHeight' that takes a String 'jsonBody' and returns the 'height' as an Integer\n5. Create a public method 'getTypeName' that takes a String 'jsonBody' and returns the first type name as a String",
+    "delta": [
+      {
+        "insert": "Create a class named PokemonParser with all four parsing methods together.\n\nRequirements:\n1. Create a public class named 'PokemonParser'\n2. Create a public method 'getName' that takes a String 'jsonBody' and returns the 'name' as a String\n3. Create a public method 'getWeight' that takes a String 'jsonBody' and returns the 'weight' as an Integer\n4. Create a public method 'getHeight' that takes a String 'jsonBody' and returns the 'height' as an Integer\n5. Create a public method 'getTypeName' that takes a String 'jsonBody' and returns the first type name as a String\n"
+      }
+    ],
+    "solution": "public class PokemonParser {\n    public String getName(String jsonBody) {\n        Map<String, Object> pokemon = (Map<String, Object>) JSON.deserializeUntyped(jsonBody);\n        return (String) pokemon.get('name');\n    }\n\n    public Integer getWeight(String jsonBody) {\n        Map<String, Object> pokemon = (Map<String, Object>) JSON.deserializeUntyped(jsonBody);\n        return (Integer) pokemon.get('weight');\n    }\n\n    public Integer getHeight(String jsonBody) {\n        Map<String, Object> pokemon = (Map<String, Object>) JSON.deserializeUntyped(jsonBody);\n        return (Integer) pokemon.get('height');\n    }\n\n    public String getTypeName(String jsonBody) {\n        Map<String, Object> pokemon = (Map<String, Object>) JSON.deserializeUntyped(jsonBody);\n        List<Object> types = (List<Object>) pokemon.get('types');\n        Map<String, Object> firstType = (Map<String, Object>) types[0];\n        Map<String, Object> typeInfo = (Map<String, Object>) firstType.get('type');\n        return (String) typeInfo.get('name');\n    }\n}",
+    "template": "",
+    "preCode": "",
+    "requirements": [
+      "Create a public class named 'PokemonParser'",
+      "Create a public method 'getName' that takes a String 'jsonBody' and returns the 'name' as a String",
+      "Create a public method 'getWeight' that takes a String 'jsonBody' and returns the 'weight' as an Integer",
+      "Create a public method 'getHeight' that takes a String 'jsonBody' and returns the 'height' as an Integer",
+      "Create a public method 'getTypeName' that takes a String 'jsonBody' and returns the first type name as a String"
+    ],
+    "tests": [
+      "PokemonParser parser = new PokemonParser();\nAssert.isNotNull(parser, 'PokemonParser class must exist');",
+      "PokemonParser parser = new PokemonParser();\nAssert.areEqual('pikachu', parser.getName('{\"name\":\"pikachu\",\"weight\":60,\"height\":4,\"types\":[{\"slot\":1,\"type\":{\"name\":\"electric\"}}]}'), 'getName must return pikachu');",
+      "PokemonParser parser = new PokemonParser();\nAssert.areEqual(60, parser.getWeight('{\"name\":\"pikachu\",\"weight\":60,\"height\":4,\"types\":[{\"slot\":1,\"type\":{\"name\":\"electric\"}}]}'), 'getWeight must return 60');",
+      "PokemonParser parser = new PokemonParser();\nAssert.areEqual(4, parser.getHeight('{\"name\":\"pikachu\",\"weight\":60,\"height\":4,\"types\":[{\"slot\":1,\"type\":{\"name\":\"electric\"}}]}'), 'getHeight must return 4');",
+      "PokemonParser parser = new PokemonParser();\nAssert.areEqual('electric', parser.getTypeName('{\"name\":\"pikachu\",\"weight\":60,\"height\":4,\"types\":[{\"slot\":1,\"type\":{\"name\":\"electric\"}}]}'), 'getTypeName must return electric');"
+    ],
+    "points": 25,
+    "difficulty": "medium",
+    "orgCode": true,
+    "testMode": false,
+    "ref": "6990bbd44dc3a532eb9ed4b0",
+    "order": 20
+  },
+  {
+    "description": "Create a class named PokemonService with a public static final String variable named BASE_URL set to 'https://pokeapi.co/api/v2' and a method named getPokemon. The method takes a String parameter 'pokemonName', sends a GET request to BASE_URL + '/pokemon/' + pokemonName, and returns the deserialized response as Map<String, Object>.\n\nMake sure https://pokeapi.co is in your Remote Site Settings.\n\nRequirements:\n1. Create a public class named 'PokemonService'\n2. Create a public static final String variable named 'BASE_URL' with value 'https://pokeapi.co/api/v2'\n3. Create a public method named 'getPokemon' that takes a String parameter 'pokemonName' and returns Map<String, Object>\n4. The method must send a GET request to BASE_URL + '/pokemon/' + pokemonName and return the deserialized response",
+    "delta": [
+      {
+        "insert": "Create a class named PokemonService with a public static final String variable named BASE_URL set to 'https://pokeapi.co/api/v2' and a method named getPokemon. The method takes a String parameter 'pokemonName', sends a GET request to BASE_URL + '/pokemon/' + pokemonName, and returns the deserialized response as Map<String, Object>.\n\nMake sure https://pokeapi.co is in your Remote Site Settings.\n\nRequirements:\n1. Create a public class named 'PokemonService'\n2. Create a public static final String variable named 'BASE_URL' with value 'https://pokeapi.co/api/v2'\n3. Create a public method named 'getPokemon' that takes a String parameter 'pokemonName' and returns Map<String, Object>\n4. The method must send a GET request to BASE_URL + '/pokemon/' + pokemonName and return the deserialized response\n"
+      }
+    ],
+    "solution": "public class PokemonService {\n    public static final String BASE_URL = 'https://pokeapi.co/api/v2';\n\n    public Map<String, Object> getPokemon(String pokemonName) {\n        HttpRequest request = new HttpRequest();\n        request.setEndpoint(BASE_URL + '/pokemon/' + pokemonName);\n        request.setMethod('GET');\n        Http http = new Http();\n        HttpResponse response = http.send(request);\n        return (Map<String, Object>) JSON.deserializeUntyped(response.getBody());\n    }\n}",
+    "template": "",
+    "preCode": "",
+    "requirements": [
+      "Create a public class named 'PokemonService'",
+      "Create a public static final String variable named 'BASE_URL' with value 'https://pokeapi.co/api/v2'",
+      "Create a public method named 'getPokemon' that takes a String parameter 'pokemonName' and returns Map<String, Object>",
+      "The method must send a GET request to BASE_URL + '/pokemon/' + pokemonName and return the deserialized response"
+    ],
+    "tests": [
+      "PokemonService service = new PokemonService();\nAssert.isNotNull(service, 'PokemonService class must exist');",
+      "Assert.areEqual('https://pokeapi.co/api/v2', PokemonService.BASE_URL, 'BASE_URL must be https://pokeapi.co/api/v2');",
+      "PokemonService service = new PokemonService();\nMap<String, Object> result = service.getPokemon('pikachu');\nAssert.isNotNull(result, 'getPokemon must return a Map');",
+      "PokemonService service = new PokemonService();\nMap<String, Object> result = service.getPokemon('pikachu');\nAssert.areEqual('pikachu', (String) result.get('name'), 'getPokemon must return correct pokemon data');"
+    ],
+    "points": 20,
+    "difficulty": "medium",
+    "orgCode": true,
+    "testMode": false,
+    "ref": "6990bbd44dc3a532eb9ed4b0",
+    "order": 21
+  },
+  {
+    "description": "Add a method named getPokemonWeight to the PokemonService class. This method takes a String parameter 'pokemonName', calls getPokemon internally, and returns the 'weight' value as an Integer.\n\nRequirements:\n1. Create a public class named 'PokemonService' with a public static final String BASE_URL = 'https://pokeapi.co/api/v2'\n2. Create a public method named 'getPokemon' that takes 'pokemonName' and returns Map<String, Object> with the deserialized API response\n3. Create a public method named 'getPokemonWeight' that takes 'pokemonName' and returns an Integer by calling getPokemon and extracting 'weight'",
+    "delta": [
+      {
+        "insert": "Add a method named getPokemonWeight to the PokemonService class. This method takes a String parameter 'pokemonName', calls getPokemon internally, and returns the 'weight' value as an Integer.\n\nRequirements:\n1. Create a public class named 'PokemonService' with a public static final String BASE_URL = 'https://pokeapi.co/api/v2'\n2. Create a public method named 'getPokemon' that takes 'pokemonName' and returns Map<String, Object> with the deserialized API response\n3. Create a public method named 'getPokemonWeight' that takes 'pokemonName' and returns an Integer by calling getPokemon and extracting 'weight'\n"
+      }
+    ],
+    "solution": "public class PokemonService {\n    public static final String BASE_URL = 'https://pokeapi.co/api/v2';\n\n    public Map<String, Object> getPokemon(String pokemonName) {\n        HttpRequest request = new HttpRequest();\n        request.setEndpoint(BASE_URL + '/pokemon/' + pokemonName);\n        request.setMethod('GET');\n        Http http = new Http();\n        HttpResponse response = http.send(request);\n        return (Map<String, Object>) JSON.deserializeUntyped(response.getBody());\n    }\n\n    public Integer getPokemonWeight(String pokemonName) {\n        Map<String, Object> pokemon = getPokemon(pokemonName);\n        return (Integer) pokemon.get('weight');\n    }\n}",
+    "template": "",
+    "preCode": "",
+    "requirements": [
+      "Create a public class named 'PokemonService' with a public static final String BASE_URL = 'https://pokeapi.co/api/v2'",
+      "Create a public method named 'getPokemon' that takes 'pokemonName' and returns Map<String, Object> with the deserialized API response",
+      "Create a public method named 'getPokemonWeight' that takes 'pokemonName' and returns an Integer by calling getPokemon and extracting 'weight'"
+    ],
+    "tests": [
+      "Assert.areEqual('https://pokeapi.co/api/v2', PokemonService.BASE_URL, 'BASE_URL must be https://pokeapi.co/api/v2');",
+      "PokemonService service = new PokemonService();\nMap<String, Object> result = service.getPokemon('pikachu');\nAssert.areEqual('pikachu', (String) result.get('name'), 'getPokemon must return correct data');",
+      "PokemonService service = new PokemonService();\nInteger weight = service.getPokemonWeight('pikachu');\nAssert.isTrue(weight > 0, 'getPokemonWeight must return a positive Integer');"
+    ],
+    "points": 20,
+    "difficulty": "medium",
+    "orgCode": true,
+    "testMode": false,
+    "ref": "6990bbd44dc3a532eb9ed4b0",
+    "order": 22
+  },
+  {
+    "description": "Add a method named getPokemonHeight to the PokemonService class. This method takes a String parameter 'pokemonName', calls getPokemon internally, and returns the 'height' value as an Integer.\n\nRequirements:\n1. Create a public class named 'PokemonService' with a public static final String BASE_URL = 'https://pokeapi.co/api/v2'\n2. Create a public method named 'getPokemon' that takes 'pokemonName' and returns Map<String, Object> with the deserialized API response\n3. Create a public method named 'getPokemonHeight' that takes 'pokemonName' and returns an Integer by calling getPokemon and extracting 'height'",
+    "delta": [
+      {
+        "insert": "Add a method named getPokemonHeight to the PokemonService class. This method takes a String parameter 'pokemonName', calls getPokemon internally, and returns the 'height' value as an Integer.\n\nRequirements:\n1. Create a public class named 'PokemonService' with a public static final String BASE_URL = 'https://pokeapi.co/api/v2'\n2. Create a public method named 'getPokemon' that takes 'pokemonName' and returns Map<String, Object> with the deserialized API response\n3. Create a public method named 'getPokemonHeight' that takes 'pokemonName' and returns an Integer by calling getPokemon and extracting 'height'\n"
+      }
+    ],
+    "solution": "public class PokemonService {\n    public static final String BASE_URL = 'https://pokeapi.co/api/v2';\n\n    public Map<String, Object> getPokemon(String pokemonName) {\n        HttpRequest request = new HttpRequest();\n        request.setEndpoint(BASE_URL + '/pokemon/' + pokemonName);\n        request.setMethod('GET');\n        Http http = new Http();\n        HttpResponse response = http.send(request);\n        return (Map<String, Object>) JSON.deserializeUntyped(response.getBody());\n    }\n\n    public Integer getPokemonHeight(String pokemonName) {\n        Map<String, Object> pokemon = getPokemon(pokemonName);\n        return (Integer) pokemon.get('height');\n    }\n}",
+    "template": "",
+    "preCode": "",
+    "requirements": [
+      "Create a public class named 'PokemonService' with a public static final String BASE_URL = 'https://pokeapi.co/api/v2'",
+      "Create a public method named 'getPokemon' that takes 'pokemonName' and returns Map<String, Object> with the deserialized API response",
+      "Create a public method named 'getPokemonHeight' that takes 'pokemonName' and returns an Integer by calling getPokemon and extracting 'height'"
+    ],
+    "tests": [
+      "Assert.areEqual('https://pokeapi.co/api/v2', PokemonService.BASE_URL, 'BASE_URL must be https://pokeapi.co/api/v2');",
+      "PokemonService service = new PokemonService();\nMap<String, Object> result = service.getPokemon('pikachu');\nAssert.areEqual('pikachu', (String) result.get('name'), 'getPokemon must return correct data');",
+      "PokemonService service = new PokemonService();\nInteger height = service.getPokemonHeight('pikachu');\nAssert.isTrue(height > 0, 'getPokemonHeight must return a positive Integer');"
+    ],
+    "points": 20,
+    "difficulty": "medium",
+    "orgCode": true,
+    "testMode": false,
+    "ref": "6990bbd44dc3a532eb9ed4b0",
+    "order": 23
+  },
+  {
+    "description": "Add a method named getPokemonType to the PokemonService class. This method takes a String parameter 'pokemonName', calls getPokemon internally, navigates the nested 'types' structure, and returns the first type name as a String.\n\nRequirements:\n1. Create a public class named 'PokemonService' with a public static final String BASE_URL = 'https://pokeapi.co/api/v2'\n2. Create a public method named 'getPokemon' that takes 'pokemonName' and returns Map<String, Object> with the deserialized API response\n3. Create a public method named 'getPokemonType' that takes 'pokemonName' and returns a String — the first type name from the nested types array",
+    "delta": [
+      {
+        "insert": "Add a method named getPokemonType to the PokemonService class. This method takes a String parameter 'pokemonName', calls getPokemon internally, navigates the nested 'types' structure, and returns the first type name as a String.\n\nRequirements:\n1. Create a public class named 'PokemonService' with a public static final String BASE_URL = 'https://pokeapi.co/api/v2'\n2. Create a public method named 'getPokemon' that takes 'pokemonName' and returns Map<String, Object> with the deserialized API response\n3. Create a public method named 'getPokemonType' that takes 'pokemonName' and returns a String — the first type name from the nested types array\n"
+      }
+    ],
+    "solution": "public class PokemonService {\n    public static final String BASE_URL = 'https://pokeapi.co/api/v2';\n\n    public Map<String, Object> getPokemon(String pokemonName) {\n        HttpRequest request = new HttpRequest();\n        request.setEndpoint(BASE_URL + '/pokemon/' + pokemonName);\n        request.setMethod('GET');\n        Http http = new Http();\n        HttpResponse response = http.send(request);\n        return (Map<String, Object>) JSON.deserializeUntyped(response.getBody());\n    }\n\n    public String getPokemonType(String pokemonName) {\n        Map<String, Object> pokemon = getPokemon(pokemonName);\n        List<Object> types = (List<Object>) pokemon.get('types');\n        Map<String, Object> firstType = (Map<String, Object>) types[0];\n        Map<String, Object> typeInfo = (Map<String, Object>) firstType.get('type');\n        return (String) typeInfo.get('name');\n    }\n}",
+    "template": "",
+    "preCode": "",
+    "requirements": [
+      "Create a public class named 'PokemonService' with a public static final String BASE_URL = 'https://pokeapi.co/api/v2'",
+      "Create a public method named 'getPokemon' that takes 'pokemonName' and returns Map<String, Object> with the deserialized API response",
+      "Create a public method named 'getPokemonType' that takes 'pokemonName' and returns a String — the first type name from the nested types array"
+    ],
+    "tests": [
+      "Assert.areEqual('https://pokeapi.co/api/v2', PokemonService.BASE_URL, 'BASE_URL must be https://pokeapi.co/api/v2');",
+      "PokemonService service = new PokemonService();\nMap<String, Object> result = service.getPokemon('pikachu');\nAssert.areEqual('pikachu', (String) result.get('name'), 'getPokemon must return correct data');",
+      "PokemonService service = new PokemonService();\nString typeName = service.getPokemonType('pikachu');\nAssert.areEqual('electric', typeName, 'getPokemonType must return electric for pikachu');"
+    ],
+    "points": 20,
+    "difficulty": "medium",
+    "orgCode": true,
+    "testMode": false,
+    "ref": "6990bbd44dc3a532eb9ed4b0",
+    "order": 24
+  },
+  {
+    "description": "Create the complete PokemonService class with all methods.\n\nMake sure https://pokeapi.co is in your Remote Site Settings.\n\nRequirements:\n1. Create a public class named 'PokemonService'\n2. Create a public static final String variable named 'BASE_URL' with value 'https://pokeapi.co/api/v2'\n3. Create a public method 'getPokemon' that takes 'pokemonName' and returns Map<String, Object> with the deserialized API response\n4. Create a public method 'getPokemonWeight' that takes 'pokemonName' and returns the weight as an Integer\n5. Create a public method 'getPokemonHeight' that takes 'pokemonName' and returns the height as an Integer\n6. Create a public method 'getPokemonType' that takes 'pokemonName' and returns the first type name as a String",
+    "delta": [
+      {
+        "insert": "Create the complete PokemonService class with all methods.\n\nMake sure https://pokeapi.co is in your Remote Site Settings.\n\nRequirements:\n1. Create a public class named 'PokemonService'\n2. Create a public static final String variable named 'BASE_URL' with value 'https://pokeapi.co/api/v2'\n3. Create a public method 'getPokemon' that takes 'pokemonName' and returns Map<String, Object> with the deserialized API response\n4. Create a public method 'getPokemonWeight' that takes 'pokemonName' and returns the weight as an Integer\n5. Create a public method 'getPokemonHeight' that takes 'pokemonName' and returns the height as an Integer\n6. Create a public method 'getPokemonType' that takes 'pokemonName' and returns the first type name as a String\n"
+      }
+    ],
+    "solution": "public class PokemonService {\n    public static final String BASE_URL = 'https://pokeapi.co/api/v2';\n\n    public Map<String, Object> getPokemon(String pokemonName) {\n        HttpRequest request = new HttpRequest();\n        request.setEndpoint(BASE_URL + '/pokemon/' + pokemonName);\n        request.setMethod('GET');\n        Http http = new Http();\n        HttpResponse response = http.send(request);\n        return (Map<String, Object>) JSON.deserializeUntyped(response.getBody());\n    }\n\n    public Integer getPokemonWeight(String pokemonName) {\n        Map<String, Object> pokemon = getPokemon(pokemonName);\n        return (Integer) pokemon.get('weight');\n    }\n\n    public Integer getPokemonHeight(String pokemonName) {\n        Map<String, Object> pokemon = getPokemon(pokemonName);\n        return (Integer) pokemon.get('height');\n    }\n\n    public String getPokemonType(String pokemonName) {\n        Map<String, Object> pokemon = getPokemon(pokemonName);\n        List<Object> types = (List<Object>) pokemon.get('types');\n        Map<String, Object> firstType = (Map<String, Object>) types[0];\n        Map<String, Object> typeInfo = (Map<String, Object>) firstType.get('type');\n        return (String) typeInfo.get('name');\n    }\n}",
+    "template": "",
+    "preCode": "",
+    "requirements": [
+      "Create a public class named 'PokemonService'",
+      "Create a public static final String variable named 'BASE_URL' with value 'https://pokeapi.co/api/v2'",
+      "Create a public method 'getPokemon' that takes 'pokemonName' and returns Map<String, Object> with the deserialized API response",
+      "Create a public method 'getPokemonWeight' that takes 'pokemonName' and returns the weight as an Integer",
+      "Create a public method 'getPokemonHeight' that takes 'pokemonName' and returns the height as an Integer",
+      "Create a public method 'getPokemonType' that takes 'pokemonName' and returns the first type name as a String"
+    ],
+    "tests": [
+      "PokemonService service = new PokemonService();\nAssert.isNotNull(service, 'PokemonService class must exist');",
+      "Assert.areEqual('https://pokeapi.co/api/v2', PokemonService.BASE_URL, 'BASE_URL must be https://pokeapi.co/api/v2');",
+      "PokemonService service = new PokemonService();\nMap<String, Object> result = service.getPokemon('pikachu');\nAssert.areEqual('pikachu', (String) result.get('name'), 'getPokemon must return correct pokemon data');",
+      "PokemonService service = new PokemonService();\nAssert.isTrue(service.getPokemonWeight('pikachu') > 0, 'getPokemonWeight must return a positive Integer');",
+      "PokemonService service = new PokemonService();\nAssert.isTrue(service.getPokemonHeight('pikachu') > 0, 'getPokemonHeight must return a positive Integer');",
+      "PokemonService service = new PokemonService();\nAssert.areEqual('electric', service.getPokemonType('pikachu'), 'getPokemonType must return electric for pikachu');"
+    ],
+    "points": 30,
+    "difficulty": "hard",
+    "orgCode": true,
+    "testMode": false,
+    "ref": "6990bbd44dc3a532eb9ed4b0",
+    "order": 25
+  }
+]

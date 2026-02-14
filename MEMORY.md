@@ -111,18 +111,26 @@ The platform engine automatically generates a requirement for every `System.debu
 
 The `Assert` class is the modern Salesforce approach. Never use `System.assert` in solutions or tests.
 
-### 5.6 LIMIT Values
+### 5.6 No Comments in Public-Facing Code
+- **Templates and solutions must NOT contain comments** unless the comment is part of the teaching process
+- ✅ `// Write your code here` — teaching, guides the user
+- ✅ `// pokemonName variable is already provided` — explains preCode context
+- ❌ `// Create a new HttpRequest` — just describing what the code does, not teaching
+- ❌ `// Extract name and height from the pokemon map` — freeform hint, not teaching
+- Comments in **tests** are fine (not user-facing)
+
+### 5.7 LIMIT Values
 - `LIMIT 0` makes no sense — use `LIMIT 1` at minimum
 - Check all SOQL queries in solutions for sensible LIMIT values
 
-### 5.7 Delta Field
+### 5.8 Delta Field
 The `delta` field is Quill.js rich text format. It must **match the description** field exactly:
 ```javascript
 delta: [{ insert: description + '\n' }]
 ```
 Always update `delta` when you update `description`.
 
-### 5.8 Scheduled Job Tasks
+### 5.9 Scheduled Job Tasks
 For tasks that require scheduling a batch job from Setup:
 - The requirement must specify the **exact job name** the user should enter
 - The test queries `CronTrigger` by that specific name:
@@ -131,7 +139,7 @@ List<CronTrigger> jobs = [SELECT Id FROM CronTrigger WHERE CronJobDetail.Name = 
 Assert.isTrue(jobs.size() > 0, 'A scheduled job named Exact Job Name must exist');
 ```
 
-### 5.9 testMode (Soft Delete)
+### 5.10 testMode (Soft Delete)
 - Never delete tasks from the database
 - To hide a task, set `testMode: true`
 - The user will delete tasks manually if needed
@@ -143,19 +151,56 @@ Assert.isTrue(jobs.size() > 0, 'A scheduled job named Exact Job Name must exist'
 ### 6.1 NEVER Write to Database Without Explicit Confirmation
 > This is the #1 rule. The database is **live** — real users are affected.
 
-- Always show the user what you plan to change (overview first)
-- Wait for an explicit "go ahead", "let's go", "run it", etc.
-- "Looks good" by itself is NOT confirmation to run — it may just mean the overview looks good
-- When in doubt, ask: "Should I run this now?"
+- **ALWAYS show the user what you plan to insert/update FIRST** — present the data as a summary table or JSON overview
+- **ALWAYS ask explicitly: "Should I run this now?"** — never assume
+- **NEVER run an insert/update script immediately after writing it** — the script is for review, not for execution
+- "Looks good" = the data looks correct. It is **NOT** permission to run.
+- "Let's add them" = user approves the task content. It is **NOT** permission to execute against the database.
+- "I love those tasks" = positive feedback on the design. It is **NOT** permission to insert.
+- The ONLY valid confirmations to execute are responses to a direct "Should I run this now?" question, such as: "yes run it", "go ahead and insert", "deploy it", "execute the script"
+- **Four-step workflow for creating new tasks:**
+  1. Write the full task JSON and show it to the user for review
+  2. **Verify every task against the trailhead org** using `sf apex run --target-org trailhead`:
+     - For `orgCode: false` tasks: run the solution + tests as anonymous Apex (classes can be defined inline)
+     - For `orgCode: true` tasks: deploy the solution class to the trailhead org via `learn-apex-3` project, run the tests as anonymous Apex, then leave the class (user uses this org for production testing)
+     - Every single test must compile and pass — if any test fails, fix the task before presenting
+  3. Present results to the user with pass/fail status for every task
+  4. Ask "Should I insert into DB now?" → get explicit DB execution approval
+- **Every batch must be reviewed separately** — never insert batch N+1 just because batch N was approved
+- When in doubt, **always ask**. Never guess.
 
-### 6.2 Pre-flight Checks
+### 6.2 Salesforce CLI — Testing Tasks Against Trailhead Org
+```bash
+# Run anonymous Apex:
+echo "your code here" | sf apex run --target-org trailhead 2>&1
+
+# Parse debug output:
+... | grep "USER_DEBUG"
+
+# Parse errors:
+... | grep -E "(FATAL|Error)"
+
+# Deploy a class (via learn-apex-3 project):
+cd /Users/igorkudryk/Salesforce/Projects/learn-apex-3
+sf project deploy start --metadata ApexClass:ClassName --target-org trailhead --wait 5
+
+# Note: CLI v2.60.13 has a cosmetic "Missing message metadata.transfer:Finalizing" error
+# but the deploy actually succeeds — verify with anonymous Apex after deploying
+```
+- Org alias: `trailhead`
+- Username: `kudryk@resilient-narwhal-cf5l8q.com`
+- SFDX project: `/Users/igorkudryk/Salesforce/Projects/learn-apex-3/`
+- Remote Site Setting for `https://pokeapi.co` is already configured
+- **Do NOT delete classes from the org after testing** — user uses this org for production testing
+
+### 6.3 Pre-flight Checks
 Every migration script must include:
 1. **Task existence check** — verify each task ID exists before modifying
 2. **Req/test count validation** — ensure they'll be equal after changes
 3. **System.debug check** — scan solutions for System.debug
 4. **Abort on failure** — if any check fails, don't proceed
 
-### 6.3 Verification After Migration
+### 6.4 Verification After Migration
 After every write operation, re-read the modified documents and verify:
 - Req count = test count
 - No System.debug in solutions
@@ -163,15 +208,15 @@ After every write operation, re-read the modified documents and verify:
 - orgCode is correct
 - All IDs are correct types
 
-### 6.4 Script Organization
+### 6.5 Script Organization
 All scripts are written in the working directory:
 ```
-/Users/igorkudryk/.claude-worktrees/mongodb-rework/keen-visvesvaraya/
+/Users/igorkudryk/Salesforce/JSProjects/mongodb-rework/
 ```
 
 Scripts use the `mongodb` npm package (already installed).
 
-### 6.5 MongoDB Atlas Connection Troubleshooting
+### 6.6 MongoDB Atlas Connection Troubleshooting
 If the connection times out (`Server selection timed out after 30000 ms`), it's likely an **IP allowlist issue** on MongoDB Atlas. The cluster only accepts connections from whitelisted IPs.
 
 - **Fix:** Switch to phone hotspot (the phone IP is already whitelisted), or go to Atlas dashboard → **Network Access** → **Add IP Address** and add the current IP
@@ -293,6 +338,7 @@ main().catch(console.error);
 7. **The platform auto-generates requirements for System.debug** found in solutions — this breaks req/test count
 8. **Always update delta when updating description** — they must stay in sync
 9. **Always verify after writing** — re-read the document and check it
+10. **NEVER execute a DB script right after writing it.** The script is for the user to review. Always show the data first, then explicitly ask "Should I run this now?" before executing. Positive feedback like "looks good" or "I love those" is about the content, NOT permission to execute.
 
 ---
 
