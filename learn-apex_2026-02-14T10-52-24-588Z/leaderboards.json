@@ -1,0 +1,274 @@
+[
+  {
+    "_id": "66315aa45e3d1c423b82340e",
+    "period": "2024-04",
+    "results": [
+      {
+        "email": "outianyi@hotmail.com",
+        "name": "Tina ODell",
+        "xp": 311,
+        "_id": "66315aa45e3d1c423b82340f"
+      },
+      {
+        "email": "robert@pyropetech.com",
+        "name": "Robert Ruelas",
+        "xp": 256,
+        "_id": "66315aa45e3d1c423b823410"
+      },
+      {
+        "email": "jonsadams@icloud.com",
+        "name": "Jonathan Adams",
+        "xp": 256,
+        "_id": "66315aa45e3d1c423b823411"
+      },
+      {
+        "email": "lynnhan81@gmail.com",
+        "name": "Lynn Han",
+        "xp": 182,
+        "_id": "66315aa45e3d1c423b823412"
+      },
+      {
+        "email": "ayse.yigit.sf@gmail.com",
+        "name": "Ayse Yigit",
+        "xp": 167,
+        "_id": "66315aa45e3d1c423b823413"
+      },
+      {
+        "email": "thotasaiabhishek@gmail.com",
+        "name": "Sai Abhishek Thota",
+        "xp": 164,
+        "_id": "66315aa45e3d1c423b823414"
+      },
+      {
+        "email": "carew.scott@gmail.com",
+        "name": "Scott",
+        "xp": 113,
+        "_id": "66315aa45e3d1c423b823415"
+      },
+      {
+        "email": "johnbarry972@gmail.com",
+        "name": "The Dude",
+        "xp": 90,
+        "_id": "66315aa45e3d1c423b823416"
+      },
+      {
+        "email": "menafrytki@gmail.com",
+        "name": "Marzena",
+        "xp": 82,
+        "_id": "66315aa45e3d1c423b823417"
+      },
+      {
+        "email": "mails2rajini@gmail.com",
+        "name": "Sai",
+        "xp": 69,
+        "_id": "66315aa45e3d1c423b823418"
+      }
+    ],
+    "createdAt": "2024-04-30T20:55:00.064Z",
+    "updatedAt": "2024-04-30T20:55:00.064Z"
+  },
+  {
+    "_id": "665a39243c51ada126563f3a",
+    "period": "2024-05",
+    "results": [
+      {
+        "email": "ola_polednik@yahoo.com",
+        "name": "Aleksandra",
+        "xp": 855,
+        "_id": "665a39243c51ada126563f3b"
+      },
+      {
+        "email": "ayse.yigit.sf@gmail.com",
+        "name": "Ayse Yigit",
+        "xp": 672,
+        "_id": "665a39243c51ada126563f3c"
+      },
+      {
+        "email": "dayton.meyer4@gmail.com",
+        "name": "Dayton Meyer",
+        "xp": 547,
+        "_id": "665a39243c51ada126563f3d"
+      },
+      {
+        "email": "atheer.bdaiwi@hotmail.co.uk",
+        "name": "Athy",
+        "xp": 421,
+        "_id": "665a39243c51ada126563f3e"
+      },
+      {
+        "email": "thotasaiabhishek@gmail.com",
+        "name": "Sai Abhishek Thota",
+        "xp": 371,
+        "_id": "665a39243c51ada126563f3f"
+      },
+      {
+        "email": "carlarsmendes@gmail.com",
+        "name": "CarlaMendes",
+        "xp": 351,
+        "_id": "665a39243c51ada126563f40"
+      },
+      {
+        "email": "grzegorz.kwiesielewicz@heycloud.pl",
+        "name": "Grzegorz Kwiesielewicz",
+        "xp": 333,
+        "_id": "665a39243c51ada126563f41"
+      },
+      {
+        "email": "outianyi@hotmail.com",
+        "name": "Tina ODell",
+        "xp": 318,
+        "_id": "665a39243c51ada126563f42"
+      },
+      {
+        "email": "jayparkk7@gmail.com",
+        "name": "JP",
+        "xp": 282,
+        "_id": "665a39243c51ada126563f43"
+      },
+      {
+        "email": "carew.scott@gmail.com",
+        "name": "Scott",
+        "xp": 281,
+        "_id": "665a39243c51ada126563f44"
+      }
+    ],
+    "createdAt": "2024-05-31T20:55:00.081Z",
+    "updatedAt": "2024-05-31T20:55:00.081Z"
+  },
+  {
+    "_id": "665a6354a5031396f8ebcb28",
+    "period": "2024-05",
+    "results": [
+      {
+        "email": "ola_polednik@yahoo.com",
+        "name": "Aleksandra",
+        "xp": 855,
+        "_id": "665a6354a5031396f8ebcb29"
+      },
+      {
+        "email": "ayse.yigit.sf@gmail.com",
+        "name": "Ayse Yigit",
+        "xp": 672,
+        "_id": "665a6354a5031396f8ebcb2a"
+      },
+      {
+        "email": "dayton.meyer4@gmail.com",
+        "name": "Dayton Meyer",
+        "xp": 547,
+        "_id": "665a6354a5031396f8ebcb2b"
+      },
+      {
+        "email": "atheer.bdaiwi@hotmail.co.uk",
+        "name": "Athy",
+        "xp": 421,
+        "_id": "665a6354a5031396f8ebcb2c"
+      },
+      {
+        "email": "thotasaiabhishek@gmail.com",
+        "name": "Sai Abhishek Thota",
+        "xp": 371,
+        "_id": "665a6354a5031396f8ebcb2d"
+      },
+      {
+        "email": "carlarsmendes@gmail.com",
+        "name": "CarlaMendes",
+        "xp": 351,
+        "_id": "665a6354a5031396f8ebcb2e"
+      },
+      {
+        "email": "grzegorz.kwiesielewicz@heycloud.pl",
+        "name": "Grzegorz Kwiesielewicz",
+        "xp": 333,
+        "_id": "665a6354a5031396f8ebcb2f"
+      },
+      {
+        "email": "outianyi@hotmail.com",
+        "name": "Tina ODell",
+        "xp": 318,
+        "_id": "665a6354a5031396f8ebcb30"
+      },
+      {
+        "email": "jayparkk7@gmail.com",
+        "name": "JP",
+        "xp": 282,
+        "_id": "665a6354a5031396f8ebcb31"
+      },
+      {
+        "email": "carew.scott@gmail.com",
+        "name": "Scott",
+        "xp": 281,
+        "_id": "665a6354a5031396f8ebcb32"
+      }
+    ],
+    "createdAt": "2024-05-31T23:55:00.034Z",
+    "updatedAt": "2024-05-31T23:55:00.034Z"
+  },
+  {
+    "_id": "6681f054614c66db7c95b3d9",
+    "period": "2024-06",
+    "results": [
+      {
+        "email": "grzegorz.kwiesielewicz@heycloud.pl",
+        "name": "Grzegorz Kwiesielewicz",
+        "xp": 1231,
+        "_id": "6681f054614c66db7c95b3da"
+      },
+      {
+        "email": "dylanschrisco@gmail.com",
+        "name": "Dylan S. Chrisco",
+        "xp": 1184,
+        "_id": "6681f054614c66db7c95b3db"
+      },
+      {
+        "email": "ayse.yigit.sf@gmail.com",
+        "name": "Ayse Yigit",
+        "xp": 693,
+        "_id": "6681f054614c66db7c95b3dc"
+      },
+      {
+        "email": "tayo.oluwalade@gmail.com",
+        "name": "Temitayo Oluwalade",
+        "xp": 618,
+        "_id": "6681f054614c66db7c95b3dd"
+      },
+      {
+        "email": "thomasbentzen@mac.com",
+        "name": "Thomas Bentzen",
+        "xp": 554,
+        "_id": "6681f054614c66db7c95b3de"
+      },
+      {
+        "email": "ola_polednik@yahoo.com",
+        "name": "Aleksandra",
+        "xp": 543,
+        "_id": "6681f054614c66db7c95b3df"
+      },
+      {
+        "email": "pjohnsonnnn@gmail.com",
+        "name": "Patrick Johnson",
+        "xp": 521,
+        "_id": "6681f054614c66db7c95b3e0"
+      },
+      {
+        "email": "carlarsmendes@gmail.com",
+        "name": "CarlaMendes",
+        "xp": 395,
+        "_id": "6681f054614c66db7c95b3e1"
+      },
+      {
+        "email": "zanstett@gmail.com",
+        "name": "https://trailblazer.me/id/zanstett",
+        "xp": 318,
+        "_id": "6681f054614c66db7c95b3e2"
+      },
+      {
+        "email": "olusogo.ogunleye@gmail.com",
+        "name": "Shogo",
+        "xp": 272,
+        "_id": "6681f054614c66db7c95b3e3"
+      }
+    ],
+    "createdAt": "2024-06-30T23:55:00.040Z",
+    "updatedAt": "2024-06-30T23:55:00.040Z"
+  }
+]

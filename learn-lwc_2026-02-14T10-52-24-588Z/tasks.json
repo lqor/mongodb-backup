@@ -1,0 +1,337 @@
+[
+  {
+    "_id": "693058846ef75f3f93e9043a",
+    "taskName": "MyFirstTask",
+    "description": "\n",
+    "status": null,
+    "delta": [
+      {
+        "insert": "\n"
+      }
+    ],
+    "solution": " ",
+    "difficulty": "medium",
+    "order": 2,
+    "xp": 5,
+    "requirements": [
+      "one",
+      "two"
+    ],
+    "tests": [
+      "69342a55b0afee84f86fb610",
+      "693467c24cb7ee3664c16fde",
+      "69394b82896db773a9785be8"
+    ],
+    "preCode": "",
+    "template": "",
+    "testMode": true,
+    "topicRef": "693b1529b1ab175c2a88c491",
+    "createdAt": "2025-12-03T15:34:28.054Z",
+    "updatedAt": "2026-01-04T13:38:56.151Z",
+    "taskFor": "html",
+    "title": "Create tag p"
+  },
+  {
+    "_id": "69485fd2bdd2cc96db0db726",
+    "title": "Create div tag (test)",
+    "description": "Create a simple div tag. Just an empty div! Don't forget to close it.\n",
+    "taskFor": "html",
+    "status": null,
+    "delta": [
+      {
+        "insert": "Create a simple div tag. Just an empty div! Don't forget to close it.\n"
+      }
+    ],
+    "solution": " <div></div>",
+    "difficulty": "easy",
+    "order": 3,
+    "xp": 1,
+    "requirements": [],
+    "tests": [
+      "69485fd2bdd2cc96db0db724"
+    ],
+    "preCode": " ",
+    "template": "// your code here",
+    "topicRef": "693b1529b1ab175c2a88c491",
+    "createdAt": "2025-12-21T21:00:02.968Z",
+    "updatedAt": "2026-01-04T13:38:56.151Z"
+  },
+  {
+    "_id": "698b40a99d0abcf90715f921",
+    "title": "Input Handling with Getter",
+    "description": "Create a component with a lightning-input field that updates a greeting message as the user types. Add a property name with an empty string value. Use lightning-input with label \"Enter your name\" and handle the onchange event to update the name property. Display \"Hello, {name}!\" in a paragraph below the input. If name is empty, display \"Hello, stranger!\" instead.\n",
+    "taskFor": "lwc",
+    "status": null,
+    "delta": [
+      {
+        "attributes": {
+          "background": "transparent",
+          "color": "#000000",
+          "bold": true
+        },
+        "insert": "Create a component with a lightning-input field that updates a greeting message as the user types. Add a property name with an empty string value. Use lightning-input with label \"Enter your name\" and handle the onchange event to update the name property. Display \"Hello, {name}!\" in a paragraph below the input. If name is empty, display \"Hello, stranger!\" instead."
+      },
+      {
+        "insert": "\n"
+      }
+    ],
+    "solution": "// HTML\r\n<template>\r\n    <lightning-input label=\"Enter your name\" value={name}\r\n        onchange={handleNameChange}></lightning-input>\r\n    <p>{greeting}</p>\r\n</template>\r\n\r\n// JS\r\nimport { LightningElement } from 'lwc';\r\nexport default class GreetingInput extends LightningElement {\r\n    name = '';\r\n\r\n    handleNameChange(event) {\r\n        this.name = event.target.value;\r\n    }\r\n\r\n    get greeting() {\r\n        if (this.name) {\r\n            return 'Hello, ' + this.name + '!';\r\n        }\r\n        return 'Hello, stranger!';\r\n    }\r\n}\r\n",
+    "difficulty": "easy",
+    "order": 1,
+    "xp": 1,
+    "requirements": [],
+    "tests": [
+      "698b41b29d0abcf90715f93a",
+      "698b41b29d0abcf90715f93e",
+      "698b43b19d0abcf90715f956",
+      "698b43b19d0abcf90715f958",
+      "698b43b19d0abcf90715f95c",
+      "698b43b19d0abcf90715f954",
+      "698b43b19d0abcf90715f95a",
+      "698b41b29d0abcf90715f93c"
+    ],
+    "preCode": " ",
+    "template": "// For this task it`s not neccessary to provide xml :)",
+    "topicRef": null,
+    "createdAt": "2026-02-10T14:28:57.644Z",
+    "updatedAt": "2026-02-13T23:53:35.960Z"
+  },
+  {
+    "_id": "698db3627fa99fbcdb747867",
+    "title": "Hello World (Static Template)",
+    "description": "Create your first LWC component that displays \"Hello World\" inside a paragraph tag.\n",
+    "taskFor": "lwc",
+    "status": null,
+    "delta": [
+      {
+        "attributes": {
+          "background": "transparent",
+          "color": "#000000",
+          "bold": true
+        },
+        "insert": "Create your first LWC component that displays \"Hello World\" inside a paragraph tag."
+      },
+      {
+        "insert": "\n"
+      }
+    ],
+    "solution": "<template>\r\n    <p>Hello World</p>\r\n</template>\r\n\r\n//JS file is unchanged.\r\n",
+    "difficulty": "easy",
+    "order": 1,
+    "xp": 1,
+    "requirements": [],
+    "tests": [
+      "698db3627fa99fbcdb74785d",
+      "698db3627fa99fbcdb74785f",
+      "698db3627fa99fbcdb747861",
+      "698db3627fa99fbcdb747863",
+      "698db3627fa99fbcdb747865"
+    ],
+    "preCode": " ",
+    "template": "// your code here",
+    "templateLwc": {
+      "html": "<template>\r\n  <!-- Your code here -->\r\n</template>\r\n",
+      "css": "//Css is not required for  this task",
+      "js": "import { LightningElement } from 'lwc';\r\nexport default class HelloWorld extends LightningElement {\r\n}\r\n",
+      "xml": "// XML is not required for this task"
+    },
+    "topicRef": null,
+    "createdAt": "2026-02-12T11:02:58.839Z",
+    "updatedAt": "2026-02-13T23:52:13.282Z"
+  },
+  {
+    "_id": "698dba5d7fa99fbcdb7478c9",
+    "title": "Reactive Property Binding",
+    "description": "Create a property called greeting with the value \"Hello from a property!\" and display it in a paragraph using curly braces {}.\n",
+    "taskFor": "lwc",
+    "status": null,
+    "delta": [
+      {
+        "attributes": {
+          "background": "transparent",
+          "color": "#000000",
+          "bold": true
+        },
+        "insert": "Create a property called greeting with the value \"Hello from a property!\" and display it in a paragraph using curly braces {}."
+      },
+      {
+        "insert": "\n"
+      }
+    ],
+    "solution": "// HTML\r\n<template>\r\n    <p>{greeting}</p>\r\n</template>\r\n\r\n// JS\r\nimport { LightningElement } from 'lwc';\r\nexport default class GreetingDisplay extends LightningElement {\r\n    greeting = 'Hello from a property!';\r\n}\r\n",
+    "difficulty": "easy",
+    "order": 1,
+    "xp": 1,
+    "requirements": [],
+    "tests": [
+      "698dba5d7fa99fbcdb7478c1",
+      "698dba5d7fa99fbcdb7478c7",
+      "698dba5d7fa99fbcdb7478c3",
+      "698de51b7fa99fbcdb747bd4",
+      "698dba5d7fa99fbcdb7478c5"
+    ],
+    "preCode": " ",
+    "template": "// your code here",
+    "templateLwc": {
+      "html": "<template>\r\n    <p></p>\r\n</template>\r\n",
+      "css": "//Css is not required for this task",
+      "js": "JS:\r\nimport { LightningElement } from 'lwc';\r\nexport default class GreetingDisplay extends LightningElement {\r\n}\r\n",
+      "xml": "//XML is not required for this task"
+    },
+    "topicRef": null,
+    "createdAt": "2026-02-12T11:32:45.743Z",
+    "updatedAt": "2026-02-13T17:26:06.467Z"
+  },
+  {
+    "_id": "698de58d7fa99fbcdb747bf9",
+    "title": "Multiple Properties",
+    "description": "Create two properties: firstName with value \"Sarah\" and lastName with value \"Chen\". Display them in a single paragraph as \"Sarah Chen\".\n",
+    "taskFor": "lwc",
+    "status": null,
+    "delta": [
+      {
+        "attributes": {
+          "background": "transparent",
+          "color": "#000000",
+          "bold": true
+        },
+        "insert": "Create two properties: firstName with value \"Sarah\" and lastName with value \"Chen\". Display them in a single paragraph as \"Sarah Chen\"."
+      },
+      {
+        "insert": "\n"
+      }
+    ],
+    "solution": "// HTML\r\n<template>\r\n    <p>{firstName} {lastName}</p>\r\n</template>\r\n\r\n// JS\r\nimport { LightningElement } from 'lwc';\r\nexport default class UserName extends LightningElement {\r\n    firstName = 'Sarah';\r\n    lastName = 'Chen';\r\n}\r\n",
+    "difficulty": "easy",
+    "order": 1,
+    "xp": 1,
+    "requirements": [],
+    "tests": [
+      "698de6dd7fa99fbcdb747c07",
+      "698de6dd7fa99fbcdb747c09",
+      "698de6dd7fa99fbcdb747c0b",
+      "698de6dd7fa99fbcdb747c0d",
+      "698de6dd7fa99fbcdb747c15",
+      "698de6dd7fa99fbcdb747c13",
+      "698de6dd7fa99fbcdb747c0f"
+    ],
+    "preCode": " ",
+    "template": "// your code here",
+    "templateLwc": {
+      "html": "<template>\r\n    <p></p>\r\n</template>\r\n",
+      "css": "//Css is not required for this task",
+      "js": "import { LightningElement } from 'lwc';\r\nexport default class UserName extends LightningElement {\r\n}\r\n",
+      "xml": "//XML is not required for this task"
+    },
+    "topicRef": null,
+    "createdAt": "2026-02-12T14:37:01.535Z",
+    "updatedAt": "2026-02-13T23:44:32.652Z"
+  },
+  {
+    "_id": "698de8637fa99fbcdb747c4b",
+    "title": "Conditional Rendering (lwc:if)",
+    "description": "Create a component that shows or hides a message based on a boolean property. Add a property isVisible set to false and a method toggleVisibility that flips its value. Use lwc:if to conditionally display the paragraph \"Now you see me!\" and connect the method to a button.\n\n",
+    "taskFor": "lwc",
+    "status": null,
+    "delta": [
+      {
+        "attributes": {
+          "background": "transparent",
+          "color": "#000000",
+          "bold": true
+        },
+        "insert": "Create a component that shows or hides a message based on a boolean property. Add a property isVisible set to false and a method toggleVisibility that flips its value. Use lwc:if to conditionally display the paragraph \"Now you see me!\" and connect the method to a button."
+      },
+      {
+        "insert": "\n\n"
+      }
+    ],
+    "solution": "// HTML\r\n<template>\r\n    <button onclick={toggleVisibility}>Toggle Message</button>\r\n    <p lwc:if={isVisible}>Now you see me!</p>\r\n</template>\r\n\r\n// JS\r\nimport { LightningElement } from 'lwc';\r\nexport default class ToggleMessage extends LightningElement {\r\n    isVisible = false;\r\n\r\n    toggleVisibility() {\r\n        this.isVisible = !this.isVisible;\r\n    }\r\n}\r\n",
+    "difficulty": "easy",
+    "order": 1,
+    "xp": 1,
+    "requirements": [],
+    "tests": [
+      "698df1aa7fa99fbcdb747c85",
+      "698df1aa7fa99fbcdb747c89",
+      "698df1aa7fa99fbcdb747c8b",
+      "698df1aa7fa99fbcdb747c8f",
+      "698df1aa7fa99fbcdb747c91",
+      "698df1aa7fa99fbcdb747c93",
+      "698df1aa7fa99fbcdb747c95",
+      "698df1aa7fa99fbcdb747c99",
+      "698df1aa7fa99fbcdb747c9b",
+      "698df1aa7fa99fbcdb747c87",
+      "698df1aa7fa99fbcdb747c8d",
+      "698df1aa7fa99fbcdb747c97"
+    ],
+    "preCode": " ",
+    "template": "// your code here",
+    "templateLwc": {
+      "html": "<template>\r\n    <button>Toggle Message</button>\r\n    <p>Now you see me!</p>\r\n</template>\r\n",
+      "css": "//Css is not required for this task",
+      "js": "import { LightningElement } from 'lwc';\r\nexport default class ToggleMessage extends LightningElement {\r\n}\r\n",
+      "xml": "//XML is not required for this task\r\n"
+    },
+    "topicRef": null,
+    "createdAt": "2026-02-12T14:49:07.713Z",
+    "updatedAt": "2026-02-12T17:34:32.000Z"
+  },
+  {
+    "_id": "698df2087fa99fbcdb747cac",
+    "title": "List Iteration (for:each)",
+    "description": "Create a component that displays a list of Salesforce clouds. Add a property clouds containing an array of objects with id and name properties. Use for:each to render each cloud name in a list item.\n\n",
+    "taskFor": "lwc",
+    "status": null,
+    "delta": [
+      {
+        "attributes": {
+          "background": "transparent",
+          "color": "#000000",
+          "bold": true
+        },
+        "insert": "Create a component that displays a list of Salesforce clouds. Add a property clouds containing an array of objects with id and name properties. Use for:each to render each cloud name in a list item."
+      },
+      {
+        "insert": "\n\n"
+      }
+    ],
+    "solution": "// HTML\r\n<template>\r\n    <h3>Salesforce Clouds</h3>\r\n    <ul>\r\n        <template for:each={clouds} for:item=\"cloud\">\r\n            <li key={cloud.id}>{cloud.name}</li>\r\n        </template>\r\n    </ul>\r\n</template>\r\n\r\n// JS\r\nimport { LightningElement } from 'lwc';\r\nexport default class CloudList extends LightningElement {\r\n    clouds = [\r\n        { id: 1, name: 'Sales Cloud' },\r\n        { id: 2, name: 'Service Cloud' },\r\n        { id: 3, name: 'Marketing Cloud' }\r\n    ];\r\n}\r\n",
+    "difficulty": "easy",
+    "order": 1,
+    "xp": 1,
+    "requirements": [],
+    "tests": [
+      "698df5997fa99fbcdb747cc4",
+      "698df89bd5ba7aee59a1567b",
+      "698df89bd5ba7aee59a1567d",
+      "698df89bd5ba7aee59a1567f",
+      "698df9f0d5ba7aee59a1569d",
+      "698dfcfbd5ba7aee59a156bd",
+      "698e0425d5ba7aee59a156f2",
+      "698e0425d5ba7aee59a156f6",
+      "698e0425d5ba7aee59a156fe",
+      "698e0425d5ba7aee59a15700",
+      "698e0425d5ba7aee59a15704",
+      "698e0425d5ba7aee59a15706",
+      "698e0426d5ba7aee59a15708",
+      "698e0425d5ba7aee59a156fc",
+      "698e0425d5ba7aee59a156fa",
+      "698e0425d5ba7aee59a156f8",
+      "698e0425d5ba7aee59a15702",
+      "698f4cc09300742ed5544648",
+      "698e0425d5ba7aee59a156f4"
+    ],
+    "preCode": " ",
+    "template": "// your code here",
+    "templateLwc": {
+      "html": "<template>\r\n    <h3>Salesforce Clouds</h3>\r\n    <ul>\r\n    //Write code here\r\n    </ul>\r\n</template>\r\n",
+      "css": "// Css is not required for this task",
+      "js": "import { LightningElement } from 'lwc';\r\nexport default class CloudList extends LightningElement {\r\n}\r\n",
+      "xml": "//XML is not required for this task"
+    },
+    "topicRef": null,
+    "createdAt": "2026-02-12T15:30:16.464Z",
+    "updatedAt": "2026-02-13T23:37:39.329Z"
+  }
+]

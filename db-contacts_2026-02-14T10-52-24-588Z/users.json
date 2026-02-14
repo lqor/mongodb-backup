@@ -1,0 +1,57 @@
+[
+  {
+    "_id": "65747c79164c345621216a12",
+    "password": "$2a$10$rXZrugLA.XF3G5hBPQo8suhIqu01Q2DEY2ZMwNOemZl1ESNgmPcNm",
+    "email": "example@mail.com",
+    "subscription": "starter",
+    "avatarURL": "//www.gravatar.com/avatar/fbf2b9cfc0a472389f3620e471bdf0e9?d=identicon",
+    "verify": true,
+    "verificationToken": null,
+    "createdAt": "2023-12-09T14:40:57.594Z",
+    "updatedAt": "2023-12-09T15:02:19.337Z"
+  },
+  {
+    "_id": "657488da8b5b8dfcef248b26",
+    "password": "$2a$10$m8jJBcrTJzeJEbSbNXxwgufxFLMiSVIbfLAIzP901CgnAS0wM463y",
+    "email": "example1@mail.com",
+    "subscription": "starter",
+    "avatarURL": "//www.gravatar.com/avatar/0e28bba5819960e93a62fa8e7c8704ee?d=identicon",
+    "verify": false,
+    "verificationToken": "WIUHU8xOpaJ5dqLj4b-dn",
+    "createdAt": "2023-12-09T15:33:46.523Z",
+    "updatedAt": "2023-12-09T15:33:46.523Z"
+  },
+  {
+    "_id": "65748b1ef66fa01d5434fc84",
+    "password": "$2a$10$eK9oemo1xCyQCqgJqZLU9eeNJWZSvbe/h7S51MWVhUn.JJPE0b4YS",
+    "email": "example2@mail.com",
+    "subscription": "starter",
+    "avatarURL": "//www.gravatar.com/avatar/7eae1d14a60b8044cb449a8170f1ce90?d=identicon",
+    "verify": false,
+    "verificationToken": "3o4mPyop6wtnbIFj3sCzl",
+    "createdAt": "2023-12-09T15:43:26.077Z",
+    "updatedAt": "2023-12-09T15:43:26.077Z"
+  },
+  {
+    "_id": "65748c98392a64dd60f3ec0f",
+    "password": "$2a$10$kD6kYPtFraoJ796NOlM7CeCZg7WJg4z6nmeZ.xdCem9VZoa9.eJ5S",
+    "email": "example3@mail.com",
+    "subscription": "starter",
+    "avatarURL": "//www.gravatar.com/avatar/b83f39da93874b983052a2ecb58b47e7?d=identicon",
+    "verify": false,
+    "verificationToken": "uK046BMQq-Fi9KJZG505N",
+    "createdAt": "2023-12-09T15:49:44.939Z",
+    "updatedAt": "2023-12-09T16:12:44.764Z"
+  },
+  {
+    "_id": "6575f0f01b08e5a57f63b09d",
+    "password": "$2a$10$2W45C.7sTcdjaPdDx7hBROwpB0uYZWxUtbPTPm1lggy4b0dHdgLse",
+    "email": "sixeta5954@gyxmz.com",
+    "subscription": "starter",
+    "avatarURL": "//www.gravatar.com/avatar/5936bf4ae4273216b204ef1df4abe34a?d=identicon",
+    "verify": true,
+    "verificationToken": null,
+    "createdAt": "2023-12-10T17:10:08.575Z",
+    "updatedAt": "2023-12-10T17:10:54.812Z"
+  }
+]

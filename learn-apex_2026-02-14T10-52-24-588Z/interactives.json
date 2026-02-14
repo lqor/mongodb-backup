@@ -1,0 +1,1378 @@
+[
+  {
+    "_id": "66ab48297d420b5bc63be1c8",
+    "snippetsCode": "public class Person {/*/\n  public String name;/*/\n  public Integer age;/*/\n\n  public void sayName() {/*/\n    System.debug('My name is ' + name);/*/\n  }/*/\n}\n",
+    "anonymousCode": "Person person = new Person();/*/\nperson.name = 'Alex';/*/\nperson.age = 36;/*/\nperson.sayName();/*/\n",
+    "order": [
+      {
+        "codeType": "anonymous",
+        "line": 0
+      },
+      {
+        "codeType": "anonymous",
+        "line": 1
+      },
+      {
+        "codeType": "anonymous",
+        "line": 2
+      },
+      {
+        "codeType": "anonymous",
+        "line": 3
+      },
+      {
+        "codeType": "snippets",
+        "line": 3
+      },
+      {
+        "codeType": "snippets",
+        "line": 4
+      },
+      {
+        "codeType": "snippets",
+        "line": 5
+      },
+      {
+        "codeType": "snippets",
+        "line": 8
+      }
+    ],
+    "expl": [
+      "Create a new instance of Person",
+      "Set the name of the person to 'Alex'",
+      "Set the age of the person to 36",
+      "Call sayName() method on the person instance",
+      "Define method sayName()",
+      "Execute debug statement",
+      "'My name is Alex' is printed out to console",
+      "End of execution"
+    ],
+    "variables": [
+      {
+        "person": "null"
+      },
+      {
+        "person": "Person instance"
+      },
+      {
+        "person": "Person instance with name 'Alex'"
+      },
+      {
+        "person": "Person instance with name 'Alex' and age 36"
+      },
+      {
+        "this.name": "Alex",
+        "this.age": "36"
+      },
+      {
+        "this.name": "Alex",
+        "this.age": "36"
+      },
+      {
+        "this.name": "Alex",
+        "this.age": "36"
+      },
+      {}
+    ]
+  },
+  {
+    "_id": "66ab48297d420b5bc63be1c9",
+    "snippetsCode": "public class Person {/*/\n  public Integer age;/*/\n  public String name;/*/\n\n  public void sayAge() {/*/\n    System.debug('My age is ' + age);/*/\n  }/*/\n  public void sayName() {/*/\n    System.debug('My name is ' + name);/*/\n  }/*/\n}\n",
+    "anonymousCode": "Person person1 = new Person();/*/\nperson1.name = 'Alex';/*/\nperson1.age = 36;/*/\nperson1.sayName();/*/\n\nPerson p2 = new Person();/*/\np2.name = 'John';/*/\np2.age = 18;/*/\np2.sayName();/*/\np2.sayAge();/*/\n",
+    "order": [
+      {
+        "codeType": "anonymous",
+        "line": 0
+      },
+      {
+        "codeType": "anonymous",
+        "line": 1
+      },
+      {
+        "codeType": "anonymous",
+        "line": 2
+      },
+      {
+        "codeType": "anonymous",
+        "line": 3
+      },
+      {
+        "codeType": "snippets",
+        "line": 6
+      },
+      {
+        "codeType": "snippets",
+        "line": 7
+      },
+      {
+        "codeType": "snippets",
+        "line": 8
+      },
+      {
+        "codeType": "anonymous",
+        "line": 4
+      },
+      {
+        "codeType": "anonymous",
+        "line": 5
+      },
+      {
+        "codeType": "anonymous",
+        "line": 6
+      },
+      {
+        "codeType": "anonymous",
+        "line": 7
+      },
+      {
+        "codeType": "snippets",
+        "line": 6
+      },
+      {
+        "codeType": "snippets",
+        "line": 7
+      },
+      {
+        "codeType": "snippets",
+        "line": 8
+      },
+      {
+        "codeType": "anonymous",
+        "line": 8
+      },
+      {
+        "codeType": "snippets",
+        "line": 3
+      },
+      {
+        "codeType": "snippets",
+        "line": 4
+      },
+      {
+        "codeType": "snippets",
+        "line": 5
+      },
+      {
+        "codeType": "snippets",
+        "line": 10
+      }
+    ],
+    "expl": [
+      "Create a new instance of Person",
+      "Set the name of the person1 to 'Alex'",
+      "Set the age of the person1 to 36",
+      "Call sayName() method on the person1 instance",
+      "Define method sayName()",
+      "Execute debug statement",
+      "'My name is Alex' is printed out to console",
+      "Create a new instance of Person",
+      "Set the name of the p2 to 'John'",
+      "Set the age of the p2 to 18",
+      "Call sayName() method on the p2 instance",
+      "Define method sayName()",
+      "Execute debug statement",
+      "'My name is John' is printed out to console",
+      "Call sayAge() method on the p2 instance",
+      "Define method sayAge()",
+      "Execute debug statement",
+      "'My age is 18' is printed out to console",
+      "End of execution"
+    ],
+    "variables": [
+      {
+        "person1": "null",
+        "p2": "null"
+      },
+      {
+        "person1": "Person instance",
+        "p2": "null"
+      },
+      {
+        "person1": "Person instance with name 'Alex'",
+        "p2": "null"
+      },
+      {
+        "person1": "Person instance with name 'Alex' and age 36",
+        "p2": "null"
+      },
+      {
+        "this.name": "Alex",
+        "this.age": "36"
+      },
+      {
+        "this.name": "Alex",
+        "this.age": "36"
+      },
+      {
+        "this.name": "Alex",
+        "this.age": "36"
+      },
+      {
+        "person1": "Person instance with name 'Alex' and age 36",
+        "p2": "null"
+      },
+      {
+        "person1": "Person instance with name 'Alex' and age 36",
+        "p2": "Person instance"
+      },
+      {
+        "person1": "Person instance with name 'Alex' and age 36",
+        "p2": "Person instance with name 'John'"
+      },
+      {
+        "person1": "Person instance with name 'Alex' and age 36",
+        "p2": "Person instance with name 'John' and age 18"
+      },
+      {
+        "this.name": "John",
+        "this.age": "18"
+      },
+      {
+        "this.name": "John",
+        "this.age": "18"
+      },
+      {
+        "this.name": "John",
+        "this.age": "18"
+      },
+      {
+        "person1": "Person instance with name 'Alex' and age 36",
+        "p2": "Person instance with name 'John' and age 18"
+      },
+      {
+        "this.name": "John",
+        "this.age": "18"
+      },
+      {
+        "this.name": "John",
+        "this.age": "18"
+      },
+      {
+        "this.name": "John",
+        "this.age": "18"
+      },
+      {}
+    ]
+  },
+  {
+    "_id": "66ab48297d420b5bc63be1ca",
+    "snippetsCode": "public class Person {/*/\n  public String name;/*/\n  public Integer age;/*/\n\n/*/public void setNameAndAge(String userName, Integer userAge) {/*/\n    name = userName;/*/\n    age = userAge;/*/\n  }/*/\n}\n",
+    "anonymousCode": "Person person1 = new Person();/*/\nperson1.setNameAndAge('Alex', 32);/*/\n",
+    "order": [
+      {
+        "codeType": "anonymous",
+        "line": 0
+      },
+      {
+        "codeType": "anonymous",
+        "line": 1
+      },
+      {
+        "codeType": "snippets",
+        "line": 4
+      },
+      {
+        "codeType": "snippets",
+        "line": 5
+      },
+      {
+        "codeType": "snippets",
+        "line": 6
+      },
+      {
+        "codeType": "snippets",
+        "line": 7
+      },
+      {
+        "codeType": "anonymous",
+        "line": 3
+      }
+    ],
+    "expl": [
+      "Create a new instance of Person",
+      "Call setNameAndAge() method on the person instance with arguments",
+      "Define method setNameAndAge()",
+      "Set name to value of argument userName",
+      "Set age to value of argument userAge",
+      "End of method execution",
+      "End of execution"
+    ],
+    "variables": [
+      {
+        "person1": "null"
+      },
+      {
+        "person1": "Person instance"
+      },
+      {
+        "this.name": "null",
+        "this.age": "null",
+        "userName": "Alex",
+        "userAge": "32"
+      },
+      {
+        "this.name": "null",
+        "this.age": "null",
+        "userName": "Alex",
+        "userAge": "32"
+      },
+      {
+        "this.name": "Alex",
+        "this.age": "null",
+        "userName": "Alex",
+        "userAge": "32"
+      },
+      {
+        "this.name": "Alex",
+        "this.age": "32",
+        "userName": "Alex",
+        "userAge": "32"
+      },
+      {
+        "person1": "Person instance with name 'Alex' and age 32"
+      }
+    ]
+  },
+  {
+    "_id": "66ab48297d420b5bc63be1cb",
+    "snippetsCode": "public class Person {/*/\n   public String name;/*/\n   public Integer age;/*/\n   public void setNameAndAge(String abc, Integer dddddd) {/*/\n    name = abc;/*/\n    age = dddddd;/*/\n   }/*/\n}\n",
+    "anonymousCode": "String s = 'Alex';/*/;\nInteger i = 32;/*/\nPerson person1 = new Person();/*/\nperson1.setNameAndAge(s, i);/*/\n",
+    "order": [
+      {
+        "codeType": "anonymous",
+        "line": 0
+      },
+      {
+        "codeType": "anonymous",
+        "line": 1
+      },
+      {
+        "codeType": "anonymous",
+        "line": 2
+      },
+      {
+        "codeType": "anonymous",
+        "line": 3
+      },
+      {
+        "codeType": "snippets",
+        "line": 3
+      },
+      {
+        "codeType": "snippets",
+        "line": 4
+      },
+      {
+        "codeType": "snippets",
+        "line": 5
+      },
+      {
+        "codeType": "snippets",
+        "line": 6
+      },
+      {
+        "codeType": "anonymous",
+        "line": 4
+      }
+    ],
+    "expl": [
+      "Define variable s",
+      "Define variable i",
+      "Create a new instance of Person",
+      "Call setNameAndAge() method on the person instance with s and i variables as arguments",
+      "Define method setNameAndAge()",
+      "Set name to value of argument abc",
+      "Set age to value of argument dddddd",
+      "End of method execution",
+      "End of execution"
+    ],
+    "variables": [
+      {
+        "person1": "null",
+        "s": "null",
+        "i": "null"
+      },
+      {
+        "person1": "null",
+        "s": "Alex",
+        "i": "null"
+      },
+      {
+        "person1": "null",
+        "s": "Alex",
+        "i": "32"
+      },
+      {
+        "person1": "Person instance",
+        "s": "Alex",
+        "i": "32"
+      },
+      {
+        "this.name": "null",
+        "this.age": "null",
+        "abc": "Alex",
+        "dddddd": "32"
+      },
+      {
+        "this.name": "null",
+        "this.age": "null",
+        "abc": "Alex",
+        "dddddd": "32"
+      },
+      {
+        "this.name": "Alex",
+        "this.age": "null",
+        "abc": "Alex",
+        "dddddd": "32"
+      },
+      {
+        "this.name": "Alex",
+        "this.age": "32",
+        "abc": "Alex",
+        "dddddd": "32"
+      },
+      {
+        "person1": "Person instance with name 'Alex' and age 32"
+      }
+    ]
+  },
+  {
+    "_id": "66ab48297d420b5bc63be1cc",
+    "snippetsCode": "public class Person {/*/\n public String name;/*/\n public Integer age;/*/\n\n /*/public void sayName() {/*/\n   System.debug('My name is ' + name);/*/\n }/*/\n\n /*/public void sayAge() {/*/\n   System.debug('I am ' + age);/*/\n }/*/\n\n /*/public void sayNameAndAge() {/*/\n   sayName();/*/\n   sayAge();/*/\n }/*/\n}\n",
+    "anonymousCode": "Person person1 = new Person();/*/\nperson1.name = 'Alex';/*/\nperson1.age = 32;/*/\nperson1.sayNameAndAge();/*/\n",
+    "order": [
+      {
+        "codeType": "anonymous",
+        "line": 0
+      },
+      {
+        "codeType": "anonymous",
+        "line": 1
+      },
+      {
+        "codeType": "anonymous",
+        "line": 2
+      },
+      {
+        "codeType": "anonymous",
+        "line": 3
+      },
+      {
+        "codeType": "snippets",
+        "line": 12
+      },
+      {
+        "codeType": "snippets",
+        "line": 13
+      },
+      {
+        "codeType": "snippets",
+        "line": 4
+      },
+      {
+        "codeType": "snippets",
+        "line": 5
+      },
+      {
+        "codeType": "snippets",
+        "line": 6
+      },
+      {
+        "codeType": "snippets",
+        "line": 14
+      },
+      {
+        "codeType": "snippets",
+        "line": 8
+      },
+      {
+        "codeType": "snippets",
+        "line": 9
+      },
+      {
+        "codeType": "snippets",
+        "line": 10
+      },
+      {
+        "codeType": "snippets",
+        "line": 15
+      },
+      {
+        "codeType": "anonymous",
+        "line": 5
+      }
+    ],
+    "expl": [
+      "Create a new instance of Person",
+      "Set the name of the person1 to 'Alex'",
+      "Set the age of the person1 to 36",
+      "Call sayNameAndAge() method on the person instance",
+      "Define method sayNameAndAge()",
+      "Call sayName() method inside sayNameAndAge() method",
+      "Define method sayName()",
+      "Execute debug statement",
+      "'My name is Alex' is printed out to console",
+      "Call sayAge() method inside sayNameAndAge() method",
+      "Define method sayAge()",
+      "Execute debug statement",
+      "'My age is 36' is printed out to console",
+      "End of method execution",
+      "End of execution"
+    ],
+    "variables": [
+      {
+        "person1": "null"
+      },
+      {
+        "person1": "Person instance"
+      },
+      {
+        "person1": "Person instance with name 'Alex'"
+      },
+      {
+        "person1": "Person instance with name 'Alex' and age 36"
+      },
+      {
+        "this.name": "Alex",
+        "this.age": "32"
+      },
+      {
+        "this.name": "Alex",
+        "this.age": "32"
+      },
+      {
+        "this.name": "Alex",
+        "this.age": "32"
+      },
+      {
+        "this.name": "Alex",
+        "this.age": "32"
+      },
+      {
+        "this.name": "Alex",
+        "this.age": "32"
+      },
+      {
+        "this.name": "Alex",
+        "this.age": "32"
+      },
+      {
+        "this.name": "Alex",
+        "this.age": "32"
+      },
+      {
+        "this.name": "Alex",
+        "this.age": "32"
+      },
+      {
+        "this.name": "Alex",
+        "this.age": "32"
+      },
+      {
+        "this.name": "Alex",
+        "this.age": "32"
+      },
+      {}
+    ]
+  },
+  {
+    "_id": "66ab48297d420b5bc63be1cd",
+    "snippetsCode": "public class Person {/*/\n   public String name;/*/\n   public Integer age;/*/\n    public Person() {/*/\n       this.name = 'John Doe';/*/\n       this.age = 0;/*/\n   }/*/\n }\n",
+    "anonymousCode": "Person person1 = new Person();/*/\n",
+    "order": [
+      {
+        "codeType": "anonymous",
+        "line": 0
+      },
+      {
+        "codeType": "snippets",
+        "line": 3
+      },
+      {
+        "codeType": "snippets",
+        "line": 4
+      },
+      {
+        "codeType": "snippets",
+        "line": 5
+      },
+      {
+        "codeType": "snippets",
+        "line": 6
+      },
+      {
+        "codeType": "anonymous",
+        "line": 4
+      }
+    ],
+    "expl": [
+      "Create a new instance of Person",
+      "Initializing constructor of Person class",
+      "Set name to 'John Doe'",
+      "Set age to 0",
+      "End of constructor",
+      "End of execution"
+    ],
+    "variables": [
+      {
+        "person1": "null"
+      },
+      {
+        "this.name": "null",
+        "this.age": "null"
+      },
+      {
+        "this.name": "null",
+        "this.age": "null"
+      },
+      {
+        "this.name": "John Doe",
+        "this.age": "null"
+      },
+      {
+        "this.name": "John Doe",
+        "this.age": "0"
+      },
+      {
+        "person1": "Person instance with name 'John Doe' and age 0"
+      }
+    ]
+  },
+  {
+    "_id": "66ab48297d420b5bc63be1ce",
+    "snippetsCode": "public class Person {/*/\n  public String name;/*/\n  public Integer age;/*/\n  public Person() {/*/\n    System.debug('The constructor is called!');/*/\n  }/*/\n  public Person(Integer userAge) {/*/\n    age = userAge;/*/\n  }/*/\n /*/public Person(String userName) {/*/\n    name = userName;/*/\n  }/*/\n /*/public Person(Integer userAge, String UserName) {/*/\n    name = userName;/*/\n    age = userAge;/*/\n  }/*/\n /*/public void printPerson() {/*/\n    System.debug('My name: ' + name + ', my age: ' + age);/*/\n  }/*/\n }\n",
+    "anonymousCode": "Person person1 = new Person();/*/\n\n/*/Person person2 = new Person(32);/*/\nperson2.printPerson(); /*/\n\n/*/Person person3 = new Person('Alex');/*/\nperson3.printPerson();/*/\n\n/*/Person person4 = new Person('Alex', 32);/*/\nperson4.printPerson();/*/\n",
+    "order": [
+      {
+        "codeType": "anonymous",
+        "line": 0
+      },
+      {
+        "codeType": "snippets",
+        "line": 3
+      },
+      {
+        "codeType": "snippets",
+        "line": 4
+      },
+      {
+        "codeType": "snippets",
+        "line": 5
+      },
+      {
+        "codeType": "anonymous",
+        "line": 2
+      },
+      {
+        "codeType": "snippets",
+        "line": 6
+      },
+      {
+        "codeType": "snippets",
+        "line": 7
+      },
+      {
+        "codeType": "snippets",
+        "line": 8
+      },
+      {
+        "codeType": "anonymous",
+        "line": 3
+      },
+      {
+        "codeType": "snippets",
+        "line": 19
+      },
+      {
+        "codeType": "snippets",
+        "line": 20
+      },
+      {
+        "codeType": "snippets",
+        "line": 21
+      },
+      {
+        "codeType": "anonymous",
+        "line": 5
+      },
+      {
+        "codeType": "snippets",
+        "line": 10
+      },
+      {
+        "codeType": "snippets",
+        "line": 11
+      },
+      {
+        "codeType": "snippets",
+        "line": 12
+      },
+      {
+        "codeType": "anonymous",
+        "line": 6
+      },
+      {
+        "codeType": "snippets",
+        "line": 19
+      },
+      {
+        "codeType": "snippets",
+        "line": 20
+      },
+      {
+        "codeType": "snippets",
+        "line": 21
+      },
+      {
+        "codeType": "anonymous",
+        "line": 8
+      },
+      {
+        "codeType": "snippets",
+        "line": 14
+      },
+      {
+        "codeType": "snippets",
+        "line": 15
+      },
+      {
+        "codeType": "snippets",
+        "line": 16
+      },
+      {
+        "codeType": "snippets",
+        "line": 17
+      },
+      {
+        "codeType": "anonymous",
+        "line": 9
+      },
+      {
+        "codeType": "snippets",
+        "line": 19
+      },
+      {
+        "codeType": "snippets",
+        "line": 20
+      },
+      {
+        "codeType": "snippets",
+        "line": 21
+      },
+      {
+        "codeType": "anonymous",
+        "line": 11
+      }
+    ],
+    "expl": [
+      "Create a new instance of Person without parameters",
+      "Initializing constructor of Person class",
+      "Execute debug statement",
+      "'The constructor is called!' is printed out to console",
+      "Create a new instance of Person with age parameter",
+      "Initializing constructor of Person class",
+      "Set age to 32",
+      "End of constructor",
+      "Call printPerson() method on the person instance",
+      "Define method printPerson()",
+      "Execute debug statement",
+      "'My name: null, my age: 32' is printed out to console",
+      "Create a new instance of Person with name parameter",
+      "Initializing constructor of Person class",
+      "Set name to 'Alex'",
+      "End of constructor",
+      "Call printPerson() method on the person instance",
+      "Define method printPerson()",
+      "Execute debug statement",
+      "'My name: Alex, my age: null' is printed out to console",
+      "Create a new instance of Person with name and age parameters",
+      "Initializing constructor of Person class",
+      "Set name to 'Alex'",
+      "Set age to 32",
+      "End of constructor",
+      "Call printPerson() method on the person instance",
+      "Define method printPerson()",
+      "Execute debug statement",
+      "'My name: Alex, my age: 32' is printed out to console",
+      "End of execution"
+    ],
+    "variables": [
+      {
+        "person1": "null"
+      },
+      {
+        "this.name": "null",
+        "this.age": "null"
+      },
+      {
+        "this.name": "null",
+        "this.age": "null"
+      },
+      {
+        "this.name": "null",
+        "this.age": "null"
+      },
+      {
+        "person1": "Person instance",
+        "person2": "null"
+      },
+      {
+        "this.name": "null",
+        "this.age": "null"
+      },
+      {
+        "this.name": "null",
+        "this.age": "null"
+      },
+      {
+        "this.name": "null",
+        "this.age": "32"
+      },
+      {
+        "person1": "Person instance",
+        "person2": "Person instance with age 32"
+      },
+      {
+        "this.name": "null",
+        "this.age": "32"
+      },
+      {
+        "this.name": "null",
+        "this.age": "32"
+      },
+      {
+        "this.name": "null",
+        "this.age": "32"
+      },
+      {
+        "person1": "Person instance",
+        "person2": "Person instance with age 32",
+        "person3": "null"
+      },
+      {
+        "this.name": "null",
+        "this.age": "null"
+      },
+      {
+        "this.name": "null",
+        "this.age": "null"
+      },
+      {
+        "this.name": "Alex",
+        "this.age": "null"
+      },
+      {
+        "person1": "Person instance",
+        "person2": "Person instance with age 32",
+        "person3": "Person instance with name Alex"
+      },
+      {
+        "this.name": "Alex",
+        "this.age": "null"
+      },
+      {
+        "this.name": "Alex",
+        "this.age": "null"
+      },
+      {
+        "this.name": "Alex",
+        "this.age": "null"
+      },
+      {
+        "person1": "Person instance",
+        "person2": "Person instance with age 32",
+        "person3": "Person instance with name Alex",
+        "person4": "null"
+      },
+      {
+        "this.name": "null",
+        "this.age": "null"
+      },
+      {
+        "this.name": "null",
+        "this.age": "null"
+      },
+      {
+        "this.name": "Alex",
+        "this.age": "null"
+      },
+      {
+        "this.name": "Alex",
+        "this.age": "32"
+      },
+      {
+        "person1": "Person instance",
+        "person2": "Person instance with age 32",
+        "person3": "Person instance with name Alex",
+        "person4": "Person instance with name Alex and age 32"
+      },
+      {
+        "this.name": "Alex",
+        "this.age": "32"
+      },
+      {
+        "this.name": "Alex",
+        "this.age": "32"
+      },
+      {
+        "this.name": "Alex",
+        "this.age": "32"
+      },
+      {
+        "person1": "Person instance",
+        "person2": "Person instance with age 32",
+        "person3": "Person instance with name Alex",
+        "person4": "Person instance with name Alex and age 32"
+      }
+    ]
+  },
+  {
+    "_id": "66ab48297d420b5bc63be1cf",
+    "snippetsCode": "public class ReturnTypes { /*/\n public String returnName() { /*/\n  return 'Alex'; /*/\n }\n}",
+    "anonymousCode": "ReturnTypes rt = new ReturnTypes(); /*/\nString name = rt.returnName(); /*/\nSystem.debug(name); /*/",
+    "order": [
+      {
+        "codeType": "anonymous",
+        "line": 0
+      },
+      {
+        "codeType": "anonymous",
+        "line": 1
+      },
+      {
+        "codeType": "snippets",
+        "line": 1
+      },
+      {
+        "codeType": "snippets",
+        "line": 2
+      },
+      {
+        "codeType": "anonymous",
+        "line": 1
+      },
+      {
+        "codeType": "anonymous",
+        "line": 2
+      },
+      {
+        "codeType": "anonymous",
+        "line": 4
+      },
+      {
+        "codeType": "anonymous",
+        "line": 4
+      }
+    ],
+    "expl": [
+      "Create a new instance of ReturnTypes",
+      "Declare public String variable name",
+      "Define returnName() method",
+      "Return 'Alex'",
+      "Assign returned value of method to name variable",
+      "Execute debug statement",
+      "'Alex' is printed out to console",
+      "Execution finished"
+    ],
+    "variables": [
+      {
+        "rt": "null",
+        "name": "null"
+      },
+      {
+        "rt": "ReturnTypes instance",
+        "name": "null"
+      },
+      {
+        "this": "null"
+      },
+      {
+        "this": "null"
+      },
+      {
+        "rt": "ReturnTypes instance",
+        "name": "Alex"
+      },
+      {
+        "rt": "ReturnTypes instance",
+        "name": "Alex"
+      },
+      {
+        "rt": "ReturnTypes instance",
+        "name": "Alex"
+      },
+      {
+        "rt": "ReturnTypes instance",
+        "name": "Alex"
+      }
+    ]
+  },
+  {
+    "_id": "66ab48297d420b5bc63be1d0",
+    "snippetsCode": "public class MyClass {\n /*/public Integer getSix() { /*/\n  return 6; /*/\n }\n}",
+    "anonymousCode": "MyClass mc = new MyClass(); /*/\nInteger result = mc.getSix(); /*/\nSystem.debug(result); /*/",
+    "order": [
+      {
+        "codeType": "anonymous",
+        "line": 0
+      },
+      {
+        "codeType": "anonymous",
+        "line": 1
+      },
+      {
+        "codeType": "snippets",
+        "line": 1
+      },
+      {
+        "codeType": "snippets",
+        "line": 2
+      },
+      {
+        "codeType": "anonymous",
+        "line": 1
+      },
+      {
+        "codeType": "anonymous",
+        "line": 2
+      },
+      {
+        "codeType": "anonymous",
+        "line": 4
+      },
+      {
+        "codeType": "anonymous",
+        "line": 4
+      }
+    ],
+    "expl": [
+      "Create a new instance of MyClass",
+      "Declare Integer variable result",
+      "Define getSix() method",
+      "Return 6",
+      "Assign returned value of method to result",
+      "Execute debug statement",
+      "6 is printed out to console",
+      "Execution finished"
+    ],
+    "variables": [
+      {
+        "mc": "null",
+        "result": "null"
+      },
+      {
+        "mc": "MyClass instance",
+        "result": "null"
+      },
+      {
+        "this": "null"
+      },
+      {
+        "this": "null"
+      },
+      {
+        "mc": "MyClass instance",
+        "result": "6"
+      },
+      {
+        "mc": "MyClass instance",
+        "result": "6"
+      },
+      {
+        "mc": "MyClass instance",
+        "result": "6"
+      },
+      {
+        "mc": "MyClass instance",
+        "result": "6"
+      }
+    ]
+  },
+  {
+    "_id": "66ab48297d420b5bc63be1d1",
+    "snippetsCode": "public class AnotherClass {\n /*/public Person createPerson() { /*/\n  Person p1 = new Person(); /*/\n  p1.name = 'Alex'; /*/\n  p1.age = 36; /*/\n\n  return p1; /*/\n }\n}",
+    "anonymousCode": "AnotherClass classVariable = new AnotherClass(); /*/\nPerson person1 = classVariable.createPerson(); /*/\nSystem.debug(person1.name); /*/\nSystem.debug(person1.age); /*/",
+    "order": [
+      {
+        "codeType": "anonymous",
+        "line": 0
+      },
+      {
+        "codeType": "anonymous",
+        "line": 1
+      },
+      {
+        "codeType": "snippets",
+        "line": 1
+      },
+      {
+        "codeType": "snippets",
+        "line": 2
+      },
+      {
+        "codeType": "snippets",
+        "line": 3
+      },
+      {
+        "codeType": "snippets",
+        "line": 4
+      },
+      {
+        "codeType": "snippets",
+        "line": 5
+      },
+      {
+        "codeType": "anonymous",
+        "line": 1
+      },
+      {
+        "codeType": "anonymous",
+        "line": 2
+      },
+      {
+        "codeType": "anonymous",
+        "line": 3
+      },
+      {
+        "codeType": "anonymous",
+        "line": 5
+      },
+      {
+        "codeType": "anonymous",
+        "line": 5
+      }
+    ],
+    "expl": [
+      "Create a new instance of AnotherClass",
+      "Call createPerson() method on the AnotherClass instance",
+      "Define method createPerson() that returns a Person object",
+      "Create a new Person instance",
+      "Set the name of the Person to 'Alex'",
+      "Set the age of the Person to 36",
+      "Return the Person object",
+      "Assign returned Person object to person1",
+      "Execute debug statement",
+      "'Alex' is printed out to console; Execute 2nd debug statement",
+      "36 is printed out to console",
+      "Execution finished"
+    ],
+    "variables": [
+      {
+        "classVariable": "null",
+        "person1": "null"
+      },
+      {
+        "classVariable": "AnotherClass instance",
+        "person1": "null"
+      },
+      {
+        "p1": "null"
+      },
+      {
+        "p1": "null"
+      },
+      {
+        "p1": "Person instance"
+      },
+      {
+        "p1": "Person instance with name 'Alex'"
+      },
+      {
+        "p1": "Person instance with name 'Alex' and age 36"
+      },
+      {
+        "classVariable": "AnotherClass instance",
+        "person1": "Person instance with name 'Alex' and age 36"
+      },
+      {
+        "classVariable": "AnotherClass instance",
+        "person1": "Person instance with name 'Alex' and age 36"
+      },
+      {
+        "classVariable": "AnotherClass instance",
+        "person1": "Person instance with name 'Alex' and age 36"
+      },
+      {
+        "classVariable": "AnotherClass instance",
+        "person1": "Person instance with name 'Alex' and age 36"
+      },
+      {
+        "classVariable": "AnotherClass instance",
+        "person1": "Person instance with name 'Alex' and age 36"
+      }
+    ]
+  },
+  {
+    "_id": "66ab48297d420b5bc63be1d2",
+    "snippetsCode": "public class Person {\n  public String name; \n  public Integer age; \n\n  /*/public void calculateYears() { /*/\n   Integer years = 65 - age; /*/\n   System.debug('Years until retirement: ' + years); /*/\n  }/*/\n}",
+    "anonymousCode": "Person person1 = new Person(); /*/\nperson1.name = 'Alex'; /*/\nperson1.age = 36; /*/\nperson1.calculateYears(); /*/",
+    "order": [
+      {
+        "codeType": "anonymous",
+        "line": 0
+      },
+      {
+        "codeType": "anonymous",
+        "line": 1
+      },
+      {
+        "codeType": "anonymous",
+        "line": 2
+      },
+      {
+        "codeType": "anonymous",
+        "line": 3
+      },
+      {
+        "codeType": "snippets",
+        "line": 1
+      },
+      {
+        "codeType": "snippets",
+        "line": 2
+      },
+      {
+        "codeType": "snippets",
+        "line": 3
+      },
+      {
+        "codeType": "snippets",
+        "line": 4
+      },
+      {
+        "codeType": "anonymous",
+        "line": 5
+      }
+    ],
+    "expl": [
+      "Create a new instance of Person",
+      "Set name to 'Alex'",
+      "Set age to 36",
+      "Call calculateYears() method on the person1 instance",
+      "Define method calculateYears()",
+      "Calculate years until retirement",
+      "Execute debug statement",
+      "'Years until retirement: 29' is printed out to console",
+      "Execution finished"
+    ],
+    "variables": [
+      {
+        "person1": "null"
+      },
+      {
+        "person1": "Person instance"
+      },
+      {
+        "person1": "Person instance with name Alex"
+      },
+      {
+        "person1": "Person instance with name Alex and age 36"
+      },
+      {
+        "this.name": "Alex",
+        "this.age": "36"
+      },
+      {
+        "this.name": "Alex",
+        "this.age": "36",
+        "years": "null"
+      },
+      {
+        "this.name": "Alex",
+        "this.age": "36",
+        "years": "29"
+      },
+      {
+        "this.name": "Alex",
+        "this.age": "36",
+        "years": "29"
+      },
+      {}
+    ]
+  },
+  {
+    "_id": "66ab6ba96d8e3cae6c464808",
+    "snippetsCode": "public class Person {\n  public String name;\n  public Integer age;\n\n  /*/public Integer calculateYears() {/*/\n    return 65 - age;/*/\n  }\n}\n",
+    "anonymousCode": "Person person1 = new Person();/*/\nperson1.name = 'Alex';/*/\nperson1.age = 36;/*/\nInteger years = person1.calculateYears();/*/\nSystem.debug('Years until retirement: ' + years);/*/",
+    "order": [
+      {
+        "codeType": "anonymous",
+        "line": 0
+      },
+      {
+        "codeType": "anonymous",
+        "line": 1
+      },
+      {
+        "codeType": "anonymous",
+        "line": 2
+      },
+      {
+        "codeType": "anonymous",
+        "line": 3
+      },
+      {
+        "codeType": "snippets",
+        "line": 1
+      },
+      {
+        "codeType": "snippets",
+        "line": 2
+      },
+      {
+        "codeType": "anonymous",
+        "line": 3
+      },
+      {
+        "codeType": "anonymous",
+        "line": 4
+      },
+      {
+        "codeType": "anonymous",
+        "line": 6
+      }
+    ],
+    "expl": [
+      "Create a new instance of Person",
+      "Set name to 'Alex'",
+      "Set age to 36",
+      "Call calculateYears() method on the person1 instance",
+      "Define method calculateYears()",
+      "Return calculated years until retirement",
+      "Assign returned value to years variable",
+      "Execute debug statement",
+      "'Years until retirement: 29' is printed out to console; Execution finished"
+    ],
+    "variables": [
+      {
+        "person1": "null"
+      },
+      {
+        "person1": "Person instance"
+      },
+      {
+        "person1": "Person instance with name Alex"
+      },
+      {
+        "person1": "Person instance with name Alex and age 36"
+      },
+      {
+        "this.name": "Alex",
+        "this.age": "36"
+      },
+      {
+        "this.name": "Alex",
+        "this.age": "36"
+      },
+      {
+        "person1": "Person instance with name Alex and age 36",
+        "years": "29"
+      },
+      {
+        "person1": "Person instance with name Alex and age 36",
+        "years": "29"
+      },
+      {}
+    ]
+  }
+]

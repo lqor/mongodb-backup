@@ -1,0 +1,2091 @@
+[
+  {
+    "_id": "69342a55b0afee84f86fb610",
+    "type": "tagExists",
+    "language": "html",
+    "tag": "p",
+    "args": [],
+    "createdAt": "2025-12-06T13:06:29.716Z",
+    "updatedAt": "2025-12-15T08:38:24.755Z",
+    "taskRef": "693058846ef75f3f93e9043a",
+    "requirement": "Tag p should exist and be opened and closed",
+    "attr": {
+      "property": "",
+      "value": ""
+    },
+    "parentTag": "",
+    "regex": "",
+    "selector": "",
+    "value": ""
+  },
+  {
+    "_id": "693467c24cb7ee3664c16fde",
+    "type": "isTagChild",
+    "language": "html",
+    "tag": "p",
+    "parentTag": "div",
+    "args": [],
+    "createdAt": "2025-12-06T17:28:34.042Z",
+    "updatedAt": "2025-12-16T14:42:35.247Z",
+    "taskRef": "693058846ef75f3f93e9043a",
+    "requirement": "Tag p should be a child of div",
+    "attr": {
+      "property": "",
+      "value": ""
+    },
+    "regex": "",
+    "selector": "",
+    "value": "",
+    "style": {
+      "property": "",
+      "value": ""
+    }
+  },
+  {
+    "_id": "693471574d189b3f3bccee25",
+    "type": "elHasCssProperty",
+    "language": "html",
+    "tag": "p",
+    "style": {
+      "property": "color",
+      "value": "rgb(255, 0, 0)"
+    },
+    "args": [],
+    "createdAt": "2025-12-06T18:09:27.587Z",
+    "updatedAt": "2026-01-04T13:39:23.039Z",
+    "taskRef": null,
+    "requirement": "Set color of p to rgb(255, 0, 0)",
+    "attr": {
+      "property": "",
+      "value": ""
+    },
+    "regex": "",
+    "selector": "",
+    "value": ""
+  },
+  {
+    "_id": "693473a53e1a0ded0f2c045c",
+    "type": "elHasCssProperty",
+    "language": "html",
+    "tag": "p",
+    "style": {
+      "property": "font-size",
+      "value": "16px"
+    },
+    "args": [],
+    "createdAt": "2025-12-06T18:19:17.358Z",
+    "updatedAt": "2026-01-04T13:39:23.039Z",
+    "taskRef": null,
+    "requirement": "Set font-size of p as 16px",
+    "attr": {
+      "property": "",
+      "value": ""
+    },
+    "parentTag": "",
+    "regex": "",
+    "selector": "",
+    "value": ""
+  },
+  {
+    "_id": "6935d372c3333d3225edc723",
+    "type": "elContainsText",
+    "language": "html",
+    "tag": "p",
+    "innerText": "",
+    "args": [],
+    "createdAt": "2025-12-07T19:20:18.968Z",
+    "updatedAt": "2026-01-04T13:39:23.039Z",
+    "value": "Hello, World!",
+    "taskRef": null,
+    "requirement": "Add Hello, World! as a content for p",
+    "attr": {
+      "property": "",
+      "value": ""
+    },
+    "regex": "",
+    "selector": "",
+    "style": {
+      "property": "",
+      "value": ""
+    }
+  },
+  {
+    "_id": "6935d6bc75f7a3508b900c77",
+    "type": "elHasOpenCloseTag",
+    "language": "html",
+    "tag": "p",
+    "args": [],
+    "createdAt": "2025-12-07T19:34:20.769Z",
+    "updatedAt": "2026-01-04T13:39:23.039Z",
+    "taskRef": null,
+    "requirement": "Ensure tag p is both openned and closed",
+    "attr": {
+      "property": "",
+      "value": ""
+    },
+    "parentTag": "",
+    "regex": "",
+    "selector": "",
+    "style": {
+      "property": "",
+      "value": ""
+    },
+    "value": ""
+  },
+  {
+    "_id": "6936d6ade997f4859796f8fb",
+    "type": "htmlValidator",
+    "language": "html",
+    "args": [],
+    "createdAt": "2025-12-08T13:46:21.195Z",
+    "updatedAt": "2026-01-04T13:39:23.039Z",
+    "taskRef": null,
+    "requirement": "HTML should be valid",
+    "attr": {
+      "property": "",
+      "value": ""
+    },
+    "parentTag": "",
+    "regex": "",
+    "selector": "",
+    "style": {
+      "property": "",
+      "value": ""
+    },
+    "tag": "",
+    "value": ""
+  },
+  {
+    "_id": "69394b82896db773a9785be8",
+    "type": "doesFnExists",
+    "language": "javascript",
+    "fnName": "sum",
+    "args": [
+      ""
+    ],
+    "createdAt": "2025-12-10T10:29:22.395Z",
+    "updatedAt": "2025-12-19T19:14:39.523Z",
+    "taskRef": "693058846ef75f3f93e9043a",
+    "requirement": "Function sum should exist",
+    "regex": "",
+    "value": "",
+    "attr": {
+      "property": "",
+      "value": ""
+    },
+    "selector": "",
+    "style": {
+      "property": "",
+      "value": ""
+    },
+    "tag": "",
+    "parentTag": ""
+  },
+  {
+    "_id": "69398001f65c8eb3a642e680",
+    "type": "doesFnReturnExpectedResult",
+    "language": "javascript",
+    "fnName": "sum",
+    "args": [
+      "2",
+      "3"
+    ],
+    "createdAt": "2025-12-10T14:13:21.614Z",
+    "updatedAt": "2026-01-04T13:39:22.075Z",
+    "taskRef": null,
+    "expectedResultType": "number",
+    "requirement": "Function should return a number",
+    "regex": "",
+    "value": ""
+  },
+  {
+    "_id": "6942601764e3fd3f0be60cbb",
+    "type": "uniqueTest",
+    "taskRef": null,
+    "requirement": "You console log inside the function sum",
+    "language": "javascript",
+    "value": "",
+    "args": [
+      ""
+    ],
+    "regex": "",
+    "createdAt": "2025-12-17T07:47:35.813Z",
+    "updatedAt": "2026-01-04T13:39:22.075Z",
+    "uniqueTest": "let CONSOLE_LOG_CALLED = false;\r\nconst ORIGINAL_CONSOLE_LOG = console.log;\r\n\r\nconsole.log = function (...args) {\r\n    CONSOLE_LOG_CALLED = true;\r\n    ORIGINAL_CONSOLE_LOG.apply(console, args);\r\n};\r\n\r\nif (typeof sum !== \"function\") {\r\n    testResults.push({\r\n        testRef: \"TEST_ID\",\r\n        success: false,\r\n        message: \"Function sum is not defined\"\r\n    });\r\n} else {\r\n    try {\r\n        sum(2, 3);\r\n\r\n        if (CONSOLE_LOG_CALLED) {\r\n            testResults.push({\r\n                testRef: \"TEST_ID\",\r\n                success: true,\r\n                message: \"console.log was called\"\r\n            });\r\n        } else {\r\n            testResults.push({\r\n                testRef: \"TEST_ID\",\r\n                success: false,\r\n                message: \"console.log was NOT called\"\r\n            });\r\n        }\r\n    } catch (e) {\r\n        testResults.push({\r\n            testRef: \"TEST_ID\",\r\n            success: false,\r\n            message: \"Runtime error: \" + e\r\n        });\r\n    }\r\n}"
+  },
+  {
+    "_id": "69485fd2bdd2cc96db0db724",
+    "type": "tagExists",
+    "taskRef": "69485fd2bdd2cc96db0db726",
+    "requirement": "Div div should exist",
+    "language": "html",
+    "tag": "div",
+    "parentTag": "",
+    "selector": "",
+    "style": {
+      "property": "",
+      "value": ""
+    },
+    "value": "",
+    "attr": {
+      "property": "",
+      "value": ""
+    },
+    "args": [],
+    "regex": "",
+    "createdAt": "2025-12-21T21:00:02.964Z",
+    "updatedAt": "2025-12-25T19:39:30.834Z"
+  },
+  {
+    "_id": "698b41b29d0abcf90715f93a",
+    "type": "lwcClassFieldExists",
+    "taskRef": "698b40a99d0abcf90715f921",
+    "requirement": "Property name exists on the class",
+    "language": "javascript",
+    "tag": "",
+    "selector": "",
+    "style": {
+      "property": "",
+      "value": ""
+    },
+    "attr": {
+      "property": "",
+      "value": ""
+    },
+    "args": [
+      ""
+    ],
+    "regex": "",
+    "createdAt": "2026-02-10T14:33:22.040Z",
+    "updatedAt": "2026-02-10T16:45:55.532Z",
+    "expectedResultType": "",
+    "lwcComponentName": "parent",
+    "fieldName": "name"
+  },
+  {
+    "_id": "698b41b29d0abcf90715f93c",
+    "type": "lwcClassFieldEqualsValue",
+    "taskRef": "698b40a99d0abcf90715f921",
+    "requirement": "Property name initial value is empty string",
+    "language": "javascript",
+    "tag": "",
+    "selector": "",
+    "style": {
+      "property": "",
+      "value": ""
+    },
+    "attr": {
+      "property": "",
+      "value": ""
+    },
+    "args": [
+      ""
+    ],
+    "regex": "",
+    "createdAt": "2026-02-10T14:33:22.056Z",
+    "updatedAt": "2026-02-13T23:53:35.965Z",
+    "expectedResultType": "string",
+    "lwcComponentName": "parent",
+    "expectedValue": " ",
+    "fieldName": "name",
+    "clsName": "",
+    "fnName": "",
+    "obj": {
+      "property": "",
+      "value": ""
+    },
+    "parentTag": "",
+    "value": ""
+  },
+  {
+    "_id": "698b41b29d0abcf90715f93e",
+    "type": "lwsMethodExists",
+    "taskRef": "698b40a99d0abcf90715f921",
+    "requirement": "Method handleNameChange exists",
+    "language": "javascript",
+    "tag": "",
+    "selector": "",
+    "style": {
+      "property": "",
+      "value": ""
+    },
+    "attr": {
+      "property": "",
+      "value": ""
+    },
+    "args": [
+      ""
+    ],
+    "regex": "",
+    "createdAt": "2026-02-10T14:33:22.064Z",
+    "updatedAt": "2026-02-10T16:46:17.567Z",
+    "expectedResultType": "",
+    "lwcComponentName": "parent",
+    "fieldName": "handleNameChange"
+  },
+  {
+    "_id": "698b43b19d0abcf90715f958",
+    "type": "elHasAttribute",
+    "taskRef": "698b40a99d0abcf90715f921",
+    "requirement": "lightning-input has value as attribute",
+    "language": "html",
+    "tag": "lightning-input",
+    "parentTag": "",
+    "selector": "",
+    "style": {
+      "property": "",
+      "value": ""
+    },
+    "value": "",
+    "attr": {
+      "property": "value",
+      "value": ""
+    },
+    "args": [
+      ""
+    ],
+    "regex": "",
+    "createdAt": "2026-02-10T14:41:53.401Z",
+    "updatedAt": "2026-02-10T16:46:38.597Z",
+    "expectedResultType": "",
+    "lwcComponentName": "parent"
+  },
+  {
+    "_id": "698b43b19d0abcf90715f95c",
+    "type": "elContainsText",
+    "taskRef": "698b40a99d0abcf90715f921",
+    "requirement": "<p> contains {greeting}",
+    "language": "html",
+    "tag": "p",
+    "parentTag": "",
+    "selector": "",
+    "style": {
+      "property": "",
+      "value": ""
+    },
+    "value": "{greeting}",
+    "attr": {
+      "property": "",
+      "value": ""
+    },
+    "args": [
+      ""
+    ],
+    "regex": "",
+    "createdAt": "2026-02-10T14:41:53.406Z",
+    "updatedAt": "2026-02-10T16:46:52.190Z",
+    "expectedResultType": "",
+    "lwcComponentName": "parent"
+  },
+  {
+    "_id": "698b43b19d0abcf90715f954",
+    "type": "tagExists",
+    "taskRef": "698b40a99d0abcf90715f921",
+    "requirement": "<lightning-input> exists in template",
+    "language": "html",
+    "tag": "lightning-input",
+    "parentTag": "",
+    "selector": "",
+    "style": {
+      "property": "",
+      "value": ""
+    },
+    "value": "",
+    "attr": {
+      "property": "",
+      "value": ""
+    },
+    "args": [
+      ""
+    ],
+    "regex": "",
+    "createdAt": "2026-02-10T14:41:53.396Z",
+    "updatedAt": "2026-02-13T23:52:21.185Z",
+    "expectedResultType": "",
+    "lwcComponentName": "parent",
+    "clsName": "",
+    "expectedValue": "",
+    "fieldName": "",
+    "fnName": "",
+    "obj": {
+      "property": "",
+      "value": ""
+    }
+  },
+  {
+    "_id": "698b43b19d0abcf90715f956",
+    "type": "elHasAttribute",
+    "taskRef": "698b40a99d0abcf90715f921",
+    "requirement": "lightning-input has label as attribute",
+    "language": "html",
+    "tag": "lightning-input",
+    "parentTag": "",
+    "selector": "",
+    "style": {
+      "property": "",
+      "value": ""
+    },
+    "value": "",
+    "attr": {
+      "property": "label",
+      "value": ""
+    },
+    "args": [
+      ""
+    ],
+    "regex": "",
+    "createdAt": "2026-02-10T14:41:53.399Z",
+    "updatedAt": "2026-02-10T16:46:31.510Z",
+    "expectedResultType": "",
+    "lwcComponentName": "parent"
+  },
+  {
+    "_id": "698b43b19d0abcf90715f95a",
+    "type": "tagExists",
+    "taskRef": "698b40a99d0abcf90715f921",
+    "requirement": "<p> exists in template",
+    "language": "html",
+    "tag": "p",
+    "parentTag": "",
+    "selector": "",
+    "style": {
+      "property": "",
+      "value": ""
+    },
+    "value": "",
+    "attr": {
+      "property": "",
+      "value": ""
+    },
+    "args": [
+      ""
+    ],
+    "regex": "",
+    "createdAt": "2026-02-10T14:41:53.404Z",
+    "updatedAt": "2026-02-13T23:52:30.685Z",
+    "expectedResultType": "",
+    "lwcComponentName": "parent",
+    "clsName": "",
+    "expectedValue": "",
+    "fieldName": "",
+    "fnName": "",
+    "obj": {
+      "property": "",
+      "value": ""
+    }
+  },
+  {
+    "_id": "698db3627fa99fbcdb747863",
+    "type": "elContainsText",
+    "taskRef": "698db3627fa99fbcdb747867",
+    "requirement": "<p> text content is exactly \"Hello World\"",
+    "language": "html",
+    "tag": "p",
+    "parentTag": "",
+    "selector": "",
+    "style": {
+      "property": "",
+      "value": ""
+    },
+    "value": "Hello World",
+    "attr": {
+      "property": "",
+      "value": ""
+    },
+    "regex": "",
+    "args": [],
+    "createdAt": "2026-02-12T11:02:58.813Z",
+    "updatedAt": "2026-02-12T11:02:58.864Z"
+  },
+  {
+    "_id": "698db3627fa99fbcdb747865",
+    "type": "parentHasOnlyOneChildTag",
+    "taskRef": "698db3627fa99fbcdb747867",
+    "requirement": "No other elements added inside <template>",
+    "language": "html",
+    "tag": "p",
+    "parentTag": "template",
+    "selector": "",
+    "style": {
+      "property": "",
+      "value": ""
+    },
+    "value": "",
+    "attr": {
+      "property": "",
+      "value": ""
+    },
+    "regex": "",
+    "args": [],
+    "createdAt": "2026-02-12T11:02:58.825Z",
+    "updatedAt": "2026-02-12T11:02:58.864Z"
+  },
+  {
+    "_id": "698db3627fa99fbcdb74785f",
+    "type": "lwcJsFileUnchanged",
+    "taskRef": "698db3627fa99fbcdb747867",
+    "requirement": "JS file is not modified",
+    "language": "javascript",
+    "tag": "",
+    "selector": "",
+    "style": {
+      "property": "",
+      "value": ""
+    },
+    "attr": {
+      "property": "",
+      "value": ""
+    },
+    "expectedValue": "",
+    "regex": "",
+    "args": [
+      ""
+    ],
+    "createdAt": "2026-02-12T11:02:58.787Z",
+    "updatedAt": "2026-02-12T11:02:58.864Z"
+  },
+  {
+    "_id": "698db3627fa99fbcdb74785d",
+    "type": "lwcClassExtendsLightningElement",
+    "taskRef": "698db3627fa99fbcdb747867",
+    "requirement": "Class extends LightningElement",
+    "language": "javascript",
+    "tag": "",
+    "selector": "",
+    "style": {
+      "property": "",
+      "value": ""
+    },
+    "attr": {
+      "property": "",
+      "value": ""
+    },
+    "expectedValue": "",
+    "regex": "",
+    "args": [
+      ""
+    ],
+    "createdAt": "2026-02-12T11:02:58.755Z",
+    "updatedAt": "2026-02-12T11:02:58.864Z"
+  },
+  {
+    "_id": "698db3627fa99fbcdb747861",
+    "type": "tagExists",
+    "taskRef": "698db3627fa99fbcdb747867",
+    "requirement": "Template contains a <p> element",
+    "language": "html",
+    "tag": "p",
+    "selector": "",
+    "style": {
+      "property": "",
+      "value": ""
+    },
+    "attr": {
+      "property": "",
+      "value": ""
+    },
+    "expectedValue": "",
+    "regex": "",
+    "args": [
+      ""
+    ],
+    "createdAt": "2026-02-12T11:02:58.800Z",
+    "updatedAt": "2026-02-12T11:02:58.864Z"
+  },
+  {
+    "_id": "698dba5d7fa99fbcdb7478c7",
+    "type": "elContainsText",
+    "taskRef": "698dba5d7fa99fbcdb7478c9",
+    "requirement": "Template <p> contains {greeting}",
+    "language": "html",
+    "tag": "p",
+    "parentTag": "",
+    "selector": "",
+    "style": {
+      "property": "",
+      "value": ""
+    },
+    "value": "{greeting}",
+    "attr": {
+      "property": "",
+      "value": ""
+    },
+    "regex": "",
+    "args": [
+      ""
+    ],
+    "createdAt": "2026-02-12T11:32:45.731Z",
+    "updatedAt": "2026-02-13T17:25:08.909Z",
+    "clsName": "",
+    "expectedResultType": "",
+    "expectedValue": "",
+    "fieldName": "",
+    "fnName": "",
+    "lwcComponentName": "parent",
+    "obj": {
+      "property": "",
+      "value": ""
+    }
+  },
+  {
+    "_id": "698dba5d7fa99fbcdb7478c1",
+    "type": "lwcClassExtendsLightningElement",
+    "taskRef": "698dba5d7fa99fbcdb7478c9",
+    "requirement": "Class extends LightningElement",
+    "language": "javascript",
+    "tag": "",
+    "selector": "",
+    "style": {
+      "property": "",
+      "value": ""
+    },
+    "attr": {
+      "property": "",
+      "value": ""
+    },
+    "expectedValue": "",
+    "regex": "",
+    "args": [
+      ""
+    ],
+    "createdAt": "2026-02-12T11:32:45.683Z",
+    "updatedAt": "2026-02-12T12:25:12.100Z",
+    "expectedResultType": "",
+    "lwcComponentName": "parent",
+    "parentTag": "",
+    "value": ""
+  },
+  {
+    "_id": "698dba5d7fa99fbcdb7478c3",
+    "type": "lwcClassFieldExists",
+    "taskRef": "698dba5d7fa99fbcdb7478c9",
+    "requirement": "Property greeting exists on the class",
+    "language": "javascript",
+    "tag": "",
+    "selector": "",
+    "style": {
+      "property": "",
+      "value": ""
+    },
+    "attr": {
+      "property": "",
+      "value": ""
+    },
+    "expectedValue": "",
+    "regex": "",
+    "args": [
+      ""
+    ],
+    "createdAt": "2026-02-12T11:32:45.706Z",
+    "updatedAt": "2026-02-12T14:28:25.790Z",
+    "expectedResultType": "",
+    "lwcComponentName": "parent",
+    "parentTag": "",
+    "value": "",
+    "clsName": "",
+    "fieldName": "greeting",
+    "fnName": ""
+  },
+  {
+    "_id": "698dba5d7fa99fbcdb7478c5",
+    "type": "lwcClassFieldEqualsValue",
+    "taskRef": "698dba5d7fa99fbcdb7478c9",
+    "requirement": "Property greeting value is \"Hello from a property!\"",
+    "language": "javascript",
+    "tag": "",
+    "selector": "",
+    "style": {
+      "property": "",
+      "value": ""
+    },
+    "attr": {
+      "property": "",
+      "value": ""
+    },
+    "expectedValue": "Hello from a property!",
+    "regex": "",
+    "args": [
+      ""
+    ],
+    "createdAt": "2026-02-12T11:32:45.718Z",
+    "updatedAt": "2026-02-13T17:26:21.109Z",
+    "clsName": "",
+    "expectedResultType": "string",
+    "fieldName": "greeting",
+    "fnName": "",
+    "lwcComponentName": "parent",
+    "parentTag": "",
+    "value": "",
+    "obj": {
+      "property": "",
+      "value": ""
+    }
+  },
+  {
+    "_id": "698de51b7fa99fbcdb747bd4",
+    "type": "elContentIsNotHardcoded",
+    "taskRef": "698dba5d7fa99fbcdb7478c9",
+    "requirement": "<p> does NOT contain hardcoded text",
+    "language": "html",
+    "tag": "p",
+    "parentTag": "",
+    "selector": "",
+    "style": {
+      "property": "",
+      "value": ""
+    },
+    "value": "Hello from a property!",
+    "attr": {
+      "property": "",
+      "value": ""
+    },
+    "clsName": "",
+    "fnName": "",
+    "fieldName": "",
+    "expectedValue": "",
+    "regex": "",
+    "args": [
+      ""
+    ],
+    "createdAt": "2026-02-12T14:35:07.550Z",
+    "updatedAt": "2026-02-13T17:25:15.425Z",
+    "expectedResultType": "",
+    "lwcComponentName": "parent",
+    "obj": {
+      "property": "",
+      "value": ""
+    }
+  },
+  {
+    "_id": "698de6dd7fa99fbcdb747c07",
+    "type": "lwcClassFieldExists",
+    "taskRef": "698de58d7fa99fbcdb747bf9",
+    "requirement": "Property firstName exists on the class",
+    "language": "javascript",
+    "tag": "",
+    "parentTag": "",
+    "selector": "",
+    "style": {
+      "property": "",
+      "value": ""
+    },
+    "value": "",
+    "attr": {
+      "property": "",
+      "value": ""
+    },
+    "clsName": "",
+    "fnName": "",
+    "fieldName": "firstName",
+    "expectedValue": "",
+    "regex": "",
+    "args": [
+      ""
+    ],
+    "createdAt": "2026-02-12T14:42:37.807Z",
+    "updatedAt": "2026-02-13T17:27:54.376Z",
+    "expectedResultType": "",
+    "lwcComponentName": "parent",
+    "obj": {
+      "property": "",
+      "value": ""
+    }
+  },
+  {
+    "_id": "698de6dd7fa99fbcdb747c0b",
+    "type": "lwcClassFieldExists",
+    "taskRef": "698de58d7fa99fbcdb747bf9",
+    "requirement": "Property lastName exists on the class",
+    "language": "javascript",
+    "tag": "",
+    "parentTag": "",
+    "selector": "",
+    "style": {
+      "property": "",
+      "value": ""
+    },
+    "value": "",
+    "attr": {
+      "property": "",
+      "value": ""
+    },
+    "clsName": "",
+    "fnName": "",
+    "fieldName": "lastName",
+    "expectedValue": "",
+    "regex": "",
+    "args": [
+      ""
+    ],
+    "createdAt": "2026-02-12T14:42:37.845Z",
+    "updatedAt": "2026-02-13T17:28:07.594Z",
+    "expectedResultType": "",
+    "lwcComponentName": "parent",
+    "obj": {
+      "property": "",
+      "value": ""
+    }
+  },
+  {
+    "_id": "698de6dd7fa99fbcdb747c13",
+    "type": "tagExists",
+    "taskRef": "698de58d7fa99fbcdb747bf9",
+    "requirement": "<template> contains <p>",
+    "language": "html",
+    "tag": "p",
+    "parentTag": "",
+    "selector": "",
+    "style": {
+      "property": "",
+      "value": ""
+    },
+    "value": "",
+    "attr": {
+      "property": "",
+      "value": ""
+    },
+    "clsName": "",
+    "fnName": "",
+    "fieldName": "",
+    "expectedValue": "",
+    "regex": "",
+    "args": [
+      ""
+    ],
+    "createdAt": "2026-02-12T14:42:37.894Z",
+    "updatedAt": "2026-02-13T23:43:39.955Z",
+    "expectedResultType": "",
+    "lwcComponentName": "parent",
+    "obj": {
+      "property": "",
+      "value": ""
+    }
+  },
+  {
+    "_id": "698de6dd7fa99fbcdb747c0d",
+    "type": "lwcClassFieldEqualsValue",
+    "taskRef": "698de58d7fa99fbcdb747bf9",
+    "requirement": "Property lastName value is \"Chen\"",
+    "language": "javascript",
+    "tag": "",
+    "parentTag": "",
+    "selector": "",
+    "style": {
+      "property": "",
+      "value": ""
+    },
+    "value": "",
+    "attr": {
+      "property": "",
+      "value": ""
+    },
+    "clsName": "",
+    "fnName": "",
+    "fieldName": "lastName",
+    "expectedValue": "Chen",
+    "regex": "",
+    "args": [
+      ""
+    ],
+    "createdAt": "2026-02-12T14:42:37.857Z",
+    "updatedAt": "2026-02-13T17:31:06.941Z",
+    "expectedResultType": "string",
+    "lwcComponentName": "parent",
+    "obj": {
+      "property": "",
+      "value": ""
+    }
+  },
+  {
+    "_id": "698de6dd7fa99fbcdb747c15",
+    "type": "elContentIsNotHardcoded",
+    "taskRef": "698de58d7fa99fbcdb747bf9",
+    "requirement": "<p> does NOT contain hardcoded \"Sarah Chen\"",
+    "language": "html",
+    "tag": "p",
+    "parentTag": "",
+    "selector": "",
+    "style": {
+      "property": "",
+      "value": ""
+    },
+    "value": "Sarah Chen",
+    "attr": {
+      "property": "",
+      "value": ""
+    },
+    "clsName": "",
+    "fnName": "",
+    "fieldName": "",
+    "expectedValue": "",
+    "regex": "",
+    "args": [
+      ""
+    ],
+    "createdAt": "2026-02-12T14:42:37.905Z",
+    "updatedAt": "2026-02-13T23:44:52.995Z",
+    "expectedResultType": "",
+    "lwcComponentName": "parent",
+    "obj": {
+      "property": "",
+      "value": ""
+    }
+  },
+  {
+    "_id": "698de6dd7fa99fbcdb747c09",
+    "type": "lwcClassFieldEqualsValue",
+    "taskRef": "698de58d7fa99fbcdb747bf9",
+    "requirement": "Property firstName value is \"Sarah\"",
+    "language": "javascript",
+    "tag": "",
+    "parentTag": "",
+    "selector": "",
+    "style": {
+      "property": "",
+      "value": ""
+    },
+    "value": "",
+    "attr": {
+      "property": "",
+      "value": ""
+    },
+    "clsName": "",
+    "fnName": "",
+    "fieldName": "firstName",
+    "expectedValue": "Sarah",
+    "regex": "",
+    "args": [
+      ""
+    ],
+    "createdAt": "2026-02-12T14:42:37.832Z",
+    "updatedAt": "2026-02-13T17:31:18.129Z",
+    "expectedResultType": "string",
+    "lwcComponentName": "parent",
+    "obj": {
+      "property": "",
+      "value": ""
+    }
+  },
+  {
+    "_id": "698de6dd7fa99fbcdb747c0f",
+    "type": "elContainsText",
+    "taskRef": "698de58d7fa99fbcdb747bf9",
+    "requirement": "Template <p> contains {firstName} and {lastName}",
+    "language": "html",
+    "tag": "p",
+    "parentTag": "",
+    "selector": "",
+    "style": {
+      "property": "",
+      "value": ""
+    },
+    "value": "{firstName} {lastName}",
+    "attr": {
+      "property": "",
+      "value": ""
+    },
+    "clsName": "",
+    "fnName": "",
+    "fieldName": "",
+    "expectedValue": "",
+    "regex": "",
+    "args": [
+      ""
+    ],
+    "createdAt": "2026-02-12T14:42:37.870Z",
+    "updatedAt": "2026-02-13T23:41:08.706Z",
+    "expectedResultType": "",
+    "lwcComponentName": "parent",
+    "obj": {
+      "property": "",
+      "value": ""
+    }
+  },
+  {
+    "_id": "698df1aa7fa99fbcdb747c91",
+    "type": "elHasAttribute",
+    "taskRef": "698de8637fa99fbcdb747c4b",
+    "requirement": "<button> has onclick attribute",
+    "language": "javascript",
+    "tag": "button",
+    "parentTag": "",
+    "selector": "",
+    "style": {
+      "property": "",
+      "value": ""
+    },
+    "value": "",
+    "attr": {
+      "property": "onclick",
+      "value": ""
+    },
+    "clsName": "",
+    "fnName": "",
+    "fieldName": "",
+    "expectedValue": "",
+    "regex": "",
+    "args": [
+      ""
+    ],
+    "createdAt": "2026-02-12T15:28:42.560Z",
+    "updatedAt": "2026-02-12T17:27:20.762Z",
+    "expectedResultType": "",
+    "lwcComponentName": "parent",
+    "obj": {
+      "property": "",
+      "value": ""
+    }
+  },
+  {
+    "_id": "698df1aa7fa99fbcdb747c97",
+    "type": "elHasAttribute",
+    "taskRef": "698de8637fa99fbcdb747c4b",
+    "requirement": "<p> has lwc:if directive",
+    "language": "html",
+    "tag": "p",
+    "parentTag": "",
+    "selector": "",
+    "style": {
+      "property": "",
+      "value": ""
+    },
+    "value": "",
+    "attr": {
+      "property": "lwc:if",
+      "value": ""
+    },
+    "clsName": "",
+    "fnName": "",
+    "fieldName": "",
+    "expectedValue": "",
+    "regex": "",
+    "args": [
+      ""
+    ],
+    "createdAt": "2026-02-12T15:28:42.599Z",
+    "updatedAt": "2026-02-12T17:34:32.032Z",
+    "expectedResultType": "",
+    "lwcComponentName": "parent",
+    "obj": {
+      "property": "",
+      "value": ""
+    }
+  },
+  {
+    "_id": "698df1aa7fa99fbcdb747c8f",
+    "type": "elContainsText",
+    "taskRef": "698de8637fa99fbcdb747c4b",
+    "requirement": "<button> text content is \"Toggle Message\"",
+    "language": "html",
+    "tag": "button",
+    "parentTag": "",
+    "selector": "",
+    "style": {
+      "property": "",
+      "value": ""
+    },
+    "value": "Toggle Message",
+    "attr": {
+      "property": "",
+      "value": ""
+    },
+    "clsName": "",
+    "fnName": "",
+    "fieldName": "",
+    "expectedValue": "",
+    "regex": "",
+    "args": [
+      ""
+    ],
+    "createdAt": "2026-02-12T15:28:42.547Z",
+    "updatedAt": "2026-02-12T17:27:38.562Z",
+    "expectedResultType": "",
+    "lwcComponentName": "parent",
+    "obj": {
+      "property": "",
+      "value": ""
+    }
+  },
+  {
+    "_id": "698df1aa7fa99fbcdb747c89",
+    "type": "lwsMethodExists",
+    "taskRef": "698de8637fa99fbcdb747c4b",
+    "requirement": "Method toggleVisibility exists",
+    "language": "javascript",
+    "tag": "",
+    "parentTag": "",
+    "selector": "",
+    "style": {
+      "property": "",
+      "value": ""
+    },
+    "value": "",
+    "attr": {
+      "property": "",
+      "value": ""
+    },
+    "clsName": "",
+    "fnName": "",
+    "fieldName": "toggleVisibility",
+    "expectedValue": "",
+    "regex": "",
+    "args": [
+      ""
+    ],
+    "createdAt": "2026-02-12T15:28:42.508Z",
+    "updatedAt": "2026-02-12T17:32:11.868Z",
+    "expectedResultType": "",
+    "lwcComponentName": "parent",
+    "obj": {
+      "property": "",
+      "value": ""
+    }
+  },
+  {
+    "_id": "698df1aa7fa99fbcdb747c8b",
+    "type": "lwcMethodReferencesThisField",
+    "taskRef": "698de8637fa99fbcdb747c4b",
+    "requirement": "Method body references this.isVisible",
+    "language": "javascript",
+    "tag": "",
+    "parentTag": "",
+    "selector": "",
+    "style": {
+      "property": "",
+      "value": ""
+    },
+    "value": "",
+    "attr": {
+      "property": "",
+      "value": ""
+    },
+    "clsName": "",
+    "fnName": "toggleVisibility",
+    "fieldName": "isVisible",
+    "expectedValue": "",
+    "regex": "",
+    "args": [
+      ""
+    ],
+    "createdAt": "2026-02-12T15:28:42.521Z",
+    "updatedAt": "2026-02-13T15:46:00.922Z",
+    "expectedResultType": "",
+    "lwcComponentName": "parent",
+    "obj": {
+      "property": "",
+      "value": ""
+    }
+  },
+  {
+    "_id": "698df1aa7fa99fbcdb747c8d",
+    "type": "tagExists",
+    "taskRef": "698de8637fa99fbcdb747c4b",
+    "requirement": "<button> element exists in template",
+    "language": "html",
+    "tag": "button",
+    "parentTag": "",
+    "selector": "",
+    "style": {
+      "property": "",
+      "value": ""
+    },
+    "value": "",
+    "attr": {
+      "property": "",
+      "value": ""
+    },
+    "clsName": "",
+    "fnName": "",
+    "fieldName": "",
+    "expectedValue": "",
+    "regex": "",
+    "args": [
+      ""
+    ],
+    "createdAt": "2026-02-12T15:28:42.534Z",
+    "updatedAt": "2026-02-13T23:39:17.390Z",
+    "expectedResultType": "",
+    "lwcComponentName": "parent",
+    "obj": {
+      "property": "",
+      "value": ""
+    }
+  },
+  {
+    "_id": "698df1aa7fa99fbcdb747c95",
+    "type": "tagExists",
+    "taskRef": "698de8637fa99fbcdb747c4b",
+    "requirement": "<p> element exists in template",
+    "language": "html",
+    "tag": "p",
+    "parentTag": "",
+    "selector": "",
+    "style": {
+      "property": "",
+      "value": ""
+    },
+    "value": "",
+    "attr": {
+      "property": "",
+      "value": ""
+    },
+    "clsName": "",
+    "fnName": "",
+    "fieldName": "",
+    "expectedValue": "",
+    "regex": "",
+    "args": [
+      ""
+    ],
+    "createdAt": "2026-02-12T15:28:42.587Z",
+    "updatedAt": "2026-02-13T23:38:53.554Z",
+    "expectedResultType": "",
+    "lwcComponentName": "parent",
+    "obj": {
+      "property": "",
+      "value": ""
+    }
+  },
+  {
+    "_id": "698df1aa7fa99fbcdb747c9b",
+    "type": "elContainsText",
+    "taskRef": "698de8637fa99fbcdb747c4b",
+    "requirement": "<p> text content is \"Now you see me!\"",
+    "language": "html",
+    "tag": "p",
+    "parentTag": "",
+    "selector": "",
+    "style": {
+      "property": "",
+      "value": ""
+    },
+    "value": "Now you see me!",
+    "attr": {
+      "property": "",
+      "value": ""
+    },
+    "clsName": "",
+    "fnName": "",
+    "fieldName": "",
+    "expectedValue": "",
+    "regex": "",
+    "args": [
+      ""
+    ],
+    "createdAt": "2026-02-12T15:28:42.623Z",
+    "updatedAt": "2026-02-12T17:25:07.880Z",
+    "expectedResultType": "",
+    "lwcComponentName": "parent",
+    "obj": {
+      "property": "",
+      "value": ""
+    }
+  },
+  {
+    "_id": "698df1aa7fa99fbcdb747c85",
+    "type": "lwcClassFieldExists",
+    "taskRef": "698de8637fa99fbcdb747c4b",
+    "requirement": "Property isVisible exists on the class",
+    "language": "javascript",
+    "tag": "",
+    "parentTag": "",
+    "selector": "",
+    "style": {
+      "property": "",
+      "value": ""
+    },
+    "value": "",
+    "attr": {
+      "property": "",
+      "value": ""
+    },
+    "clsName": "",
+    "fnName": "",
+    "fieldName": "isVisible",
+    "expectedValue": "",
+    "regex": "",
+    "args": [
+      ""
+    ],
+    "createdAt": "2026-02-12T15:28:42.468Z",
+    "updatedAt": "2026-02-12T17:23:20.520Z",
+    "expectedResultType": "",
+    "lwcComponentName": "parent",
+    "obj": {
+      "property": "",
+      "value": ""
+    }
+  },
+  {
+    "_id": "698df1aa7fa99fbcdb747c87",
+    "type": "lwcClassFieldEqualsValue",
+    "taskRef": "698de8637fa99fbcdb747c4b",
+    "requirement": "Property isVisible initial value is false",
+    "language": "javascript",
+    "tag": "",
+    "parentTag": "",
+    "selector": "",
+    "style": {
+      "property": "",
+      "value": ""
+    },
+    "value": "",
+    "attr": {
+      "property": "",
+      "value": ""
+    },
+    "clsName": "",
+    "fnName": "",
+    "fieldName": "isVisible",
+    "expectedValue": "false",
+    "regex": "",
+    "args": [
+      ""
+    ],
+    "createdAt": "2026-02-12T15:28:42.496Z",
+    "updatedAt": "2026-02-13T15:41:25.112Z",
+    "expectedResultType": "boolean",
+    "lwcComponentName": "parent",
+    "obj": {
+      "property": "",
+      "value": ""
+    }
+  },
+  {
+    "_id": "698df1aa7fa99fbcdb747c93",
+    "type": "elAttributeEqualsValue",
+    "taskRef": "698de8637fa99fbcdb747c4b",
+    "requirement": "onclick value is {toggleVisibility}",
+    "language": "html",
+    "tag": "button",
+    "parentTag": "",
+    "selector": "",
+    "style": {
+      "property": "",
+      "value": ""
+    },
+    "value": "",
+    "attr": {
+      "property": "onclick",
+      "value": "{toggleVisibility}"
+    },
+    "clsName": "",
+    "fnName": "",
+    "fieldName": "",
+    "expectedValue": "",
+    "regex": "",
+    "args": [
+      ""
+    ],
+    "createdAt": "2026-02-12T15:28:42.573Z",
+    "updatedAt": "2026-02-12T17:27:02.393Z",
+    "expectedResultType": "",
+    "lwcComponentName": "parent",
+    "obj": {
+      "property": "",
+      "value": ""
+    }
+  },
+  {
+    "_id": "698df1aa7fa99fbcdb747c99",
+    "type": "elAttributeEqualsValue",
+    "taskRef": "698de8637fa99fbcdb747c4b",
+    "requirement": "lwc:if value is {isVisible}",
+    "language": "html",
+    "tag": "p",
+    "parentTag": "",
+    "selector": "",
+    "style": {
+      "property": "",
+      "value": ""
+    },
+    "value": "",
+    "attr": {
+      "property": "lwc:if",
+      "value": "{isVisible}"
+    },
+    "clsName": "",
+    "fnName": "",
+    "fieldName": "",
+    "expectedValue": "",
+    "regex": "",
+    "args": [
+      ""
+    ],
+    "createdAt": "2026-02-12T15:28:42.611Z",
+    "updatedAt": "2026-02-12T17:24:56.498Z",
+    "expectedResultType": "",
+    "lwcComponentName": "parent",
+    "obj": {
+      "property": "",
+      "value": ""
+    }
+  },
+  {
+    "_id": "698df5997fa99fbcdb747cc4",
+    "type": "lwcClassFieldExists",
+    "taskRef": "698df2087fa99fbcdb747cac",
+    "requirement": "Property clouds exists on the class",
+    "language": "javascript",
+    "tag": "",
+    "parentTag": "",
+    "selector": "",
+    "style": {
+      "property": "",
+      "value": ""
+    },
+    "value": "",
+    "attr": {
+      "property": "",
+      "value": ""
+    },
+    "clsName": "",
+    "fnName": "",
+    "fieldName": "clouds",
+    "expectedValue": "",
+    "regex": "",
+    "args": [
+      ""
+    ],
+    "createdAt": "2026-02-12T15:45:29.763Z",
+    "updatedAt": "2026-02-13T15:52:09.846Z",
+    "expectedResultType": "",
+    "lwcComponentName": "parent",
+    "obj": {
+      "property": "",
+      "value": ""
+    }
+  },
+  {
+    "_id": "698df89bd5ba7aee59a1567b",
+    "type": "lwcClassFieldIsArray",
+    "taskRef": "698df2087fa99fbcdb747cac",
+    "requirement": "clouds is an array",
+    "language": "javascript",
+    "tag": "",
+    "parentTag": "",
+    "selector": "",
+    "style": {
+      "property": "",
+      "value": ""
+    },
+    "value": "",
+    "attr": {
+      "property": "",
+      "value": ""
+    },
+    "clsName": "",
+    "fnName": "",
+    "fieldName": "clouds",
+    "expectedValue": "",
+    "obj": {
+      "property": "",
+      "value": ""
+    },
+    "regex": "",
+    "args": [
+      ""
+    ],
+    "createdAt": "2026-02-12T15:58:19.173Z",
+    "updatedAt": "2026-02-12T15:58:35.237Z",
+    "expectedResultType": "",
+    "lwcComponentName": "parent"
+  },
+  {
+    "_id": "698df89bd5ba7aee59a1567d",
+    "type": "lwcClassArrayFieldLengthEquals",
+    "taskRef": "698df2087fa99fbcdb747cac",
+    "requirement": "clouds has exactly 3 elements",
+    "language": "javascript",
+    "tag": "",
+    "parentTag": "",
+    "selector": "",
+    "style": {
+      "property": "",
+      "value": ""
+    },
+    "value": "",
+    "attr": {
+      "property": "",
+      "value": ""
+    },
+    "clsName": "",
+    "fnName": "",
+    "fieldName": "clouds",
+    "expectedValue": "3",
+    "obj": {
+      "property": "",
+      "value": ""
+    },
+    "regex": "",
+    "args": [
+      ""
+    ],
+    "createdAt": "2026-02-12T15:58:19.204Z",
+    "updatedAt": "2026-02-13T16:13:11.474Z",
+    "expectedResultType": "number",
+    "lwcComponentName": "parent"
+  },
+  {
+    "_id": "698df89bd5ba7aee59a1567f",
+    "type": "lwcArrayObjectsHaveProperty",
+    "taskRef": "698df2087fa99fbcdb747cac",
+    "requirement": "Each element has an id property",
+    "language": "javascript",
+    "tag": "",
+    "parentTag": "",
+    "selector": "",
+    "style": {
+      "property": "",
+      "value": ""
+    },
+    "value": "",
+    "attr": {
+      "property": "",
+      "value": ""
+    },
+    "clsName": "",
+    "fnName": "",
+    "fieldName": "clouds",
+    "expectedValue": "",
+    "obj": {
+      "property": "id",
+      "value": ""
+    },
+    "regex": "",
+    "args": [
+      ""
+    ],
+    "createdAt": "2026-02-12T15:58:19.218Z",
+    "updatedAt": "2026-02-13T16:12:48.836Z",
+    "expectedResultType": "",
+    "lwcComponentName": "parent"
+  },
+  {
+    "_id": "698df9f0d5ba7aee59a1569d",
+    "type": "lwcArrayObjectsHaveProperty",
+    "taskRef": "698df2087fa99fbcdb747cac",
+    "requirement": "Each element has a name property",
+    "language": "javascript",
+    "tag": "",
+    "parentTag": "",
+    "selector": "",
+    "style": {
+      "property": "",
+      "value": ""
+    },
+    "value": "",
+    "attr": {
+      "property": "",
+      "value": ""
+    },
+    "clsName": "",
+    "fnName": "",
+    "fieldName": "clouds",
+    "expectedValue": "",
+    "obj": {
+      "property": "name",
+      "value": ""
+    },
+    "regex": "",
+    "args": [
+      ""
+    ],
+    "createdAt": "2026-02-12T16:04:00.379Z",
+    "updatedAt": "2026-02-12T16:08:46.711Z",
+    "expectedResultType": "",
+    "lwcComponentName": "parent"
+  },
+  {
+    "_id": "698dfcfbd5ba7aee59a156bd",
+    "type": "lwcArrayObjectsPropMatchesExpected",
+    "taskRef": "698df2087fa99fbcdb747cac",
+    "requirement": "Names are \"Sales Cloud\", \"Service Cloud\", \"Marketing Cloud\"",
+    "language": "javascript",
+    "tag": "",
+    "parentTag": "",
+    "selector": "",
+    "style": {
+      "property": "",
+      "value": ""
+    },
+    "value": "",
+    "attr": {
+      "property": "",
+      "value": ""
+    },
+    "clsName": "",
+    "fnName": "",
+    "fieldName": "clouds",
+    "expectedValue": "",
+    "obj": {
+      "property": "name",
+      "value": ""
+    },
+    "regex": "",
+    "args": [
+      "Sales Cloud",
+      "Service Cloud",
+      "Marketing Cloud"
+    ],
+    "createdAt": "2026-02-12T16:16:59.566Z",
+    "updatedAt": "2026-02-12T16:35:45.170Z",
+    "expectedResultType": "",
+    "lwcComponentName": "parent"
+  },
+  {
+    "_id": "698e0425d5ba7aee59a156fc",
+    "type": "elHasAttribute",
+    "taskRef": "698df2087fa99fbcdb747cac",
+    "requirement": "<template> has for:each attribute",
+    "language": "html",
+    "tag": "template",
+    "parentTag": "",
+    "selector": "",
+    "style": {
+      "property": "",
+      "value": ""
+    },
+    "value": "",
+    "attr": {
+      "property": "for:each",
+      "value": ""
+    },
+    "clsName": "",
+    "fnName": "",
+    "fieldName": "",
+    "expectedValue": "",
+    "obj": {
+      "property": "",
+      "value": ""
+    },
+    "regex": "",
+    "args": [
+      ""
+    ],
+    "createdAt": "2026-02-12T16:47:33.987Z",
+    "updatedAt": "2026-02-13T16:03:53.778Z",
+    "expectedResultType": "",
+    "lwcComponentName": "parent"
+  },
+  {
+    "_id": "698e0425d5ba7aee59a156fa",
+    "type": "isTagChild",
+    "taskRef": "698df2087fa99fbcdb747cac",
+    "requirement": "A <template> element exists inside <ul>",
+    "language": "html",
+    "tag": "template",
+    "parentTag": "ul",
+    "selector": "",
+    "style": {
+      "property": "",
+      "value": ""
+    },
+    "value": "",
+    "attr": {
+      "property": "",
+      "value": ""
+    },
+    "clsName": "",
+    "fnName": "",
+    "fieldName": "",
+    "expectedValue": "",
+    "obj": {
+      "property": "",
+      "value": ""
+    },
+    "regex": "",
+    "args": [
+      ""
+    ],
+    "createdAt": "2026-02-12T16:47:33.984Z",
+    "updatedAt": "2026-02-13T16:04:06.748Z",
+    "expectedResultType": "",
+    "lwcComponentName": "parent"
+  },
+  {
+    "_id": "698e0425d5ba7aee59a15702",
+    "type": "isTagChild",
+    "taskRef": "698df2087fa99fbcdb747cac",
+    "requirement": "<li> element exists inside <template>",
+    "language": "html",
+    "tag": "li",
+    "parentTag": "template",
+    "selector": "",
+    "style": {
+      "property": "",
+      "value": ""
+    },
+    "value": "",
+    "attr": {
+      "property": "",
+      "value": ""
+    },
+    "clsName": "",
+    "fnName": "",
+    "fieldName": "",
+    "expectedValue": "",
+    "obj": {
+      "property": "",
+      "value": ""
+    },
+    "regex": "",
+    "args": [
+      ""
+    ],
+    "createdAt": "2026-02-12T16:47:33.995Z",
+    "updatedAt": "2026-02-13T23:27:57.996Z",
+    "expectedResultType": "",
+    "lwcComponentName": "parent"
+  },
+  {
+    "_id": "698e0425d5ba7aee59a15706",
+    "type": "elAttributeEqualsValue",
+    "taskRef": "698df2087fa99fbcdb747cac",
+    "requirement": "key references iterator item's id (e.g. {cloud.id})",
+    "language": "html",
+    "tag": "li",
+    "parentTag": "",
+    "selector": "",
+    "style": {
+      "property": "",
+      "value": ""
+    },
+    "value": "",
+    "attr": {
+      "property": "key",
+      "value": "{cloud.id}"
+    },
+    "clsName": "",
+    "fnName": "",
+    "fieldName": "",
+    "expectedValue": "",
+    "obj": {
+      "property": "",
+      "value": ""
+    },
+    "regex": "",
+    "args": [
+      ""
+    ],
+    "createdAt": "2026-02-12T16:47:33.999Z",
+    "updatedAt": "2026-02-13T15:53:30.545Z",
+    "expectedResultType": "",
+    "lwcComponentName": "parent"
+  },
+  {
+    "_id": "698e0426d5ba7aee59a15708",
+    "type": "elContainsText",
+    "taskRef": "698df2087fa99fbcdb747cac",
+    "requirement": "<li> body references iterator item's name (e.g. {cloud.name})",
+    "language": "html",
+    "tag": "li",
+    "parentTag": "",
+    "selector": "",
+    "style": {
+      "property": "",
+      "value": ""
+    },
+    "value": "{cloud.name}",
+    "attr": {
+      "property": "",
+      "value": ""
+    },
+    "clsName": "",
+    "fnName": "",
+    "fieldName": "",
+    "expectedValue": "",
+    "obj": {
+      "property": "",
+      "value": ""
+    },
+    "regex": "",
+    "args": [
+      ""
+    ],
+    "createdAt": "2026-02-12T16:47:34.001Z",
+    "updatedAt": "2026-02-13T17:05:05.189Z",
+    "expectedResultType": "",
+    "lwcComponentName": "parent"
+  },
+  {
+    "_id": "698e0425d5ba7aee59a156f4",
+    "type": "tagExists",
+    "taskRef": "698df2087fa99fbcdb747cac",
+    "requirement": "<h3> exists in tempate",
+    "language": "html",
+    "tag": "h3",
+    "parentTag": "",
+    "selector": "",
+    "style": {
+      "property": "",
+      "value": ""
+    },
+    "value": "",
+    "attr": {
+      "property": "",
+      "value": ""
+    },
+    "clsName": "",
+    "fnName": "",
+    "fieldName": "",
+    "expectedValue": "",
+    "obj": {
+      "property": "",
+      "value": ""
+    },
+    "regex": "",
+    "args": [
+      ""
+    ],
+    "createdAt": "2026-02-12T16:47:33.976Z",
+    "updatedAt": "2026-02-13T23:37:39.335Z",
+    "expectedResultType": "",
+    "lwcComponentName": "parent"
+  },
+  {
+    "_id": "698e0425d5ba7aee59a156f6",
+    "type": "elContainsText",
+    "taskRef": "698df2087fa99fbcdb747cac",
+    "requirement": "<h3> exists with text \"Salesforce Clouds\"",
+    "language": "html",
+    "tag": "h3",
+    "parentTag": "",
+    "selector": "",
+    "style": {
+      "property": "",
+      "value": ""
+    },
+    "value": "Salesforce Clouds",
+    "attr": {
+      "property": "",
+      "value": ""
+    },
+    "clsName": "",
+    "fnName": "",
+    "fieldName": "",
+    "expectedValue": "",
+    "obj": {
+      "property": "",
+      "value": ""
+    },
+    "regex": "",
+    "args": [
+      ""
+    ],
+    "createdAt": "2026-02-12T16:47:33.978Z",
+    "updatedAt": "2026-02-13T15:52:42.028Z",
+    "expectedResultType": "",
+    "lwcComponentName": "parent"
+  },
+  {
+    "_id": "698e0425d5ba7aee59a15704",
+    "type": "elHasAttribute",
+    "taskRef": "698df2087fa99fbcdb747cac",
+    "requirement": "<li> has key attribute",
+    "language": "html",
+    "tag": "li",
+    "parentTag": "",
+    "selector": "",
+    "style": {
+      "property": "",
+      "value": ""
+    },
+    "value": "",
+    "attr": {
+      "property": "key",
+      "value": ""
+    },
+    "clsName": "",
+    "fnName": "",
+    "fieldName": "",
+    "expectedValue": "",
+    "obj": {
+      "property": "",
+      "value": ""
+    },
+    "regex": "",
+    "args": [
+      ""
+    ],
+    "createdAt": "2026-02-12T16:47:33.997Z",
+    "updatedAt": "2026-02-13T15:53:24.589Z",
+    "expectedResultType": "",
+    "lwcComponentName": "parent"
+  },
+  {
+    "_id": "698e0425d5ba7aee59a156fe",
+    "type": "elAttributeEqualsValue",
+    "taskRef": "698df2087fa99fbcdb747cac",
+    "requirement": "for:each value is {clouds}",
+    "language": "html",
+    "tag": "template",
+    "parentTag": "",
+    "selector": "",
+    "style": {
+      "property": "",
+      "value": ""
+    },
+    "value": "",
+    "attr": {
+      "property": "for:each",
+      "value": "{clouds}"
+    },
+    "clsName": "",
+    "fnName": "",
+    "fieldName": "",
+    "expectedValue": "",
+    "obj": {
+      "property": "",
+      "value": ""
+    },
+    "regex": "",
+    "args": [
+      ""
+    ],
+    "createdAt": "2026-02-12T16:47:33.990Z",
+    "updatedAt": "2026-02-13T16:09:57.055Z",
+    "expectedResultType": "",
+    "lwcComponentName": "parent"
+  },
+  {
+    "_id": "698e0425d5ba7aee59a15700",
+    "type": "elHasAttribute",
+    "taskRef": "698df2087fa99fbcdb747cac",
+    "requirement": "<template> has for:item attribute",
+    "language": "html",
+    "tag": "template",
+    "parentTag": "",
+    "selector": "",
+    "style": {
+      "property": "",
+      "value": ""
+    },
+    "value": "",
+    "attr": {
+      "property": "for:item",
+      "value": ""
+    },
+    "clsName": "",
+    "fnName": "",
+    "fieldName": "",
+    "expectedValue": "",
+    "obj": {
+      "property": "",
+      "value": ""
+    },
+    "regex": "",
+    "args": [
+      ""
+    ],
+    "createdAt": "2026-02-12T16:47:33.993Z",
+    "updatedAt": "2026-02-13T16:08:49.827Z",
+    "expectedResultType": "",
+    "lwcComponentName": "parent"
+  },
+  {
+    "_id": "698e0425d5ba7aee59a156f8",
+    "type": "tagExists",
+    "taskRef": "698df2087fa99fbcdb747cac",
+    "requirement": "<ul> element exists inside template",
+    "language": "html",
+    "tag": "ul",
+    "parentTag": "",
+    "selector": "",
+    "style": {
+      "property": "",
+      "value": ""
+    },
+    "value": "",
+    "attr": {
+      "property": "",
+      "value": ""
+    },
+    "clsName": "",
+    "fnName": "",
+    "fieldName": "",
+    "expectedValue": "",
+    "obj": {
+      "property": "",
+      "value": ""
+    },
+    "regex": "",
+    "args": [
+      ""
+    ],
+    "createdAt": "2026-02-12T16:47:33.981Z",
+    "updatedAt": "2026-02-13T23:26:35.027Z",
+    "expectedResultType": "",
+    "lwcComponentName": "parent"
+  },
+  {
+    "_id": "698e0425d5ba7aee59a156f2",
+    "type": "lwcArrayObjectsPropValuesAreUnique",
+    "taskRef": "698df2087fa99fbcdb747cac",
+    "requirement": "Each id is unique",
+    "language": "javascript",
+    "tag": "",
+    "parentTag": "",
+    "selector": "",
+    "style": {
+      "property": "",
+      "value": ""
+    },
+    "value": "",
+    "attr": {
+      "property": "",
+      "value": ""
+    },
+    "clsName": "",
+    "fnName": "",
+    "fieldName": "clouds",
+    "expectedValue": "",
+    "obj": {
+      "property": "id",
+      "value": ""
+    },
+    "regex": "",
+    "args": [
+      ""
+    ],
+    "createdAt": "2026-02-12T16:47:33.955Z",
+    "updatedAt": "2026-02-13T15:52:35.878Z",
+    "expectedResultType": "",
+    "lwcComponentName": "parent"
+  },
+  {
+    "_id": "698f4cc09300742ed5544648",
+    "type": "elAttributeEqualsValue",
+    "taskRef": "698df2087fa99fbcdb747cac",
+    "requirement": "for:each value is {clouds}",
+    "language": "html",
+    "tag": "template",
+    "parentTag": "",
+    "selector": "",
+    "style": {
+      "property": "",
+      "value": ""
+    },
+    "value": "",
+    "attr": {
+      "property": "for:item",
+      "value": "cloud"
+    },
+    "clsName": "",
+    "fnName": "",
+    "fieldName": "",
+    "expectedValue": "",
+    "obj": {
+      "property": "",
+      "value": ""
+    },
+    "regex": "",
+    "args": [
+      ""
+    ],
+    "createdAt": "2026-02-13T16:09:36.851Z",
+    "updatedAt": "2026-02-13T17:14:23.969Z",
+    "expectedResultType": "",
+    "lwcComponentName": "parent"
+  }
+]

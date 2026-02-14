@@ -1,0 +1,709 @@
+[
+  {
+    "_id": "65cc9d63c6df99b606913c87",
+    "password": "$2a$10$8qEaKyBnVLTOnOMwVfHyi.j72V336HA/apd5FpCnIevO.foLwAqNa",
+    "email": "komef23316@tupanda.com",
+    "name": "Alex",
+    "subscription": true,
+    "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1Y2M5ZDYzYzZkZjk5YjYwNjkxM2M4NyIsImlhdCI6MTcxMzIxNzE4OSwiZXhwIjoxNzE0NDI2Nzg5fQ.cHAlsIsRZ0N_eu2fhlPn9N8N5xdqmIZcLWC3IeI8Vx4",
+    "verify": true,
+    "verificationToken": null,
+    "resetToken": "",
+    "createdAt": "2024-02-14T11:00:51.398Z",
+    "updatedAt": "2024-04-24T13:22:10.541Z",
+    "progress": [
+      {
+        "taskId": "65ac0e2ef2480095c9b44835",
+        "solution": "public class Person { \r\n    public String name = 'John Doe'; \r\n    public Integer age = 0;\r\n     }",
+        "_id": "65cf2774255691cadc60093b"
+      },
+      {
+        "taskId": "65aa74bb88fda36a2fb493b2",
+        "solution": "Integer a = 15; System.debug(a); \r\n\r\nInteger b = 22; System.debug(b); Integer sum = a + b;",
+        "_id": "65d49fd4066b5ea4071d4613"
+      },
+      {
+        "taskId": "65aa74bb88fda36a2fb493b3",
+        "solution": "Integer varOne = 2; System.debug(varOne);\r\n\r\nInteger varTwo = 2; \r\nSystem.debug (varTwo) ;\r\n\r\nInteger sum = varOne + varTwo;\r\nSystem.debug   ( sum);",
+        "_id": "65d65b13161bbaeaa2782754"
+      },
+      {
+        "taskId": "65aa591d88fda36a2fb493ab",
+        "solution": "Boolean trueVariable = true; System.debug(trueVariable);",
+        "_id": "65d665e6e5c6c17c62806508"
+      },
+      {
+        "taskId": "65aa591d88fda36a2fb493a7",
+        "solution": "String name = 'Alex'; System.debug(name);",
+        "_id": "65d667e8161bbaeaa2782a8f"
+      },
+      {
+        "taskId": "65aa591d88fda36a2fb493a8",
+        "solution": "String email = 'alex@mail.com';",
+        "_id": "65d6845cf983be9f598af69d"
+      },
+      {
+        "taskId": "65aa591d88fda36a2fb493a9",
+        "solution": "Integer abc = 123;",
+        "_id": "65d687b5423c69673b57bfd4"
+      },
+      {
+        "taskId": "65aa591d88fda36a2fb493aa",
+        "solution": "Decimal half = 0.5;",
+        "_id": "65da4cdefe356e3d4b6a4878"
+      },
+      {
+        "taskId": "65d4a55d7feb872c39bf6fa6",
+        "solution": "SELECT MAX(Amount) FROM Opportunity",
+        "_id": "65da5896f3414b9c3d2b31ea"
+      },
+      {
+        "taskId": "65d8a13ea519ae283cd78646",
+        "solution": "SELECT Id, Name, AnnualRevenue, BillingState FROM Account WHERe AnnualRevenue > 1000000 and BillingState = 'CA'",
+        "_id": "65dc8efbf3414b9c3d2c021e"
+      },
+      {
+        "taskId": "65d4a55d7feb872c39bf6fa5",
+        "solution": "SELECT count_DISTINCT(Owner.Name) FROM Opportunity",
+        "_id": "65dc8fd0f3414b9c3d2c02fa"
+      },
+      {
+        "taskId": "65d8a217a519ae283cd7865c",
+        "solution": "SELECT Status, COUNT(Id) FROM Lead GROUP BY Status",
+        "_id": "65dc902af3414b9c3d2c0363"
+      },
+      {
+        "taskId": "65d8a3d7a519ae283cd78669",
+        "solution": "SELECT Id, Name, Contact.Name FROM Contact",
+        "_id": "65dc93e7f3414b9c3d2c03e6"
+      },
+      {
+        "taskId": "65d4a55d7feb872c39bf6fa7",
+        "solution": "SELECT AVg(Amount) FROM Opportunity WHERE StageName = 'Closed Won'",
+        "_id": "65dc9a0cf3414b9c3d2c076b"
+      },
+      {
+        "taskId": "65d8a28ca519ae283cd78663",
+        "solution": "SELECT CALENDAR_YEAR(Birthdate), COUNT(Id) FROM Contact GROUP BY CALENDAR_year(Birthdate)",
+        "_id": "65dc9aa5f3414b9c3d2c0829"
+      },
+      {
+        "taskId": "65d4a55d7feb872c39bf6fac",
+        "solution": "SELECT naMe, staGeName FROM opportunity WHERE isclosed = FALSE AND AmOuNt > 10000 AND CloseDate > TODAY",
+        "_id": "65dca206f3414b9c3d2c0b54"
+      },
+      {
+        "taskId": "65d8a13ea519ae283cd7864c",
+        "solution": "SELECT Id, Name, Industry, NumberOfEmployees, BillingState FROM Account WHERE (Industry = 'Technology' OR Industry = 'Healthcare') AND (numberOFEmployees > 50 OR NumberOfEmployees < 10) AND BillingState = 'CA'",
+        "_id": "65dca23cf3414b9c3d2c0c01"
+      },
+      {
+        "taskId": "65d8a13ea519ae283cd7864d",
+        "solution": "SELECT Id, Name, BillingState, Industry, NumberOfEmployees FROM Account WHERE (BillingState = 'CA' OR BillingState = 'NY') AND NOT (Industry = 'Retail' OR Industry = 'Government') OR NumberOfEmployees >= 100 AND NumberOfEmployees <= 500",
+        "_id": "65dca2f1f3414b9c3d2c0d14"
+      },
+      {
+        "taskId": "65d8a1c4a519ae283cd78654",
+        "solution": "SELECT Id, Name,  Status, CreatedDate FROM Lead WHERE CreatedDate = LAST_YEAR AND CreatedDate != LAST_MONTH AND Status IN ('Open - Not Contacted', 'Working - Contacted') limit 2",
+        "_id": "65dcc973f3414b9c3d2c1bcc"
+      },
+      {
+        "taskId": "65d8a0e0a519ae283cd78643",
+        "solution": "SELECT Id, Name, Status FROM Lead WHERE Status = 'New' LIMIT 10",
+        "_id": "65dccb78f3414b9c3d2c1c96"
+      },
+      {
+        "taskId": "65d8a28ca519ae283cd78664",
+        "solution": "SELECT StageName, CALENDAR_YEAR(CloseDate) fiscalYear, COUNT(Id) FROM Opportunity\r\nGROUP BY StageName, CALENDAR_YEAR(CloseDate), qwqwqwq",
+        "_id": "65dcd27af3414b9c3d2c1ded"
+      },
+      {
+        "taskId": "65d8a3d7a519ae283cd78671",
+        "solution": "SELECT Account.Name, COUNT(Id) FROM Opportunity WHERE StageName IN ('Closed Won', 'Closed Lost') AND Account.Industry = 'Manufacturing' GROUP BY Account.Name",
+        "_id": "65dcd394f3414b9c3d2c1e92"
+      },
+      {
+        "taskId": "65d89e99a519ae283cd78631",
+        "solution": "SELECT Id, Name, Industry FROM Account",
+        "_id": "65dcd3d0f3414b9c3d2c1f3c"
+      },
+      {
+        "taskId": "65d8a44ba519ae283cd78679",
+        "solution": "SELECT Id, Name, (SELECT Id, Name, Amount, stageName, CloseDate FROM Opportunities ORDER BY Amount DESC LIMIT 5), (SELECT Id, FirstName, LastName, Email FROM Contacts ORDER BY LastName ASC) FROM Account",
+        "_id": "65ddf9d1f3414b9c3d2d40f6"
+      },
+      {
+        "taskId": "65d8a3d7a519ae283cd78672",
+        "solution": "SELECT Name, Account.Name, Account.AnnualRevenue FROM Contact ORDER BY Account.AnnualRevenue DESC",
+        "_id": "65ddf9edf3414b9c3d2d418a"
+      },
+      {
+        "taskId": "65d89e99a519ae283cd78633",
+        "solution": "SELECT Id, FirstName, LastName, Email FROM Contact",
+        "_id": "65ddfa00f3414b9c3d2d4261"
+      },
+      {
+        "taskId": "65d8a217a519ae283cd7865a",
+        "solution": "SELECT AVG(NumberOfEmployees) FROM Account",
+        "_id": "65ddfcc5f3414b9c3d2d539a"
+      },
+      {
+        "taskId": "65d8a44ba519ae283cd78674",
+        "solution": "SELECT Id, Name, Amount, StageName, CloseDate, (SELECT Name, Quantity, UnitPrice FROM OpportunityLineItems) FROM Opportunity",
+        "_id": "65ddfd84f3414b9c3d2d5845"
+      },
+      {
+        "taskId": "65d8a44ba519ae283cd78675",
+        "solution": "SELECT Id, Name, Amount, StageName, CloseDate, (SELECT Name, Quantity, UnitPrice FROM OpportunityLineItems ORDER BY Quantity DESC) FROM Opportunity WHERE StageName = 'Closed Won' ORDER BY CloseDate DESC",
+        "_id": "65ddfd98f3414b9c3d2d5a26"
+      },
+      {
+        "taskId": "65d8a44ba519ae283cd78676",
+        "solution": "SELECT Id, Name, Amount, StageName, CloseDate, AccountId, Account.Name, (SELECT Name, Quantity, UnitPrice FROM OpportunityLineItems) FROM Opportunity WHERE CloseDate = THIS_FISCAL_QUARTER",
+        "_id": "65ddfda8f3414b9c3d2d5ba5"
+      },
+      {
+        "taskId": "65d8a44ba519ae283cd78677",
+        "solution": "SELECT Id, Name, Amount, StageName, CloseDate, (SELECT Name, Quantity, UnitPrice FROM OpportunityLineItems) FROM Opportunity WHERE Account.Industry = 'Technology'",
+        "_id": "65ddfdb5f3414b9c3d2d5dfa"
+      },
+      {
+        "taskId": "65d8a44ba519ae283cd78678",
+        "solution": "SELECT Id, Name, Amount, StageName, CloseDate, (SELECT Name, Quantity, UnitPrice FROM OpportunityLineItems ORDER BY UnitPrice DESC LIMIT 2) FROM Opportunity",
+        "_id": "65ddfdd6f3414b9c3d2d5eb0"
+      },
+      {
+        "taskId": "65d89fc4a519ae283cd78640",
+        "solution": "select rating, id, name from account WHERE rating IN ('hot', 'warm', 'cold')",
+        "_id": "65df15af87f91ba986d93d41"
+      },
+      {
+        "taskId": "65d89fc4a519ae283cd78641",
+        "solution": "SELEct id, firstname, lastName, title FROm contact WHERE title IN ('Manager', 'Director', 'VP')",
+        "_id": "65df164587f91ba986d93ddd"
+      },
+      {
+        "taskId": "65e1abed87f91ba986da3a69",
+        "solution": "trigger AccountTrigger on Account (before insert) {\r\n     for(Account account : Trigger.New) { if(account.Industry == null) {\r\n         account.Industry = 'Education'; \r\n         } \r\n    } \r\n}",
+        "_id": "65e89d52cd73a9faf242544a"
+      },
+      {
+        "taskId": "65e37f9a072638f3c75857a2",
+        "solution": "trigger LeadTrigger on Lead (before insert) {\r\n  for (Lead lead : Trigger.new) {\r\n      Decimal annualRevenue = lead.AnnualRevenue;\r\n\r\n      if (annualRevenue == null || annualRevenue < 1000000) {\r\n          lead.Rating = 'Low'; \r\n      } else if (annualRevenue < 10000000) {\r\n          lead.Rating = 'Medium';\r\n      } else if (annualRevenue >= 10000000) {\r\n          lead.Rating = 'High';\r\n      }\r\n  }\r\n}",
+        "_id": "6607186bbf15dc68e9111989"
+      },
+      {
+        "taskId": "65e37f9a072638f3c7585798",
+        "solution": "trigger OpportunityTrigger on Opportunity (after update) {\r\n    List<Task> tasksToCreate = new List<Task>();\r\n    for(Opportunity opp : Trigger.new) {\r\n        Opportunity oldOpp = Trigger.oldMap.get(opp.Id);\r\n        if(opp.StageName == 'Closed Lost' && oldOpp.StageName != 'Closed Lost') {\r\n            Task followUpTask = new Task(\r\n                WhatId = opp.AccountId,\r\n                Subject = 'Follow-up on lost opportunity',\r\n                ActivityDate = System.today().addDays(7)\r\n            );\r\n            tasksToCreate.add(followUpTask);\r\n        }\r\n    }\r\n    if(!tasksToCreate.isEmpty()) {\r\n        insert tasksToCreate;\r\n    }\r\n}",
+        "_id": "66082f05bf15dc68e91280aa"
+      },
+      {
+        "taskId": "65e37f9a072638f3c758579d",
+        "solution": "trigger AccountRevenueTrigger on Account (after update) {\r\n    List<Task> tasksToCreate = new List<Task>();\r\n    \r\n    for(Account acc : Trigger.new) {\r\n        Account oldAccount = Trigger.oldMap.get(acc.Id);\r\n        \r\n        if(acc.AnnualRevenue > 1000000 && (oldAccount.AnnualRevenue <= 1000000 || oldAccount.AnnualRevenue == null)) {\r\n            Task newTask = new Task(\r\n                WhatId = acc.Id, // Associate the task with the account\r\n                OwnerId = acc.OwnerId, // Assign the task to the account owner\r\n                Subject = 'Notify Admin: Annual Revenue Exceeds $1M',\r\n                Description = 'The annual revenue of ' + acc.Name + ' has exceeded $1,000,000. Please notify the admin.',\r\n                Priority = 'High',\r\n                Status = 'Open'\r\n            );\r\n            tasksToCreate.add(newTask);\r\n        }\r\n    }\r\n    \r\n    insert tasksToCreate;\r\n}\r\n",
+        "_id": "66095304bf15dc68e9129400"
+      },
+      {
+        "taskId": "65e37f9a072638f3c75857a3",
+        "solution": "trigger AccountTrigger on Account (before insert, before update) {\r\n  for (Account acc : Trigger.new) {\r\n    if (acc.Name != null) {\r\n      List<String> words = acc.Name.split(' ');\r\n      String capitalizedName = '';\r\n      for (String word : words) {\r\n        capitalizedName += word.capitalize() + ' ';\r\n      }\r\n      acc.Name = capitalizedName.trim();\r\n    }\r\n  }}",
+        "_id": "660bd0ace6e9cc79226f797c"
+      },
+      {
+        "taskId": "65aa591d88fda36a2fb493ac",
+        "solution": "Boolean falseValue = false;",
+        "_id": "660e7a88095456126a22a526"
+      },
+      {
+        "taskId": "65aa74bb88fda36a2fb493b4",
+        "solution": "Integer var1 = 12; Integer var2 = 12; Integer diff = var2 - var1;",
+        "_id": "660e7acc095456126a22a73c"
+      },
+      {
+        "taskId": "65d8a28ca519ae283cd78665",
+        "solution": "SELECT CALENDAR_MONTH(CreatedDate), COUNT(Id) FROM Account WHERE CALENDAR_YEAR(CreatedDate) = 2024 GROUP BY CALENDAR_MONTH(CreatedDate)",
+        "_id": "660e7b0c095456126a22a995"
+      },
+      {
+        "taskId": "65e37f9a072638f3c7585799",
+        "solution": "trigger AccountOpportunityTrigger on Account (after insert, after update) {\r\n    List<Opportunity> newOpportunities = new List<Opportunity>();\r\n    for(Account acc : Trigger.new) {\r\n        if(acc.Industry == 'Banking') {\r\n            Opportunity newOpp = new Opportunity(\r\n                Name = acc.Name + ' - New Opportunity',\r\n                StageName = 'Prospecting',\r\n                CloseDate = System.today().addMonths(1),\r\n                AccountId = acc.Id\r\n            );\r\n            newOpportunities.add(newOpp);\r\n        }\r\n    }\r\n    if(!newOpportunities.isEmpty()) {\r\n        insert newOpportunities;\r\n    }\r\n}",
+        "_id": "660e7b5f095456126a22ad20"
+      },
+      {
+        "taskId": "65e37f9a072638f3c758579a",
+        "solution": "trigger OpportunityTrigger on Opportunity (before update) { \r\n    for(Opportunity opp : Trigger.new) {\r\n        if(opp.StageName == 'Closed Won') {\r\n            opp.CloseDate = System.today();\r\n        }\r\n    }\r\n}",
+        "_id": "660e8010c712d6c7c3dafc2b"
+      },
+      {
+        "taskId": "65d4a55d7feb872c39bf6faa",
+        "solution": "SELECT Account.Name, SUM(Amount) FROM Opportunity GROUP BY Account.Name",
+        "_id": "660e803ac712d6c7c3daff21"
+      },
+      {
+        "taskId": "65e6dc13527a6aa325431728",
+        "solution": {
+          "trigger": "trigger AccountTriggerr on Account (before insert) {\r\n    if(Trigger.isBefore && Trigger.isInsert) {\r\n        AccountTriggerHandler.beforeInsert(Trigger.new, Trigger.newMap);\r\n    } \r\n}",
+          "handler": "public with sharing class AccountTriggerHandler {\r\n     public static void beforeInsert(\r\n        List<Account> newList, Map<Id, Account> newMap) {\r\n             AccountService service = new AccountService();\r\n            service.setIndustryToEducation(newList); \r\n            } }  ",
+          "service": "public with sharing class AccountService {\r\n     public void setIndustryToEducation(List<Account> accounts) {\r\n         for(Account acc : accounts) { if(String.isBlank(acc.Industry)) {\r\n             acc.Industry = 'Education'; } \r\n             } \r\n        } }  "
+        },
+        "_id": "660ea12bc712d6c7c3db03d7"
+      },
+      {
+        "taskId": "65aa4db54cc3c4aa7eda9edb",
+        "solution": "String myName = 'Pepe Chil'; system.debug (myName );",
+        "_id": "660fe6547a3f606e96caa0ae"
+      },
+      {
+        "taskId": "65aa74bb88fda36a2fb493b5",
+        "solution": "Integer multiplier = 2;\r\nInteger multiplicand = 2;\r\nInteger product = multiplier * multiplicand;",
+        "_id": "660fe6dd7a3f606e96caa1f0"
+      },
+      {
+        "taskId": "65aa74bb88fda36a2fb493b6",
+        "solution": "Decimal dec1 = 0.3;\r\nDecimal dec2 = 0.4;\r\nDecimal dec3 = 0.1;\r\nDecimal sum = dec1 + dec2 + dec3;\r\n",
+        "_id": "660fe9847a3f606e96caa379"
+      },
+      {
+        "taskId": "65aa74bb88fda36a2fb493b8",
+        "solution": "Decimal mult1 = 0.3;\r\nDecimal mult2 = 0.3;\r\nDecimal product = mult1 * mult2;",
+        "_id": "660fe9fb7a3f606e96caa549"
+      },
+      {
+        "taskId": "65aa74bb88fda36a2fb493b9",
+        "solution": "Boolean bool1 = true;\r\nBoolean bool2 = false;\r\nBoolean result = bool1 && bool2;",
+        "_id": "660fea9c7a3f606e96caa69b"
+      },
+      {
+        "taskId": "65aa74bb88fda36a2fb493ba",
+        "solution": "Boolean boolA = true;\r\nBoolean boolB = false;\r\nBoolean outcome = boolA || boolB;",
+        "_id": "660ff6fb7a3f606e96caacba"
+      },
+      {
+        "taskId": "65aa74bb88fda36a2fb493b7",
+        "solution": "Decimal decA = 0.2;\r\nDecimal decB = 0.2;\r\nDecimal decC = 0.2;\r\nDecimal decD = 0.2;\r\nDecimal difference = decA - decB - decC - decD;",
+        "_id": "661165eefcf84d0955cbe81c"
+      },
+      {
+        "taskId": "65aa74bb88fda36a2fb493bb",
+        "solution": "Boolean boolVar = true;\r\nBoolean negation = !boolVar;",
+        "_id": "66116626fcf84d0955cbe9c4"
+      },
+      {
+        "taskId": "65d8a28ca519ae283cd78666",
+        "solution": "SELECT Industry, MIN(NumberOfEmployees), MAX(NumberOfEmployees), AVG(NumberOfEmployees) FROM Account GROUP BY Industry",
+        "_id": "66131621925229540e7160a6"
+      },
+      {
+        "taskId": "65acf9daa35d11beb1ef1caf",
+        "solution": "public class Rectangle { \n    public Integer width; \n    public Integer length; \n\n    public Integer area() { return width * length; }\n}",
+        "_id": "6613176c925229540e71669c"
+      },
+      {
+        "taskId": "65aa4db54cc3c4aa7eda9edc",
+        "solution": "Integer myAge = 25; System.debug ( myAge) ;",
+        "_id": "6613ac9b89ea5d163c89bf3d"
+      },
+      {
+        "taskId": "65aa4db54cc3c4aa7eda9edd",
+        "solution": "String book = 'Harry Potter';\r\nSystem.debug(book);",
+        "_id": "6613acc70f91b4187ecd05cb"
+      },
+      {
+        "taskId": "65ad6e19a9f2cd2b5c005f9e",
+        "solution": "public class AccountService { \n    public String getAccountSummary(Account acc) { \n return 'Name: ' + acc.Name + ', Type: ' + acc.Type + ', Annual Revenue: ' + acc.AnnualRevenue; \n }\n}",
+        "_id": "6615a08fccde01c889c613fd"
+      },
+      {
+        "taskId": "65ad6e3da9f2cd2b5c005fa2",
+        "solution": "public class OpportunityService { \n   public Boolean isOpen(Opportunity opp) { \n return opp.StageName == 'Prospecting' || opp.StageName == 'Qualification'; \n }\n}",
+        "_id": "6615a55bccde01c889c61d78"
+      },
+      {
+        "taskId": "6614035dc0668317c150ed2a",
+        "solution": {
+          "trigger": "trigger AccountTrigger on Account (before update) {\r\n    if (Trigger.isUpdate) {\r\n        AccountTriggerHandler.beforeUpdate(Trigger.new);\r\n    }\r\n}",
+          "handler": "public with sharing class AccountTriggerHandler {\r\n    public static void beforeUpdate(List<Account> accounts) {\r\n        AccountService service = new AccountService();\r\n        service.updateDescription(accounts);\r\n    }\r\n}",
+          "service": "public with sharing class AccountService {\r\n    public void updateDescription(List<Account> accounts) {\r\n        for (Account acc : accounts) {\r\n            acc.Description = 'Updated on ' + DateTime.now().format('MM/dd/yyyy HH:mm:ss');\r\n        }\r\n    }\r\n}"
+        },
+        "_id": "66164e60e7b2a0b9b509a19e"
+      },
+      {
+        "taskId": "65e37f9a072638f3c75857a1",
+        "solution": "trigger AccountTypeTrigger on Account(before insert, before update) {\r\nfor (Account acc : Trigger.new) {\r\nif (acc.Industry == 'Finance') {\r\nacc.Type = 'Customer - Direct';\r\n} else if (acc.Industry == 'Technology') {\r\nacc.Type = 'Technology Partner';\r\n} else if (acc.Industry == 'Healthcare') {\r\nacc.Type = 'Prospect';\r\n}\r\n}\r\n}",
+        "_id": "661afe841d7ba310ee8c2bf4"
+      },
+      {
+        "taskId": "65ac0de5f2480095c9b4482e",
+        "solution": "public class Car {}",
+        "_id": "661affab1d7ba310ee8c315f"
+      },
+      {
+        "taskId": "65acf9daa35d11beb1ef1cb0",
+        "solution": "public class Rectangle {\n    public Integer width;\n    public Integer length;\n\n    public Integer area() {\n        return width * length;\n    }\n    public Integer perimeter() { return (width + length) * 2; }\n}",
+        "_id": "6624180d6d51c3b17f5f59cb"
+      },
+      {
+        "taskId": "65acf9daa35d11beb1ef1cb1",
+        "solution": "public class Rectangle {\n    public Integer width;\n    public Integer length;\n\n    public Integer area() {\n        return width * length;\n    }\n\n    public Integer perimeter() {\n        return (width + length) * 2;\n    }\n    public Boolean isSquare() { return width == length; }\n}",
+        "_id": "662418646d51c3b17f5f5c68"
+      },
+      {
+        "taskId": "65e37f9a072638f3c758579b",
+        "solution": "trigger SetAccountRating on Account (before insert) { \r\n    for(Account acc : Trigger.new) { \r\n        acc.Rating = 'Warm'; \r\n    } \r\n}",
+        "_id": "66266d113191167384547ab5"
+      },
+      {
+        "taskId": "65e37f9a072638f3c758579c",
+        "solution": "trigger SetIndustryToEducation on Account (before insert, before update) { \r\n    for(Account acc : Trigger.new) { \r\n        if(acc.Website != null && acc.Website.contains('edu')) { \r\n            acc.Industry = 'Education'; \r\n        } \r\n    } \r\n}",
+        "_id": "66266d553191167384547e8d"
+      },
+      {
+        "taskId": "65e37f9a072638f3c758579e",
+        "solution": "trigger ContactEmailUpdate on Contact (before insert) { \r\n    for(Contact c : Trigger.new) { \r\n        if(c.Email == null) { \r\n            c.Email = c.FirstName + '.' + c.LastName + '@gmail.com';\r\n        } \r\n    } \r\n}",
+        "_id": "66266de558bfec5221189663"
+      },
+      {
+        "taskId": "65e37f9a072638f3c75857a0",
+        "solution": "trigger ContactTrigger on Contact (before insert) { \r\n   for(Contact contact : Trigger.New) { \r\n      if(contact.MailingStreet == null || contact.MailingCity == null || contact.MailingPostalCode == null) { \r\n         contact.addError('Please fill in the Mailing Street, Mailing City, and Mailing Postal Code fields.'); \r\n      } \r\n   } \r\n}",
+        "_id": "66266e578e34268c7bd3629a"
+      },
+      {
+        "taskId": "65acfabaa35d11beb1ef1cb9",
+        "solution": "public class Car {\n    public String motor;\n    public Integer maximumSpeed;\n    public Integer passengers;\n    public String color;\n    public Boolean motorIsOn;\n  public Car(String motor, Integer maximumSpeed, Integer passengers, String color) { this.motor = motor; this.maximumSpeed = maximumSpeed; this.passengers = passengers; this.color = color; }\n    // Your code here\n}",
+        "_id": "66266ec7d20adea838efd65d"
+      },
+      {
+        "taskId": "65acfb27a35d11beb1ef1cbd",
+        "solution": " public class Department {\n    public String name;\n    public Integer budget;\n    public Employee manager;\n    public Employee supervisor;\n    public Employee contactPerson;\npublic String getDepartmentInfo() {\n    return 'The manager of ' + this.name + ' is ' + this.manager.getFullName() + ' with the salary ' + this.manager.calculateBonus() + '.';\n}\n    // Your code here\n}\n\n",
+        "_id": "6627c41e649ac8005de3f530"
+      },
+      {
+        "taskId": "65acfb27a35d11beb1ef1cbe",
+        "solution": " public class Department {\n    public String name;\n    public Integer budget;\n    public Employee manager;\n    public Employee supervisor;\n    public Employee contactPerson;\npublic Decimal getSalaryExpenses() {\n    return this.manager.salary + this.supervisor.salary + this.contactPerson.salary;\n}\n    // Your code here\n}",
+        "_id": "6627cc3c649ac8005de3f83c"
+      },
+      {
+        "taskId": "65acfabaa35d11beb1ef1cba",
+        "solution": " public class Radio {\n    public String radioType;\n    public Boolean isOn;\n    public Integer volume;\n    public String station;\npublic Radio(String radioType) { this.radioType = radioType; this.isOn = true; this.station = 'Rock'; this.volume = 5; }\n    // Your code here\n}",
+        "_id": "6627d5becf4ce002cc84a62d"
+      },
+      {
+        "taskId": "65acfb27a35d11beb1ef1cbf",
+        "solution": " public class Department {\n    public String name;\n    public Integer budget;\n    public Employee manager;\n    public Employee supervisor;\n    public Employee contactPerson;\npublic Decimal getBudgetDifference() {\n    Decimal totalSalaries = this.manager.salary + this.supervisor.salary + this.contactPerson.salary;\n    return this.budget - totalSalaries;\n}\n    // Your code here\n}",
+        "_id": "6627de67cfb2c27a752f8376"
+      },
+      {
+        "taskId": "65ad9404241984dc2ea0611f",
+        "solution": "\n   public class ListSumCalculator { \n    public Integer sumList(List<Integer> numbers) { \n        Integer sum = 0; \n        for (Integer numberVar : numbers) { \n            sum += numberVar; \n        } \n\n        return sum;\n    }\n}\n",
+        "_id": "6628eda3b64d82b9fdb739a4"
+      }
+    ],
+    "points": 1176,
+    "topicsProgress": [
+      "65aa611688fda36a2fb493b0",
+      "65bbf23947d1e9b990f4bd0e",
+      "65bbf23947d1e9b990f4bd0e",
+      "65bc00dc47d1e9b990f4bd17",
+      "65bbf23947d1e9b990f4bd0f",
+      "65bc00dc47d1e9b990f4bd18",
+      "65bc00dc47d1e9b990f4bd19",
+      "65bc00dc47d1e9b990f4bd1a",
+      "65bc00dc47d1e9b990f4bd1b",
+      "65bc00dc47d1e9b990f4bd1c",
+      "65bc00dc47d1e9b990f4bd1d",
+      "65bc00dc47d1e9b990f4bd1e",
+      "65bc00dc47d1e9b990f4bd1f",
+      "65bc00dc47d1e9b990f4bd20",
+      "65a838abfeef90604e14c678",
+      "65ad9259241984dc2ea06119",
+      "65bc00dc47d1e9b990f4bd21",
+      "65acfb7fa35d11beb1ef1cc8",
+      "65b8e3e6d9ab309999c4bf66",
+      "65b8e3e6d9ab309999c4bf67",
+      "65b8e3e6d9ab309999c4bf68",
+      "65b8e3e6d9ab309999c4bf69",
+      "65b8e3e6d9ab309999c4bf6a",
+      "65ba4b0c3d39e51f62223b34",
+      "65b8e3e6d9ab309999c4bf6b",
+      "65ba4b0c3d39e51f62223b33",
+      "65ad994a241984dc2ea06130",
+      "65bc00dc47d1e9b990f4bd22",
+      "65b6a2e52424782cda43247a",
+      "65b6a2e52424782cda43247b",
+      "65ada9d71912968f8242a5fd",
+      "65b6a2e52424782cda43247d",
+      "65acfb7fa35d11beb1ef1cc6",
+      "65b6a2e52424782cda43247c",
+      "65ad5366a9f2cd2b5c005f99",
+      "65ada9d71912968f8242a5fe",
+      "65ada9d71912968f8242a5ff",
+      "65ada9d71912968f8242a600",
+      "65f6e11a80b2697bd32b8f30",
+      "65ad77f2241984dc2ea06115",
+      "65acfb7fa35d11beb1ef1cc7",
+      "65acfb7fa35d11beb1ef1cca",
+      "65acfb7fa35d11beb1ef1ccb",
+      "65acfb7fa35d11beb1ef1ccc",
+      "65acfb7fa35d11beb1ef1cce",
+      "65ad994a241984dc2ea0612c",
+      "65ad994a241984dc2ea0612d",
+      "65aa5b7688fda36a2fb493ae",
+      "65ad994a241984dc2ea0612e",
+      "65ad994a241984dc2ea0612f",
+      "65ad77f2241984dc2ea06116",
+      "65ad77f2241984dc2ea06117",
+      "65ada9d71912968f8242a602",
+      "65aa766d88fda36a2fb493c0",
+      "65ad700aa9f2cd2b5c005fb7",
+      "661403e7c0668317c150ed2d",
+      "65acfb7fa35d11beb1ef1cc9",
+      "65acfb7fa35d11beb1ef1ccd"
+    ],
+    "xp": 925,
+    "achievements": {
+      "xp": [
+        {
+          "data-id": "100xp",
+          "target": 100,
+          "unlocked": true,
+          "timestamp": "2024-04-15 21:45",
+          "isNew": false,
+          "_id": "661d9f7d38729165ac9dd2a7"
+        },
+        {
+          "data-id": "200xp",
+          "target": 200,
+          "unlocked": true,
+          "timestamp": "2024-04-15 21:45",
+          "isNew": false,
+          "_id": "661d9f7d38729165ac9dd2a8"
+        },
+        {
+          "data-id": "300xp",
+          "target": 300,
+          "unlocked": true,
+          "timestamp": "2024-04-15 21:45",
+          "isNew": false,
+          "_id": "661d9f7d38729165ac9dd2a9"
+        },
+        {
+          "data-id": "500xp",
+          "target": 500,
+          "unlocked": true,
+          "timestamp": "2024-04-24 13:22",
+          "isNew": false,
+          "_id": "661d9f7d38729165ac9dd2aa"
+        },
+        {
+          "data-id": "800xp",
+          "target": 800,
+          "unlocked": true,
+          "timestamp": "2024-04-15 21:45",
+          "isNew": false,
+          "_id": "661d9f7d38729165ac9dd2ab"
+        },
+        {
+          "data-id": "1300xp",
+          "target": 1300,
+          "unlocked": false,
+          "timestamp": "",
+          "isNew": false,
+          "_id": "661d9f7d38729165ac9dd2ac"
+        }
+      ],
+      "tasks": [
+        {
+          "data-id": "1t",
+          "target": 1,
+          "unlocked": true,
+          "timestamp": "2024-04-15 21:45",
+          "isNew": false,
+          "_id": "661d9f7d38729165ac9dd2ad"
+        },
+        {
+          "data-id": "10t",
+          "target": 10,
+          "unlocked": true,
+          "timestamp": "2024-04-15 21:45",
+          "isNew": false,
+          "_id": "661d9f7d38729165ac9dd2ae"
+        },
+        {
+          "data-id": "50t",
+          "target": 50,
+          "unlocked": true,
+          "timestamp": "2024-04-23 18:42",
+          "isNew": false,
+          "_id": "661d9f7d38729165ac9dd2af"
+        },
+        {
+          "data-id": "100t",
+          "target": 100,
+          "unlocked": false,
+          "timestamp": "",
+          "isNew": false,
+          "_id": "661d9f7d38729165ac9dd2b0"
+        },
+        {
+          "data-id": "150t",
+          "target": 150,
+          "unlocked": false,
+          "timestamp": "",
+          "isNew": false,
+          "_id": "661d9f7d38729165ac9dd2b1"
+        },
+        {
+          "data-id": "200t",
+          "target": 200,
+          "unlocked": false,
+          "timestamp": "",
+          "isNew": false,
+          "_id": "661d9f7d38729165ac9dd2b2"
+        }
+      ],
+      "bundles": [
+        {
+          "data-id": "Control Structures",
+          "target": [
+            "65ae8e1204510a00c27882de",
+            "65ae8e1204510a00c27882e0"
+          ],
+          "unlocked": true,
+          "timestamp": "2024-04-15 21:45",
+          "isNew": false,
+          "_id": "661d9f7d38729165ac9dd2b3"
+        },
+        {
+          "data-id": "Data structures",
+          "target": [
+            "65ae8e1204510a00c27882df",
+            "65ae8e1204510a00c27882e3",
+            "65ae8e1204510a00c27882e1"
+          ],
+          "unlocked": false,
+          "timestamp": "",
+          "isNew": false,
+          "_id": "661d9f7d38729165ac9dd2b4"
+        }
+      ],
+      "_id": "661d9f7d38729165ac9dd2a6"
+    },
+    "lessonsProgress": [
+      "65ae8e1204510a00c27882e2",
+      "65ae8e1204510a00c27882da",
+      "65ae8e1204510a00c27882de",
+      "66140455c0668317c150ed32",
+      "65bbf2a047d1e9b990f4bd13",
+      "65ae8e1204510a00c27882e0",
+      "65b8e4cbd9ab309999c4bf71",
+      "65ba4b633d39e51f62223b37",
+      "65b8e4cbd9ab309999c4bf72"
+    ],
+    "licenseKey": "",
+    "xpTimeSpan": [
+      {
+        "timestamp": 1713641485745,
+        "date": "2024-04",
+        "xp": 2,
+        "_id": "6624180d6d51c3b17f5f59ca"
+      },
+      {
+        "timestamp": 1713641572755,
+        "date": "2024-04",
+        "xp": 2,
+        "_id": "662418646d51c3b17f5f5c67"
+      },
+      {
+        "timestamp": 1713641572869,
+        "date": "2024-04",
+        "xp": 10,
+        "_id": "662418646d51c3b17f5f5dea"
+      },
+      {
+        "timestamp": 1713792784199,
+        "date": "2024-04",
+        "xp": 4,
+        "_id": "662667101a9729fe30145242"
+      },
+      {
+        "timestamp": 1713792784275,
+        "date": "2024-04",
+        "xp": 4,
+        "_id": "662667101a9729fe30145308"
+      },
+      {
+        "timestamp": 1713794389578,
+        "date": "2024-04",
+        "xp": 4,
+        "_id": "66266d553191167384547cb2"
+      },
+      {
+        "timestamp": 1713794533603,
+        "date": "2024-04",
+        "xp": 6,
+        "_id": "66266de558bfec522118947f"
+      },
+      {
+        "timestamp": 1713794647630,
+        "date": "2024-04",
+        "xp": 4,
+        "_id": "66266e578e34268c7bd360ad"
+      },
+      {
+        "timestamp": 1713794759154,
+        "date": "2024-04",
+        "xp": 2,
+        "_id": "66266ec7d20adea838efd65c"
+      },
+      {
+        "timestamp": 1713882142008,
+        "date": "2024-04",
+        "xp": 3,
+        "_id": "6627c41e649ac8005de3f52f"
+      },
+      {
+        "timestamp": 1713884220121,
+        "date": "2024-04",
+        "xp": 4,
+        "_id": "6627cc3c649ac8005de3f83b"
+      },
+      {
+        "timestamp": 1713886654367,
+        "date": "2024-04",
+        "xp": 2,
+        "_id": "6627d5becf4ce002cc84a62c"
+      },
+      {
+        "timestamp": 1713886654497,
+        "date": "2024-04",
+        "xp": 10,
+        "_id": "6627d5becf4ce002cc84a7f7"
+      },
+      {
+        "timestamp": 1713886974545,
+        "date": "2024-04",
+        "xp": 10,
+        "_id": "6627d6fecfb2c27a752f6244"
+      },
+      {
+        "timestamp": 1713888871633,
+        "date": "2024-04",
+        "xp": 2,
+        "_id": "6627de67cfb2c27a752f8375"
+      },
+      {
+        "timestamp": 1713958307687,
+        "date": "2024-04",
+        "xp": 2,
+        "_id": "6628eda3b64d82b9fdb739a3"
+      },
+      {
+        "timestamp": 1713964924287,
+        "date": "2024-04",
+        "xp": 10,
+        "_id": "6629077cb64d82b9fdb786f9"
+      }
+    ],
+    "xpTimeSpanMonth": {
+      "2024-04": 43
+    }
+  }
+]

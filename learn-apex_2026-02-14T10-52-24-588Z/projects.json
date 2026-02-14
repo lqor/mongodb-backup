@@ -1,0 +1,331 @@
+[
+  {
+    "_id": "67bb6c1ef636957c2e5bf080",
+    "name": "Bank Account Management",
+    "link": "bank-account-management",
+    "prerequisities": [
+      {
+        "lesson": "variables",
+        "module": "syntax-and-basics",
+        "order": 1,
+        "_id": "67bb6c1ef636957c2e5bf081"
+      },
+      {
+        "lesson": "classes",
+        "module": "syntax-and-basics",
+        "order": 2,
+        "_id": "67d26759e3e4edc159f8e3a7"
+      },
+      {
+        "lesson": "methods",
+        "module": "syntax-and-basics",
+        "order": 3,
+        "_id": "67d26759e3e4edc159f8e3a8"
+      }
+    ],
+    "theoryId": "10049",
+    "stages": [
+      {
+        "title": "Bank Account Management",
+        "descr": [
+          {
+            "attributes": {
+              "background": "#ffffff",
+              "color": "#2b373e"
+            },
+            "insert": "Create a BankAccount class that can transfer funds between accounts. Your BankAccount class should:"
+          },
+          {
+            "insert": "\n"
+          },
+          {
+            "attributes": {
+              "background": "#ffffff",
+              "color": "#2b373e"
+            },
+            "insert": "Have properties for accountNumber, balance, and accountType"
+          },
+          {
+            "attributes": {
+              "list": "bullet"
+            },
+            "insert": "\n"
+          },
+          {
+            "attributes": {
+              "background": "#ffffff",
+              "color": "#2b373e"
+            },
+            "insert": "Include method called `deposit` and `withdraw` for deposit and withdraw operations."
+          },
+          {
+            "attributes": {
+              "list": "bullet"
+            },
+            "insert": "\n"
+          },
+          {
+            "attributes": {
+              "background": "#ffffff",
+              "color": "#2b373e"
+            },
+            "insert": "Create method "
+          },
+          {
+            "attributes": {
+              "background": "#ffffff",
+              "color": "#2b373e",
+              "italic": true
+            },
+            "insert": "getAccountDetails()"
+          },
+          {
+            "attributes": {
+              "background": "#ffffff",
+              "color": "#2b373e"
+            },
+            "insert": " that returns formatted account details in following format. Your account [accountNumber] is a [accountType] and has balance of [balance]."
+          },
+          {
+            "attributes": {
+              "list": "bullet"
+            },
+            "insert": "\n"
+          },
+          {
+            "insert": "\n"
+          }
+        ],
+        "requirements": [
+          "Deposit should add to the balance",
+          "Deposit should not add anything to the balance if we are adding 0",
+          "Withdraw should subtract from the balance",
+          "Account details should include accountNumber and the balance."
+        ],
+        "tests": [
+          "BankAccount testAccount = new BankAccount(); \ntestAccount.accountNumber = 'CHK-001'; \ntestAccount.accountType = 'Checking'; \ntestAccount.balance = 0; \n\ntestAccount.deposit(1000); \nAssert.areEqual(1000, testAccount.balance, 'Deposit should add to the balance'); ",
+          "BankAccount testAccount = new BankAccount(); \ntestAccount.accountNumber = 'CHK-001'; \ntestAccount.accountType = 'Checking'; \ntestAccount.balance = 0; \n\ntestAccount.deposit(0); \nAssert.areEqual(0, testAccount.balance, 'Deposit should not add anything to the balance if we are adding 0'); ",
+          " BankAccount testAccount = new BankAccount(); \ntestAccount.accountNumber = 'CHK-001'; \ntestAccount.accountType = 'Checking'; \ntestAccount.balance = 1000; \n\ntestAccount.withdraw(250); \nAssert.areEqual(750, testAccount.balance, 'Withdraw should subtract from the balance');",
+          " BankAccount testAccount = new BankAccount(); \ntestAccount.accountNumber = 'CHK-001'; \ntestAccount.accountType = 'Checking'; \ntestAccount.balance = 750; \n\nString accountDetails = testAccount.getAccountDetails(); \n\nAssert.isTrue(accountDetails.contains('CHK-001'), 'Account details should contain the account number'); \n\nAssert.isTrue(accountDetails.contains('750'), 'Account details should contain the current balance');"
+        ],
+        "reward": 5,
+        "_id": "67bb6c1ef636957c2e5bf084"
+      },
+      {
+        "title": "Transaction Management",
+        "descr": [
+          {
+            "attributes": {
+              "background": "#ffffff",
+              "color": "#2b373e"
+            },
+            "insert": "Create a BankTransaction class to track banking transactions. Your BankTransaction class should:"
+          },
+          {
+            "insert": "\n"
+          },
+          {
+            "attributes": {
+              "background": "#ffffff",
+              "color": "#2b373e"
+            },
+            "insert": "Have properties for transactionId, transactionDate, amount, transactionType, and relatedAccount"
+          },
+          {
+            "attributes": {
+              "list": "bullet"
+            },
+            "insert": "\n"
+          },
+          {
+            "attributes": {
+              "background": "#ffffff",
+              "color": "#2b373e"
+            },
+            "insert": "Include a method calculateTransactionFee() that returns a fee based on the transaction amount. The transaction fee should be 0.25% of the transaction amount."
+          },
+          {
+            "attributes": {
+              "list": "bullet"
+            },
+            "insert": "\n"
+          },
+          {
+            "attributes": {
+              "background": "#ffffff",
+              "color": "#2b373e"
+            },
+            "insert": "Create a method getTransactionDetails() that returns formatted transaction information with the class fields included"
+          },
+          {
+            "attributes": {
+              "list": "bullet"
+            },
+            "insert": "\n"
+          }
+        ],
+        "requirements": [
+          "Transaction fee should be calculated correctly",
+          "Transaction details should include ID and amount"
+        ],
+        "tests": [
+          "BankTransaction testTransaction = new BankTransaction();\ntestTransaction.transactionId = 'TXN-001';\ntestTransaction.amount = 1000;\ntestTransaction.transactionType = 'Deposit';\n\nDecimal fee = testTransaction.calculateTransactionFee();\nAssert.areEqual(2.5, fee, 'Transaction fee should be 0.25% of transaction amount');",
+          "BankTransaction testTransaction = new BankTransaction();\ntestTransaction.transactionId = 'TXN-001';\ntestTransaction.amount = 1000;\ntestTransaction.transactionType = 'Withdrawal';\ntestTransaction.transactionDate = Date.today();\n\nString details = testTransaction.getTransactionDetails();\nAssert.isTrue(details.contains('TXN-001'), 'Transaction details should contain the transaction ID');\nAssert.isTrue(details.contains('1000'), 'Transaction details should contain the transaction amount');"
+        ],
+        "reward": 5,
+        "_id": "67bb6c1ef636957c2e5bf085"
+      },
+      {
+        "title": "Customer Management",
+        "descr": [
+          {
+            "attributes": {
+              "background": "#ffffff",
+              "color": "#2b373e"
+            },
+            "insert": "Create a Customer class to manage banking customers. Your Customer class should:"
+          },
+          {
+            "insert": "\n"
+          },
+          {
+            "attributes": {
+              "background": "#ffffff",
+              "color": "#2b373e"
+            },
+            "insert": "Have properties for customerId, name, contactInfo, primaryAccount, and secondaryAccount"
+          },
+          {
+            "attributes": {
+              "list": "bullet"
+            },
+            "insert": "\n"
+          },
+          {
+            "attributes": {
+              "background": "#ffffff",
+              "color": "#2b373e"
+            },
+            "insert": "Include a method calculateTotalBalance() that sums balances from both accounts"
+          },
+          {
+            "attributes": {
+              "list": "bullet"
+            },
+            "insert": "\n"
+          },
+          {
+            "attributes": {
+              "background": "#ffffff",
+              "color": "#2b373e"
+            },
+            "insert": "Create methods setPrimaryAccount() and setSecondaryAccount() to associate accounts with the customer"
+          },
+          {
+            "attributes": {
+              "list": "bullet"
+            },
+            "insert": "\n"
+          },
+          {
+            "attributes": {
+              "background": "#ffffff",
+              "color": "#2b373e"
+            },
+            "insert": "Create a method getCustomerSummary() that returns formatted customer information"
+          },
+          {
+            "attributes": {
+              "list": "bullet"
+            },
+            "insert": "\n"
+          }
+        ],
+        "requirements": [
+          "Total balance should sum account balances.",
+          "Customer summary should include name and total balance"
+        ],
+        "tests": [
+          " Customer testCustomer = new Customer(); \ntestCustomer.customerId = 'CUST-001'; \ntestCustomer.name = 'John Doe'; \n\nBankAccount account1 = new BankAccount(); \naccount1.accountNumber = 'CHK-001'; \naccount1.balance = 1000; \n\nBankAccount account2 = new BankAccount(); \naccount2.accountNumber = 'SAV-001'; \naccount2.balance = 2500; \n\ntestCustomer.setPrimaryAccount(account1); \ntestCustomer.setSecondaryAccount(account2); \n\nDecimal totalBalance = testCustomer.calculateTotalBalance(); \nAssert.areEqual(3500, totalBalance, 'Total balance should be the sum of all account balances');",
+          " Customer testCustomer = new Customer(); \ntestCustomer.customerId = 'CUST-001'; \ntestCustomer.name = 'John Doe'; \ntestCustomer.contactInfo = 'johndoe@email.com'; \n\nBankAccount account1 = new BankAccount(); \naccount1.accountNumber = 'CHK-001'; \naccount1.balance = 1000; \n\nBankAccount account2 = new BankAccount(); \naccount2.accountNumber = 'SAV-001'; \naccount2.balance = 2500; \n\ntestCustomer.setPrimaryAccount(account1); \ntestCustomer.setSecondaryAccount(account2); \n\nString summary = testCustomer.getCustomerSummary(); \nAssert.isTrue(summary.contains('John Doe'), 'Customer summary should contain the customer name'); \nAssert.isTrue(summary.contains('3500'), 'Customer summary should contain the total balance');"
+        ],
+        "reward": 5,
+        "_id": "67d1f64ae3e4edc159f478d5"
+      },
+      {
+        "title": " Banking Comparison Service",
+        "descr": [
+          {
+            "attributes": {
+              "background": "#ffffff",
+              "color": "#2b373e"
+            },
+            "insert": "Create an InterestCalculator class to calculate interest for different account types. Your InterestCalculator class should:"
+          },
+          {
+            "insert": "\n"
+          },
+          {
+            "attributes": {
+              "background": "#ffffff",
+              "color": "#2b373e"
+            },
+            "insert": "Include a method calculateSavingsInterest() that calculates interest for savings accounts"
+          },
+          {
+            "attributes": {
+              "list": "bullet"
+            },
+            "insert": "\n"
+          },
+          {
+            "attributes": {
+              "background": "#ffffff",
+              "color": "#2b373e"
+            },
+            "insert": "Include a method calculateCheckingInterest() that calculates interest for checking accounts"
+          },
+          {
+            "attributes": {
+              "list": "bullet"
+            },
+            "insert": "\n"
+          },
+          {
+            "attributes": {
+              "background": "#ffffff",
+              "color": "#2b373e"
+            },
+            "insert": "Create a method calculateTotalInterestEarned() that calculates total interest across both accounts"
+          },
+          {
+            "attributes": {
+              "list": "bullet"
+            },
+            "insert": "\n"
+          }
+        ],
+        "requirements": [
+          " Savings interest should be calculated correctly",
+          " Checking interest should be calculated correctly",
+          " Total interest should be sum of both accounts"
+        ],
+        "tests": [
+          " InterestCalculator interestCalculator = new InterestCalculator();\n\nBankAccount savingsAccount = new BankAccount();\nsavingsAccount.accountNumber = 'SAV-001';\nsavingsAccount.accountType = 'Savings';\nsavingsAccount.balance = 1000;\n\nDecimal annualRate = 0.025;\nDecimal months = 12;\nDecimal interest = interestCalculator.calculateSavingsInterest(savingsAccount, annualRate, months);\nAssert.areEqual(25.0, interest, 'Savings interest should be calculated at 2.5% annual rate');",
+          " InterestCalculator interestCalculator = new InterestCalculator();\n\nBankAccount checkingAccount = new BankAccount();\ncheckingAccount.accountNumber = 'CHK-001';\ncheckingAccount.accountType = 'Checking';\ncheckingAccount.balance = 1000;\n\nDecimal annualRate = 0.005;\nDecimal months = 12;\nDecimal interest = interestCalculator.calculateCheckingInterest(checkingAccount, annualRate, months);\nAssert.areEqual(5.0, interest, 'Checking interest should be calculated at 0.5% annual rate');",
+          " InterestCalculator interestCalculator = new InterestCalculator();\n\nBankAccount savingsAccount = new BankAccount();\nsavingsAccount.accountNumber = 'SAV-001';\nsavingsAccount.accountType = 'Savings';\nsavingsAccount.balance = 1000;\n\nBankAccount checkingAccount = new BankAccount();\ncheckingAccount.accountNumber = 'CHK-001';\ncheckingAccount.accountType = 'Checking';\ncheckingAccount.balance = 2000;\n\nDecimal savingsRate = 0.025;\nDecimal checkingRate = 0.005; \nDecimal months = 12;\n\nDecimal totalInterest = interestCalculator.calculateTotalInterestEarned(\n    savingsAccount, checkingAccount, savingsRate, checkingRate, months);\nAssert.areEqual(35.0, totalInterest, 'Total interest should be the sum of interest from both accounts');"
+        ],
+        "reward": 5,
+        "_id": "67d1f64ae3e4edc159f478d6"
+      }
+    ],
+    "createdAt": "2025-02-23T18:42:38.606Z",
+    "updatedAt": "2025-03-19T16:39:38.466Z",
+    "projectReward": 20,
+    "appearance": {
+      "lesson": "methods",
+      "module": "syntax-and-basics",
+      "order": 3
+    }
+  }
+]

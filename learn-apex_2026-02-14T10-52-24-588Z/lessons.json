@@ -1,0 +1,482 @@
+[
+  {
+    "_id": "65ae8e1204510a00c27882da",
+    "ref": "syntax-and-basics",
+    "topics": [
+      "variables-basics",
+      "variable-types",
+      "real-variable-explanation",
+      "variable-operations",
+      "operation-abbreviations"
+    ],
+    "title": "Variables",
+    "free": true,
+    "order": 1,
+    "link": "variables",
+    "updatedAt": "2024-11-06T20:55:06.407Z"
+  },
+  {
+    "_id": "65ae8e1204510a00c27882db",
+    "ref": "syntax-and-basics",
+    "topics": [
+      "creating-classes",
+      "class-variables",
+      "creating-objects"
+    ],
+    "title": "Classes",
+    "order": 2,
+    "link": "classes",
+    "updatedAt": "2024-11-06T20:55:06.407Z"
+  },
+  {
+    "_id": "65ae8e1204510a00c27882dc",
+    "ref": "syntax-and-basics",
+    "topics": [
+      "void-return-type",
+      "constructors-with-parameters",
+      "calling-methods-from-other-methods",
+      "constructors",
+      "calling-methods-from-variables",
+      "simple-methods",
+      "this-keyword",
+      "return-return-types",
+      "arguments",
+      "methods-in-other-classes",
+      "string-methods",
+      "date-datetime-methods",
+      "math-methods",
+      "integer-methods",
+      "private-variables-methods"
+    ],
+    "title": "Methods",
+    "order": 3,
+    "free": true,
+    "link": "methods",
+    "updatedAt": "2024-11-06T20:55:06.407Z"
+  },
+  {
+    "_id": "65ae8e1204510a00c27882dd",
+    "ref": "syntax-and-basics",
+    "topics": [
+      "what-is-an-sobject-",
+      "creating-records-with-apex",
+      "constructors-in-sobjects",
+      "relationships-in-sobjects"
+    ],
+    "title": "sObjects",
+    "order": 4,
+    "link": "sobjects",
+    "updatedAt": "2024-11-06T20:55:06.407Z"
+  },
+  {
+    "_id": "65ae8e1204510a00c27882de",
+    "ref": "syntax-and-basics",
+    "topics": [
+      "if-statement",
+      "modulo",
+      "else",
+      "multiple-if-else",
+      "else-if",
+      "nested-if-s",
+      "switch-statement",
+      "ternary-operator"
+    ],
+    "title": "If / Else / Switch",
+    "order": 5,
+    "link": "if-else-switch",
+    "updatedAt": "2024-11-06T20:55:06.407Z"
+  },
+  {
+    "_id": "65ae8e1204510a00c27882df",
+    "ref": "syntax-and-basics",
+    "topics": [
+      "creating-a-list",
+      "list-methods",
+      "adding-getting-elements-to-a-list",
+      "sets",
+      "additional-theory"
+    ],
+    "title": "Lists",
+    "order": 6,
+    "link": "lists",
+    "updatedAt": "2024-11-06T20:55:06.407Z"
+  },
+  {
+    "_id": "65ae8e1204510a00c27882e0",
+    "ref": "syntax-and-basics",
+    "topics": [
+      "standard-for-loop",
+      "lists-and-loops",
+      "continue",
+      "break",
+      "nested-loops",
+      "while-do-while"
+    ],
+    "title": "Loops",
+    "order": 7,
+    "link": "loops",
+    "updatedAt": "2024-11-06T20:55:06.407Z"
+  },
+  {
+    "_id": "65ae8e1204510a00c27882e1",
+    "ref": "syntax-and-basics",
+    "topics": [
+      "-for-each-loop"
+    ],
+    "title": "For Each",
+    "order": 8,
+    "link": "for-each",
+    "updatedAt": "2024-11-06T20:55:06.407Z"
+  },
+  {
+    "_id": "65ae8e1204510a00c27882e2",
+    "ref": "syntax-and-basics",
+    "topics": [
+      "insert",
+      "update",
+      "upsert",
+      "lists-dml"
+    ],
+    "title": "DML in Apex",
+    "order": 9,
+    "link": "dml-in-apex",
+    "updatedAt": "2024-11-06T20:55:06.407Z"
+  },
+  {
+    "_id": "65ae8e1204510a00c27882e3",
+    "ref": "syntax-and-basics",
+    "topics": [
+      "what-is-a-map-",
+      "getting-and-adding-element",
+      "keys-and-values",
+      "map-common-methods",
+      "iterating-through-the-map"
+    ],
+    "title": "Maps",
+    "order": 10,
+    "free": true,
+    "link": "maps",
+    "updatedAt": "2024-11-06T20:55:06.407Z"
+  },
+  {
+    "_id": "65ae8e1204510a00c27882e4",
+    "ref": "syntax-and-basics",
+    "topics": [
+      "binding-variables",
+      "soql-and-loops",
+      "soql-return-list",
+      "soql-relationships",
+      "dynamic-soql",
+      "soql-returns-single-record"
+    ],
+    "title": "SOQL & Apex",
+    "order": 11,
+    "link": "soql-apex",
+    "updatedAt": "2024-11-06T20:55:06.406Z"
+  },
+  {
+    "_id": "65b8e4cbd9ab309999c4bf73",
+    "ref": "soql",
+    "topics": [
+      "aggregate-functions",
+      "group-by"
+    ],
+    "title": "Aggregate Functions",
+    "order": 4,
+    "link": "aggregate-functions",
+    "updatedAt": "2024-11-06T20:55:06.407Z"
+  },
+  {
+    "_id": "65b8e4cbd9ab309999c4bf72",
+    "ref": "soql",
+    "topics": [
+      "combining-conditions",
+      "working-with-dates"
+    ],
+    "title": "Conditions in SOQL",
+    "order": 2,
+    "link": "conditions-in-soql",
+    "updatedAt": "2024-11-06T20:55:06.407Z"
+  },
+  {
+    "_id": "65b8e4cbd9ab309999c4bf71",
+    "ref": "soql",
+    "topics": [
+      "select-and-from",
+      "where",
+      "limit"
+    ],
+    "title": "Basics of SOQL",
+    "order": 1,
+    "link": "basics-of-soql",
+    "updatedAt": "2024-11-06T20:55:06.407Z"
+  },
+  {
+    "_id": "65ba4b633d39e51f62223b37",
+    "ref": "soql",
+    "topics": [
+      "child-to-parent",
+      "parent-to-child"
+    ],
+    "title": "Relationships in SOQL",
+    "order": 3,
+    "link": "relationships-in-soql",
+    "updatedAt": "2024-11-06T20:55:06.407Z"
+  },
+  {
+    "_id": "65bbf2a047d1e9b990f4bd13",
+    "ref": "triggers-in-apex",
+    "topics": [
+      "databases-basics",
+      "what-is-a-trigger-",
+      "order-of-execution",
+      "before-after-triggers",
+      "trigger-syntax",
+      "context-variables",
+      "bulkification",
+      "validations-in-trigger",
+      "dml-events",
+      "limits",
+      "common-mistakes",
+      "best-practices",
+      "testing-triggers",
+      "practice-cases"
+    ],
+    "title": "Triggers",
+    "order": 1,
+    "free": true,
+    "link": "triggers",
+    "updatedAt": "2024-11-06T20:55:06.407Z"
+  },
+  {
+    "_id": "66140455c0668317c150ed32",
+    "ref": "triggers-in-apex",
+    "topics": [
+      "trigger-handlers"
+    ],
+    "title": "Trigger Handlers",
+    "order": 2,
+    "free": false,
+    "link": "trigger-handlers",
+    "updatedAt": "2024-11-06T20:55:06.407Z"
+  },
+  {
+    "_id": "667583bd22179a9906afc110",
+    "ref": "syntax-and-basics",
+    "topics": [
+      "bitwise-operators",
+      "comparable-interface-in-apex"
+    ],
+    "title": "Additional Topics",
+    "order": 12,
+    "free": false,
+    "link": "additional-topics",
+    "updatedAt": "2024-11-06T20:55:06.407Z"
+  },
+  {
+    "_id": "695ebaa735aada7a8f2f4092",
+    "ref": "asynchronous-apex",
+    "topics": [
+      "what-is-async",
+      "interfaces-in-apex",
+      "interfaces-in-real-world",
+      "implementing-multiple-interfaces"
+    ],
+    "title": "What is Async Apex?",
+    "order": 1,
+    "link": "async"
+  },
+  {
+    "_id": "69691b55d331617a8ce8abbb",
+    "ref": "asynchronous-apex",
+    "topics": [
+      "why-interfaces",
+      "what-is-scheduled",
+      "schedule-from-ui",
+      "schedule-from-code",
+      "real-world-scheduled"
+    ],
+    "title": "Schedulable Apex",
+    "order": 2,
+    "link": "scheduled"
+  },
+  {
+    "_id": "69692324d331617a8ce8abc4",
+    "ref": "asynchronous-apex",
+    "topics": [
+      "queueable-basics",
+      "first-queueable-class",
+      "first-queueable-job",
+      "transaction-failures",
+      "queueable-limits",
+      "future-methods",
+      "testing-queueables",
+      "passing-data",
+      "real-world-queueables"
+    ],
+    "title": "Queueables in Apex",
+    "order": 3,
+    "link": "queueables"
+  },
+  {
+    "_id": "6969339bd331617a8ce8abd0",
+    "ref": "asynchronous-apex",
+    "topics": [
+      "what-is-batch",
+      "batch-structure",
+      "batchable-interface",
+      "start-method",
+      "execute-method",
+      "running-batch-job",
+      "batch-and-scheduled",
+      "testing-batch"
+    ],
+    "title": "Batch Apex",
+    "order": 4,
+    "link": "batch"
+  },
+  {
+    "_id": "696dfb81d51c3505d8e7f64b",
+    "ref": "integrations",
+    "topics": [
+      "intro",
+      "intro-integrations",
+      "what-is-integration",
+      "what-is-api",
+      "http-request",
+      "http-response",
+      "http-payload",
+      "first-callout"
+    ],
+    "title": "First Callout",
+    "order": 1,
+    "link": "first-callout"
+  },
+  {
+    "_id": "6970d1c20a6f66b9d8042fbd",
+    "ref": "integrations",
+    "topics": [
+      "json-apex",
+      "xml-integrations",
+      "parsing-json",
+      "json-class",
+      "object-class",
+      "parsing-maps",
+      "inner-classes",
+      "parsing-inner-classes",
+      "maps-create-json",
+      "classes-create-json",
+      "attach-body-request",
+      "url-encoding"
+    ],
+    "title": "Post Requests",
+    "order": 2,
+    "link": "post-requests"
+  },
+  {
+    "_id": "6970d1c20a6f66b9d8042fbe",
+    "ref": "integrations",
+    "topics": [
+      "callouts-triggers",
+      "why-no-callout-trigger",
+      "how-callouts-triggers",
+      "queueables-recap",
+      "simple-callout-trigger",
+      "integration-trigger-architecture",
+      "custom-exceptions",
+      "fail-early"
+    ],
+    "title": "Requests from Triggers",
+    "order": 3,
+    "link": "requests-from-triggers"
+  },
+  {
+    "_id": "6970d1c20a6f66b9d8042fbf",
+    "ref": "integrations",
+    "topics": [
+      "why-integrations-different-test",
+      "first-integration-test",
+      "careful-with-insert",
+      "testing-static-resource"
+    ],
+    "title": "Testing Integrations",
+    "order": 4,
+    "link": "testing-integrations"
+  },
+  {
+    "_id": "6970d1c20a6f66b9d8042fc0",
+    "ref": "integrations",
+    "topics": [
+      "why-logging",
+      "simple-logging",
+      "logs-cleanup",
+      "nebula-logger",
+      "coding-best-practices"
+    ],
+    "title": "Logging in Integrations",
+    "order": 5,
+    "link": "logging-in-integrations"
+  },
+  {
+    "_id": "6970d1c20a6f66b9d8042fc1",
+    "ref": "integrations",
+    "topics": [
+      "auth-vs-authz",
+      "salesforce-api",
+      "oauth2",
+      "external-client-app",
+      "external-client-permissions",
+      "org-a-retrieve-accounts",
+      "external-ids",
+      "why-named-credentials",
+      "moving-named-credentials"
+    ],
+    "title": "Authentication",
+    "order": 6,
+    "link": "authentication"
+  },
+  {
+    "_id": "6970d1c20a6f66b9d8042fc2",
+    "ref": "integrations",
+    "topics": [
+      "first-web-service",
+      "exposing-api-apex",
+      "what-is-webhook",
+      "building-webhook",
+      "webhooks-homework"
+    ],
+    "title": "Webhooks",
+    "order": 7,
+    "link": "webhooks"
+  },
+  {
+    "_id": "6970d1c20a6f66b9d8042fc3",
+    "ref": "integrations",
+    "topics": [
+      "encryption-vs-encoding",
+      "why-encryption-not-enough",
+      "why-not-just-secret",
+      "hmac",
+      "pub-sub"
+    ],
+    "title": "Events & Signing",
+    "order": 8,
+    "link": "events"
+  },
+  {
+    "_id": "6970d1c20a6f66b9d8042fc4",
+    "ref": "integrations",
+    "topics": [
+      "pattern-summary",
+      "request-reply",
+      "fire-forget",
+      "batch-data-sync",
+      "remote-call-in",
+      "ui-update-data-changes",
+      "data-virtualization"
+    ],
+    "title": "Integration Architect Preparation",
+    "order": 9,
+    "link": "integration-architect"
+  }
+]

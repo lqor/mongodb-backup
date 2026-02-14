@@ -1,0 +1,130 @@
+[
+  {
+    "_id": "65fb2ada8f43bfd4a32a68f0",
+    "title": "Topics navigation and theory completion",
+    "description": "Intuitive and easy navigation to previous or next topic is now available in the bottom part of each topic;\nTopics with only theory now got the \"Done\" button, after mastering study material press it to update your progress ",
+    "timestampDate": "2024-03-18",
+    "createdAt": "2024-03-20T18:28:42.086Z",
+    "updatedAt": "2024-03-20T18:28:42.086Z"
+  },
+  {
+    "_id": "65fb34ab8f43bfd4a32a6984",
+    "title": "Breadcrumps navigation",
+    "description": "Opening any topic above learning materials you will see detailed navigation which represents yor current path in such form: module/lesson/topic",
+    "timestampDate": "2024-03-19",
+    "createdAt": "2024-03-20T19:10:35.637Z",
+    "updatedAt": "2024-03-20T19:10:35.637Z"
+  },
+  {
+    "_id": "65fb37858f43bfd4a32a6a49",
+    "title": "Lessons progressbar",
+    "description": "Besides your overall progress in your profile page, platform is now also tracking your progress in each lesson separately. You can see this progress by opening any module, each lesson will have its own progressbar",
+    "timestampDate": "2024-03-19",
+    "createdAt": "2024-03-20T19:22:45.050Z",
+    "updatedAt": "2024-03-20T19:22:45.050Z"
+  },
+  {
+    "_id": "65fb3a888f43bfd4a32a6d1d",
+    "title": "Introducing platform changelog!",
+    "description": "All changes, updates, new features etc. will appear in this page",
+    "timestampDate": "2024-03-20",
+    "createdAt": "2024-03-20T19:35:36.255Z",
+    "updatedAt": "2024-03-20T19:35:36.255Z"
+  },
+  {
+    "_id": "66056a28b98f2023fcc3db1d",
+    "title": "Leaderboard",
+    "description": "Introducing leaderboard which shows top 10 users on the platform. Compare your progress with other users, master your knowledge to get on top! You can check it here <link>https://www.learn-apex.com/leaderboard</link> or find it in dropdown menu under your profile",
+    "timestampDate": "2024-03-28",
+    "createdAt": "2024-03-28T13:01:28.730Z",
+    "updatedAt": "2024-03-28T13:01:28.730Z"
+  },
+  {
+    "_id": "6606a6cdbf15dc68e910d949",
+    "title": "Apex Hunger Games",
+    "description": "Hey :) \n\nWe created a Leaderboard based on how many tasks you have.\n\nAnd we're starting Learn Apex games - the competition until 14.04.2024 (14th April)\n\nWith the following prizes:\n- Place 1: 1 hour of consultation with me\n- Place 2: 1 hour of consultation with me\n- Place 3: 1 hour of consultation with me\n\nQuite simple :)\n\nBut the best price: You learning Apex.\n\nWe also added on the platform:\n+ 38 different tasks (Maps, variables, etc)\n+ New topic explanation on Boolean Table\n+ Fixed many tasks",
+    "timestampDate": "2024-03-29",
+    "createdAt": "2024-03-29T11:32:29.969Z",
+    "updatedAt": "2024-03-29T11:32:29.969Z"
+  },
+  {
+    "_id": "661d58a481ff6fa1f9e734c6",
+    "title": "Platform gamification",
+    "description": "1. Achievements. In your profile page you can see list of achievements, hovering on them will show your current progress of each of them.\n\n2. Major update for user progress. From now all your progress has xp based system:\n- You're gaining xp not only for solving tasks, but also for completing topics and unlocking achievements as well;\n- Your level now also depends on gained xp, you can see your level and its progress at the top right corner or in your profile page\n\nHappy coding :)",
+    "timestampDate": "2024-04-15",
+    "createdAt": "2024-04-15T16:41:08.643Z",
+    "updatedAt": "2024-04-15T16:41:08.643Z"
+  },
+  {
+    "_id": "663225d0fd8b0c9b15632e82",
+    "title": "User's activity heatmap & new leaderboard",
+    "description": "1. Heatmap was added to your profile page so now you can see your progress more precisely\n\n2. Leaderboard now shows all time top users in global tab and top users monthly in the current month tab",
+    "timestampDate": "2024-05-1",
+    "createdAt": "2024-05-01T11:21:52.146Z",
+    "updatedAt": "2024-05-01T11:21:52.146Z"
+  },
+  {
+    "_id": "663f7ef2797ae76437f519c1",
+    "title": "Code checker update",
+    "description": "Reworked code checer layout, all the controls are now in one place & added responsive design to checker for better user experience",
+    "timestampDate": "2024-05-11",
+    "createdAt": "2024-05-11T14:21:38.295Z",
+    "updatedAt": "2024-05-11T14:21:38.295Z"
+  },
+  {
+    "_id": "664cb2656ea818cb5de9dd1e",
+    "title": "New type of tasks, solutions update & more",
+    "description": "- New type of tasks\nIn tasks with Salesforce logo you will need to write some code in your org and then click Run Code to check it and get a feedback. More coming soon😉\n\n- Update of your actual progress\nAll lessons&topics that were done by you will be shown as \"not completed\" everytime there are new tasks.\n\n- Solutions for tasks\nWhen task is completed, in the Solution there will be available both your and platform solutions for it\n- Task difficulties and xp reward shown\nEvery task in the list now have small badges that are showing difficulty and reward for this task",
+    "timestampDate": "2024-05-21",
+    "createdAt": "2024-05-21T14:40:37.293Z",
+    "updatedAt": "2024-05-21T14:40:37.293Z"
+  },
+  {
+    "_id": "66719b3c596cf0ca36df3947",
+    "title": "Tablet&mobile support",
+    "description": "Platform now is fully responsive to all kinds of devices",
+    "timestampDate": "2024-06-18",
+    "createdAt": "2024-06-18T14:35:40.938Z",
+    "updatedAt": "2024-06-18T14:35:40.938Z"
+  },
+  {
+    "_id": "669bc003e7c688f693202aac",
+    "title": "Debug logs tab",
+    "description": "All your System.debug() will be logged in the tab below code editor. Developer Console-like full log is also available",
+    "timestampDate": "2024-07-02",
+    "createdAt": "2024-07-20T13:47:47.350Z",
+    "updatedAt": "2024-07-20T13:47:47.350Z"
+  },
+  {
+    "_id": "66ab9c689e948d2c93d76c97",
+    "title": "Interactive visualizer",
+    "description": "Understanding methods in Apex is made easy! New visualizer  will guide you on how methods in Apex are working with step by step info and what are they changing after each line being executed. Fully responsive, fully resizable to your comfort\nTry new feature: <link>https://www.learn-apex.com/modules/syntax_and_basics/65ae8e1204510a00c27882dc/65acfb7fa35d11beb1ef1cc6</link> and other topics related to methods",
+    "timestampDate": "2024-08-1",
+    "createdAt": "2024-08-01T14:32:08.005Z",
+    "updatedAt": "2024-08-01T14:32:08.005Z"
+  },
+  {
+    "_id": "66f1d71cfbccdf20ce8ff806",
+    "title": "Redirect to org ",
+    "description": "- After connecting an org you can quickly navigate to it using arrow near connect/disconnect org button in header\n- More intuitive layout of tasks to be solved in your org with quick navigation to your org as well\n- bug fixes (error during generating logs while opening a task or submitting your code)",
+    "timestampDate": "2024-09-23",
+    "createdAt": "2024-09-23T21:01:16.649Z",
+    "updatedAt": "2024-09-23T21:01:16.649Z"
+  },
+  {
+    "_id": "674e334e645df9a4ab979816",
+    "title": "Readable URLs",
+    "description": "URL links now are fully readable so you can clearly see your current path e.g. \"/modules/syntax-and-basics/for-each/-for-each-loop\"\nAll old links like \"modules/syntax_and_basics/65ae8e1204510a00c27882/65a838abfeef90604e1c6/\" are invalid now, following those links will cause an error \n",
+    "timestampDate": "2024-11-07",
+    "createdAt": "2024-12-02T22:23:10.423Z",
+    "updatedAt": "2024-12-02T22:23:10.423Z"
+  },
+  {
+    "_id": "678005a498fceb17b3e7c294",
+    "title": "Flashcards",
+    "description": "New feature that will enhance your studying experience! This new feature will help you to properly absorb and retain learning materials. Relearning process will adapt to your learning style and most important it relies on actual science-based algorithm for learning.\nTry new feature: <link>https://www.learn-apex.com/flashcards</link>",
+    "timestampDate": "2024-12-20",
+    "createdAt": "2025-01-09T17:21:40.095Z",
+    "updatedAt": "2025-01-09T17:21:40.095Z"
+  }
+]

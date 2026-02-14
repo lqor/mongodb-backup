@@ -1,0 +1,8375 @@
+[
+  {
+    "_id": "680e3a889652bacd83be4a50",
+    "name": "Task 1 - Simple HTML page",
+    "description": "Learn basics of HTML tags",
+    "delta": [
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Build a simple HTML page about an imaginary Salesforce Consulting company. No CSS needed. Use tags that are described below. But fill out the information as you want. Imagine that you're actually building a consultancy."
+      },
+      {
+        "insert": "\n\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "bold": true
+        },
+        "insert": "Requirements:"
+      },
+      {
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Use a "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "<!DOCTYPE html>"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " and set "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "lang=\"en\""
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " on the "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "html"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " element."
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "In the "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "head"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": ", include "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "meta charset=\"utf-8\""
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " and a "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "title"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " of \"Salesforce Services\"."
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Add a "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "header"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " with an "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "h1"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " and a short intro paragraph."
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "In the "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "main"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": ", add:"
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "A section with an h2 (\"What We Offer\") and a list of four services, each inside a link to https://trailhead.salesforce.com (target=\"_blank\")."
+      },
+      {
+        "attributes": {
+          "indent": 1,
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "A section with an h2 (\"Service Comparison\") and a table with 4 columns and 4 rows describing different services."
+      },
+      {
+        "attributes": {
+          "indent": 1,
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "A section with an h2 (\"Our Solutions\") and two figure elements, each containing a linked img and a figcaption."
+      },
+      {
+        "attributes": {
+          "indent": 1,
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "Add a footer with a contact paragraph and an address including an email and phone number."
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "\nHint: You can use this for images:\n\n<img src=\"https://images.unsplash.com/photo-1661956602944-249bcd04b63f?q=80&w=870&auto=format&fit=crop\" alt=\"Salesforce Cloud Solutions\" width=\"400\" height=\"300\">"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "\n"
+      }
+    ],
+    "language": "html",
+    "week": "1",
+    "preCode": "// your code here",
+    "links": [],
+    "createdAt": "2025-04-27T14:09:12.937Z",
+    "updatedAt": "2025-05-01T14:15:25.756Z",
+    "difficulty": "easy",
+    "optional": false
+  },
+  {
+    "_id": "681250f7d809ed541f4b95dc",
+    "name": "Task 2 - Simple Table",
+    "description": "Create a simple table",
+    "delta": [
+      {
+        "insert": "Create a static page using only HTML & CSS that will resemble a basic Salesforce Opportunity List View. Solve this task locally, not in Salesforce.\nThe table should have the following columns:\nOpportunity Name"
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "Stage"
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "Amount"
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "Close Date"
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "Fill the table with at least 5 dummy Opportunities.\nRequirements:\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Use correct HTML tags: "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "<table>"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": ", "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "<thead>"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": ", "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "<tbody>"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": ", "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "<tr>"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": ", "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "<th>"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": ", "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "<td>"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "."
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "Style the table with basic CSS:"
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "Add borders to the table and all cells."
+      },
+      {
+        "attributes": {
+          "indent": 1,
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "Add padding inside cells."
+      },
+      {
+        "attributes": {
+          "indent": 1,
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "Set a light blue background color for the header row."
+      },
+      {
+        "attributes": {
+          "indent": 1,
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "Center-align the header text."
+      },
+      {
+        "attributes": {
+          "indent": 1,
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "Right-align the Amount values."
+      },
+      {
+        "attributes": {
+          "indent": 1,
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "Set table width to 80% and center it horizontally."
+      },
+      {
+        "attributes": {
+          "indent": 1,
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "Add a hover effect: when hovering over a row, change the background to a light gray color."
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "Apply different text colors for different Stage values:"
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "Prospecting: orange"
+      },
+      {
+        "attributes": {
+          "indent": 1,
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "Closed Won: green"
+      },
+      {
+        "attributes": {
+          "indent": 1,
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "Closed Lost: red"
+      },
+      {
+        "attributes": {
+          "indent": 1,
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "\n"
+      }
+    ],
+    "language": "html",
+    "difficulty": "easy",
+    "week": "1",
+    "preCode": "// your code here",
+    "links": [],
+    "createdAt": "2025-04-30T16:33:59.599Z",
+    "updatedAt": "2025-05-01T14:19:14.443Z",
+    "optional": false
+  },
+  {
+    "_id": "681383569fa3faa9f3ed0c4b",
+    "name": "Task 3 - CSS Grid (optional)",
+    "description": "Create a simple grid.",
+    "delta": [
+      {
+        "insert": "Create a static page using only HTML & CSS that will resemble a simple Salesforce Dashboard Layout. Solve this task locally, not in Salesforce.\n\nThe layout should contain:\n4 dashboard components (like mini \"cards\" or \"reports\")"
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "Components should be placed in a grid: 2 columns and 2 rows"
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "Each component should have:"
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "A title (e.g., \"New Leads\", \"Closed Deals\", \"Pipeline Value\", \"Open Cases\")"
+      },
+      {
+        "attributes": {
+          "indent": 1,
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "A big number (like 245, $120,000, etc.)"
+      },
+      {
+        "attributes": {
+          "indent": 1,
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "A small description below the number (e.g., \"This month\", \"Q2 total\")"
+      },
+      {
+        "attributes": {
+          "indent": 1,
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "Requirements:\nUse "
+      },
+      {
+        "attributes": {
+          "bold": true
+        },
+        "insert": "CSS Grid"
+      },
+      {
+        "insert": " to arrange the 4 components"
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "Make the grid "
+      },
+      {
+        "attributes": {
+          "bold": true
+        },
+        "insert": "responsive"
+      },
+      {
+        "insert": ":"
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "2 columns on desktop"
+      },
+      {
+        "attributes": {
+          "indent": 1,
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "1 column on mobile (screen width < 600px)"
+      },
+      {
+        "attributes": {
+          "indent": 1,
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "Add basic styling:"
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "Light border around each card"
+      },
+      {
+        "attributes": {
+          "indent": 1,
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "Padding inside cards"
+      },
+      {
+        "attributes": {
+          "indent": 1,
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "Center the text inside each card"
+      },
+      {
+        "attributes": {
+          "indent": 1,
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "Add slight background color differences for each card (optional)"
+      },
+      {
+        "attributes": {
+          "indent": 1,
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "\n"
+      }
+    ],
+    "language": "html",
+    "difficulty": "easy",
+    "week": "1",
+    "preCode": "// your code here",
+    "links": [
+      {
+        "link": "https://www.skool.com/lwc-mastery-cohort-1477/classroom/41d95fc8?md=a9520cc00ff04a11b1d50b61d484bc7f",
+        "name": "Link In Skool",
+        "_id": "681383569fa3faa9f3ed0c4c"
+      }
+    ],
+    "createdAt": "2025-05-01T14:21:10.655Z",
+    "updatedAt": "2025-05-07T14:06:48.988Z",
+    "optional": true
+  },
+  {
+    "_id": "681383a09fa3faa9f3ed0c83",
+    "name": "Task 4 - Mini-Salesforce (optional)",
+    "description": "Create a mini-salesforce record layout.",
+    "delta": [
+      {
+        "insert": "Create a static page using only HTML & CSS that will as closely as possible resemble Record Detail Page of Salesforce Lightning. Solve this task locally, not in Salesforce.\n\nFor example, have a look in skool community: https://www.skool.com/lwc-mastery-cohort-1477/classroom/41d95fc8?md=c254c4c6255b4071a74a6d4347bce564\n"
+      }
+    ],
+    "language": "html",
+    "difficulty": "medium",
+    "week": "1",
+    "preCode": "// your code here",
+    "links": [
+      {
+        "link": "https://www.skool.com/lwc-mastery-cohort-1477/classroom/41d95fc8?md=c254c4c6255b4071a74a6d4347bce564",
+        "name": "Example in Skool Community",
+        "_id": "681383a09fa3faa9f3ed0c84"
+      }
+    ],
+    "createdAt": "2025-05-01T14:22:24.879Z",
+    "updatedAt": "2025-05-07T14:07:56.791Z",
+    "optional": true
+  },
+  {
+    "_id": "6818a79b020e9ac9e961aa35",
+    "name": "Variables",
+    "description": "Create 3 variables",
+    "delta": [
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Create three variables:"
+      },
+      {
+        "attributes": {
+          "list": "ordered"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "Name"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " as your first name"
+      },
+      {
+        "attributes": {
+          "indent": 1,
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "age"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " as your age"
+      },
+      {
+        "attributes": {
+          "indent": 1,
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "isStudent"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " as a boolean indicating whether you're a student"
+      },
+      {
+        "attributes": {
+          "indent": 1,
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Log them individually and together in a single line."
+      },
+      {
+        "attributes": {
+          "list": "ordered"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "\n"
+      }
+    ],
+    "language": "javascript",
+    "difficulty": "easy",
+    "week": "2",
+    "preCode": "// your code here",
+    "links": [],
+    "createdAt": "2025-05-05T11:57:15.292Z",
+    "updatedAt": "2025-05-05T11:57:15.292Z",
+    "optional": false
+  },
+  {
+    "_id": "6818db14ed40f2ebfb3c6898",
+    "name": "Special Numbers",
+    "description": "Create 2 variables",
+    "delta": [
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Create two variables:"
+      },
+      {
+        "attributes": {
+          "list": "ordered"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "dividedByZero"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " that stores a number divided by zero"
+      },
+      {
+        "attributes": {
+          "indent": 1,
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "notANumber"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " storing the result of multiplying a string with a number"
+      },
+      {
+        "attributes": {
+          "indent": 1,
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Log both results and their types."
+      },
+      {
+        "attributes": {
+          "list": "ordered"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "\n"
+      }
+    ],
+    "language": "javascript",
+    "difficulty": "easy",
+    "week": "2",
+    "preCode": "// your code here",
+    "links": [],
+    "createdAt": "2025-05-05T15:36:52.859Z",
+    "updatedAt": "2025-05-05T15:36:52.859Z",
+    "optional": false
+  },
+  {
+    "_id": "6818db84ed40f2ebfb3c68a2",
+    "name": "String Manipulation",
+    "description": "Create a variable that contains string, use template literals (\\`)",
+    "delta": [
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Create a variable "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "message"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " that contains the string:"
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "             Hi, I'm [your name] and I love JavaScript!"
+      },
+      {
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "           Use template literals (\\`)."
+      },
+      {
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Log this message."
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "\n"
+      }
+    ],
+    "language": "javascript",
+    "difficulty": "easy",
+    "week": "2",
+    "preCode": "// your code here",
+    "links": [],
+    "createdAt": "2025-05-05T15:38:44.449Z",
+    "updatedAt": "2025-05-05T15:38:44.449Z",
+    "optional": false
+  },
+  {
+    "_id": "68190f74ab5c31ec6dc8c013",
+    "name": "Stars",
+    "description": "Create a short program for the user that ask a number ",
+    "delta": [
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Write a program that asks the user for a number using "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "prompt"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " and then prints that many "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "*"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " on a single line."
+      },
+      {
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Example (if user enters 5):"
+      },
+      {
+        "insert": "\n*****"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      }
+    ],
+    "language": "javascript",
+    "difficulty": "easy",
+    "week": "2",
+    "preCode": "// your code here",
+    "links": [],
+    "createdAt": "2025-05-05T19:20:20.397Z",
+    "updatedAt": "2025-05-05T19:20:20.397Z",
+    "optional": false
+  },
+  {
+    "_id": "68190fcbab5c31ec6dc8c048",
+    "name": "Summing User Input",
+    "description": "Create a program that asks the user to enter a positive whole number",
+    "delta": [
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Write a program that asks the user to enter a positive whole number using "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "prompt()"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": ". Make sure to convert the input to a number. Then, use a loop to calculate the sum of all whole numbers starting from 1 up to and including the number the user entered. Finally, "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "console.log"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " the calculated sum."
+      },
+      {
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "italic": true
+        },
+        "insert": "Example:"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " If the user enters "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "5"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": ", the program should calculate 1+2+3+4+5 and output "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "15"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "."
+      },
+      {
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "italic": true
+        },
+        "insert": "Hints:"
+      },
+      {
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Remember "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "prompt()"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " returns a string, you'll need "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "Number()"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " to convert it."
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "This variable can be solve with a loop, or without in a single line. Solve it in both ways."
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      }
+    ],
+    "language": "javascript",
+    "difficulty": "easy",
+    "week": "2",
+    "preCode": "// your code here",
+    "links": [],
+    "createdAt": "2025-05-05T19:21:47.943Z",
+    "updatedAt": "2025-05-05T19:21:47.943Z",
+    "optional": false
+  },
+  {
+    "_id": "68190ff4ab5c31ec6dc8c04d",
+    "name": "FizzBuzz",
+    "description": "Create a program that prints out all numbers from 1 to 100.",
+    "delta": [
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "This is a classical interview task for developers. It's easy, but there are rumors that it sorts out a big % of applicants. So if you can solve it - well done, you're already ahead of some people :)"
+      },
+      {
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Here's the task:"
+      },
+      {
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Write a program that prints out all numbers from 1 to 100. But for numbers that are divisible by 3, print \"Fizz\" instead of the number. For numbers divisible by 5 (but not by 3), print \"Buzz\". For numbers that are divisible by 3 and by 5, print out \"FizzBuzz\"."
+      },
+      {
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Hints:"
+      },
+      {
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Use modulo operator "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "%"
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Make sure that each number starts with a new line."
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Submit the task once it's done."
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      }
+    ],
+    "language": "javascript",
+    "difficulty": "easy",
+    "week": "2",
+    "preCode": "// your code here",
+    "links": [],
+    "createdAt": "2025-05-05T19:22:28.318Z",
+    "updatedAt": "2025-05-05T19:22:28.318Z",
+    "optional": false
+  },
+  {
+    "_id": "6819101fab5c31ec6dc8c052",
+    "name": "Repeat (optional)",
+    "description": "Create a program with a loop that prints the following pattern.",
+    "delta": [
+      {
+        "insert": "Write a loop that prints the following pattern. Each line shows the same number repeated that many times. Use a single loop.\n1"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "22"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "333"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "4444"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "55555"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      }
+    ],
+    "language": "javascript",
+    "difficulty": "easy",
+    "week": "2",
+    "preCode": "// your code here",
+    "links": [],
+    "createdAt": "2025-05-05T19:23:11.305Z",
+    "updatedAt": "2025-05-07T14:32:51.464Z",
+    "optional": true
+  },
+  {
+    "_id": "68191044ab5c31ec6dc8c057",
+    "name": "Until Zero (optional)",
+    "description": "Create a program that ask the user to enter numbers",
+    "delta": [
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Ask the user to enter numbers using "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "prompt"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": ". Keep asking until they enter "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "0"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": ". When they do, print the sum of all previously entered numbers."
+      },
+      {
+        "insert": "\nEnter a number: 3  "
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "Enter a number: 7  "
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "Enter a number: -2  "
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "Enter a number: 0  "
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "Sum is: 8"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      }
+    ],
+    "language": "javascript",
+    "difficulty": "easy",
+    "week": "2",
+    "preCode": "// your code here",
+    "links": [],
+    "createdAt": "2025-05-05T19:23:48.275Z",
+    "updatedAt": "2025-05-07T14:33:04.275Z",
+    "optional": true
+  },
+  {
+    "_id": "68191074ab5c31ec6dc8c066",
+    "name": "Multiplication table (optional)",
+    "description": "Create a program that ask the user for a number",
+    "delta": [
+      {
+        "insert": "Ask the user for a number. Then print its multiplication table from 1 to 10.\nEnter a number: 4  "
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "4 x 1 = 4  "
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "4 x 2 = 8  "
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "...  "
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "4 x 10 = 40"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      }
+    ],
+    "language": "javascript",
+    "difficulty": "easy",
+    "week": "2",
+    "preCode": "// your code here",
+    "links": [],
+    "createdAt": "2025-05-05T19:24:36.901Z",
+    "updatedAt": "2025-05-07T14:33:23.519Z",
+    "optional": true
+  },
+  {
+    "_id": "68191091ab5c31ec6dc8c06b",
+    "name": "Password (optional)",
+    "description": "Create a program that ask the user to enter a password",
+    "delta": [
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Ask the user to enter a password using "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "prompt"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": ". Keep asking until they enter "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "\"letmein\""
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": ". When they do, print "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "\"Access granted.\""
+      },
+      {
+        "insert": "\nEnter password: 1234  "
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "Enter password: secret  "
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "Enter password: letmein  "
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "Access granted."
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      }
+    ],
+    "language": "javascript",
+    "difficulty": "easy",
+    "week": "2",
+    "preCode": "// your code here",
+    "links": [],
+    "createdAt": "2025-05-05T19:25:05.802Z",
+    "updatedAt": "2025-05-07T14:33:39.584Z",
+    "optional": true
+  },
+  {
+    "_id": "681910aaab5c31ec6dc8c070",
+    "name": "Square Box (optional)",
+    "description": "Create a program that ask the user for a number",
+    "delta": [
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Ask the user for a number. Print a square of "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "#"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " characters of that size."
+      },
+      {
+        "insert": "\nEnter size: 3  "
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "###  "
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "###  "
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "###"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      }
+    ],
+    "language": "javascript",
+    "difficulty": "easy",
+    "week": "2",
+    "preCode": "// your code here",
+    "links": [],
+    "createdAt": "2025-05-05T19:25:30.721Z",
+    "updatedAt": "2025-05-07T14:33:49.141Z",
+    "optional": true
+  },
+  {
+    "_id": "681910c4ab5c31ec6dc8c07a",
+    "name": "Digit Counter (optional)",
+    "description": "Create a program that ask the user for a number",
+    "delta": [
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Ask the user for a number using "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "prompt"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": ". Count and print how many digits the number has."
+      },
+      {
+        "insert": "\nEnter a number: 39284  "
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "Digits: 5"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "Hint: Use division by 10 and a loop."
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      }
+    ],
+    "language": "javascript",
+    "difficulty": "easy",
+    "week": "2",
+    "preCode": "// your code here",
+    "links": [],
+    "createdAt": "2025-05-05T19:25:56.057Z",
+    "updatedAt": "2025-05-07T14:34:07.445Z",
+    "optional": true
+  },
+  {
+    "_id": "681910e1ab5c31ec6dc8c07f",
+    "name": "Prime Number Between (optional)",
+    "description": "Create a program that ask the user to input two numbers",
+    "delta": [
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Write a program that asks the user to input two numbers ("
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "start"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " and "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "end"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": ") using "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "prompt()"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": ". Print all prime numbers between these two numbers, inclusive. A prime number is divisible only by itself and "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "1"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "."
+      },
+      {
+        "insert": "\nEnter start number: 10"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "Enter end number: 20"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n\n"
+      },
+      {
+        "insert": "Primes between 10 and 20:"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "11"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "13"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "17"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "19"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      }
+    ],
+    "language": "javascript",
+    "difficulty": "easy",
+    "week": "2",
+    "preCode": "// your code here",
+    "links": [],
+    "createdAt": "2025-05-05T19:26:25.200Z",
+    "updatedAt": "2025-05-07T14:34:22.756Z",
+    "optional": true
+  },
+  {
+    "_id": "681910fcab5c31ec6dc8c084",
+    "name": "Binary Conversion (optional)",
+    "description": "Create a program that prompts the user for a positive integer",
+    "delta": [
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Write a program that prompts the user for a positive integer using "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "prompt()"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": ". Convert and print this number into its binary representation. "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "bold": true
+        },
+        "insert": "You are not allowed to use built-in methods like "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "toString(2)"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " or similar. Implement the conversion manually using loops and arithmetic operations only."
+      },
+      {
+        "insert": "\nEnter a number: 19"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "Binary representation: 10011"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      }
+    ],
+    "language": "javascript",
+    "difficulty": "easy",
+    "week": "2",
+    "preCode": "// your code here",
+    "links": [],
+    "createdAt": "2025-05-05T19:26:52.815Z",
+    "updatedAt": "2025-05-07T14:36:14.741Z",
+    "optional": true
+  },
+  {
+    "_id": "681a3621b1625a5c0f37c474",
+    "name": "Mini-project | Cookie Clicker (very optional)",
+    "description": "Mini-game",
+    "delta": [
+      {
+        "insert": "Create a mini game. Description here: https://www.loom.com/share/62170925ff15433fb86ad03275c1d1f4?sid=9207d3e0-2dee-4745-8c0e-253d8a5ff48d\n"
+      }
+    ],
+    "language": "javascript",
+    "difficulty": "medium",
+    "week": "2",
+    "preCode": "// your code here",
+    "links": [
+      {
+        "link": "https://www.loom.com/share/62170925ff15433fb86ad03275c1d1f4?sid=9207d3e0-2dee-4745-8c0e-253d8a5ff48d",
+        "name": "Task Description",
+        "_id": "681a3621b1625a5c0f37c475"
+      }
+    ],
+    "createdAt": "2025-05-06T16:17:37.864Z",
+    "updatedAt": "2025-05-07T14:36:25.737Z",
+    "optional": true
+  },
+  {
+    "_id": "682399bdcbc969fa386c02e7",
+    "name": "Task 1",
+    "description": "Create a new array that contains the same values but in reverse order",
+    "delta": [
+      {
+        "insert": "Given this array:\nlet nums = [1, 2, 3, 4, 5];"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "Create a new array called reversedNums that contains the same values but in reverse order. No"
+      },
+      {
+        "attributes": {
+          "italic": true
+        },
+        "insert": " .reverse() "
+      },
+      {
+        "insert": "allowed.\n"
+      }
+    ],
+    "language": "javascript",
+    "difficulty": "easy",
+    "week": "3",
+    "preCode": "// your code here",
+    "links": [],
+    "optional": false,
+    "createdAt": "2025-05-13T19:13:02.003Z",
+    "updatedAt": "2025-05-15T19:15:45.601Z"
+  },
+  {
+    "_id": "682399dccbc969fa386c02f6",
+    "name": "Task 2",
+    "description": "Create a new array that only contains the truthy values",
+    "delta": [
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Given this array:"
+      },
+      {
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "let mixed = [0, \"hello\", false, 42, \"\", null, \"world\", undefined];"
+      },
+      {
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Use a loop to create a new array that only contains the truthy values."
+      },
+      {
+        "insert": "\n"
+      }
+    ],
+    "language": "javascript",
+    "difficulty": "easy",
+    "week": "3",
+    "preCode": "// your code here",
+    "links": [],
+    "optional": false,
+    "createdAt": "2025-05-13T19:13:32.307Z",
+    "updatedAt": "2025-05-15T19:16:11.696Z"
+  },
+  {
+    "_id": "682399edcbc969fa386c0305",
+    "name": "Task 3",
+    "description": "Create a loop that finds the largest number",
+    "delta": [
+      {
+        "insert": "Create a loop that finds the largest number in this array:\nlet scores = [12, 55, 3, 98, 42, 77];\n"
+      }
+    ],
+    "language": "javascript",
+    "difficulty": "easy",
+    "week": "3",
+    "preCode": "// your code here",
+    "links": [],
+    "optional": false,
+    "createdAt": "2025-05-13T19:13:49.181Z",
+    "updatedAt": "2025-05-15T19:16:34.713Z"
+  },
+  {
+    "_id": "68239a13cbc969fa386c0314",
+    "name": "Task 4 (optional)",
+    "description": "Clean the data and produce a list of properly formatted contacts",
+    "delta": [
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "You’re given a messy string of names and emails — badly formatted, full of inconsistent casing, extra spaces, and broken structure."
+      },
+      {
+        "insert": "\nlet rawData = `"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "  alex   smith @gmail.com,  "
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "BEYONCE-KNOWLES@music.com,  "
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "  taylor__swift@pop.com,   "
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "madonna   ciccone   @queen.com ,   "
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "Will_smith@hollywood.com  "
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "`;"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Your job is to clean the data and produce a list of properly formatted contacts. Your output should be:"
+      },
+      {
+        "insert": "\n["
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "  \"Alex Smith <smith@gmail.com>\","
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "  \"Beyonce Knowles <knowles@music.com>\","
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "  \"Madonna Ciccone <ciccone@queen.com>\","
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "  \"Taylor Swift <swift@pop.com>\","
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "  \"Will Smith <smith@hollywood.com>\""
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "]"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Requirements:"
+      },
+      {
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Don’t use "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": ".map()"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " , regular expressions or any arrow functions."
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Capitalize each word in the name."
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Rebuild emails correctly (e.g. "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "\"smith@gmail.com\""
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": ", not just "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "\"@gmail.com\""
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": ")."
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Remove extra spaces inside emails."
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Sort the final array alphabetically by name."
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "The function should work for more than 5 values as well."
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "\n"
+      }
+    ],
+    "language": "javascript",
+    "difficulty": "easy",
+    "week": "3",
+    "preCode": "// your code here",
+    "links": [],
+    "optional": true,
+    "createdAt": "2025-05-13T19:14:27.914Z",
+    "updatedAt": "2025-05-19T11:11:15.203Z"
+  },
+  {
+    "_id": "68239a31cbc969fa386c0323",
+    "name": "Task 5 - Deep Comparison (optional)",
+    "description": "Write a function that takes two values and returns 'true'",
+    "delta": [
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Sometimes using == (or even ===) isn’t enough - especially when comparing objects. These operators only check if the two values point to the same thing in memory."
+      },
+      {
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "We want to be able to compare them based on their values and structure."
+      },
+      {
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Write a function "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "deepEqual"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " that takes two values and returns "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "true"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " only if they are the same value or are objects with the same properties, where the values of the properties are equal when compared with a recursive call to "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "deepEqual"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "."
+      },
+      {
+        "insert": "\nconsole.log(deepEqual(1, 1));                         // true"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "console.log(deepEqual(1, '1'));                       // false"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "console.log(deepEqual(null, null));                   // true"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "console.log(deepEqual(null, {}));                     // false"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "console.log(deepEqual({a: 1}, {a: 1}));               // true"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "console.log(deepEqual({a: 1}, {a: 2}));               // false"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "console.log(deepEqual({a: 1}, {a: 1, b: 2}));          // false"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "console.log(deepEqual({a: {b: 2}}, {a: {b: 2}}));     // true"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "console.log(deepEqual({a: {b: 2}}, {a: {b: 3}}));     // false"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      }
+    ],
+    "language": "javascript",
+    "difficulty": "easy",
+    "week": "3",
+    "preCode": "// your code here",
+    "links": [],
+    "optional": true,
+    "createdAt": "2025-05-13T19:14:57.646Z",
+    "updatedAt": "2025-05-19T11:11:25.395Z"
+  },
+  {
+    "_id": "68263d02cbc969fa386c5871",
+    "name": "Mini-project | Contact CSV Import Tool",
+    "description": "Develop a mini CRM import tool using JavaScript",
+    "delta": [
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "You're building a "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "bold": true
+        },
+        "insert": "mini CRM import tool"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " using JavaScript. Just like in Salesforce, we often get CSV files with contact info from clients - and we need to parse, clean, and analyze them before importing."
+      },
+      {
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Here's the data:"
+      },
+      {
+        "insert": "\nconst csvData = `"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "First Name,Last Name,Email,Company,Title"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "Anna,Smith,anna@example.com,Acme Inc.,Manager"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "Brian,,brian@email.com,,Developer"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "Claire,Brown,,Acme Inc.,Intern"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "John,Doe,john.doe@example.com,Salesforce,Admin"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "Ella,Fitzgerald,ella@jazzmail.com,Jazz Corp,VP"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "Tom,,tom123@invalid,N/A,Consultant"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "Maria,Garcia,maria.garcia@company.com,Acme Inc.,Sales"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "Derek,Lee,,Salesforce,Engineer"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "Sophie,Khan,sophie.khan@email.com,StartupX,CEO"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "Kevin,Nguyen,,StartupX,Intern"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "`.trim();"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "bold": true
+        },
+        "insert": "Task 1 - Clean Up "
+      },
+      {
+        "attributes": {
+          "header": 4
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Clean up the data. If a contact is missing a "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "bold": true
+        },
+        "insert": "first name"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": ", "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "bold": true
+        },
+        "insert": "last name"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": ", "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "bold": true
+        },
+        "insert": "email"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": ", "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "bold": true
+        },
+        "insert": "company"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": ", or "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "bold": true
+        },
+        "insert": "title"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": ", you must replace it with default values:"
+      },
+      {
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Missing names or titles → "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "\"Unknown\""
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Missing email → "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "\"no-email@example.com\""
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Missing company → "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "\"N/A\""
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "For example, this CSV row:"
+      },
+      {
+        "insert": "\nBrian,,brian@email.com,,Developer"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Should be converted into:"
+      },
+      {
+        "insert": "\n{"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "  firstName: \"Brian\","
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "  lastName: \"Unknown\","
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "  email: \"brian@email.com\","
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "  company: \"N/A\","
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "  title: \"Developer\""
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "}"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "bold": true
+        },
+        "insert": "Task 2 - Mark Invalid Contacts"
+      },
+      {
+        "attributes": {
+          "header": 4
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Identify invalid contacts using the original CSV data (before Task 1 clean-up) based on these rules:"
+      },
+      {
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Missing original first name → invalid"
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Email without an '@' or without '.' after '@' → invalid"
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Add a boolean property "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "invalid: true"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " to these contacts."
+      },
+      {
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Separate contacts into valid and invalid arrays based on this."
+      },
+      {
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Task 3 - Normalize"
+      },
+      {
+        "attributes": {
+          "header": 4
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Before proceeding further, normalize contact titles to a consistent format:"
+      },
+      {
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "\"ceo\" → \"CEO\""
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "\"vp\" → \"VP\""
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "\"chief executive officer\" → \"CEO\""
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Implement this normalization for all contacts."
+      },
+      {
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "After normalization, collect contacts whose title is one of these: \"Manager\", \"VP\", or \"CEO\" into a separate array."
+      },
+      {
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Task 4 - Grouping"
+      },
+      {
+        "attributes": {
+          "header": 4
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Create an object grouping valid contacts by company:"
+      },
+      {
+        "insert": "\n{"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "  \"Acme Inc.\": [/* 3 contacts */],"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "  \"Salesforce\": [/* 2 contacts */],"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "  \"StartupX\": [/* 1 contact */],"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "  \"N/A\": [/* contacts without a company */]"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "}"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Then, generate a summary object indicating the number of valid contacts per company:"
+      },
+      {
+        "insert": "\n{"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "  \"Acme Inc.\": 3,"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "  \"Salesforce\": 2,"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "  \"StartupX\": 1,"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "  \"N/A\": 2"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "}"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Task 5 - Final Report"
+      },
+      {
+        "attributes": {
+          "header": 4
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "At the end, simulate a user clicking \"Import\" by logging a detailed summary to the console. Include user-friendly messages for each step and introduce a 2-second pause between steps to mimic processing time."
+      },
+      {
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "The final summary should contain:"
+      },
+      {
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "✅ Number of successfully imported contacts"
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "❌ Number of contacts skipped due to invalid data"
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "🏷️ Number of contacts whose title was originally missing (now \"Unknown\")"
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "🧠 Number of key contacts imported (\"CEO\", \"VP\", \"Manager\")"
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "📅 Timestamp of the import"
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Example of console output:"
+      },
+      {
+        "insert": "\n📦 CRM Import Summary"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "-------------------------"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "📅 Timestamp: 2025-05-11T18:03:25.000Z"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n\n"
+      },
+      {
+        "insert": "✅ Imported Contacts: 7"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "❌ Skipped Contacts (invalid data): 3"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "🏷️ Contacts with Unknown Title: 2"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "🧠 Key Roles Imported (CEO/VP/Manager): 3"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n\n"
+      },
+      {
+        "insert": "Import completed successfully."
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "And if there are no valid contacts:"
+      },
+      {
+        "insert": "\n❌ Import Failed."
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "Reason: No valid contacts found."
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "Please review the data before trying again."
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Submit this project as a whole, not task by task."
+      },
+      {
+        "insert": "\n"
+      }
+    ],
+    "language": "javascript",
+    "difficulty": "medium",
+    "week": "3",
+    "preCode": "// your code here",
+    "links": [],
+    "optional": false,
+    "createdAt": "2025-05-15T19:14:10.814Z",
+    "updatedAt": "2025-05-15T19:14:10.814Z"
+  },
+  {
+    "_id": "682b1e9bcbc969fa386cfd9b",
+    "name": "Task 1 - Map",
+    "description": "Create your own function that will work the same way as the map function",
+    "delta": [
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Create "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "myMap"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " function that will work the same way as the "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "map"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " function. Google all the necessary information on how the "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "map"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " function works."
+      },
+      {
+        "insert": "\n"
+      }
+    ],
+    "language": "javascript",
+    "difficulty": "easy",
+    "week": "4",
+    "preCode": "// your code here",
+    "links": [],
+    "optional": false,
+    "createdAt": "2025-05-19T12:05:47.455Z",
+    "updatedAt": "2025-05-19T12:05:47.455Z"
+  },
+  {
+    "_id": "682b1ecccbc969fa386cfdaa",
+    "name": "Task 2 - Reduce",
+    "description": "Create your own function that will work the same way as the 'reduce' function",
+    "delta": [
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Create "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "myReduce"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " function that will work the same way as the "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "reduce"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " function. Google all the necessary information on how the "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "find"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " function works."
+      },
+      {
+        "insert": "\n"
+      }
+    ],
+    "language": "javascript",
+    "difficulty": "easy",
+    "week": "4",
+    "preCode": "// your code here",
+    "links": [],
+    "optional": false,
+    "createdAt": "2025-05-19T12:06:36.020Z",
+    "updatedAt": "2025-05-19T12:10:31.321Z"
+  },
+  {
+    "_id": "682b1eeecbc969fa386cfdb9",
+    "name": "Task 3 - Find ",
+    "description": "Create your own function that will work the same way as the 'find' function",
+    "delta": [
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Create "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "myFind"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " function that will work the same way as the "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "find"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " function. Google all the necessary information on how the "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "find"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " function works."
+      },
+      {
+        "insert": "\n"
+      }
+    ],
+    "language": "javascript",
+    "difficulty": "easy",
+    "week": "4",
+    "preCode": "// your code here",
+    "links": [],
+    "optional": false,
+    "createdAt": "2025-05-19T12:07:10.916Z",
+    "updatedAt": "2025-05-19T12:07:10.916Z"
+  },
+  {
+    "_id": "682b1f09cbc969fa386cfdc8",
+    "name": "Task 4 - Some",
+    "description": "Create your own function that will work the same way as the 'some' function",
+    "delta": [
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Create "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "mySome"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " function that will work the same way as the "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "some"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " function. Google all the necessary information on how the "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "some"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " function works."
+      },
+      {
+        "insert": "\n"
+      }
+    ],
+    "language": "javascript",
+    "difficulty": "easy",
+    "week": "4",
+    "preCode": "// your code here",
+    "links": [],
+    "optional": false,
+    "createdAt": "2025-05-19T12:07:37.667Z",
+    "updatedAt": "2025-05-19T12:07:37.667Z"
+  },
+  {
+    "_id": "682b1f1bcbc969fa386cfdd7",
+    "name": "Task 5 - Every",
+    "description": "Create your own function that will work the same way as the 'every' function",
+    "delta": [
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Create "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "myEvery"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " function that will work the same way as the "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "every"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " function. Google all the necessary information on how the "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "every"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " function works."
+      },
+      {
+        "insert": "\n"
+      }
+    ],
+    "language": "javascript",
+    "difficulty": "easy",
+    "week": "4",
+    "preCode": "// your code here",
+    "links": [],
+    "optional": false,
+    "createdAt": "2025-05-19T12:07:55.895Z",
+    "updatedAt": "2025-05-19T12:07:55.895Z"
+  },
+  {
+    "_id": "682b1fe1cbc969fa386cfe5b",
+    "name": "Task 6",
+    "description": "Create a Promise that resolves after 2 seconds with the message",
+    "delta": [
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Create a Promise that resolves after 2 seconds with the message "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "\"Data loaded\""
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": ". Use "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": ".then()"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " to print the result."
+      },
+      {
+        "insert": "\n"
+      }
+    ],
+    "language": "javascript",
+    "difficulty": "easy",
+    "week": "4",
+    "preCode": "// your code here",
+    "links": [],
+    "optional": false,
+    "createdAt": "2025-05-19T12:11:13.300Z",
+    "updatedAt": "2025-05-19T12:11:13.300Z"
+  },
+  {
+    "_id": "682b200fcbc969fa386cfe6a",
+    "name": "Task 7",
+    "description": "Create a Promise that rejects after 1 second with the message",
+    "delta": [
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Create a Promise that rejects after 1 second with the message "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "\"Failed to load data\""
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "."
+      },
+      {
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Use "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": ".catch()"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " to handle the error and print it."
+      },
+      {
+        "insert": "\n"
+      }
+    ],
+    "language": "javascript",
+    "difficulty": "easy",
+    "week": "4",
+    "preCode": "// your code here",
+    "links": [],
+    "optional": false,
+    "createdAt": "2025-05-19T12:11:59.010Z",
+    "updatedAt": "2025-05-19T12:11:59.010Z"
+  },
+  {
+    "_id": "682b2028cbc969fa386cfe79",
+    "name": "Task 8",
+    "description": "Create a function loadContacts() that returns a Promise",
+    "delta": [
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Create a function "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "loadContacts()"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " that returns a Promise."
+      },
+      {
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "After 2 seconds, it resolves with "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "[\"Alex\", \"Igor\", \"Maria\"]"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "."
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Call the function and print:"
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "\"Contacts loaded: Alex, Igor, Maria.\""
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Just a simple understanding of how to call a promise will be enough to follow this course. No need to go into crazy deep theory on them. But if you want to go deeper, here are a few more tasks."
+      },
+      {
+        "insert": "\n"
+      }
+    ],
+    "language": "javascript",
+    "difficulty": "easy",
+    "week": "4",
+    "preCode": "// your code here",
+    "links": [],
+    "optional": false,
+    "createdAt": "2025-05-19T12:12:24.703Z",
+    "updatedAt": "2025-05-19T12:12:24.703Z"
+  },
+  {
+    "_id": "682b2040cbc969fa386cfe88",
+    "name": "Task 9 (optional)",
+    "description": "Create a Promise that resolves after 1 second with the number",
+    "delta": [
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Create a Promise that resolves after 1 second with the number "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "5"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": ". In "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": ".then()"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": ", multiply the number by "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "2"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " and return it. Chain another "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": ".then()"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " to print the final value."
+      },
+      {
+        "insert": "\n"
+      }
+    ],
+    "language": "javascript",
+    "difficulty": "easy",
+    "week": "4",
+    "preCode": "// your code here",
+    "links": [],
+    "optional": true,
+    "createdAt": "2025-05-19T12:12:48.326Z",
+    "updatedAt": "2025-05-19T15:21:06.864Z"
+  },
+  {
+    "_id": "682b2073cbc969fa386cfe97",
+    "name": "Task 10 (optional)",
+    "description": "Create a program with 4 tasks",
+    "delta": [
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Create following program:"
+      },
+      {
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Create a promise that resolves after 3 seconds."
+      },
+      {
+        "attributes": {
+          "list": "ordered"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Print "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "\"Promise in progress\""
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " immediately after creating the promise."
+      },
+      {
+        "attributes": {
+          "list": "ordered"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Also print the promise object itself to see its pending state."
+      },
+      {
+        "attributes": {
+          "list": "ordered"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Use "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": ".then()"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " to print "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "\"Script completed\""
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " once resolved."
+      },
+      {
+        "attributes": {
+          "list": "ordered"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "\n"
+      }
+    ],
+    "language": "javascript",
+    "difficulty": "easy",
+    "week": "4",
+    "preCode": "// your code here",
+    "links": [],
+    "optional": true,
+    "createdAt": "2025-05-19T12:13:39.330Z",
+    "updatedAt": "2025-05-19T15:20:38.631Z"
+  },
+  {
+    "_id": "682b2092cbc969fa386cfea6",
+    "name": "Task 11 (optional)",
+    "description": "Create a program with 5 tasks. Try yourself!",
+    "delta": [
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Create following program:"
+      },
+      {
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "When the script starts, print:"
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "\"Script started\""
+      },
+      {
+        "attributes": {
+          "list": "ordered"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Create a Promise that will:"
+      },
+      {
+        "attributes": {
+          "list": "ordered"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Reject after 3 seconds with the message "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "\"Data load failed\""
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "."
+      },
+      {
+        "attributes": {
+          "indent": 1,
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Resolve after 6 seconds with the message "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "\"Data loaded successfully\""
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "."
+      },
+      {
+        "attributes": {
+          "indent": 1,
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Right after creating the Promise, print:"
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "\"Promise in progress\" "
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "and also print the Promise object itself."
+      },
+      {
+        "attributes": {
+          "list": "ordered"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Use "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": ".then()"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " to handle resolution and print "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "\"Script successful\""
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "."
+      },
+      {
+        "attributes": {
+          "list": "ordered"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Use "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": ".catch()"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " to handle rejection and print "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "\"Script failed\""
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "."
+      },
+      {
+        "attributes": {
+          "list": "ordered"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "bold": true
+        },
+        "insert": "Expected behavior:"
+      },
+      {
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "At the start:"
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "Script started"
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "Promise in progress"
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "[object Promise]"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " or "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "Promise { <pending> }"
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "After 3 seconds:"
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "Script failed"
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "It will never reach \"Script successful\" because the promise is already rejected."
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "\n"
+      }
+    ],
+    "language": "javascript",
+    "difficulty": "easy",
+    "week": "4",
+    "preCode": "// your code here",
+    "links": [],
+    "optional": true,
+    "createdAt": "2025-05-19T12:14:10.788Z",
+    "updatedAt": "2025-05-19T15:11:39.201Z"
+  },
+  {
+    "_id": "682b20b3cbc969fa386cfeb5",
+    "name": "Task 12 (optional)",
+    "description": "Create a function that returns a Promise",
+    "delta": [
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Create a function "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "fetchUserData()"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " that returns a Promise."
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "This promise randomly resolves after 2 seconds with "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "\"User data fetched\""
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " or rejects with "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "\"Failed to fetch user data\""
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "."
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Call this function, and handle both outcomes:"
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "If successful, print "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "\"Success: User data fetched\""
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "."
+      },
+      {
+        "attributes": {
+          "indent": 1,
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "If failed, print "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "\"Error: Failed to fetch user data\""
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "."
+      },
+      {
+        "attributes": {
+          "indent": 1,
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Hint: Use Math.random()."
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      }
+    ],
+    "language": "javascript",
+    "difficulty": "easy",
+    "week": "4",
+    "preCode": "// your code here",
+    "links": [],
+    "optional": true,
+    "createdAt": "2025-05-19T12:14:43.121Z",
+    "updatedAt": "2025-05-19T15:11:21.963Z"
+  },
+  {
+    "_id": "682b20d4cbc969fa386cfec4",
+    "name": "Task 13 (optional)",
+    "description": "Implement your own simplified version of 'Promise.all()'",
+    "delta": [
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Your goal is to implement your own simplified version of "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "Promise.all()"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " named "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "promiseAll"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": ". This function will take an array of promises and return a single promise."
+      },
+      {
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "bold": true
+        },
+        "insert": "Requirements:"
+      },
+      {
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "If all promises resolve successfully, your returned promise resolves with an array of resolved values (in the same order as promises were given)."
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "If "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "bold": true
+        },
+        "insert": "any"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " promise rejects, your returned promise immediately rejects with the rejection reason of the first rejected promise."
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      }
+    ],
+    "language": "javascript",
+    "difficulty": "easy",
+    "week": "4",
+    "preCode": "// your code here",
+    "links": [],
+    "optional": true,
+    "createdAt": "2025-05-19T12:15:16.971Z",
+    "updatedAt": "2025-05-19T15:09:58.197Z"
+  },
+  {
+    "_id": "683639af29fc345784bd252f",
+    "name": "Task 1 - Simple Table",
+    "description": "Create a static page, now for LWC",
+    "delta": [
+      {
+        "insert": "Remember the task from week 1?\nHere's the task: "
+      },
+      {
+        "attributes": {
+          "link": "https://www.skool.com/lwc-mastery-cohort-1477/classroom/41d95fc8?md=aa8230fb86874cc4ac13ce7980778658"
+        },
+        "insert": "https://www.skool.com/lwc-mastery-cohort-1477/classroom/41d95fc8?md=aa8230fb86874cc4ac13ce7980778658"
+      },
+      {
+        "insert": "\nNow you have to do the exact same component, but for LWC. All the data for the component has to be stored in JavaScript and not be hard-coded in the HTML.\n"
+      }
+    ],
+    "language": "javascript",
+    "difficulty": "easy",
+    "week": "5",
+    "preCode": "// your code here",
+    "links": [],
+    "optional": false,
+    "createdAt": "2025-05-27T22:16:15.765Z",
+    "updatedAt": "2025-05-27T22:16:15.765Z"
+  },
+  {
+    "_id": "683639db29fc345784bd2553",
+    "name": "Task 2 - Expense Tracker",
+    "description": "Create a LWC that displays your monthly expenses in a clean, organized table format.",
+    "delta": [
+      {
+        "insert": "Create a Lightning Web Component that displays your monthly expenses in a clean, organized table format.\n"
+      },
+      {
+        "attributes": {
+          "bold": true
+        },
+        "insert": "Requirements:"
+      },
+      {
+        "insert": "\nCreate at least 6-8 individual expense entries using separate JavaScript objects"
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "Display all expenses in an HTML table with proper headers"
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "Include columns for: Expense Name, Category, Amount, and Date"
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "Style the table with CSS to make it visually appealing"
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "Use different expense categories (Food, Transportation, Entertainment, Utilities, etc.)"
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "Store data inside of JavaScript."
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "Example:\nexpense1 = {name: 'Grocery Shopping', category: 'Food', amount: 85, date: 'Jan 15'};"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "expense2 = {name: 'Gas', category: 'Transportation', amount: 45, date: 'Jan 12'};"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "You are not allowed to use any of the standard components or slds. You can style the component any way you want.\n"
+      }
+    ],
+    "language": "javascript",
+    "difficulty": "easy",
+    "week": "5",
+    "preCode": "// your code here",
+    "links": [],
+    "optional": false,
+    "createdAt": "2025-05-27T22:16:59.156Z",
+    "updatedAt": "2025-05-27T22:16:59.156Z"
+  },
+  {
+    "_id": "68363a0329fc345784bd2577",
+    "name": "Task 3 - CSS Grid Again (optional)",
+    "description": "Create a static page using LWC",
+    "delta": [
+      {
+        "insert": "We had following task: "
+      },
+      {
+        "attributes": {
+          "link": "https://www.skool.com/lwc-mastery-cohort-1477/classroom/41d95fc8?md=a9520cc00ff04a11b1d50b61d484bc7f"
+        },
+        "insert": "https://www.skool.com/lwc-mastery-cohort-1477/classroom/41d95fc8?md=a9520cc00ff04a11b1d50b61d484bc7f"
+      },
+      {
+        "insert": "\nNow, you need to implement the same in LWC. But all the data for the component has to be stored in JavaScript and no be hard-coded in the HTML.\n"
+      }
+    ],
+    "language": "javascript",
+    "difficulty": "easy",
+    "week": "5",
+    "preCode": "// your code here",
+    "links": [],
+    "optional": true,
+    "createdAt": "2025-05-27T22:17:39.329Z",
+    "updatedAt": "2025-05-27T22:19:26.610Z"
+  },
+  {
+    "_id": "68363a4229fc345784bd25ac",
+    "name": "Task 4 - Custom Dashboard (optional)",
+    "description": "Create a static page using LWC",
+    "delta": [
+      {
+        "insert": "Let's be honest: Salesforce's standard detail page is not perfect. Sometimes we want to make it a bit more fun so that our sales reps can see the most important info faster.\nThat's exactly what we'll do in this task. You need to create a custom dashboard that will show the most important information. It should have the following fields:\nClose Date"
+      },
+      {
+        "attributes": {
+          "list": "ordered"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "Last Modified Date"
+      },
+      {
+        "attributes": {
+          "list": "ordered"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "Probability"
+      },
+      {
+        "attributes": {
+          "list": "ordered"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "Stage"
+      },
+      {
+        "attributes": {
+          "list": "ordered"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "Deal Value"
+      },
+      {
+        "attributes": {
+          "list": "ordered"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "In addition, add a custom progress bar that will be filled out to 75%.\nThis information should be displayed in an easy-to-read, colorful way. The exact layout is up to you. You are not allowed to use any of the standard components or SLDS. All the data must be hard-coded inside the JavaScript. You don't need to source any data from Apex or Salesforce.\n"
+      }
+    ],
+    "language": "javascript",
+    "difficulty": "easy",
+    "week": "5",
+    "preCode": "// your code here",
+    "links": [],
+    "optional": true,
+    "createdAt": "2025-05-27T22:18:42.565Z",
+    "updatedAt": "2025-05-27T22:19:15.553Z"
+  },
+  {
+    "_id": "683ec64629fc345784bfbd0d",
+    "name": "Task 1",
+    "description": "for:each element",
+    "delta": [
+      {
+        "insert": "Re-work your table from week 1 and week 5 with the for:each element: "
+      },
+      {
+        "attributes": {
+          "link": "https://www.skool.com/lwc-mastery-cohort-1477/classroom/7ce1af0e?md=88c72f9d8e4c4d74b93c7e422a56761f"
+        },
+        "insert": "https://www.skool.com/lwc-mastery-cohort-1477/classroom/7ce1af0e?md=88c72f9d8e4c4d74b93c7e422a56761f"
+      },
+      {
+        "insert": "\n"
+      }
+    ],
+    "language": "javascript",
+    "difficulty": "easy",
+    "week": "6",
+    "preCode": "// your code here",
+    "links": [],
+    "optional": false,
+    "createdAt": "2025-06-03T09:54:14.285Z",
+    "updatedAt": "2025-06-03T09:54:14.285Z"
+  },
+  {
+    "_id": "683ec67129fc345784bfbd31",
+    "name": "Task 2",
+    "description": "expense tracker with for:each element",
+    "delta": [
+      {
+        "insert": "Rework your expense tracker from the last week with for-each element: "
+      },
+      {
+        "attributes": {
+          "link": "https://www.skool.com/lwc-mastery-cohort-1477/classroom/7ce1af0e?md=e2739c54fe5b44d7ab178d0b2e3ddc27"
+        },
+        "insert": "https://www.skool.com/lwc-mastery-cohort-1477/classroom/7ce1af0e?md=e2739c54fe5b44d7ab178d0b2e3ddc27"
+      },
+      {
+        "insert": "\n"
+      }
+    ],
+    "language": "javascript",
+    "difficulty": "easy",
+    "week": "6",
+    "preCode": "// your code here",
+    "links": [],
+    "optional": false,
+    "createdAt": "2025-06-03T09:54:57.652Z",
+    "updatedAt": "2025-06-03T09:54:57.652Z"
+  },
+  {
+    "_id": "683ec69629fc345784bfbd55",
+    "name": "Task 3",
+    "description": "Create a component with a property",
+    "delta": [
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "\"Create a component with a property called "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "showSpinner"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": ". If "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "showSpinner"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " is true, display the text 'Spinner is spinning'; otherwise, display 'Spinner ain't spinning'.\""
+      },
+      {
+        "insert": "\n"
+      }
+    ],
+    "language": "javascript",
+    "difficulty": "easy",
+    "week": "6",
+    "preCode": "// your code here",
+    "links": [],
+    "optional": false,
+    "createdAt": "2025-06-03T09:55:34.015Z",
+    "updatedAt": "2025-06-03T09:55:34.015Z"
+  },
+  {
+    "_id": "683ec6b929fc345784bfbd79",
+    "name": "Task 4",
+    "description": "Using DataTable",
+    "delta": [
+      {
+        "insert": "Rework your table from Task 1 from this week to use a DataTable.\n"
+      }
+    ],
+    "language": "javascript",
+    "difficulty": "easy",
+    "week": "6",
+    "preCode": "// your code here",
+    "links": [],
+    "optional": false,
+    "createdAt": "2025-06-03T09:56:09.496Z",
+    "updatedAt": "2025-06-03T09:56:09.496Z"
+  },
+  {
+    "_id": "683ec6d629fc345784bfbd9d",
+    "name": "Task 5",
+    "description": "Using DataTable",
+    "delta": [
+      {
+        "insert": "Rework your table from task 2 from this week to use the DataTable standard component.\n"
+      }
+    ],
+    "language": "javascript",
+    "difficulty": "easy",
+    "week": "6",
+    "preCode": "// your code here",
+    "links": [],
+    "optional": false,
+    "createdAt": "2025-06-03T09:56:38.791Z",
+    "updatedAt": "2025-06-03T09:56:38.791Z"
+  },
+  {
+    "_id": "683ec83a29fc345784bfbdc1",
+    "name": "Task 6",
+    "description": "Create a new table with some mock contact data",
+    "delta": [
+      {
+        "insert": "Create a new table with some mock contact data. Place it on the contact record. Enclosed the component in a lightning card with an icon.\n"
+      }
+    ],
+    "language": "javascript",
+    "difficulty": "easy",
+    "week": "6",
+    "preCode": "// your code here",
+    "links": [],
+    "optional": false,
+    "createdAt": "2025-06-03T10:02:34.199Z",
+    "updatedAt": "2025-06-03T10:02:34.199Z"
+  },
+  {
+    "_id": "683ec92829fc345784bfbde5",
+    "name": "Task 7 (optional)",
+    "description": "Create a record-edit form",
+    "delta": [
+      {
+        "insert": "Create a record-edit form with all the required fields to place it on the opportunity bar.\n"
+      }
+    ],
+    "language": "javascript",
+    "difficulty": "easy",
+    "week": "6",
+    "preCode": "// your code here",
+    "links": [],
+    "optional": true,
+    "createdAt": "2025-06-03T10:06:32.226Z",
+    "updatedAt": "2025-06-03T10:08:11.485Z"
+  },
+  {
+    "_id": "683ec94229fc345784bfbe09",
+    "name": "Task 8 (optional)",
+    "description": "Create a record form that will create a new contact record",
+    "delta": [
+      {
+        "insert": "Create a record form that will create a new contact record. Place it on the contact record page.\n"
+      }
+    ],
+    "language": "javascript",
+    "difficulty": "easy",
+    "week": "6",
+    "preCode": "// your code here",
+    "links": [],
+    "optional": true,
+    "createdAt": "2025-06-03T10:06:58.309Z",
+    "updatedAt": "2025-06-03T10:06:58.309Z"
+  },
+  {
+    "_id": "683ec95629fc345784bfbe2d",
+    "name": "Task 9 (optional)",
+    "description": "Create a multi-step screen flow that creates a new account record",
+    "delta": [
+      {
+        "insert": "Create a multi-step screen flow that creates a new account record. Embed this flow into an LWC component and place it on the account page.\n"
+      }
+    ],
+    "language": "javascript",
+    "difficulty": "easy",
+    "week": "6",
+    "preCode": "// your code here",
+    "links": [],
+    "optional": true,
+    "createdAt": "2025-06-03T10:07:18.646Z",
+    "updatedAt": "2025-06-03T10:07:18.646Z"
+  },
+  {
+    "_id": "683ec96e29fc345784bfbe51",
+    "name": "Task 10 (optional)",
+    "description": "Create a new LWC component that will display 3 real estate properties on a carousel",
+    "delta": [
+      {
+        "insert": "Create a new LWC component that will display 3 real estate properties on a carousel. Include an image, title, and description under each card.\n"
+      }
+    ],
+    "language": "javascript",
+    "difficulty": "easy",
+    "week": "6",
+    "preCode": "// your code here",
+    "links": [],
+    "optional": true,
+    "createdAt": "2025-06-03T10:07:42.601Z",
+    "updatedAt": "2025-06-03T10:07:42.601Z"
+  },
+  {
+    "_id": "684974eb29fc345784c2ab31",
+    "name": "Task 1",
+    "description": "Create a table that will display all users in the system",
+    "delta": [
+      {
+        "insert": "Create a table that will display all users in the system. Use imperative Apex call.\n"
+      }
+    ],
+    "language": "javascript",
+    "difficulty": "easy",
+    "week": "7",
+    "preCode": "// your code here",
+    "links": [],
+    "optional": false,
+    "createdAt": "2025-06-11T12:22:03.245Z",
+    "updatedAt": "2025-06-11T12:22:03.245Z"
+  },
+  {
+    "_id": "6849750329fc345784c2ab55",
+    "name": "Task 2",
+    "description": "Using @wire method.",
+    "delta": [
+      {
+        "insert": "Create a table that will display all users in the system. Use @wire method.\n"
+      }
+    ],
+    "language": "javascript",
+    "difficulty": "easy",
+    "week": "7",
+    "preCode": "// your code here",
+    "links": [],
+    "optional": false,
+    "createdAt": "2025-06-11T12:22:27.723Z",
+    "updatedAt": "2025-06-11T12:22:27.723Z"
+  },
+  {
+    "_id": "6849751429fc345784c2ab79",
+    "name": "Task 3",
+    "description": "Create a table that will only display related opportunity line items",
+    "delta": [
+      {
+        "insert": "Create a table that will only display related opportunity line items (called Opportunity Products) on the opportunity page.\n"
+      }
+    ],
+    "language": "javascript",
+    "difficulty": "easy",
+    "week": "7",
+    "preCode": "// your code here",
+    "links": [],
+    "optional": false,
+    "createdAt": "2025-06-11T12:22:44.429Z",
+    "updatedAt": "2025-06-11T12:22:44.429Z"
+  },
+  {
+    "_id": "6849752629fc345784c2ab9d",
+    "name": "Task 4",
+    "description": "Create a component that will list all opportunities for this week that are still not closed.",
+    "delta": [
+      {
+        "insert": "Create a component that will list all opportunities for this week that are still not closed. Order them by amount. Place your component on the home page.\n"
+      }
+    ],
+    "language": "javascript",
+    "difficulty": "easy",
+    "week": "7",
+    "preCode": "// your code here",
+    "links": [],
+    "optional": false,
+    "createdAt": "2025-06-11T12:23:02.737Z",
+    "updatedAt": "2025-06-11T12:23:02.737Z"
+  },
+  {
+    "_id": "6849753829fc345784c2abc1",
+    "name": "Task 5",
+    "description": "Create a component that will show the manager what accounts were changed in the last 10 days",
+    "delta": [
+      {
+        "insert": "Our manager wants to review any updates made to the accounts to prevent bad data. Create a component that will show the manager what accounts were changed in the last 10 days. The accounts must be clickable.\n"
+      }
+    ],
+    "language": "javascript",
+    "difficulty": "easy",
+    "week": "7",
+    "preCode": "// your code here",
+    "links": [],
+    "optional": false,
+    "createdAt": "2025-06-11T12:23:20.821Z",
+    "updatedAt": "2025-06-11T12:23:20.821Z"
+  },
+  {
+    "_id": "6849754f29fc345784c2abe5",
+    "name": "Task 6 (optional)",
+    "description": "Create a component that displays the latest records from Cases, Opportunities, and Leads in one table. ",
+    "delta": [
+      {
+        "insert": "Create a component that displays the latest records from Cases, Opportunities, and Leads in one table. Show: Record Name, Object Type, Created Date, and Owner Name. Place it on the Home page. Show records that are not older than 7 days.\nHint: You might need to use "
+      },
+      {
+        "attributes": {
+          "link": "https://www.sfdcpoint.com/salesforce/wrapper-class-in-lwc/#google_vignette"
+        },
+        "insert": "wrappers"
+      },
+      {
+        "insert": ".\n"
+      }
+    ],
+    "language": "javascript",
+    "difficulty": "medium",
+    "week": "7",
+    "preCode": "// your code here",
+    "links": [],
+    "optional": true,
+    "createdAt": "2025-06-11T12:23:43.601Z",
+    "updatedAt": "2025-06-11T12:23:43.601Z"
+  },
+  {
+    "_id": "6849756c29fc345784c2ac09",
+    "name": "Task 7 (optional)",
+    "description": "Create a dashboard component for managers to see the most urgent, unresolved cases.",
+    "delta": [
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Create a dashboard component for managers to see the most urgent, unresolved cases."
+      },
+      {
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Build an LWC that shows all "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "Case"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " records that are "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "bold": true
+        },
+        "insert": "not closed"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " and have a "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "Priority"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " of 'High'."
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Order the results by "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "CreatedDate"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " ascending, so the oldest cases appear first."
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "bold": true
+        },
+        "insert": "Display Fields:"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " Case Number, Subject, Account Name, Owner Name."
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "\n"
+      }
+    ],
+    "language": "javascript",
+    "difficulty": "medium",
+    "week": "7",
+    "preCode": "// your code here",
+    "links": [],
+    "optional": true,
+    "createdAt": "2025-06-11T12:24:12.841Z",
+    "updatedAt": "2025-06-11T12:24:12.841Z"
+  },
+  {
+    "_id": "6849759a29fc345784c2ac2d",
+    "name": "Task 8 (optional)",
+    "description": "Make all necessary assumptions and deliver the working solution.",
+    "delta": [
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Your company has many floating licenses in a custom object called "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "Software_License__c"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": ". They can be grouped into 5 categories."
+      },
+      {
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Active"
+      },
+      {
+        "attributes": {
+          "list": "ordered"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Due to renew"
+      },
+      {
+        "attributes": {
+          "list": "ordered"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Expired"
+      },
+      {
+        "attributes": {
+          "list": "ordered"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Paused"
+      },
+      {
+        "attributes": {
+          "list": "ordered"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "To remove"
+      },
+      {
+        "attributes": {
+          "list": "ordered"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "The custom object has a field called Category__c. It takes too many clicks for Salesforce users to click through the record page and update it manually. Your task is to implement the 1-click solution to reduce the click time."
+      },
+      {
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "It's up to you to figure out the exact solution. Here are the requirements from the client:"
+      },
+      {
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "It must take only 1 click to categorize a given "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "Software_License__c"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " record."
+      },
+      {
+        "attributes": {
+          "list": "ordered"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "The component must be easily accessible on the record page."
+      },
+      {
+        "attributes": {
+          "list": "ordered"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "Make all necessary assumptions and deliver the working solution."
+      },
+      {
+        "insert": "\n"
+      }
+    ],
+    "language": "javascript",
+    "difficulty": "medium",
+    "week": "7",
+    "preCode": "// your code here",
+    "links": [],
+    "optional": true,
+    "createdAt": "2025-06-11T12:24:58.463Z",
+    "updatedAt": "2025-06-11T12:24:58.463Z"
+  },
+  {
+    "_id": "684975c529fc345784c2ac51",
+    "name": "Task 9 (optional)",
+    "description": "A manager wants a component on the Account page that provides an at-a-glance \"health score\" to quickly identify healthy, at-risk, and critical accounts.",
+    "delta": [
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "A manager wants a component on the Account page that provides an at-a-glance \"health score\" to quickly identify healthy, at-risk, and critical accounts."
+      },
+      {
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "The health score starts at a baseline of "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "bold": true
+        },
+        "insert": "50 points"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " and is adjusted based on the following criteria. All time-based rules refer to activity within the "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "bold": true
+        },
+        "insert": "last 90 days"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "."
+      },
+      {
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "bold": true
+        },
+        "insert": "Positive Adjustments (Good Signs):"
+      },
+      {
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "bold": true
+        },
+        "insert": "+15 points"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " for each "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "bold": true
+        },
+        "insert": "Closed-Won Opportunity"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "."
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "bold": true
+        },
+        "insert": "+5 points"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " for each newly created "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "bold": true
+        },
+        "insert": "Contact"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "."
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "bold": true
+        },
+        "insert": "+2 points"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " for each completed "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "bold": true
+        },
+        "insert": "Task"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " or logged "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "bold": true
+        },
+        "insert": "Call"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " (up to a maximum of +10 points from this category)."
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "bold": true
+        },
+        "insert": "Negative Adjustments (Red Flags):"
+      },
+      {
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "bold": true
+        },
+        "insert": "-20 points"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " for each open "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "bold": true
+        },
+        "insert": "Case"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " with a "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "Priority"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " of 'High' or 'Critical'."
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "bold": true
+        },
+        "insert": "-10 points"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " for each "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "bold": true
+        },
+        "insert": "Closed-Lost Opportunity"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "."
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "bold": true
+        },
+        "insert": "-25 points"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " if there has been "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "bold": true
+        },
+        "insert": "no activity"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " on the account at all (i.e., the "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "code": true
+        },
+        "insert": "LastModifiedDate"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " is older than 90 days)."
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "The final score should be translated into a visual indicator in the LWC:"
+      },
+      {
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "bold": true
+        },
+        "insert": "Score 80+:"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "bold": true
+        },
+        "insert": "Healthy"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " (Display with a green color and a \"thumbs up\" icon)."
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "bold": true
+        },
+        "insert": "Score 50 - 79:"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "bold": true
+        },
+        "insert": "At-Risk"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " (Display with a yellow/amber color and a \"warning\" icon)."
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "bold": true
+        },
+        "insert": "Score Below 50:"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " "
+      },
+      {
+        "attributes": {
+          "background": "#000000",
+          "bold": true
+        },
+        "insert": "Critical"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": " (Display with a red color and a \"danger\" icon)."
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "background": "#000000"
+        },
+        "insert": "The score can't be higher than 100 or lower than 0. Make all necessary assumptions and deliver a working solution."
+      },
+      {
+        "insert": "\n"
+      }
+    ],
+    "language": "javascript",
+    "difficulty": "hard",
+    "week": "7",
+    "preCode": "// your code here",
+    "links": [],
+    "optional": true,
+    "createdAt": "2025-06-11T12:25:41.680Z",
+    "updatedAt": "2025-06-11T12:25:41.680Z"
+  },
+  {
+    "_id": "6851e00129fc345784c50bb2",
+    "name": "Task 1",
+    "description": "Now it's time to use SLDS",
+    "delta": [
+      {
+        "insert": "Remember Grid the task from week 1? We've done it many different ways. Now it's time to use SLDS to do the same task: "
+      },
+      {
+        "attributes": {
+          "link": "https://www.skool.com/lwc-mastery-cohort-1477/classroom/41d95fc8?md=a9520cc00ff04a11b1d50b61d484bc7f"
+        },
+        "insert": "https://www.skool.com/lwc-mastery-cohort-1477/classroom/41d95fc8?md=a9520cc00ff04a11b1d50b61d484bc7f"
+      },
+      {
+        "insert": "\nAlso, make sure that your data comes from Salesforce and isn't just hard-coded.\n"
+      }
+    ],
+    "language": "javascript",
+    "difficulty": "easy",
+    "week": "8",
+    "preCode": "// your code here",
+    "links": [],
+    "optional": false,
+    "createdAt": "2025-06-17T21:37:05.474Z",
+    "updatedAt": "2025-06-17T21:37:05.474Z"
+  },
+  {
+    "_id": "6851e01329fc345784c50bd6",
+    "name": "Task 2",
+    "description": "Create a button that counts how many times it's been clicked. Display that info on the component. ",
+    "delta": [
+      {
+        "insert": "Create a button that counts how many times it's been clicked. Display that info on the component.\n"
+      }
+    ],
+    "language": "javascript",
+    "difficulty": "easy",
+    "week": "8",
+    "preCode": "// your code here",
+    "links": [],
+    "optional": false,
+    "createdAt": "2025-06-17T21:37:23.804Z",
+    "updatedAt": "2025-06-17T21:37:23.804Z"
+  },
+  {
+    "_id": "6851e02129fc345784c50bfa",
+    "name": "Task 3",
+    "description": "Create a component that displays what the user types in an input field in real-time.",
+    "delta": [
+      {
+        "insert": "Create a component that displays what the user types in an input field in real-time.\n"
+      }
+    ],
+    "language": "javascript",
+    "difficulty": "easy",
+    "week": "8",
+    "preCode": "// your code here",
+    "links": [],
+    "optional": false,
+    "createdAt": "2025-06-17T21:37:37.213Z",
+    "updatedAt": "2025-06-17T21:37:37.213Z"
+  },
+  {
+    "_id": "6851e02d29fc345784c50c1e",
+    "name": "Task 4",
+    "description": "Create a button that will disable itself once clicked.",
+    "delta": [
+      {
+        "insert": "Create a button that will disable itself once clicked.\n"
+      }
+    ],
+    "language": "javascript",
+    "difficulty": "easy",
+    "week": "8",
+    "preCode": "// your code here",
+    "links": [],
+    "optional": false,
+    "createdAt": "2025-06-17T21:37:49.691Z",
+    "updatedAt": "2025-06-17T21:37:49.691Z"
+  },
+  {
+    "_id": "6851e04729fc345784c50c42",
+    "name": "Task 5",
+    "description": "Create a component that will accept two numbers entered by the user and show their sum, multiplication, subtraction, and division.",
+    "delta": [
+      {
+        "insert": "Create a component that will accept two numbers entered by the user and show their sum, multiplication, subtraction, and division. Handle bad inputs (e.g. text instead of numbers) as you find correct.\n"
+      }
+    ],
+    "language": "javascript",
+    "difficulty": "easy",
+    "week": "8",
+    "preCode": "// your code here",
+    "links": [],
+    "optional": false,
+    "createdAt": "2025-06-17T21:38:15.759Z",
+    "updatedAt": "2025-06-17T21:38:15.759Z"
+  },
+  {
+    "_id": "68594552ed153e3020ebb6e8",
+    "name": "Real-world task #1 (optional)",
+    "description": "Real-world task",
+    "delta": [
+      {
+        "insert": "Copy the code from live coding into your VS Code editor."
+      },
+      {
+        "attributes": {
+          "list": "ordered"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "Implement a spinner when the contacts are saved."
+      },
+      {
+        "attributes": {
+          "list": "ordered"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "The spinner must be shown for the duration of the saving (Apex call) time. The spinner must only be implemented for the input form, not for the data table."
+      },
+      {
+        "attributes": {
+          "list": "ordered"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "\n"
+      }
+    ],
+    "language": "javascript",
+    "difficulty": "medium",
+    "week": "9",
+    "preCode": "// your code here",
+    "links": [],
+    "optional": true,
+    "createdAt": "2025-06-23T12:15:14.335Z",
+    "updatedAt": "2025-06-23T12:15:14.335Z"
+  },
+  {
+    "_id": "685945b6ed153e3020ebb73f",
+    "name": "Real-world Project #1 (optional)",
+    "description": "Implement an improved UI for case comments.",
+    "delta": [
+      {
+        "insert": "https://www.loom.com/share/fee05c0fc88e4197a5633b2b8f259ea2?sid=7d7edd7f-a823-4671-80a9-b1bdf60d2d99\n\nOverview"
+      },
+      {
+        "attributes": {
+          "header": 3
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "Support agents need a clear, organized way to view and manage case comments to improve case resolution efficiency and customer service quality.\nUser Story"
+      },
+      {
+        "attributes": {
+          "header": 2
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "bold": true
+        },
+        "insert": "As a"
+      },
+      {
+        "insert": " support agent\n"
+      },
+      {
+        "attributes": {
+          "bold": true
+        },
+        "insert": "I want to"
+      },
+      {
+        "insert": " view and add case comments in an organized table\n"
+      },
+      {
+        "attributes": {
+          "bold": true
+        },
+        "insert": "So that"
+      },
+      {
+        "insert": " I can efficiently manage case communications without page refreshes\nTask"
+      },
+      {
+        "attributes": {
+          "header": 3
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "Implement an improved UI for case comments.\n\nComment Display"
+      },
+      {
+        "attributes": {
+          "header": 3
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "Display all case comments in a clean, organized table format"
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "Show comment content, category, creation date, and author for each entry"
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "Display newest comments first"
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "Comment Creation"
+      },
+      {
+        "attributes": {
+          "header": 3
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "Provide an easy way to add new comments directly from the interface"
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "New comments automatically appear in the table without requiring page refresh"
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "Comments are immediately saved to Salesforce"
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "Comment Categorization"
+      },
+      {
+        "attributes": {
+          "header": 3
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "Each comment must have a category indicator with the following types:"
+      },
+      {
+        "attributes": {
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "bold": true
+        },
+        "insert": "General"
+      },
+      {
+        "insert": " - Standard customer communications"
+      },
+      {
+        "attributes": {
+          "indent": 1,
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "bold": true
+        },
+        "insert": "Technical"
+      },
+      {
+        "insert": " - Technical issues and solutions"
+      },
+      {
+        "attributes": {
+          "indent": 1,
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "bold": true
+        },
+        "insert": "Billing"
+      },
+      {
+        "insert": " - Payment and billing-related comments"
+      },
+      {
+        "attributes": {
+          "indent": 1,
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "bold": true
+        },
+        "insert": "Follow-up"
+      },
+      {
+        "insert": " - Scheduled follow-up actions"
+      },
+      {
+        "attributes": {
+          "indent": 1,
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "attributes": {
+          "bold": true
+        },
+        "insert": "Escalation"
+      },
+      {
+        "insert": " - High-priority or escalated issues"
+      },
+      {
+        "attributes": {
+          "indent": 1,
+          "list": "bullet"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "\n"
+      }
+    ],
+    "language": "javascript",
+    "difficulty": "hard",
+    "week": "9",
+    "preCode": "// your code here",
+    "links": [],
+    "optional": true,
+    "createdAt": "2025-06-23T12:16:54.644Z",
+    "updatedAt": "2025-06-23T12:16:54.644Z"
+  },
+  {
+    "_id": "685a8da5ed153e3020ec0c4c",
+    "name": "#1 - Real-world example: Datatable (optional)",
+    "description": "Real-world",
+    "delta": [
+      {
+        "insert": "https://www.loom.com/share/24c0b6acc1734d449de67f962080543c?sid=171c7d2b-9e07-4439-a6a0-cee48a38f076\n"
+      }
+    ],
+    "language": "javascript",
+    "difficulty": "medium",
+    "week": "8",
+    "preCode": "// your code here",
+    "links": [],
+    "optional": true,
+    "createdAt": "2025-06-24T11:36:05.360Z",
+    "updatedAt": "2025-06-24T11:36:05.360Z"
+  },
+  {
+    "_id": "685a8dc5ed153e3020ec0c70",
+    "name": "#2 - Real-world example: Datatable (optional)",
+    "description": "Real-world",
+    "delta": [
+      {
+        "insert": "https://www.loom.com/share/57c52c9cfb934ea1b182902a652cf5b5\n\nHere's the code we had at the end!\n<template>"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "    <lightning-card title=\"Contact List\" icon-name=\"standard:contact\">"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "        <lightning-datatable "
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "            key-field=\"Id\""
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "            data={contacts}"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "            columns={columns}"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "            draft-values={draftValues}"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "            onsave={handleSave}"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "            oncancel={handleCancel}"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "            hide-checkbox-column>"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "        </lightning-datatable>"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "    </lightning-card>"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "</template>"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "import { LightningElement, api } from 'lwc';"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "import queryContacts from '@salesforce/apex/HelloWorldController.queryContacts';"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "import saveContacts from '@salesforce/apex/HelloWorldController.saveContacts';"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "import { ShowToastEvent } from 'lightning/platformShowToastEvent';"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n\n"
+      },
+      {
+        "insert": "export default class HelloWorld extends LightningElement {"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "    @api recordId; "
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "    contacts = [];"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "    draftValues = [];"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n\n"
+      },
+      {
+        "insert": "    columns = ["
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "        { label: 'First Name', fieldName: 'FirstName', editable : 'true'},"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "        { label: 'Last Name', fieldName: 'LastName', editable : 'true'},"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "        { label: 'Email', fieldName: 'Email', type: 'email', editable : 'true'},"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "        { label: 'Phone', fieldName: 'Phone', type: 'phone', editable : 'true'}"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "    ];"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n\n"
+      },
+      {
+        "insert": "    connectedCallback() {"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "        queryContacts({accountId: this.recordId})"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "            .then(result => {"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "                this.contacts = result;"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "            })"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "            .catch(error => {"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "                console.error('Error fetching contacts:', error);"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "            });"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "    }"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n\n"
+      },
+      {
+        "insert": "    handleSave(event) {"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "        this.draftValues = event.detail.draftValues;"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n\n"
+      },
+      {
+        "insert": "        saveContacts({contacts: this.draftValues})"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "            .then(result => {"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "                this.contacts = result;"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "                this.draftValues = [];"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n\n"
+      },
+      {
+        "insert": "                this.showToast('Success!', 'Everything saved.', 'success')"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "            })"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "            .catch(error => {"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "                console.error('Error fetching contacts:', error);"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "            });"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "    }"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n\n"
+      },
+      {
+        "insert": "    handleCancel(event) {"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "        this.draftValues = [];"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "    }"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n\n"
+      },
+      {
+        "insert": "    showToast(title, message, variant) {"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "        const evt = new ShowToastEvent({"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "            title: title,"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "            message: message,"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "            variant: variant"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "        });"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n\n"
+      },
+      {
+        "insert": "        this.dispatchEvent(evt);"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "    }"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "}"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "public with sharing class HelloWorldController {"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "    @AuraEnabled"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "    public static List<Contact> queryContacts(Id accountId){"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "        return ["
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "            SELECT Id, FirstName, LastName, Email, Phone "
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "            FROM Contact "
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "            WHERE AccountId = :accountId "
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "        ];"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "    }"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n\n"
+      },
+      {
+        "insert": "    @AuraEnabled"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "    public static List<Contact> saveContacts(List<Contact> contacts){"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "        update contacts;"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "        return ["
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "            SELECT Id, FirstName, LastName, Email, Phone "
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "            FROM Contact "
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "            WHERE Id IN :contacts "
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "        ];"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "    }"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "}"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "\n"
+      }
+    ],
+    "language": "javascript",
+    "difficulty": "medium",
+    "week": "8",
+    "preCode": "// your code here",
+    "links": [],
+    "optional": true,
+    "createdAt": "2025-06-24T11:36:37.652Z",
+    "updatedAt": "2025-06-24T11:36:37.652Z"
+  },
+  {
+    "_id": "685a8df5ed153e3020ec0c94",
+    "name": "#3 - Real-world Task 1 (optional)",
+    "description": "Real-world project",
+    "delta": [
+      {
+        "insert": "https://www.loom.com/share/628a7ae46d2547fba33c002613f66c94?sid=dc7e319d-8e1e-410e-b54e-2fd98c7fdf35\n\nCopy the code from the last example ("
+      },
+      {
+        "attributes": {
+          "link": "https://www.skool.com/lwc-mastery-cohort-1477/classroom/092f7a75?md=55869daedf90448a8095471eed50e215"
+        },
+        "insert": "link"
+      },
+      {
+        "insert": ").\nImplement an action \"Add Contact\" that will allow you to add contacts to the datable as specified in the example.\n\n"
+      }
+    ],
+    "language": "javascript",
+    "difficulty": "medium",
+    "week": "8",
+    "preCode": "// your code here",
+    "links": [],
+    "optional": true,
+    "createdAt": "2025-06-24T11:37:25.737Z",
+    "updatedAt": "2025-06-24T11:37:25.737Z"
+  },
+  {
+    "_id": "685a8e09ed153e3020ec0cb8",
+    "name": "#4 - Real-World Task 2 (optional)",
+    "description": "Add a \"delete\" button to the table that will delete the whole contact from the table and the system.",
+    "delta": [
+      {
+        "insert": "Add a \"delete\" button to the table that will delete the whole contact from the table and the system.\n"
+      }
+    ],
+    "language": "javascript",
+    "difficulty": "medium",
+    "week": "8",
+    "preCode": "// your code here",
+    "links": [],
+    "optional": true,
+    "createdAt": "2025-06-24T11:37:45.570Z",
+    "updatedAt": "2025-06-24T11:37:45.570Z"
+  },
+  {
+    "_id": "685a8e28ed153e3020ec0cdc",
+    "name": "#5 - Real-World Task 3 (optional)",
+    "description": "Create an expense management page in LWC",
+    "delta": [
+      {
+        "insert": "https://www.loom.com/share/fc5a74bf0e0c40fe82a33f125aed9943?sid=b9899aff-9c31-4d98-b996-5c9cbd2becfa\n\nCreate an expense management page in LWC. The user must be able to:\nAdd expenses with at least 4 fields (Description, Category, Amount, Date)"
+      },
+      {
+        "attributes": {
+          "list": "ordered"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "See the table of all expenses for the current calendar month."
+      },
+      {
+        "attributes": {
+          "list": "ordered"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "Optional part: Make it based on the current logged-in user."
+      },
+      {
+        "attributes": {
+          "indent": 1,
+          "list": "ordered"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "Have a delete button in each row to delete expenses."
+      },
+      {
+        "attributes": {
+          "list": "ordered"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "Make the component reactive so that it works without a page refresh."
+      },
+      {
+        "attributes": {
+          "list": "ordered"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "Good luck!\n"
+      }
+    ],
+    "language": "javascript",
+    "difficulty": "hard",
+    "week": "8",
+    "preCode": "// your code here",
+    "links": [],
+    "optional": true,
+    "createdAt": "2025-06-24T11:38:16.685Z",
+    "updatedAt": "2025-06-24T11:38:16.685Z"
+  },
+  {
+    "_id": "686d1d8aed153e3020ed51b0",
+    "name": "Task 1",
+    "description": "Copy this code into your org and write at least 3 different tests for this component",
+    "delta": [
+      {
+        "insert": "Copy this code into your org and write at least 3 different tests for this component.\n<template>"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "    <lightning-modal-header label=\"Please confirm the delete operation\"></lightning-modal-header>"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "    <lightning-modal-body>"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "        The contact <b>{contactName}</b> is about to be deleted. Please click on \"OK\" to confirm."
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "    </lightning-modal-body>"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "    <lightning-modal-footer>"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "        <lightning-button"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "            class=\"slds-button\""
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "            variant=\"neutral\""
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "            label=\"Cancel\""
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "            onclick={handleDismiss}"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "        ></lightning-button>"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "        <lightning-button"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "            class=\"slds-button slds-m-left_x-small\""
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "            variant=\"destructive\""
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "            label=\"Yes, delete!\""
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "            onclick={handleOkay}"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "        ></lightning-button>"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "    </lightning-modal-footer>"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "</template>"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "import { api } from 'lwc';"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "import LightningModal from 'lightning/modal';"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n\n"
+      },
+      {
+        "insert": "export default class WarningAction extends LightningModal {"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "    @api contactName;"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n\n"
+      },
+      {
+        "insert": "    handleOkay() {"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "        this.close('okay');"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n\n"
+      },
+      {
+        "insert": "        let event = new CustomEvent('confirmdelete', {"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "            detail: {"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "                contactName: this.contactName "
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "            }"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "        });"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "        this.dispatchEvent(event);"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "    }"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n\n"
+      },
+      {
+        "insert": "    handleDismiss() {"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "        this.close('dismiss');"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "    }"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "}"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "\n"
+      }
+    ],
+    "language": "javascript",
+    "difficulty": "easy",
+    "week": "11",
+    "preCode": "// your code here",
+    "links": [],
+    "optional": false,
+    "createdAt": "2025-07-08T13:30:50.648Z",
+    "updatedAt": "2025-07-08T13:30:50.648Z"
+  },
+  {
+    "_id": "686d1da4ed153e3020ed51d4",
+    "name": "Task 2",
+    "description": "Write at least 3 tests for the following LWC component:",
+    "delta": [
+      {
+        "insert": "Write at least 3 tests for the following LWC component:\n<template>"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "    <lightning-card title=\"Do Some Math\" icon-name=\"standard:budget\">"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "        <template for:each={newLeads} for:item=\"leadRecord\">"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "            <p key={lead.id}>"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "                {leadRecord.FirstName} {leadRecord.LastName} - {leadRecord.Company}"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "            </p>"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "        </template>"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n\n"
+      },
+      {
+        "insert": "        <template for:each={newOpps} for:item=\"oppRecord\">"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "            <p key={oppRecord.id}>"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "                {oppRecord.Name} - {oppRecord.Amount} - {oppRecord.StageName}"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "            </p>"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "        </template>"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n\n"
+      },
+      {
+        "insert": "        <template for:each={newLeads} for:item=\"leadRecord\">"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "            <p key={lead.id}>"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "                {leadRecord.FirstName} {leadRecord.LastName} - {leadRecord.Company}"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "            </p>"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "        </template>"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "    </lightning-card>"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "</template>"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "import queryData from '@salesforce/apex/HelloWorldController.queryData';"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "import { LightningElement } from 'lwc';"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n\n"
+      },
+      {
+        "insert": "export default class HelloWorld extends LightningElement {"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n\n"
+      },
+      {
+        "insert": "    newLeads;"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "    newOpps;"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n\n"
+      },
+      {
+        "insert": "    connectedCallback() {"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "        queryData()"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "            .then(result => {"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "                this.newLeads = result.leads;"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "                this.newOpps = result.opportunities;"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "            })"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "            .catch(error => {"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "                console.error('Error fetching data:', error);"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "            });"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "    }"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "}"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "public with sharing class HelloWorldController {"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "    @AuraEnabled"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "    public static Map<String, Integer> queryData() {"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "        Map<String, Integer> data = new Map<String, Integer>();"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "        data.put('leads', [SELECT FirstName, LastName, Company FROM Lead WHERE IsConverted = FALSE]);"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "        data.put('opportunities', [SELECT Name, Amount, StageName FROM Opportunity WHERE IsClosed = FALSE]);"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "        return data;    "
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "    }"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "}"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "\n"
+      }
+    ],
+    "language": "javascript",
+    "difficulty": "medium",
+    "week": "11",
+    "preCode": "// your code here",
+    "links": [],
+    "optional": false,
+    "createdAt": "2025-07-08T13:31:16.537Z",
+    "updatedAt": "2025-07-08T13:32:03.133Z"
+  },
+  {
+    "_id": "686d1dbfed153e3020ed51f8",
+    "name": "Task 3 (optional)",
+    "description": "Write at least 4 different test cases for this LWC Component. Include at least 1 test case for lightning datatable UI.",
+    "delta": [
+      {
+        "insert": "Write at least 4 different test cases for this LWC Component. Include at least 1 test case for lightning datatable UI.\nimport { LightningElement, api } from 'lwc';"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "import queryContacts from '@salesforce/apex/HelloWorldController.queryContacts';"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n\n"
+      },
+      {
+        "insert": "export default class JestPractice2 extends LightningElement {"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "    @api recordId;"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "    "
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "    @api contacts = [];"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n\n"
+      },
+      {
+        "insert": "    columns = ["
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "        { label: 'First Name', fieldName: 'FirstName', type: 'text' },"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "        { label: 'Last Name', fieldName: 'LastName', type: 'text' },"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "        { label: 'Email', fieldName: 'Email', type: 'email' }"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "    ];"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n\n"
+      },
+      {
+        "insert": "    connectedCallback() {"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "        queryContacts({ accountId: this.recordId })"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "            .then(result => {"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "                this.contacts = result;"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "            })"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "            .catch(error => {"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "                console.error('Error loading contacts:', error);"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "            });"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "    }"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "}"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "<template>"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "    <lightning-card title=\"Related Contacts\" icon-name=\"standard:people\">"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "        <lightning-datatable"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "            key-field=\"id\""
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "            data={contacts}"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "            columns={columns}"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "            hide-checkbox-column>"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "        </lightning-datatable>"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "    </lightning-card>"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "</template>"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "public with sharing class HelloWorldController {"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "    @AuraEnabled"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "    public static List<Contact> queryContacts(Id accountId){"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "        return ["
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "            SELECT Id, FirstName, LastName, Email, Phone "
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "            FROM Contact "
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "            WHERE AccountId = :accountId "
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "        ];"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "    }"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "}"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "\n"
+      }
+    ],
+    "language": "javascript",
+    "difficulty": "hard",
+    "week": "11",
+    "preCode": "// your code here",
+    "links": [],
+    "optional": true,
+    "createdAt": "2025-07-08T13:31:43.952Z",
+    "updatedAt": "2025-07-08T13:31:43.952Z"
+  },
+  {
+    "_id": "68754dc3ed153e3020edf564",
+    "name": "Task 1",
+    "description": "We have a client's request for Experience Cloud!",
+    "delta": [
+      {
+        "insert": "We have a client's request for Experience Cloud!\n\"We want a message banner component on the community homepage that our marketing team can configure without involving a developer. It should let us choose between info/warning/success styles, let us change the message text, and optionally highlight the message with a colored background.\"\n"
+      },
+      {
+        "attributes": {
+          "bold": true
+        },
+        "insert": "Note:"
+      },
+      {
+        "insert": " Bonus point for using the following styling hooks:\n--dxp-g-info"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "--dxp-g-warning"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "--dxp-g-success"
+      },
+      {
+        "attributes": {
+          "code-block": "plain"
+        },
+        "insert": "\n"
+      },
+      {
+        "insert": "\n"
+      }
+    ],
+    "language": "javascript",
+    "difficulty": "medium",
+    "week": "12",
+    "preCode": "// your code here",
+    "links": [],
+    "optional": false,
+    "createdAt": "2025-07-14T18:34:43.488Z",
+    "updatedAt": "2025-07-14T18:34:43.488Z"
+  }
+]

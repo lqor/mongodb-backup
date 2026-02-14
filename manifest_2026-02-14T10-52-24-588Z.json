@@ -1,0 +1,10 @@
+{
+  "timestamp": "2026-02-14T10:52:35.945Z",
+  "databases": [
+    "learn-apex",
+    "learn-lwc",
+    "lwc-mastery-cohort",
+    "db-contacts"
+  ],
+  "backupDir": "/Users/igorkudryk/.claude-worktrees/mongodb-rework/keen-visvesvaraya/backups"
+}

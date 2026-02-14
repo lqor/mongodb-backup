@@ -1,0 +1,41 @@
+[
+  {
+    "_id": "67abe969ea56da78246a1ff1",
+    "name": "Landing_Page_Table",
+    "data": {
+      "tableRows": [
+        {
+          "title": "Videos",
+          "text": "20+ hours"
+        },
+        {
+          "title": "Topics",
+          "text": "120+ easy-to-understand topics"
+        },
+        {
+          "title": "800+ Tasks",
+          "text": "Tasks that you can solve on your own pace to practice"
+        },
+        {
+          "title": "Access",
+          "text": "12 months"
+        },
+        {
+          "title": "BONUS 1",
+          "text": "Trigger Handler Course"
+        },
+        {
+          "title": "BONUS 2",
+          "text": "Free telegram community"
+        },
+        {
+          "title": "Bonus 3",
+          "text": "1 week of live group coaching"
+        }
+      ],
+      "header": "One place to learn all Apex."
+    },
+    "createdAt": "2025-02-12T00:20:57.402Z",
+    "updatedAt": "2026-02-02T14:25:59.830Z"
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "_id": "693afacf19fd822ae354635b",
+    "title": "HTML & CSS",
+    "description": "Learn the basics of HTML and CSS",
+    "lessons": [
+      "695a69b9d01e9f7a0166925c",
+      "695a6737d01e9f7a01669236"
+    ],
+    "isAvailable": true,
+    "hasFreeContent": true,
+    "createdAt": "2025-12-11T17:09:35.650Z",
+    "updatedAt": "2026-01-04T13:30:43.529Z"
+  },
+  {
+    "_id": "69524b5d8d3e113030fb7d4d",
+    "title": "JavaScript",
+    "description": "Learn how to write JavaScript",
+    "lessons": [
+      "695a6c24d01e9f7a016692c2",
+      "695a6b76d01e9f7a0166929b"
+    ],
+    "isAvailable": false,
+    "hasFreeContent": true,
+    "createdAt": "2025-12-29T09:35:25.162Z",
+    "updatedAt": "2026-01-04T13:36:37.605Z"
+  },
+  {
+    "_id": "695a6a55d01e9f7a01669272",
+    "title": "Lightning Web Components",
+    "description": "Learn how to write production-ready LWC.",
+    "lessons": [],
+    "isAvailable": false,
+    "hasFreeContent": false,
+    "createdAt": "2026-01-04T13:25:41.012Z",
+    "updatedAt": "2026-01-04T13:25:41.012Z"
+  }
+]
