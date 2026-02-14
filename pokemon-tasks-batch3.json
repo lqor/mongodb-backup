@@ -102,28 +102,5 @@
     "testMode": false,
     "ref": "6990bbd44dc3a532eb9ed4b0",
     "order": 14
-  },
-  {
-    "description": "You can build dynamic API URLs by concatenating a variable into the endpoint. Use the provided 'pokemonName' variable to call the API for any Pokemon. Complete the code by building the endpoint dynamically.",
-    "delta": [
-      {
-        "insert": "You can build dynamic API URLs by concatenating a variable into the endpoint. Use the provided 'pokemonName' variable to call the API for any Pokemon. Complete the code by building the endpoint dynamically.\n"
-      }
-    ],
-    "solution": "HttpRequest request = new HttpRequest();\nrequest.setEndpoint('https://pokeapi.co/api/v2/pokemon/' + pokemonName);\nrequest.setMethod('GET');",
-    "template": "HttpRequest request = new HttpRequest();\nrequest.setEndpoint('https://pokeapi.co/api/v2/pokemon/' + ___);\nrequest.setMethod('GET');",
-    "preCode": "String pokemonName = 'charizard';",
-    "requirements": [
-      "Build the endpoint dynamically using the pokemonName variable"
-    ],
-    "tests": [
-      "String pokemonName = 'charizard';\nHttpRequest request = new HttpRequest();\nrequest.setEndpoint('https://pokeapi.co/api/v2/pokemon/' + pokemonName);\nAssert.areEqual('https://pokeapi.co/api/v2/pokemon/charizard', request.getEndpoint(), 'Endpoint must include the pokemon name dynamically');"
-    ],
-    "points": 5,
-    "difficulty": "easy",
-    "orgCode": false,
-    "testMode": false,
-    "ref": "6990bbd44dc3a532eb9ed4b0",
-    "order": 15
   }
 ]
