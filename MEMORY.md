@@ -171,6 +171,14 @@ All scripts are written in the working directory:
 
 Scripts use the `mongodb` npm package (already installed).
 
+### 6.5 MongoDB Atlas Connection Troubleshooting
+If the connection times out (`Server selection timed out after 30000 ms`), it's likely an **IP allowlist issue** on MongoDB Atlas. The cluster only accepts connections from whitelisted IPs.
+
+- **Fix:** Switch to phone hotspot (the phone IP is already whitelisted), or go to Atlas dashboard → **Network Access** → **Add IP Address** and add the current IP
+- **Check current IP:** `curl -s ifconfig.me`
+- Public WiFi networks will have different IPs that are likely not on the allowlist
+- The phone hotspot IP (`2a02:3033:...`) has been confirmed to work
+
 ---
 
 ## 7. Batch Apex Lesson Structure
