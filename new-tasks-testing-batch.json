@@ -1,0 +1,95 @@
+[
+  {
+    "description": "Write a test class for the 'AccountDescriptionBatch' batch class. This batch selects all Accounts and updates their Description to 'Processed'.\n\nIf you don't have the AccountDescriptionBatch class in your org, create it first before writing the test.\n\nRequirements:\n1. Create a public test class named 'AccountDescriptionBatchTest' with the @isTest annotation\n2. Create a test method named 'testBatchExecution' with the @isTest annotation\n3. Insert at least one test Account record in the test method\n4. Execute the AccountDescriptionBatch using Database.executeBatch inside Test.startTest() and Test.stopTest()\n5. Assert that the Account Description was updated to 'Processed' after the batch runs",
+    "delta": [
+      {
+        "insert": "Write a test class for the 'AccountDescriptionBatch' batch class. This batch selects all Accounts and updates their Description to 'Processed'.\n\nIf you don't have the AccountDescriptionBatch class in your org, create it first before writing the test.\n\nRequirements:\n1. Create a public test class named 'AccountDescriptionBatchTest' with the @isTest annotation\n2. Create a test method named 'testBatchExecution' with the @isTest annotation\n3. Insert at least one test Account record in the test method\n4. Execute the AccountDescriptionBatch using Database.executeBatch inside Test.startTest() and Test.stopTest()\n5. Assert that the Account Description was updated to 'Processed' after the batch runs\n"
+      }
+    ],
+    "solution": "@isTest\npublic class AccountDescriptionBatchTest {\n    @isTest\n    static void testBatchExecution() {\n        Account account = new Account(Name = 'Test Account');\n        insert account;\n\n        Test.startTest();\n        AccountDescriptionBatch batch = new AccountDescriptionBatch();\n        Database.executeBatch(batch);\n        Test.stopTest();\n\n        Account result = [SELECT Description FROM Account WHERE Id = :account.Id];\n        Assert.areEqual('Processed', result.Description, 'Description should be updated to Processed');\n    }\n}",
+    "template": "",
+    "preCode": "",
+    "requirements": [
+      "Create a public test class named 'AccountDescriptionBatchTest' with the @isTest annotation",
+      "Create a test method named 'testBatchExecution' with the @isTest annotation",
+      "Insert at least one test Account record in the test method",
+      "Execute the AccountDescriptionBatch using Database.executeBatch inside Test.startTest() and Test.stopTest()",
+      "Assert that the Account Description was updated to 'Processed' after the batch runs"
+    ],
+    "tests": [
+      "List<ApexClass> classes = [SELECT Id FROM ApexClass WHERE Name = 'AccountDescriptionBatchTest'];\nAssert.isTrue(classes.size() > 0, 'AccountDescriptionBatchTest class must exist');",
+      "List<ApexClass> classes = [SELECT Body FROM ApexClass WHERE Name = 'AccountDescriptionBatchTest'];\nString body = classes[0].Body;\nAssert.isTrue(body.contains('@isTest') || body.contains('@IsTest'), 'Class must have @isTest annotation');",
+      "List<ApexClass> classes = [SELECT Body FROM ApexClass WHERE Name = 'AccountDescriptionBatchTest'];\nString body = classes[0].Body;\nAssert.isTrue(body.contains('testBatchExecution'), 'Class must have a method named testBatchExecution');",
+      "List<ApexClass> classes = [SELECT Body FROM ApexClass WHERE Name = 'AccountDescriptionBatchTest'];\nString body = classes[0].Body;\nAssert.isTrue(body.contains('Test.startTest()') && body.contains('Test.stopTest()') && body.contains('Database.executeBatch'), 'Test must use Test.startTest(), Test.stopTest(), and Database.executeBatch');",
+      "List<ApexClass> classes = [SELECT Body FROM ApexClass WHERE Name = 'AccountDescriptionBatchTest'];\nString body = classes[0].Body;\nAssert.isTrue(body.contains('Assert.'), 'Test must contain at least one Assert class assertion');"
+    ],
+    "points": 10,
+    "difficulty": "easy",
+    "orgCode": true,
+    "testMode": false,
+    "ref": "69693440d331617a8ce8abd9",
+    "order": 1
+  },
+  {
+    "description": "Write a test class for the 'ContactCleanupBatch' batch class. This batch selects all Contacts where Description is null and sets their Description to 'Cleaned'.\n\nIf you don't have the ContactCleanupBatch class in your org, create it first before writing the test.\n\nUse the @testSetup annotation to create test data separately from the test method.\n\nRequirements:\n1. Create a public test class named 'ContactCleanupBatchTest' with the @isTest annotation\n2. Create a setup method named 'setupTestData' with the @testSetup annotation that inserts 5 Contact records with no Description\n3. Create a test method named 'testBatchCleansContacts' with the @isTest annotation\n4. Execute the ContactCleanupBatch using Database.executeBatch inside Test.startTest() and Test.stopTest()\n5. Assert that all 5 Contacts have Description set to 'Cleaned' after the batch runs",
+    "delta": [
+      {
+        "insert": "Write a test class for the 'ContactCleanupBatch' batch class. This batch selects all Contacts where Description is null and sets their Description to 'Cleaned'.\n\nIf you don't have the ContactCleanupBatch class in your org, create it first before writing the test.\n\nUse the @testSetup annotation to create test data separately from the test method.\n\nRequirements:\n1. Create a public test class named 'ContactCleanupBatchTest' with the @isTest annotation\n2. Create a setup method named 'setupTestData' with the @testSetup annotation that inserts 5 Contact records with no Description\n3. Create a test method named 'testBatchCleansContacts' with the @isTest annotation\n4. Execute the ContactCleanupBatch using Database.executeBatch inside Test.startTest() and Test.stopTest()\n5. Assert that all 5 Contacts have Description set to 'Cleaned' after the batch runs\n"
+      }
+    ],
+    "solution": "@isTest\npublic class ContactCleanupBatchTest {\n    @testSetup\n    static void setupTestData() {\n        List<Contact> contacts = new List<Contact>();\n        for (Integer i = 0; i < 5; i++) {\n            contacts.add(new Contact(LastName = 'Test Contact ' + i));\n        }\n        insert contacts;\n    }\n\n    @isTest\n    static void testBatchCleansContacts() {\n        Test.startTest();\n        ContactCleanupBatch batch = new ContactCleanupBatch();\n        Database.executeBatch(batch);\n        Test.stopTest();\n\n        List<Contact> results = [SELECT Description FROM Contact];\n        for (Contact contact : results) {\n            Assert.areEqual('Cleaned', contact.Description, 'Each Contact Description should be Cleaned');\n        }\n    }\n}",
+    "template": "",
+    "preCode": "",
+    "requirements": [
+      "Create a public test class named 'ContactCleanupBatchTest' with the @isTest annotation",
+      "Create a setup method named 'setupTestData' with the @testSetup annotation that inserts 5 Contact records with no Description",
+      "Create a test method named 'testBatchCleansContacts' with the @isTest annotation",
+      "Execute the ContactCleanupBatch using Database.executeBatch inside Test.startTest() and Test.stopTest()",
+      "Assert that all 5 Contacts have Description set to 'Cleaned' after the batch runs"
+    ],
+    "tests": [
+      "List<ApexClass> classes = [SELECT Id FROM ApexClass WHERE Name = 'ContactCleanupBatchTest'];\nAssert.isTrue(classes.size() > 0, 'ContactCleanupBatchTest class must exist');",
+      "List<ApexClass> classes = [SELECT Body FROM ApexClass WHERE Name = 'ContactCleanupBatchTest'];\nString body = classes[0].Body;\nAssert.isTrue((body.contains('@testSetup') || body.contains('@TestSetup')) && body.contains('setupTestData'), 'Class must have a @testSetup method named setupTestData');",
+      "List<ApexClass> classes = [SELECT Body FROM ApexClass WHERE Name = 'ContactCleanupBatchTest'];\nString body = classes[0].Body;\nAssert.isTrue(body.contains('testBatchCleansContacts'), 'Class must have a method named testBatchCleansContacts');",
+      "List<ApexClass> classes = [SELECT Body FROM ApexClass WHERE Name = 'ContactCleanupBatchTest'];\nString body = classes[0].Body;\nAssert.isTrue(body.contains('Test.startTest()') && body.contains('Test.stopTest()') && body.contains('Database.executeBatch'), 'Test must use Test.startTest(), Test.stopTest(), and Database.executeBatch');",
+      "List<ApexClass> classes = [SELECT Body FROM ApexClass WHERE Name = 'ContactCleanupBatchTest'];\nString body = classes[0].Body;\nAssert.isTrue(body.contains('Assert.'), 'Test must contain at least one Assert class assertion');"
+    ],
+    "points": 15,
+    "difficulty": "medium",
+    "orgCode": true,
+    "testMode": false,
+    "ref": "69693440d331617a8ce8abd9",
+    "order": 2
+  },
+  {
+    "description": "Write a test class for the 'LeadStatusBatch' batch class. This batch selects all Leads and updates their Description to 'Updated'.\n\nIf you don't have the LeadStatusBatch class in your org, create it first before writing the test.\n\nYour test must verify the batch works correctly when executed with a specific batch size of 50.\n\nRequirements:\n1. Create a public test class named 'LeadStatusBatchTest' with the @isTest annotation\n2. Create a test method named 'testBatchWithCustomSize' with the @isTest annotation\n3. Insert at least one test Lead record in the test method\n4. Execute the LeadStatusBatch using Database.executeBatch with a batch size of 50 inside Test.startTest() and Test.stopTest()\n5. Assert that the Lead Description was updated to 'Updated' after the batch runs",
+    "delta": [
+      {
+        "insert": "Write a test class for the 'LeadStatusBatch' batch class. This batch selects all Leads and updates their Description to 'Updated'.\n\nIf you don't have the LeadStatusBatch class in your org, create it first before writing the test.\n\nYour test must verify the batch works correctly when executed with a specific batch size of 50.\n\nRequirements:\n1. Create a public test class named 'LeadStatusBatchTest' with the @isTest annotation\n2. Create a test method named 'testBatchWithCustomSize' with the @isTest annotation\n3. Insert at least one test Lead record in the test method\n4. Execute the LeadStatusBatch using Database.executeBatch with a batch size of 50 inside Test.startTest() and Test.stopTest()\n5. Assert that the Lead Description was updated to 'Updated' after the batch runs\n"
+      }
+    ],
+    "solution": "@isTest\npublic class LeadStatusBatchTest {\n    @isTest\n    static void testBatchWithCustomSize() {\n        Lead lead = new Lead(LastName = 'Test Lead', Company = 'Test Company');\n        insert lead;\n\n        Test.startTest();\n        LeadStatusBatch batch = new LeadStatusBatch();\n        Database.executeBatch(batch, 50);\n        Test.stopTest();\n\n        Lead result = [SELECT Description FROM Lead WHERE Id = :lead.Id];\n        Assert.areEqual('Updated', result.Description, 'Description should be updated to Updated');\n    }\n}",
+    "template": "",
+    "preCode": "",
+    "requirements": [
+      "Create a public test class named 'LeadStatusBatchTest' with the @isTest annotation",
+      "Create a test method named 'testBatchWithCustomSize' with the @isTest annotation",
+      "Insert at least one test Lead record in the test method",
+      "Execute the LeadStatusBatch using Database.executeBatch with a batch size of 50 inside Test.startTest() and Test.stopTest()",
+      "Assert that the Lead Description was updated to 'Updated' after the batch runs"
+    ],
+    "tests": [
+      "List<ApexClass> classes = [SELECT Id FROM ApexClass WHERE Name = 'LeadStatusBatchTest'];\nAssert.isTrue(classes.size() > 0, 'LeadStatusBatchTest class must exist');",
+      "List<ApexClass> classes = [SELECT Body FROM ApexClass WHERE Name = 'LeadStatusBatchTest'];\nString body = classes[0].Body;\nAssert.isTrue(body.contains('@isTest') || body.contains('@IsTest'), 'Class must have @isTest annotation');",
+      "List<ApexClass> classes = [SELECT Body FROM ApexClass WHERE Name = 'LeadStatusBatchTest'];\nString body = classes[0].Body;\nAssert.isTrue(body.contains('testBatchWithCustomSize'), 'Class must have a method named testBatchWithCustomSize');",
+      "List<ApexClass> classes = [SELECT Body FROM ApexClass WHERE Name = 'LeadStatusBatchTest'];\nString body = classes[0].Body;\nAssert.isTrue(body.contains('Test.startTest()') && body.contains('Test.stopTest()') && body.contains('Database.executeBatch') && body.contains('50'), 'Test must use Test.startTest(), Test.stopTest(), and Database.executeBatch with batch size 50');",
+      "List<ApexClass> classes = [SELECT Body FROM ApexClass WHERE Name = 'LeadStatusBatchTest'];\nString body = classes[0].Body;\nAssert.isTrue(body.contains('Assert.'), 'Test must contain at least one Assert class assertion');"
+    ],
+    "points": 10,
+    "difficulty": "easy",
+    "orgCode": true,
+    "testMode": false,
+    "ref": "69693440d331617a8ce8abd9",
+    "order": 3
+  }
+]

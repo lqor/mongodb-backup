@@ -105,18 +105,24 @@ The platform engine automatically generates a requirement for every `System.debu
 - **Always remove** `System.debug(...)` lines from solutions
 - If the task genuinely needs debug output, handle it differently
 
-### 5.5 LIMIT Values
+### 5.5 Always Use Assert Class, Never System.assert
+- ❌ `System.assert(condition)`, `System.assertEquals(...)`, `System.assertNotEquals(...)`
+- ✅ `Assert.isTrue(condition, 'message')`, `Assert.areEqual(expected, actual, 'message')`, `Assert.isNotNull(value, 'message')`
+
+The `Assert` class is the modern Salesforce approach. Never use `System.assert` in solutions or tests.
+
+### 5.6 LIMIT Values
 - `LIMIT 0` makes no sense — use `LIMIT 1` at minimum
 - Check all SOQL queries in solutions for sensible LIMIT values
 
-### 5.6 Delta Field
+### 5.7 Delta Field
 The `delta` field is Quill.js rich text format. It must **match the description** field exactly:
 ```javascript
 delta: [{ insert: description + '\n' }]
 ```
 Always update `delta` when you update `description`.
 
-### 5.7 Scheduled Job Tasks
+### 5.8 Scheduled Job Tasks
 For tasks that require scheduling a batch job from Setup:
 - The requirement must specify the **exact job name** the user should enter
 - The test queries `CronTrigger` by that specific name:
@@ -125,7 +131,7 @@ List<CronTrigger> jobs = [SELECT Id FROM CronTrigger WHERE CronJobDetail.Name = 
 Assert.isTrue(jobs.size() > 0, 'A scheduled job named Exact Job Name must exist');
 ```
 
-### 5.8 testMode (Soft Delete)
+### 5.9 testMode (Soft Delete)
 - Never delete tasks from the database
 - To hide a task, set `testMode: true`
 - The user will delete tasks manually if needed
@@ -180,7 +186,7 @@ Scripts use the `mongodb` npm package (already installed).
 | The Execute Method | `69693440d331617a8ce8abd6` | 16 tasks (orders 1-16) — fully reworked |
 | Running a Batch Job | `69693440d331617a8ce8abd7` | User deleted problematic tasks |
 | Batch Apex and Scheduled | `69693440d331617a8ce8abd8` | 3 tasks remain — reworked with CronTrigger tests |
-| Testing Batch Class | `69693440d331617a8ce8abd9` | 0 tasks |
+| Testing Batch Class | `69693440d331617a8ce8abd9` | 3 tasks (orders 1-3) — newly created |
 
 ---
 
@@ -201,6 +207,18 @@ Scripts use the `mongodb` npm package (already installed).
 - Added specific job names to requirement 7 (e.g., "Inactive Account Scheduler")
 - Replaced generic/weak CronTrigger tests with name-specific queries
 - Updated descriptions and deltas to match
+
+### Migration 4: Testing Batch Class — NEW tasks (3 tasks)
+- Created 3 brand-new tasks for the empty "Testing Batch Class" topic (`69693440d331617a8ce8abd9`)
+- These tasks teach users how to write test classes for batch Apex
+- Testing approach: query `ApexClass.Body` via SOQL to verify the user's test class structure (contains `@isTest`, `Test.startTest()`, `Test.stopTest()`, `Database.executeBatch`, `Assert.`)
+- Task IDs: `6990789b4b9088be3d92b3b2` (order 1), `6990789b4b9088be3d92b3b3` (order 2), `6990789b4b9088be3d92b3b4` (order 3)
+- Task 1 (easy): AccountDescriptionBatchTest — basic test class with `@isTest`, insert data, run batch, assert
+- Task 2 (medium): ContactCleanupBatchTest — uses `@testSetup` for data creation, bulk testing with 5 records
+- Task 3 (easy): LeadStatusBatchTest — tests batch execution with custom batch size of 50
+- All `orgCode: true`, empty templates, no System.debug, no System.assert (uses Assert class only)
+- Task IDs pushed to topic as strings ✅
+- Script: `insert-testing-batch-tasks.js` | JSON: `new-tasks-testing-batch.json`
 
 ### User manual actions
 - User deleted 3 fill-in-the-blank tasks from "Running a Batch Job" (d314, d315, d316)
