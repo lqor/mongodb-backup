@@ -119,18 +119,140 @@ The `Assert` class is the modern Salesforce approach. Never use `System.assert` 
 - ❌ `// Extract name and height from the pokemon map` — freeform hint, not teaching
 - Comments in **tests** are fine (not user-facing)
 
-### 5.7 LIMIT Values
+### 5.7 Platform Test Execution Model
+
+> ⚠️ **This is one of the most important sections.** Understanding how the platform runs tests is essential for writing tasks that actually work. Getting this wrong causes compilation errors, false failures, or untestable tasks.
+
+#### How Tests Run
+
+The platform runs **each test individually as a separate API request** via Salesforce anonymous Apex. There is no batching — test[0] runs alone, then test[1] runs alone, etc.
+
+The execution differs by `orgCode`:
+
+**orgCode: false (website tasks):**
+The user writes code in the website editor. For each test, the platform concatenates and sends:
+```
+preCode + userCode + test[i]
+```
+This entire block runs as one anonymous Apex execution. All three parts share the same scope — variables declared in preCode or userCode are visible in the test.
+
+**orgCode: true (Salesforce org tasks):**
+The user writes code in their Salesforce org (e.g., creates/modifies a class). For each test, the platform sends:
+```
+test[i]
+```
+Each test runs as anonymous Apex against the user's org, where the class already exists. The test instantiates the class, calls methods, and asserts on the results.
+
+#### What the User Sees
+
+- **Template** = starter code shown in the website editor. The user modifies it (fills blanks, adds code). The result after editing is what becomes `userCode`.
+- **Requirements** = shown to the user as a checklist. Each requirement maps 1:1 to a test.
+- **On failure:** The user sees the **requirement text** + the **error message** from the Assert. They do NOT see the test code itself.
+- **On success:** The requirement shows as passed (green checkmark).
+
+Since users see requirement text + error messages but NOT test code, write clear requirement strings and descriptive Assert messages.
+
+#### Critical Rules for orgCode: false Tests
+
+Since `preCode + userCode + test` all run in the same anonymous Apex scope:
+
+1. **Tests must NEVER redeclare variables** that exist in userCode or preCode
+   - If the user's code has `HttpRequest request = new HttpRequest();` and the test also declares `HttpRequest request = ...`, it throws **"Duplicate field: request"** compilation error
+   - Tests should contain **ONLY assertion logic**
+
+2. **Use preCode for shared setup that isn't part of the user's task**
+   - preCode runs before EVERY test (it's prepended to each one)
+   - Good for: providing variables the user needs, setting up context
+   - Example: `String pokemonName = 'charizard';` in preCode if the task asks the user to use that variable
+
+3. **Variables from userCode are visible in tests**
+   - If the solution declares `String name = (String) pokemon.get('name');`, the test can just do `Assert.areEqual('pikachu', name, '...');`
+   - No need to re-fetch, re-parse, or re-declare anything
+
+4. **Each test runs independently with the SAME userCode**
+   - test[0] gets: preCode + userCode + test[0]
+   - test[1] gets: preCode + userCode + test[1]
+   - This means ALL variables from userCode exist in every test
+   - But test[0]'s variables are NOT visible in test[1] (they're separate executions)
+
+**Example — WRONG (causes "Duplicate field" error):**
+```
+// userCode:  HttpRequest request = new HttpRequest();
+// test[0]:   HttpRequest request = new HttpRequest();
+//            Assert.isNotNull(request, 'must exist');
+// Result:    Two declarations of 'request' → COMPILATION ERROR
+```
+
+**Example — CORRECT:**
+```
+// userCode:  HttpRequest request = new HttpRequest();
+// test[0]:   Assert.isNotNull(request, 'HttpRequest must be created');
+// Result:    test uses the variable from userCode → PASSES
+```
+
+**Example — preCode usage:**
+```
+// preCode:   String pokemonName = 'charizard';
+// userCode:  request.setEndpoint('https://pokeapi.co/api/v2/pokemon/' + pokemonName);
+// test[0]:   Assert.areEqual('https://pokeapi.co/api/v2/pokemon/charizard', request.getEndpoint(), '...');
+// Result:    preCode provides the variable, userCode uses it, test asserts → PASSES
+```
+
+#### Critical Rules for orgCode: true Tests
+
+Since tests run as standalone anonymous Apex against the deployed class:
+
+1. **Tests must be fully self-contained** — they instantiate classes and call methods themselves
+2. **No variable conflicts** — the test is the only code running, so declare whatever you need
+3. **Test with multiple data points** — e.g., test with both 'pikachu' and 'charizard' to verify the code isn't hardcoded
+4. **preCode role is unclear** — to be safe, assume tests must be fully self-contained for orgCode:true tasks
+
+**Example — orgCode:true test:**
+```
+// test[0]: PokemonService service = new PokemonService();
+//          Map<String, Object> result = service.getPokemon('pikachu');
+//          Assert.areEqual('pikachu', (String) result.get('name'), 'getPokemon must return correct data');
+```
+
+#### How to Verify Tests Locally Before Inserting
+
+To simulate what the platform does, use the Salesforce CLI:
+
+**For orgCode:false tasks:**
+```bash
+# Simulate: preCode + solution + test[i]
+echo "preCode here
+solution here
+test[i] here" | sf apex run --target-org trailhead 2>&1
+```
+Check for "Compiled successfully. Executed successfully."
+
+**For orgCode:true tasks:**
+```bash
+# 1. Deploy the class to the org
+cd /Users/igorkudryk/Salesforce/Projects/learn-apex-3
+sf project deploy start --metadata ApexClass:ClassName --target-org trailhead --wait 5
+
+# 2. Run each test as anonymous Apex
+echo "test[i] code here" | sf apex run --target-org trailhead 2>&1
+```
+
+#### Task Placement: When a Task is "Too Basic" for a Topic
+
+Tasks should match the topic's teaching focus. A task about `new HttpRequest()` belongs in the HTTP Request topic, not in the Pokemon API topic — even if it technically works. If a task doesn't use the topic's subject matter, consider moving it to the correct topic rather than deleting it.
+
+### 5.8 LIMIT Values
 - `LIMIT 0` makes no sense — use `LIMIT 1` at minimum
 - Check all SOQL queries in solutions for sensible LIMIT values
 
-### 5.8 Delta Field
+### 5.9 Delta Field
 The `delta` field is Quill.js rich text format. It must **match the description** field exactly:
 ```javascript
 delta: [{ insert: description + '\n' }]
 ```
 Always update `delta` when you update `description`.
 
-### 5.9 Scheduled Job Tasks
+### 5.10 Scheduled Job Tasks
 For tasks that require scheduling a batch job from Setup:
 - The requirement must specify the **exact job name** the user should enter
 - The test queries `CronTrigger` by that specific name:
@@ -139,7 +261,7 @@ List<CronTrigger> jobs = [SELECT Id FROM CronTrigger WHERE CronJobDetail.Name = 
 Assert.isTrue(jobs.size() > 0, 'A scheduled job named Exact Job Name must exist');
 ```
 
-### 5.10 testMode (Soft Delete)
+### 5.11 testMode (Soft Delete)
 - Never delete tasks from the database
 - To hide a task, set `testMode: true`
 - The user will delete tasks manually if needed
@@ -273,6 +395,26 @@ If the connection times out (`Server selection timed out after 30000 ms`), it's 
 - Task IDs pushed to topic as strings ✅
 - Script: `insert-testing-batch-tasks.js` | JSON: `new-tasks-testing-batch.json`
 
+### Migration 5: Pokemon API Topic — NEW topic + 25 tasks
+- Created brand-new topic "Working with the Pokemon API" in the "Post Requests" lesson (`6970d1c20a6f66b9d8042fbd`)
+- Topic ID: `6990bbd44dc3a532eb9ed4b0` | link: `pokemon-api` | wp_id: `10540` | order: 13
+- Originally 25 tasks (orders 1-25), teaching HTTP callouts and JSON parsing using the Pokemon API
+- Tasks progress from fill-in-the-blank HTTP basics → JSON parsing → methods/classes → full PokemonService capstone
+- **Post-creation fixes applied:**
+  - Removed task 1 (generic `new HttpRequest()` — too basic, doesn't use Pokemon API) → `testMode: true`
+  - Fixed all orgCode:false tests (orders 2-14 had duplicate variable declarations causing "Duplicate field" errors)
+  - Re-ordered remaining 24 tasks (1-24)
+- Final structure (24 active tasks):
+  - Orders 1-9: Fill-in-the-blank (setEndpoint, setMethod, http.send, getStatusCode, getBody, deserializeUntyped, cast to Map, extract name, extract weight)
+  - Orders 10-13: Multi-field extraction, nested JSON navigation (name+height, base_experience, types list, nested type name)
+  - Order 14: PokemonFetcher class (orgCode:true)
+  - Orders 15-18: PokemonParser individual methods (orgCode:false, with templates)
+  - Order 19: PokemonParser full class (orgCode:true)
+  - Orders 20-23: PokemonService built incrementally (orgCode:true, each task only tests its NEW method)
+  - Order 24: Capstone — full PokemonService tested with bulbasaur (orgCode:true, hard)
+- Scripts: `insert-pokemon-api-topic.js`, `insert-pokemon-tasks-batch1.js` through `batch4.js`, `fix-pokemon-tests-and-reorder.js`
+- JSON files: `pokemon-tasks-batch1.json` through `batch4.json`
+
 ### User manual actions
 - User deleted 3 fill-in-the-blank tasks from "Running a Batch Job" (d314, d315, d316)
 - User deleted or set testMode on 2 overlapping tasks (d317, d318)
@@ -339,6 +481,12 @@ main().catch(console.error);
 8. **Always update delta when updating description** — they must stay in sync
 9. **Always verify after writing** — re-read the document and check it
 10. **NEVER execute a DB script right after writing it.** The script is for the user to review. Always show the data first, then explicitly ask "Should I run this now?" before executing. Positive feedback like "looks good" or "I love those" is about the content, NOT permission to execute.
+11. **Tests for orgCode:false tasks must NOT redeclare user variables.** The platform concatenates `preCode + userCode + test` — if both the user's code and the test declare the same variable (e.g., `HttpRequest request`), it throws "Duplicate field" compilation error. Tests should only contain assertions.
+12. **Always verify tasks on the actual platform** — not just via CLI. The CLI tests the Apex logic, but the platform has its own concatenation model (`preCode + userCode + test`) that can surface issues the CLI won't catch (like duplicate variable names).
+13. **Tasks must match their topic's teaching focus.** A generic `new HttpRequest()` task belongs in the HTTP Request topic, not in a Pokemon API topic. Move tasks to where they fit, don't just delete them.
+14. **orgCode:false tests with classes work differently.** When the user's code defines a class (e.g., `public class PokemonParser { ... }`), the test instantiates it (`PokemonParser parser = new PokemonParser();`). This works in anonymous Apex and doesn't cause duplicate variable issues because the test uses a different variable name than anything in the class definition.
+15. **Test with multiple data points for orgCode:true tasks.** Using only one test input (e.g., just 'pikachu') means the user could hardcode the answer. Test with at least 2 different inputs (e.g., pikachu + charizard) and use a completely different input for capstone tasks (e.g., bulbasaur).
+16. **Each incremental task should only test its NEW method.** When tasks build on each other (e.g., PokemonService adding methods one by one), don't re-test methods from previous tasks — the user already proved those work. Only test the newly added method.
 
 ---
 
@@ -373,15 +521,20 @@ main().catch(console.error);
 
 1. Query all tasks with `ref` matching the topic ID
 2. For each task, check:
-   - [ ] `orgCode` — should it be `true`? (Apex tasks = yes)
-   - [ ] Description language — "Write"/"Create", not "Complete"/"Fill in"
-   - [ ] Template — empty for orgCode tasks
-   - [ ] Solution — no casting, no System.debug
+   - [ ] `orgCode` — should it be `true`? (class/method tasks = yes, fill-in-blank = false)
+   - [ ] Description language — "Write"/"Create" for orgCode:true, not "Complete"/"Fill in"
+   - [ ] Template — empty for orgCode:true tasks; starter code for orgCode:false
+   - [ ] Solution — no casting, no System.debug, no unnecessary comments
    - [ ] Requirements count = tests count
+   - [ ] Tests for orgCode:false — assertion-only (no duplicate variable declarations)
+   - [ ] Tests for orgCode:true — self-contained, multiple data points
    - [ ] SOQL queries have sensible LIMIT values
    - [ ] Orders are sequential (1, 2, 3...)
    - [ ] Delta matches description
-3. Present overview to user
-4. **Wait for explicit confirmation**
-5. Run migration with pre-flight checks
-6. Verify after migration
+   - [ ] Task belongs in this topic (matches the topic's teaching focus)
+   - [ ] No comments in solutions/templates (unless teaching, e.g., `// Write your code here`)
+3. **Verify every task against the trailhead org** — simulate `preCode + solution + test` for orgCode:false, deploy + run tests for orgCode:true
+4. Present overview to user
+5. **Wait for explicit confirmation**
+6. Run migration with pre-flight checks
+7. Verify after migration
