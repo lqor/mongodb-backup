@@ -1,6 +1,7 @@
-# MongoDB Task Rework — Session Memory
+# MongoDB Task Rework — Long-Term Reference
 
-> **Purpose:** Bootstrap any new Claude session to understand the database, the platform rules, and the workflow for modifying tasks. Read this file before doing anything.
+> Essential rules for every session are in `CLAUDE.md` (auto-loaded by Claude Code).
+> This file contains migration history, topic/lesson IDs, and detailed reference.
 
 ---
 
@@ -232,9 +233,17 @@ Since tests run as standalone anonymous Apex against the deployed class:
 1. **Tests must be fully self-contained** — they instantiate classes and call methods themselves
 2. **No variable conflicts** — the test is the only code running, so declare whatever you need
 3. **Test with multiple data points** — e.g., test with both 'pikachu' and 'charizard' to verify the code isn't hardcoded
-4. **preCode role is unclear** — to be safe, assume tests must be fully self-contained for orgCode:true tasks
+4. **preCode runs before every test** — for orgCode:true, the platform sends `preCode + test[i]` for each test (confirmed). Use preCode to set up test data, call methods, and create variables that tests can reference.
 
-**Example — orgCode:true test:**
+**Example — orgCode:true with preCode:**
+```
+// preCode:  PokemonService service = new PokemonService();
+//           Map<String, Object> result = service.getPokemon('pikachu');
+// test[0]:  Assert.areEqual('pikachu', (String) result.get('name'), 'getPokemon must return correct data');
+// test[1]:  Assert.isNotNull(result.get('weight'), 'weight must be present');
+```
+
+**Example — orgCode:true test (no preCode):**
 ```
 // test[0]: PokemonService service = new PokemonService();
 //          Map<String, Object> result = service.getPokemon('pikachu');
@@ -318,29 +327,28 @@ Assert.isTrue(jobs.size() > 0, 'A scheduled job named Exact Job Name must exist'
 - **Every batch must be reviewed separately** — never insert batch N+1 just because batch N was approved
 - When in doubt, **always ask**. Never guess.
 
-### 6.2 Salesforce CLI — Testing Tasks Against Trailhead Org
+### 6.2 Salesforce CLI — Testing Tasks Against Orgs
 ```bash
 # Run anonymous Apex:
-echo "your code here" | sf apex run --target-org trailhead 2>&1
-
-# Parse debug output:
-... | grep "USER_DEBUG"
-
-# Parse errors:
-... | grep -E "(FATAL|Error)"
+sf apex run --target-org <alias> --file /tmp/test.apex 2>&1
 
 # Deploy a class (via learn-apex-3 project):
 cd /Users/igorkudryk/Salesforce/Projects/learn-apex-3
-sf project deploy start --metadata ApexClass:ClassName --target-org trailhead --wait 5
-
-# Note: CLI v2.60.13 has a cosmetic "Missing message metadata.transfer:Finalizing" error
-# but the deploy actually succeeds — verify with anonymous Apex after deploying
+sf project deploy start --metadata ApexClass:ClassName --target-org <alias> --wait 5
 ```
-- Org alias: `trailhead`
-- Username: `kudryk@resilient-narwhal-cf5l8q.com`
+
+**Available orgs:**
+
+| Alias | Username | Use for |
+|---|---|---|
+| `trailhead` | `kudryk@resilient-narwhal-cf5l8q.com` | Most tasks (Batch Apex, Pokemon API, etc.) |
+| `Claude_Org` | `kudryk@wise-badger-94mfwi.com` | Nebula Logger / Integration module tasks |
+
 - SFDX project: `/Users/igorkudryk/Salesforce/Projects/learn-apex-3/`
-- Remote Site Setting for `https://pokeapi.co` is already configured
-- **Do NOT delete classes from the org after testing** — user uses this org for production testing
+- Remote Site Settings configured: `https://pokeapi.co` (trailhead), Postman mock (Claude_Org)
+- Nebula Logger v4.16.5 installed on Claude_Org
+- **Do NOT delete classes from orgs after testing** — user uses these for production testing
+- **Prefer `--file` over echo/pipe** for running Apex — avoids shell encoding issues with special characters
 
 ### 6.3 Pre-flight Checks
 Every migration script must include:
@@ -392,7 +400,29 @@ If the connection times out (`Server selection timed out after 30000 ms`), it's 
 
 ---
 
-## 8. Work Completed
+## 8. Integration Module Lesson Structure
+
+**Lesson:** "Integrations" — contains multiple topics with tasks across two sub-lessons:
+
+**Logging in Integrations:**
+| Topic | Link slug | Topic ID | Tasks | Status |
+|---|---|---|---|---|
+| Simple Logging | `simple-logging` | `6970d58b0a6f66b9d8042fdf` | 5 tasks (orders 1-5) | Fixed (Task 3, Task 5) |
+| Nebula Logger | `nebula-logger` | `6970d58b0a6f66b9d8042fe1` | 15 tasks (orders 1-15) | Fully rewritten |
+
+**Events & Signing:**
+| Topic | Link slug | Topic ID | Tasks | Status |
+|---|---|---|---|---|
+| HMAC | `hmac` | `6970d58b0a6f66b9d8042ff3` | 6 tasks (orders 1-6) | Orders set |
+
+**Notes:**
+- Integration topics use `link` slugs in lessons (not ObjectIds) — topics found by `{link: slug}`
+- Nebula Logger tasks require `Claude_Org` (wise-badger) — Nebula Logger v4.16.5 installed there
+- All nebula-logger tasks use `Logger.saveLog(Logger.SaveMethod.SYNCHRONOUS_DML)` — default async save doesn't work for tests
+
+---
+
+## 9. Work Completed
 
 ### Migration 1: Batchable Interface → Execute Method (6 tasks)
 - Moved 6 tasks from "The Batchable Interface" topic to "The Execute Method" topic
@@ -442,6 +472,23 @@ If the connection times out (`Server selection timed out after 30000 ms`), it's 
 - Scripts: `insert-pokemon-api-topic.js`, `insert-pokemon-tasks-batch1.js` through `batch4.js`, `fix-pokemon-tests-and-reorder.js`
 - JSON files: `pokemon-tasks-batch1.json` through `batch4.json`
 
+### Migration 6: Simple-logging fixes (2 tasks)
+- Task 3 (`6972364e38f7e59865987e7f`): test[2] `Assert.areEqual('', null)` → `Assert.isTrue(String.isBlank(...))`
+- Task 5 (`6972364e38f7e59865987e81`): preCode added (try-catch logic), solution bracket notation `accounts[0]` → `accounts.get(0)`
+- Script: `fix-logging-hmac-tasks.js`
+
+### Migration 7: HMAC task orders (6 tasks)
+- Set order 1-6 on all 6 HMAC tasks (`6974fe70fa17fbf3b1b8be2e` through `6974fe70fa17fbf3b1b8be33`)
+- Script: `fix-logging-hmac-tasks.js`
+
+### Migration 8: Nebula Logger full rewrite (15 tasks)
+- Rewrote all 15 nebula-logger tasks (tests, solutions, preCode)
+- Fixed: `Message__c` not filterable in SOQL (check in Apex loops instead), `Logger.saveLog()` → `Logger.saveLog(Logger.SaveMethod.SYNCHRONOUS_DML)`, bracket notation, broad deletes, Task 1 weak test, Task 10 callout-after-DML
+- Tasks 2-5, 11-12: anon apex solutions moved to preCode for test isolation
+- 8 solution classes deployed to Claude_Org: OrderProcessor, ContactValidator, AccountService, BulkAccountProcessor, PaymentLinkCallout, LeadScorer, OpportunityChecker, CaseLogger
+- All 43 individual tests verified passing on Claude_Org before DB write
+- Script: `rewrite-nebula-tests.js` | Test runner: `deploy-and-test-v2.js`
+
 ### User manual actions
 - User deleted 3 fill-in-the-blank tasks from "Running a Batch Job" (d314, d315, d316)
 - User deleted or set testMode on 2 overlapping tasks (d317, d318)
@@ -451,7 +498,7 @@ If the connection times out (`Server selection timed out after 30000 ms`), it's 
 
 ---
 
-## 9. Common Patterns for Migration Scripts
+## 10. Common Patterns for Migration Scripts
 
 ```javascript
 const { MongoClient, ObjectId } = require('mongodb');
@@ -496,7 +543,7 @@ main().catch(console.error);
 
 ---
 
-## 10. Lessons Learned (Mistakes to Never Repeat)
+## 11. Lessons Learned (Mistakes to Never Repeat)
 
 1. **Don't run scripts without explicit user confirmation.** "Looks good" ≠ "run it"
 2. **Topic tasks arrays contain strings, not ObjectIds.** Pushing ObjectIds creates inconsistent data
@@ -522,10 +569,16 @@ main().catch(console.error);
 22. **Ghost task IDs in topic arrays.** Topics can reference task IDs that don't exist in the tasks collection. This causes empty/broken views on the frontend. Fix by setting `tasks: []` on the topic. Always verify task IDs exist before assuming they're valid.
 23. **Tasks must be in the right lesson for the curriculum order.** If a task requires concepts not yet taught (e.g., for loops in an if/else lesson), move it to the appropriate lesson/topic. Check lesson `order` field to verify curriculum sequence.
 24. **Variable name typos between description and solution/tests break tasks.** If the description says `foodOccurrences` but tests check `foodOccurences`, the student's correct code fails. Always ensure variable names are consistent AND correctly spelled across description, solution, requirements, and tests.
+25. **preCode runs before every test for orgCode:true.** The platform sends `preCode + test[i]` — NOT just `test[i]`. Use preCode to set up data, call methods, and create variables tests can reference. Section 5.9 documents this.
+26. **Salesforce stores empty strings as null for custom text fields.** `Assert.areEqual('', null)` fails. Use `Assert.isTrue(String.isBlank(value))` to check for empty/null.
+27. **Can't do HTTP callouts after DML in the same anonymous Apex transaction.** Error: "You have uncommitted work pending." Either skip the insert, or restructure so callouts happen before DML.
+28. **Nebula Logger `LogEntry__c.Message__c` is TEXTAREA — not filterable in SOQL WHERE.** Must query by parent `Log__c`, then check Message__c in Apex loops. Same for any custom TEXTAREA field.
+29. **Nebula Logger default save method is EVENT_BUS (async).** Entries won't be immediately queryable. Always use `Logger.saveLog(Logger.SaveMethod.SYNCHRONOUS_DML)` in solutions and preCode.
+30. **Anonymous Apex solutions are valid for orgCode:true tasks.** The `solution` field is just a reference answer — doesn't have to be a class. For anon apex orgCode:true tasks, move solution code into preCode for test isolation (so it runs before each test).
 
 ---
 
-## 11. Salesforce Anonymous Apex Limitations
+## 12. Salesforce Anonymous Apex Limitations
 
 > **Tested and confirmed** — this determines whether a task can be `orgCode: false` (website) or must be `orgCode: true` (written in org).
 
@@ -552,7 +605,7 @@ main().catch(console.error);
 
 ---
 
-## 12. Quick Reference: How to Analyze a Topic's Tasks
+## 13. Quick Reference: How to Analyze a Topic's Tasks
 
 1. Query all tasks with `ref` matching the topic ID
 2. For each task, check:
@@ -576,7 +629,7 @@ main().catch(console.error);
 
 ---
 
-## 13. Tally Feedback Form
+## 14. Tally Feedback Form
 
 The platform has a feedback form on Tally.so for bug reports and feature requests.
 
@@ -600,7 +653,7 @@ Use this to monitor user-reported bugs and check if they're real task issues or 
 
 ---
 
-## 14. Feedback Fixes Completed
+## 15. Feedback Fixes Completed
 
 | Date | Reporter | Issue | Fix |
 |---|---|---|---|
@@ -609,3 +662,123 @@ Use this to monitor user-reported bugs and check if they're real task issues or 
 | Feb 17 | Jace | `foodOccurences` typo — description says `foodOccurrences` but tests use misspelled version | Fixed to correct spelling `foodOccurrences` everywhere. Script: `fix-food-occurrences.js` |
 | Feb 16 | *(anon)* | JSON.deserializeUntyped error on Parsing with maps | Not a bug — user error (likely shadowed JSON class) |
 | Feb 18 | Oluwafemi | Cleared template code on Task 12 (Company constructor) | Not a DB bug — drafted response with template code |
+
+---
+
+## 16. Syntax & Basics — Audit Checklist
+
+> Goal: Run quality checklist + org tests on every topic, fix issues found.
+> Work through top to bottom, one topic at a time.
+
+### Lesson 1: Variables
+
+| Status | Topic | Tasks | Topic ID |
+|---|---|---|---|
+| [ ] | variable-types | 6 | `65aa5b7688fda36a2fb493ae` |
+| [ ] | variable-operations | 15 | `65aa766d88fda36a2fb493c0` |
+| [ ] | operation-abbreviations | 5 | `67406899740532e4401b9406` |
+| [ ] | variables-basics | 4 | `65a838abfeef90604e14c678` |
+
+### Lesson 2: Classes
+
+| Status | Topic | Tasks | Topic ID |
+|---|---|---|---|
+| [ ] | creating-classes | 4 | `65ac114ef2480095c9b4483f` |
+| [ ] | class-variables | 6 | `65ac1170f2480095c9b44841` |
+| [ ] | creating-objects | 7 | `65ac1179f2480095c9b44843` |
+
+### Lesson 3: Methods
+
+| Status | Topic | Tasks | Topic ID |
+|---|---|---|---|
+| [ ] | simple-methods | 4 | `65acfb7fa35d11beb1ef1cc6` |
+| [ ] | calling-methods-from-variables | 5 | `65acfb7fa35d11beb1ef1cc7` |
+| [ ] | calling-methods-from-other-methods | 1 | `65acfb7fa35d11beb1ef1cc8` |
+| [ ] | return-return-types | 13 | `65acfb7fa35d11beb1ef1cc9` |
+| [ ] | void-return-type | 4 | `65acfb7fa35d11beb1ef1cca` |
+| [ ] | arguments | 17 | `65acfb7fa35d11beb1ef1ccb` |
+| [ ] | this-keyword | 5 | `65acfb7fa35d11beb1ef1ccc` |
+| [ ] | constructors | 4 | `65acfb7fa35d11beb1ef1ccd` |
+| [ ] | constructors-with-parameters | 8 | `65acfb7fa35d11beb1ef1cce` |
+| [ ] | methods-in-other-classes | 8 | `65acfb7fa35d11beb1ef1ccf` |
+| [ ] | string-methods | 20 | `66841c28a761240716ed3be4` |
+| [ ] | date-datetime-methods | 11 | `66844a8aa761240716ed3bea` |
+| [ ] | math-methods | 4 | `66844a8aa761240716ed3beb` |
+| [ ] | integer-methods | 5 | `66844a8aa761240716ed3bec` |
+| [ ] | private-variables-methods | 1 | `66910da268bc8aa54895ce09` |
+
+### Lesson 4: sObjects
+
+| Status | Topic | Tasks | Topic ID |
+|---|---|---|---|
+| [ ] | what-is-an-sobject- | 3 | `65ad5366a9f2cd2b5c005f98` |
+| [ ] | creating-records-with-apex | 6 | `65ad5366a9f2cd2b5c005f9a` |
+| [ ] | relationships-in-sobjects | 2 | `65ad5366a9f2cd2b5c005f9b` |
+
+### Lesson 5: If / Else / Switch
+
+| Status | Topic | Tasks | Topic ID |
+|---|---|---|---|
+| [ ] | if-statement | 15 | `65ad700aa9f2cd2b5c005fb7` |
+| [ ] | else | 14 | `65ad700aa9f2cd2b5c005fb8` |
+| [ ] | else-if | 10 | `65ad700aa9f2cd2b5c005fb9` |
+| [ ] | multiple-if-else | 21 | `65ad700aa9f2cd2b5c005fba` |
+| [ ] | nested-if-s | 3 | `65ad700aa9f2cd2b5c005fbb` |
+| [ ] | modulo | 3 | `65ad700aa9f2cd2b5c005fbc` |
+| [ ] | switch-statement | 4 | `65f6e11a80b2697bd32b8f30` |
+| [ ] | ternary-operator | 12 | `666711d9898b09adc8aca8f2` |
+
+### Lesson 6: Lists
+
+| Status | Topic | Tasks | Topic ID |
+|---|---|---|---|
+| [ ] | creating-a-list | 4 | `65ad9259241984dc2ea06119` |
+| [ ] | adding-getting-elements-to-a-list | 11 | `65ad9259241984dc2ea0611a` |
+| [ ] | list-methods | 17 | `65ad9259241984dc2ea0611b` |
+| [ ] | sets | 16 | `65ad9259241984dc2ea0611c` |
+
+### Lesson 7: Loops
+
+| Status | Topic | Tasks | Topic ID |
+|---|---|---|---|
+| [ ] | standard-for-loop | 55 | `65ad77f2241984dc2ea06112` |
+| [ ] | lists-and-loops | 3 | `65ad77f2241984dc2ea06113` |
+| [ ] | nested-loops | 7 | `65ad77f2241984dc2ea06115` |
+| [ ] | while-do-while | 13 | `66844b29a761240716ed3bee` |
+
+### Lesson 8: For Each
+
+| Status | Topic | Tasks | Topic ID |
+|---|---|---|---|
+| [ ] | for-each-loop | 66 | `65ad77f2241984dc2ea06114` |
+
+### Lesson 9: DML in Apex
+
+(all topics have 0 tasks - nothing to audit)
+
+### Lesson 10: Maps
+
+| Status | Topic | Tasks | Topic ID |
+|---|---|---|---|
+| [ ] | what-is-a-map- | 3 | `65b6a2e52424782cda43247a` |
+| [ ] | getting-and-adding-element | 7 | `65b6a2e52424782cda43247b` |
+| [ ] | keys-and-values | 5 | `65b6a2e52424782cda43247c` |
+| [ ] | map-common-methods | 7 | `65b6a2e52424782cda43247d` |
+| [ ] | iterating-through-the-map | 38 | `65b6a2e52424782cda43247e` |
+
+### Lesson 11: SOQL & Apex
+
+| Status | Topic | Tasks | Topic ID |
+|---|---|---|---|
+| [ ] | soql-relationships | 4 | `65ada9d71912968f8242a601` |
+
+### Lesson 12: Additional Topics
+
+| Status | Topic | Tasks | Topic ID |
+|---|---|---|---|
+| [ ] | comparable-interface-in-apex | 2 | `667aad0e225e73a25d0595de` |
+| [ ] | bitwise-operators | 1 | `6675834f22179a9906afc10b` |
+
+---
+
+**Total: ~470 tasks across 48 topics**
