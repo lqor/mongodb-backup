@@ -111,7 +111,34 @@ The platform engine automatically generates a requirement for every `System.debu
 
 The `Assert` class is the modern Salesforce approach. Never use `System.assert` in solutions or tests.
 
-### 5.6 No Comments in Public-Facing Code
+### 5.6 Use .get() Instead of Bracket Notation for List Access
+- ❌ `types[0]` — bracket notation works but is not best practice in Apex
+- ✅ `types.get(0)` — best practice, use `.get()` for all List element access
+- This applies to **solutions, templates, tests, and preCode** — anywhere Apex code is written
+
+### 5.7 Description and Requirements Writing Rules
+
+**Writing style:**
+- Use simple, direct language - 5th grade grammar. No fluff, no filler.
+- Use regular hyphens `-` not em dashes `—`. Em dashes look AI-generated.
+- Don't mention internal implementation details the platform can't test (e.g., "calls getPokemon internally" - we can't verify what's called internally, so don't say it).
+- Description must match what the student actually does. If the template already has the HTTP call done, don't describe the HTTP call as the task.
+  - ❌ "Call the Pokemon API and extract the name" (student isn't calling the API - the template does that)
+  - ✅ "Complete the code to extract the 'name' value from the pokemon map" (this is what the student actually writes)
+- For orgCode:true tasks where the student writes everything, use "Create a ... class" or "Add a ... method" language.
+
+**Description content rules:**
+- **Never list requirements in the description.** The user already sees requirements as a separate checklist.
+- **Descriptions should explain the task context:** what the method does, what data it works with, and where to find the data structure (e.g., API link).
+- For API tasks, point users to the API URL so they can explore the JSON structure themselves (e.g., "You can explore the JSON structure at https://pokeapi.co/api/v2/pokemon/pikachu")
+- **Break long descriptions into multiple paragraphs.** A single wall of text is hard to read on the platform. Use `\n\n` to separate logical sections (e.g., what to build, example JSON, hints).
+
+**Requirements rules:**
+- **Requirements should be concrete with input/output examples** rather than vague descriptions:
+  - ❌ `"The method must return the 'name' value"` - too vague
+  - ✅ `"If the input is '{\"name\":\"charizard\",\"weight\":905}' then getName must return 'charizard'"` - concrete, testable
+
+### 5.8 No Comments in Public-Facing Code
 - **Templates and solutions must NOT contain comments** unless the comment is part of the teaching process
 - ✅ `// Write your code here` — teaching, guides the user
 - ✅ `// pokemonName variable is already provided` — explains preCode context
@@ -119,7 +146,7 @@ The `Assert` class is the modern Salesforce approach. Never use `System.assert` 
 - ❌ `// Extract name and height from the pokemon map` — freeform hint, not teaching
 - Comments in **tests** are fine (not user-facing)
 
-### 5.7 Platform Test Execution Model
+### 5.9 Platform Test Execution Model
 
 > ⚠️ **This is one of the most important sections.** Understanding how the platform runs tests is essential for writing tasks that actually work. Getting this wrong causes compilation errors, false failures, or untestable tasks.
 
@@ -241,18 +268,18 @@ echo "test[i] code here" | sf apex run --target-org trailhead 2>&1
 
 Tasks should match the topic's teaching focus. A task about `new HttpRequest()` belongs in the HTTP Request topic, not in the Pokemon API topic — even if it technically works. If a task doesn't use the topic's subject matter, consider moving it to the correct topic rather than deleting it.
 
-### 5.8 LIMIT Values
+### 5.10 LIMIT Values
 - `LIMIT 0` makes no sense — use `LIMIT 1` at minimum
 - Check all SOQL queries in solutions for sensible LIMIT values
 
-### 5.9 Delta Field
+### 5.11 Delta Field
 The `delta` field is Quill.js rich text format. It must **match the description** field exactly:
 ```javascript
 delta: [{ insert: description + '\n' }]
 ```
 Always update `delta` when you update `description`.
 
-### 5.10 Scheduled Job Tasks
+### 5.12 Scheduled Job Tasks
 For tasks that require scheduling a batch job from Setup:
 - The requirement must specify the **exact job name** the user should enter
 - The test queries `CronTrigger` by that specific name:
@@ -261,7 +288,7 @@ List<CronTrigger> jobs = [SELECT Id FROM CronTrigger WHERE CronJobDetail.Name = 
 Assert.isTrue(jobs.size() > 0, 'A scheduled job named Exact Job Name must exist');
 ```
 
-### 5.11 testMode (Soft Delete)
+### 5.13 testMode (Soft Delete)
 - Never delete tasks from the database
 - To hide a task, set `testMode: true`
 - The user will delete tasks manually if needed
@@ -487,6 +514,14 @@ main().catch(console.error);
 14. **orgCode:false tests with classes work differently.** When the user's code defines a class (e.g., `public class PokemonParser { ... }`), the test instantiates it (`PokemonParser parser = new PokemonParser();`). This works in anonymous Apex and doesn't cause duplicate variable issues because the test uses a different variable name than anything in the class definition.
 15. **Test with multiple data points for orgCode:true tasks.** Using only one test input (e.g., just 'pikachu') means the user could hardcode the answer. Test with at least 2 different inputs (e.g., pikachu + charizard) and use a completely different input for capstone tasks (e.g., bulbasaur).
 16. **Each incremental task should only test its NEW method.** When tasks build on each other (e.g., PokemonService adding methods one by one), don't re-test methods from previous tasks — the user already proved those work. Only test the newly added method.
+17. **Use `.get(0)` not `[0]` for List access in Apex.** Bracket notation works but `.get()` is best practice. Applies to solutions, templates, tests, and preCode.
+18. **Write descriptions for what the student actually does, not the full code flow.** If the template already handles the HTTP call and deserialization, the task is "Complete the code to extract X" not "Call the API and extract X." Also don't mention untestable implementation details like "calls method X internally."
+19. **Never use variable names that are Apex reserved words or shadow system classes.** `JSON`, `Http`, `System`, `Database`, `Test`, `Url`, `Type`, `Package`, `currency`, etc. are system classes or reserved identifiers. Using them as variable names causes compilation errors ("Identifier name is reserved" or "Method does not exist"). Use descriptive names instead: `jsonString`, `currencyData`, `httpClient`, etc. This applies to ALL code: tests, solutions, templates, and preCode.
+20. **Some older topics store task IDs as ObjectIds, not strings.** Before pushing to a topic's tasks array, always check what type the existing entries use (`typeof` + `instanceof ObjectId`). Push the same type to avoid inconsistency. The rule "always push strings" only applies to topics we created/managed — older topics may use ObjectIds.
+21. **System.debug in preCode also causes phantom requirements.** Not just in solutions — if the preCode contains a class with System.debug inside a method, the platform will detect it. Remove System.debug from preCode classes too.
+22. **Ghost task IDs in topic arrays.** Topics can reference task IDs that don't exist in the tasks collection. This causes empty/broken views on the frontend. Fix by setting `tasks: []` on the topic. Always verify task IDs exist before assuming they're valid.
+23. **Tasks must be in the right lesson for the curriculum order.** If a task requires concepts not yet taught (e.g., for loops in an if/else lesson), move it to the appropriate lesson/topic. Check lesson `order` field to verify curriculum sequence.
+24. **Variable name typos between description and solution/tests break tasks.** If the description says `foodOccurrences` but tests check `foodOccurences`, the student's correct code fails. Always ensure variable names are consistent AND correctly spelled across description, solution, requirements, and tests.
 
 ---
 
@@ -538,3 +573,39 @@ main().catch(console.error);
 5. **Wait for explicit confirmation**
 6. Run migration with pre-flight checks
 7. Verify after migration
+
+---
+
+## 13. Tally Feedback Form
+
+The platform has a feedback form on Tally.so for bug reports and feature requests.
+
+- **API Key:** `tly-KCOaa22uzMS7JzhhXuHZMHuekiQuKpjz`
+- **Form ID:** `2ENWXp` (Feedback Form)
+- **API endpoint:** `https://api.tally.so/forms/2ENWXp/submissions`
+- **Auth:** `Authorization: Bearer <api_key>`
+- **Categories:** Bug reports, feedback, help requests
+- **Key question IDs:**
+  - `RzD1Qv` — Category (bug/feedback/help)
+  - `oA2YZ5` — Feedback text
+  - `VZzXaN` — Bug description
+  - `OA7KZk` — Bug category dropdown
+  - `24KzYg` — Name
+  - `xdJE7E` — Email
+  - `EPxeGA` — Attachments
+
+Use this to monitor user-reported bugs and check if they're real task issues or user errors.
+
+**Not fixable via DB:** SOQL tasks (user confirmed), streak issues, "Something went wrong" app errors, WordPress/UI content issues, dark mode requests.
+
+---
+
+## 14. Feedback Fixes Completed
+
+| Date | Reporter | Issue | Fix |
+|---|---|---|---|
+| Feb 17 | Ufuk | For loop task in if/else lesson (before loops taught) | Moved task to "Standard for loop" topic. Script: `fix-move-investment-task.js` |
+| Feb 17 | Manish | Flowers task — System.debug phantom reqs, System.assertEquals | Removed System.debug from solution + preCode, updated test to Assert.areEqual. Script: `fix-flowers-task.js` |
+| Feb 17 | Jace | `foodOccurences` typo — description says `foodOccurrences` but tests use misspelled version | Fixed to correct spelling `foodOccurrences` everywhere. Script: `fix-food-occurrences.js` |
+| Feb 16 | *(anon)* | JSON.deserializeUntyped error on Parsing with maps | Not a bug — user error (likely shadowed JSON class) |
+| Feb 18 | Oluwafemi | Cleared template code on Task 12 (Company constructor) | Not a DB bug — drafted response with template code |

@@ -1,0 +1,11 @@
+HttpRequest request = new HttpRequest();
+request.setEndpoint('https://pokeapi.co/api/v2/pokemon/pikachu');
+request.setMethod('GET');
+Http http = new Http();
+HttpResponse response = http.send(request);
+Map<String, Object> pokemon = (Map<String, Object>) JSON.deserializeUntyped(response.getBody());
+List<Object> types = (List<Object>) pokemon.get('types');
+Map<String, Object> firstType = (Map<String, Object>) types[0];
+Map<String, Object> typeInfo = (Map<String, Object>) firstType.get('type');
+String typeName = (String) typeInfo.get('name');
+Assert.isNotNull(firstType, 'First type entry must not be null');

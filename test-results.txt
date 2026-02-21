@@ -1,0 +1,24 @@
+PASS | SL-1 | test[0]
+PASS | SL-1 | test[1]
+PASS | SL-1 | test[2]
+PASS | SL-1 | test[3]
+PASS | SL-1 | test[4]
+PASS | SL-1 | test[5]
+FAIL | SL-2-noPreCode | test[0] | Error (1): Compilation failed at Line 1 column 31 with the error:
+PASS | SL-2-withPreCode | test[0]
+PASS | SL-2-withPreCode | test[1]
+PASS | SL-2-withPreCode | test[2]
+PASS | SL-2-withPreCode | test[3]
+PASS | SL-2-withPreCode | test[4]
+FAIL | SL-3-noPreCode | test[0] | Error (1): Compilation failed at Line 1 column 15 with the error:
+Variable does not exist: insertedLog.Error_Message__c
+PASS | SL-3-withPreCode | test[0]
+PASS | SL-3-withPreCode | test[1]
+FAIL | SL-3-withPreCode | test[2] | Error (1): Execution failed at this code:
+PASS | SL-3-withPreCode | test[3]
+PASS | SL-4-withPreCode | test[0]
+PASS | SL-4-withPreCode | test[1]
+PASS | SL-4-withPreCode | test[2]
+PASS | SL-5-withSolution | test[0]
+PASS | SL-5-withSolution | test[1]
+PASS | SL-5-withSolution | test[2]
